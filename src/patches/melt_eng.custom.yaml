@@ -121,8 +121,11 @@ patch:
     - derive/ible$/able/               # responsable→responsible
     - derive/able$/ible/               # accessable→accessible
 
-    # ── 禁用小写单编码 ──
-    - erase/^[a-z]$/
+    # ── 单字母编码：**不禁用** ──
+    # 上游有 `erase/^[a-z]$/`，把所有单字母编码抹掉，本意是防止单字母刷屏。
+    # 但对纯英文键盘这是反效果：a 和 I 本身就是最常用的英文单词，
+    # 打 a 却出不来 a、只能出一堆 a 开头的词，很蠢。
+    # 已连同 a / I 两个词条一起补进词库（见 curated_terms.txt）。
 
     # ── 中文数字/符号读音派生（沿用上游全拼部分）──
     - derive/(?<!\d)1([1-9])(?!\d)/shi$1/

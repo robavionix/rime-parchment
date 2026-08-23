@@ -539,7 +539,6 @@ rimeSchemaChangedNotification:
   backgroundStyle: "alphabeticButtonBackgroundStyle"
   foregroundStyle:
   - "spaceButtonForegroundStyle"
-  - "spaceButtonRimeSchemaForegroundStyle"
   notificationType: "rime"
   rimeNotificationType: "schemaChanged"
 scaleAnimation:
@@ -555,7 +554,6 @@ spaceButton:
   backgroundStyle: "alphabeticButtonBackgroundStyle"
   foregroundStyle:
   - "spaceButtonForegroundStyle"
-  - "spaceButtonRimeSchemaForegroundStyle"
   - "spaceButtonSwipeUpForegroundStyle"
   notification:
   - "rimeSchemaChangedNotification"
@@ -563,14 +561,14 @@ spaceButton:
   swipeUpAction:
     symbol: "0"
 spaceButtonForegroundStyle:
-  buttonStyleType: "systemImage"
+  buttonStyleType: "text"
   center:
     x: 0.5
     "y": 0.5
-  fontSize: 20
+  fontSize: 16
   highlightColor: "#F2EFE8"
   normalColor: "#F2EFE8"
-  systemImageName: "space"
+  text: "$rimeSchemaName"
 spaceButtonPreeditChangedForegroundStyle:
   buttonStyleType: "text"
   center:
@@ -596,15 +594,6 @@ spaceButtonPreeditChangedSwipeUpForegroundStyle:
   highlightColor: "#A9A49A"
   normalColor: "#A9A49A"
   text: "次选"
-spaceButtonRimeSchemaForegroundStyle:
-  buttonStyleType: "text"
-  center:
-    x: 0.2
-    "y": 0.7
-  fontSize: 9
-  highlightColor: "#A9A49A"
-  normalColor: "#A9A49A"
-  text: "$rimeSchemaName"
 spaceButtonSwipeUpForegroundStyle:
   buttonStyleType: "text"
   center:

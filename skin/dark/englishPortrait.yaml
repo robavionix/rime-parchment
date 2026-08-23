@@ -398,17 +398,17 @@ commaButton:
 commaButtonForegroundStyle:
   buttonStyleType: "text"
   center:
-    "y": 0.52
-  fontSize: 20
+    "y": 0.48
+  fontSize: 22.5
   highlightColor: "#F2EFE8"
   normalColor: "#F2EFE8"
-  text: "，"
+  text: ","
 commaButtonHintForegroundStyle:
   buttonStyleType: "text"
-  fontSize: 20
+  fontSize: 22.5
   highlightColor: "#FFF3E4"
   normalColor: "#F2EFE8"
-  text: "，"
+  text: ","
 commaButtonHintStyle:
   backgroundStyle: "alphabeticHintBackgroundStyle"
   foregroundStyle: "commaButtonHintForegroundStyle"
@@ -418,18 +418,18 @@ commaButtonHintStyle:
   swipeUpForegroundStyle: "commaButtonHintSwipeUpForegroundStyle"
 commaButtonHintSwipeUpForegroundStyle:
   buttonStyleType: "text"
-  fontSize: 20
+  fontSize: 22.5
   highlightColor: "#FFF3E4"
   normalColor: "#F2EFE8"
-  text: "。"
+  text: "."
 commaButtonSwipeUpForegroundStyle:
   buttonStyleType: "text"
   center:
-    "y": 0.3
-  fontSize: 9
+    "y": 0.28
+  fontSize: 10
   highlightColor: "#A9A49A"
   normalColor: "#A9A49A"
-  text: "。"
+  text: "."
 dButton:
   action:
     character: "d"
@@ -2182,7 +2182,6 @@ rimeSchemaChangedNotification:
   backgroundStyle: "alphabeticButtonBackgroundStyle"
   foregroundStyle:
   - "spaceButtonForegroundStyle"
-  - "spaceButtonRimeSchemaForegroundStyle"
   notificationType: "rime"
   rimeNotificationType: "schemaChanged"
 sButton:
@@ -2345,19 +2344,18 @@ spaceButton:
   backgroundStyle: "alphabeticButtonBackgroundStyle"
   foregroundStyle:
   - "spaceButtonForegroundStyle"
-  - "spaceButtonRimeSchemaForegroundStyle"
   notification:
   - "rimeSchemaChangedNotification"
   - "spaceButtonPreeditChangedNotification"
 spaceButtonForegroundStyle:
-  buttonStyleType: "systemImage"
+  buttonStyleType: "text"
   center:
     x: 0.5
     "y": 0.5
-  fontSize: 20
+  fontSize: 18
   highlightColor: "#F2EFE8"
   normalColor: "#F2EFE8"
-  systemImageName: "space"
+  text: "English Nano"
 spaceButtonPreeditChangedForegroundStyle:
   buttonStyleType: "text"
   center:
@@ -2383,15 +2381,6 @@ spaceButtonPreeditChangedSwipeUpForegroundStyle:
   highlightColor: "#A9A49A"
   normalColor: "#A9A49A"
   text: "次选"
-spaceButtonRimeSchemaForegroundStyle:
-  buttonStyleType: "text"
-  center:
-    x: 0.2
-    "y": 0.7
-  fontSize: 10
-  highlightColor: "#A9A49A"
-  normalColor: "#A9A49A"
-  text: "English Nano"
 systemButtonBackgroundStyle:
   buttonStyleType: "geometry"
   cornerRadius: 8.5

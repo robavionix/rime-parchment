@@ -2199,7 +2199,6 @@ rimeSchemaChangedNotification:
   backgroundStyle: "alphabeticButtonBackgroundStyle"
   foregroundStyle:
   - "spaceButtonForegroundStyle"
-  - "spaceButtonRimeSchemaForegroundStyle"
   notificationType: "rime"
   rimeNotificationType: "schemaChanged"
 sButton:
@@ -2362,19 +2361,18 @@ spaceButton:
   backgroundStyle: "alphabeticButtonBackgroundStyle"
   foregroundStyle:
   - "spaceButtonForegroundStyle"
-  - "spaceButtonRimeSchemaForegroundStyle"
   notification:
   - "rimeSchemaChangedNotification"
   - "spaceButtonPreeditChangedNotification"
 spaceButtonForegroundStyle:
-  buttonStyleType: "systemImage"
+  buttonStyleType: "text"
   center:
     x: 0.5
     "y": 0.5
-  fontSize: 20
+  fontSize: 16
   highlightColor: "#3B3226"
   normalColor: "#3B3226"
-  systemImageName: "space"
+  text: "$rimeSchemaName"
 spaceButtonPreeditChangedForegroundStyle:
   buttonStyleType: "text"
   center:
@@ -2400,15 +2398,6 @@ spaceButtonPreeditChangedSwipeUpForegroundStyle:
   highlightColor: "#8F8067"
   normalColor: "#8F8067"
   text: "次选"
-spaceButtonRimeSchemaForegroundStyle:
-  buttonStyleType: "text"
-  center:
-    x: 0.2
-    "y": 0.7
-  fontSize: 9
-  highlightColor: "#8F8067"
-  normalColor: "#8F8067"
-  text: "$rimeSchemaName"
 systemButtonBackgroundStyle:
   buttonStyleType: "geometry"
   cornerRadius: 8.5
