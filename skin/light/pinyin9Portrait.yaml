@@ -313,7 +313,7 @@ keyboardStyle:
   backgroundStyle: "keyboardBackgroundStyle"
 latinSymbolButton:
   action:
-    symbol: "@"
+    symbol: "，"
   backgroundStyle: "systemButtonBackgroundStyle"
   foregroundStyle:
   - "latinSymbolButtonForegroundStyle"
@@ -321,135 +321,153 @@ latinSymbolButton:
   size:
     width:
       percentage: 0.2
-  swipeDownAction:
-    symbol: "。"
   swipeUpAction:
-    symbol: "%"
+    symbol: "。"
 latinSymbolButtonForegroundStyle:
   buttonStyleType: "text"
-  fontSize: 18
+  fontSize: 16
   highlightColor: "#3B3226"
   normalColor: "#3B3226"
-  text: "@"
+  text: "，"
 latinSymbolButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "、"
+latinSymbolButtonLongPressSymbol0Style:
+  action:
+    symbol: "、"
+  foregroundStyle: "latinSymbolButtonLongPressSymbol0ForegroundStyle"
+latinSymbolButtonLongPressSymbol10ForegroundStyle:
   buttonStyleType: "text"
   fontSize: 22.5
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "@"
-latinSymbolButtonLongPressSymbol0Style:
-  action:
-    symbol: "@"
-  foregroundStyle: "latinSymbolButtonLongPressSymbol0ForegroundStyle"
-latinSymbolButtonLongPressSymbol10ForegroundStyle:
-  buttonStyleType: "text"
-  fontSize: 20
-  highlightColor: "#FFF8EC"
-  normalColor: "#3B3226"
-  text: "°"
+  text: "_"
 latinSymbolButtonLongPressSymbol10Style:
   action:
-    symbol: "°"
+    symbol: "_"
   foregroundStyle: "latinSymbolButtonLongPressSymbol10ForegroundStyle"
 latinSymbolButtonLongPressSymbol11ForegroundStyle:
-  buttonStyleType: "text"
-  fontSize: 20
-  highlightColor: "#FFF8EC"
-  normalColor: "#3B3226"
-  text: "—"
-latinSymbolButtonLongPressSymbol11Style:
-  action:
-    symbol: "—"
-  foregroundStyle: "latinSymbolButtonLongPressSymbol11ForegroundStyle"
-latinSymbolButtonLongPressSymbol1ForegroundStyle:
   buttonStyleType: "text"
   fontSize: 22.5
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
   text: "&"
-latinSymbolButtonLongPressSymbol1Style:
+latinSymbolButtonLongPressSymbol11Style:
   action:
     symbol: "&"
-  foregroundStyle: "latinSymbolButtonLongPressSymbol1ForegroundStyle"
-latinSymbolButtonLongPressSymbol2ForegroundStyle:
+  foregroundStyle: "latinSymbolButtonLongPressSymbol11ForegroundStyle"
+latinSymbolButtonLongPressSymbol12ForegroundStyle:
   buttonStyleType: "text"
   fontSize: 22.5
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
   text: "#"
-latinSymbolButtonLongPressSymbol2Style:
+latinSymbolButtonLongPressSymbol12Style:
   action:
     symbol: "#"
-  foregroundStyle: "latinSymbolButtonLongPressSymbol2ForegroundStyle"
-latinSymbolButtonLongPressSymbol3ForegroundStyle:
-  buttonStyleType: "text"
-  fontSize: 22.5
-  highlightColor: "#FFF8EC"
-  normalColor: "#3B3226"
-  text: "%"
-latinSymbolButtonLongPressSymbol3Style:
-  action:
-    symbol: "%"
-  foregroundStyle: "latinSymbolButtonLongPressSymbol3ForegroundStyle"
-latinSymbolButtonLongPressSymbol4ForegroundStyle:
+  foregroundStyle: "latinSymbolButtonLongPressSymbol12ForegroundStyle"
+latinSymbolButtonLongPressSymbol13ForegroundStyle:
   buttonStyleType: "text"
   fontSize: 22.5
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
   text: "*"
-latinSymbolButtonLongPressSymbol4Style:
+latinSymbolButtonLongPressSymbol13Style:
   action:
     symbol: "*"
+  foregroundStyle: "latinSymbolButtonLongPressSymbol13ForegroundStyle"
+latinSymbolButtonLongPressSymbol1ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "："
+latinSymbolButtonLongPressSymbol1Style:
+  action:
+    symbol: "："
+  foregroundStyle: "latinSymbolButtonLongPressSymbol1ForegroundStyle"
+latinSymbolButtonLongPressSymbol2ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "；"
+latinSymbolButtonLongPressSymbol2Style:
+  action:
+    symbol: "；"
+  foregroundStyle: "latinSymbolButtonLongPressSymbol2ForegroundStyle"
+latinSymbolButtonLongPressSymbol3ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "“"
+latinSymbolButtonLongPressSymbol3Style:
+  action:
+    symbol: "“"
+  foregroundStyle: "latinSymbolButtonLongPressSymbol3ForegroundStyle"
+latinSymbolButtonLongPressSymbol4ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "”"
+latinSymbolButtonLongPressSymbol4Style:
+  action:
+    symbol: "”"
   foregroundStyle: "latinSymbolButtonLongPressSymbol4ForegroundStyle"
 latinSymbolButtonLongPressSymbol5ForegroundStyle:
   buttonStyleType: "text"
-  fontSize: 22.5
+  fontSize: 20
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "+"
+  text: "（"
 latinSymbolButtonLongPressSymbol5Style:
   action:
-    symbol: "+"
+    symbol: "（"
   foregroundStyle: "latinSymbolButtonLongPressSymbol5ForegroundStyle"
 latinSymbolButtonLongPressSymbol6ForegroundStyle:
   buttonStyleType: "text"
-  fontSize: 22.5
+  fontSize: 20
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "="
+  text: "）"
 latinSymbolButtonLongPressSymbol6Style:
   action:
-    symbol: "="
+    symbol: "）"
   foregroundStyle: "latinSymbolButtonLongPressSymbol6ForegroundStyle"
 latinSymbolButtonLongPressSymbol7ForegroundStyle:
   buttonStyleType: "text"
-  fontSize: 22.5
+  fontSize: 20
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "/"
+  text: "—"
 latinSymbolButtonLongPressSymbol7Style:
   action:
-    symbol: "/"
+    symbol: "—"
   foregroundStyle: "latinSymbolButtonLongPressSymbol7ForegroundStyle"
 latinSymbolButtonLongPressSymbol8ForegroundStyle:
   buttonStyleType: "text"
   fontSize: 22.5
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "_"
+  text: "~"
 latinSymbolButtonLongPressSymbol8Style:
   action:
-    symbol: "_"
+    symbol: "~"
   foregroundStyle: "latinSymbolButtonLongPressSymbol8ForegroundStyle"
 latinSymbolButtonLongPressSymbol9ForegroundStyle:
   buttonStyleType: "text"
   fontSize: 22.5
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "~"
+  text: "/"
 latinSymbolButtonLongPressSymbol9Style:
   action:
-    symbol: "~"
+    symbol: "/"
   foregroundStyle: "latinSymbolButtonLongPressSymbol9ForegroundStyle"
 latinSymbolButtonLongPressSymbolsStyle:
   backgroundStyle: "longPressSymbolsBackgroundStyle"
@@ -459,7 +477,7 @@ latinSymbolButtonLongPressSymbolsStyle:
     right: 3
     top: 3
   selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
-  selectedIndex: 0
+  selectedIndex: 2
   size:
     height: 45
     width: 45
@@ -476,6 +494,8 @@ latinSymbolButtonLongPressSymbolsStyle:
   - "latinSymbolButtonLongPressSymbol9Style"
   - "latinSymbolButtonLongPressSymbol10Style"
   - "latinSymbolButtonLongPressSymbol11Style"
+  - "latinSymbolButtonLongPressSymbol12Style"
+  - "latinSymbolButtonLongPressSymbol13Style"
 longPressSymbolsBackgroundStyle:
   borderSize: 0.5
   buttonStyleType: "geometry"
@@ -755,84 +775,134 @@ t9OneButtonForegroundStyle:
   text: "@/."
 t9OneButtonLongPressSymbol0ForegroundStyle:
   buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "@"
+t9OneButtonLongPressSymbol0Style:
+  action:
+    symbol: "@"
+  foregroundStyle: "t9OneButtonLongPressSymbol0ForegroundStyle"
+t9OneButtonLongPressSymbol10ForegroundStyle:
+  buttonStyleType: "text"
   fontSize: 20
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "，"
-t9OneButtonLongPressSymbol0Style:
+  text: "×"
+t9OneButtonLongPressSymbol10Style:
   action:
-    symbol: "，"
-  foregroundStyle: "t9OneButtonLongPressSymbol0ForegroundStyle"
+    symbol: "×"
+  foregroundStyle: "t9OneButtonLongPressSymbol10ForegroundStyle"
+t9OneButtonLongPressSymbol11ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "÷"
+t9OneButtonLongPressSymbol11Style:
+  action:
+    symbol: "÷"
+  foregroundStyle: "t9OneButtonLongPressSymbol11ForegroundStyle"
+t9OneButtonLongPressSymbol12ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "="
+t9OneButtonLongPressSymbol12Style:
+  action:
+    symbol: "="
+  foregroundStyle: "t9OneButtonLongPressSymbol12ForegroundStyle"
 t9OneButtonLongPressSymbol1ForegroundStyle:
   buttonStyleType: "text"
   fontSize: 20
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "。"
+  text: "？"
 t9OneButtonLongPressSymbol1Style:
   action:
-    symbol: "。"
+    symbol: "？"
   foregroundStyle: "t9OneButtonLongPressSymbol1ForegroundStyle"
 t9OneButtonLongPressSymbol2ForegroundStyle:
   buttonStyleType: "text"
   fontSize: 20
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "？"
+  text: "！"
 t9OneButtonLongPressSymbol2Style:
   action:
-    symbol: "？"
+    symbol: "！"
   foregroundStyle: "t9OneButtonLongPressSymbol2ForegroundStyle"
 t9OneButtonLongPressSymbol3ForegroundStyle:
   buttonStyleType: "text"
   fontSize: 20
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "！"
+  text: "…"
 t9OneButtonLongPressSymbol3Style:
   action:
-    symbol: "！"
+    symbol: "…"
   foregroundStyle: "t9OneButtonLongPressSymbol3ForegroundStyle"
 t9OneButtonLongPressSymbol4ForegroundStyle:
   buttonStyleType: "text"
-  fontSize: 20
+  fontSize: 22.5
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "、"
+  text: "%"
 t9OneButtonLongPressSymbol4Style:
   action:
-    symbol: "、"
+    symbol: "%"
   foregroundStyle: "t9OneButtonLongPressSymbol4ForegroundStyle"
 t9OneButtonLongPressSymbol5ForegroundStyle:
   buttonStyleType: "text"
   fontSize: 20
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "："
+  text: "£"
 t9OneButtonLongPressSymbol5Style:
   action:
-    symbol: "："
+    symbol: "£"
   foregroundStyle: "t9OneButtonLongPressSymbol5ForegroundStyle"
 t9OneButtonLongPressSymbol6ForegroundStyle:
   buttonStyleType: "text"
   fontSize: 20
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "；"
+  text: "$"
 t9OneButtonLongPressSymbol6Style:
   action:
-    symbol: "；"
+    symbol: "$"
   foregroundStyle: "t9OneButtonLongPressSymbol6ForegroundStyle"
 t9OneButtonLongPressSymbol7ForegroundStyle:
   buttonStyleType: "text"
   fontSize: 20
   highlightColor: "#FFF8EC"
   normalColor: "#3B3226"
-  text: "…"
+  text: "¥"
 t9OneButtonLongPressSymbol7Style:
   action:
-    symbol: "…"
+    symbol: "¥"
   foregroundStyle: "t9OneButtonLongPressSymbol7ForegroundStyle"
+t9OneButtonLongPressSymbol8ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "+"
+t9OneButtonLongPressSymbol8Style:
+  action:
+    symbol: "+"
+  foregroundStyle: "t9OneButtonLongPressSymbol8ForegroundStyle"
+t9OneButtonLongPressSymbol9ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "-"
+t9OneButtonLongPressSymbol9Style:
+  action:
+    symbol: "-"
+  foregroundStyle: "t9OneButtonLongPressSymbol9ForegroundStyle"
 t9OneButtonLongPressSymbolsStyle:
   backgroundStyle: "longPressSymbolsBackgroundStyle"
   insets:
@@ -841,7 +911,7 @@ t9OneButtonLongPressSymbolsStyle:
     right: 3
     top: 3
   selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
-  selectedIndex: 1
+  selectedIndex: 0
   size:
     height: 45
     width: 45
@@ -854,6 +924,11 @@ t9OneButtonLongPressSymbolsStyle:
   - "t9OneButtonLongPressSymbol5Style"
   - "t9OneButtonLongPressSymbol6Style"
   - "t9OneButtonLongPressSymbol7Style"
+  - "t9OneButtonLongPressSymbol8Style"
+  - "t9OneButtonLongPressSymbol9Style"
+  - "t9OneButtonLongPressSymbol10Style"
+  - "t9OneButtonLongPressSymbol11Style"
+  - "t9OneButtonLongPressSymbol12Style"
 t9OneButtonPreeditChangedForegroundStyle:
   buttonStyleType: "text"
   center:

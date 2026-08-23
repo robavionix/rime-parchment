@@ -33,14 +33,19 @@ local commonButtons = import './Common.libsonnet';
       text: '@/.',
 
       longPress: [
-        { action: { symbol: '，' }, text: '，' },
-        { action: { symbol: '。' }, text: '。', selected: true },
+        { action: { symbol: '@' }, text: '@', selected: true },
         { action: { symbol: '？' }, text: '？' },
         { action: { symbol: '！' }, text: '！' },
-        { action: { symbol: '、' }, text: '、' },
-        { action: { symbol: '：' }, text: '：' },
-        { action: { symbol: '；' }, text: '；' },
         { action: { symbol: '…' }, text: '…' },
+        { action: { symbol: '%' }, text: '%' },
+        { action: { symbol: '£' }, text: '£' },
+        { action: { symbol: '$' }, text: '$' },
+        { action: { symbol: '¥' }, text: '¥' },
+        { action: { symbol: '+' }, text: '+' },
+        { action: { symbol: '-' }, text: '-' },
+        { action: { symbol: '×' }, text: '×' },
+        { action: { symbol: '÷' }, text: '÷' },
+        { action: { symbol: '=' }, text: '=' },
       ],
 
       whenPreeditChanged: {
@@ -169,26 +174,33 @@ local commonButtons = import './Common.libsonnet';
   //
   // 选取原则：与最左侧 t9Symbols 列表（以中文标点为主）错开，
   // 收录写英文、填表单、发邮件时真正高频的拉丁符号。
+  //
+  // 4.3：本键改为中文标点主键 —— 点按逗号、上划句号，这两个占了中文标点
+  // 用量的绝大部分，一个手势直出，不用长按。
+  // 拉丁与数学符号整体迁到 1 键的长按网格（见上）。
+  //
+  // 键名保留 latinSymbolButton 不改，避免已编译样式名和用户覆盖失效。
   latinSymbolButton: {
     name: 'latinSymbolButton',
     params: {
-      action: { symbol: '@' },
-      text: '@',
-      swipeUp: { action: { symbol: '%' }, text: '%' },
-      swipeDown: { action: { symbol: '。' }, text: '。' },   // 4.2 新增，与 1 键下划的逗号配对
+      action: { symbol: '，' },
+      text: '，',
+      swipeUp: { action: { symbol: '。' }, text: '。' },
       longPress: [
-        { action: { symbol: '@' }, text: '@', selected: true },
-        { action: { symbol: '&' }, text: '&' },
-        { action: { symbol: '#' }, text: '#' },
-        { action: { symbol: '%' }, text: '%' },
-        { action: { symbol: '*' }, text: '*' },
-        { action: { symbol: '+' }, text: '+' },
-        { action: { symbol: '=' }, text: '=' },
+        { action: { symbol: '、' }, text: '、' },
+        { action: { symbol: '：' }, text: '：' },
+        { action: { symbol: '；' }, text: '；', selected: true },
+        { action: { symbol: '“' }, text: '“' },
+        { action: { symbol: '”' }, text: '”' },
+        { action: { symbol: '（' }, text: '（' },
+        { action: { symbol: '）' }, text: '）' },
+        { action: { symbol: '—' }, text: '—' },
+        { action: { symbol: '~' }, text: '~' },
         { action: { symbol: '/' }, text: '/' },
         { action: { symbol: '_' }, text: '_' },
-        { action: { symbol: '~' }, text: '~' },
-        { action: { symbol: '°' }, text: '°' },
-        { action: { symbol: '—' }, text: '—' },
+        { action: { symbol: '&' }, text: '&' },
+        { action: { symbol: '#' }, text: '#' },
+        { action: { symbol: '*' }, text: '*' },
       ],
     }
   },
