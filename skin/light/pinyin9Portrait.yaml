@@ -321,6 +321,8 @@ latinSymbolButton:
   size:
     width:
       percentage: 0.2
+  swipeDownAction:
+    symbol: "。"
   swipeUpAction:
     symbol: "%"
 latinSymbolButtonForegroundStyle:
@@ -735,8 +737,11 @@ t9OneButton:
   foregroundStyle:
   - "t9OneButtonForegroundStyle"
   - "t9OneButtonSwipeUpForegroundStyle"
+  hintSymbolsStyle: "t9OneButtonLongPressSymbolsStyle"
   notification:
   - "t9OneButtonPreeditChangedNotification"
+  swipeDownAction:
+    symbol: "，"
   swipeUpAction:
     symbol: "1"
 t9OneButtonForegroundStyle:
@@ -748,6 +753,107 @@ t9OneButtonForegroundStyle:
   highlightColor: "#3B3226"
   normalColor: "#3B3226"
   text: "@/."
+t9OneButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "，"
+t9OneButtonLongPressSymbol0Style:
+  action:
+    symbol: "，"
+  foregroundStyle: "t9OneButtonLongPressSymbol0ForegroundStyle"
+t9OneButtonLongPressSymbol1ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "。"
+t9OneButtonLongPressSymbol1Style:
+  action:
+    symbol: "。"
+  foregroundStyle: "t9OneButtonLongPressSymbol1ForegroundStyle"
+t9OneButtonLongPressSymbol2ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "？"
+t9OneButtonLongPressSymbol2Style:
+  action:
+    symbol: "？"
+  foregroundStyle: "t9OneButtonLongPressSymbol2ForegroundStyle"
+t9OneButtonLongPressSymbol3ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "！"
+t9OneButtonLongPressSymbol3Style:
+  action:
+    symbol: "！"
+  foregroundStyle: "t9OneButtonLongPressSymbol3ForegroundStyle"
+t9OneButtonLongPressSymbol4ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "、"
+t9OneButtonLongPressSymbol4Style:
+  action:
+    symbol: "、"
+  foregroundStyle: "t9OneButtonLongPressSymbol4ForegroundStyle"
+t9OneButtonLongPressSymbol5ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "："
+t9OneButtonLongPressSymbol5Style:
+  action:
+    symbol: "："
+  foregroundStyle: "t9OneButtonLongPressSymbol5ForegroundStyle"
+t9OneButtonLongPressSymbol6ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "；"
+t9OneButtonLongPressSymbol6Style:
+  action:
+    symbol: "；"
+  foregroundStyle: "t9OneButtonLongPressSymbol6ForegroundStyle"
+t9OneButtonLongPressSymbol7ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "…"
+t9OneButtonLongPressSymbol7Style:
+  action:
+    symbol: "…"
+  foregroundStyle: "t9OneButtonLongPressSymbol7ForegroundStyle"
+t9OneButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 1
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "t9OneButtonLongPressSymbol0Style"
+  - "t9OneButtonLongPressSymbol1Style"
+  - "t9OneButtonLongPressSymbol2Style"
+  - "t9OneButtonLongPressSymbol3Style"
+  - "t9OneButtonLongPressSymbol4Style"
+  - "t9OneButtonLongPressSymbol5Style"
+  - "t9OneButtonLongPressSymbol6Style"
+  - "t9OneButtonLongPressSymbol7Style"
 t9OneButtonPreeditChangedForegroundStyle:
   buttonStyleType: "text"
   center:

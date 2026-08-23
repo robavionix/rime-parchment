@@ -16,12 +16,32 @@ local commonButtons = import './Common.libsonnet';
   local root = self,
 
   // T9 按键
+  // 1 键：点按走 Rime punctuator（1 @ . / : _ - #），打字时是分词键。
+  //
+  // 4.2 新增中文标点通路 —— 长按弹出网格，下划直出逗号。
+  // 起因：九宫格最左侧那一列是元书内置组件 t9Symbols，点选标点后会跳回
+  // 主键盘（皮肤无法干预，见 README「已知问题」）。这里用普通按键提供
+  // 一条等价通路，普通按键不带切键盘动作，所以不会跳。
+  //
+  // 一律用 symbol（直发系统）而非 character（会走 Rime punctuator 转换）。
   t9OneButton: {
     name: 't9OneButton',
     params: {
       action: { character: '1' },
       swipeUp: { action: { symbol: '1' } },
+      swipeDown: { action: { symbol: '，' }, text: '，' },
       text: '@/.',
+
+      longPress: [
+        { action: { symbol: '，' }, text: '，' },
+        { action: { symbol: '。' }, text: '。', selected: true },
+        { action: { symbol: '？' }, text: '？' },
+        { action: { symbol: '！' }, text: '！' },
+        { action: { symbol: '、' }, text: '、' },
+        { action: { symbol: '：' }, text: '：' },
+        { action: { symbol: '；' }, text: '；' },
+        { action: { symbol: '…' }, text: '…' },
+      ],
 
       whenPreeditChanged: {
         text: '分词',
@@ -155,6 +175,7 @@ local commonButtons = import './Common.libsonnet';
       action: { symbol: '@' },
       text: '@',
       swipeUp: { action: { symbol: '%' }, text: '%' },
+      swipeDown: { action: { symbol: '。' }, text: '。' },   // 4.2 新增，与 1 键下划的逗号配对
       longPress: [
         { action: { symbol: '@' }, text: '@', selected: true },
         { action: { symbol: '&' }, text: '&' },
