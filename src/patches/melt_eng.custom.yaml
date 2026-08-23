@@ -1,0 +1,148 @@
+# melt_eng 方案补丁
+#
+# 目的：精简拼写派生规则，压缩 prism 体积
+#
+# 上游 algebra_common 为每个单词派生 12 种大小写拼写：
+#   - 全小写（仅限 4 字符以上）
+#   - 全大写
+#   - 首字母大写
+#   - 前 2/3/4/5/6/7/8/9/10 个字母大写   ← 九条规则，收益极低
+#
+# prism 体积 ≈ 词条数 × 派生数。那九条「前 N 字母大写」是为了让
+# 「ABCdef」这类混合大小写也能命中，实际几乎无人使用，却贡献了
+# 大部分索引膨胀（23,866 词 → prism 8.2 MB）。
+#
+# 本补丁保留 3 种真正有用的派生，并把「全小写」放宽到所有长度
+# （上游限制 4 字符以上，导致 NHS、GDP 这类三字母缩写无法小写输入）。
+#
+# speller/algebra 在上游是 `__include: algebra_rime_ice`，
+# 补丁无法安全地增删 __include 展开后的条目，故整体重定义。
+patch:
+
+  # ════════════════════════════════════════════════════════
+  # 方案名
+  # ════════════════════════════════════════════════════════
+  # 上游名为「Easy English Nano」——又长又难看。
+  #
+  # ⚠️ 只改皮肤里空格键的文本是不够的：那只管空格键一处。
+  # 元书凡是显示「当前方案名」的地方——工具栏、方案切换菜单、
+  # 切换时的提示浮层——读的都是本字段。必须在这里改，才能全局生效。
+  schema/name: English Nano
+
+  # ════════════════════════════════════════════════════════
+  # 独立英文方案配置（仅影响纯英文键盘）
+  # ════════════════════════════════════════════════════════
+  # melt_eng 有双重身份：
+  #   ① 独立方案 —— 纯英文键盘使用，配置在本文件的 translator/ 下
+  #   ② rime_ice 的次翻译器 —— 26 键混打使用，配置在 rime_ice.custom.yaml 的 melt_eng/ 下
+  # 两者互相独立，因此可以做到「纯英文键盘开连句，混打键盘不开」。
+
+  # 英文连句：已关闭。
+  # 实测开启后噪音过大——打单个字母就冒出大量拼接组合（is / IC 之类），
+  # 淹没了真正想要的单词。用户明确只要打单词，不要连句。
+  translator/enable_sentence: false
+
+  # 前缀补全：打 inter 直接出 international
+  translator/enable_completion: true
+
+  # 学习个人英文用词频率
+  translator/enable_user_dict: true
+
+  speller/algebra:
+    # ── 数字派生 ──
+    - derive/1([4-7|9])/$1teen/
+    - derive/11/eleven/
+    - derive/12/twelve/
+    - derive/13/thirteen/
+    - derive/15/fifteen/
+    - derive/18/eighteen/
+    - derive/0/o/
+    - derive/0/O/
+    - derive/0/zero/
+    - derive/1/one/
+    - derive/10/ten/
+    - derive/2/to/
+    - derive/2/two/
+    - derive/3/three/
+    - derive/4/for/
+    - derive/4/four/
+    - derive/5/five/
+    - derive/6/six/
+    - derive/7/seven/
+    - derive/8/eight/
+    - derive/9/nine/
+
+    # ── 符号派生 ──
+    - derive/\+/plus/
+    - derive/\./dot/
+    - derive/@/at/
+    - derive/-/hyphen/
+    - derive/#/hash/
+    - derive/#/number/
+    - derive/#/sharp/
+    - derive/♯/sharp/
+    - derive / slash
+    - derive/&/and/
+    - derive/%/percent/
+
+    # ── 派生无特殊字符的拼写 ──
+    - derive/[.]//
+    - derive/[+]//
+    - derive/[@]//
+    - derive/[-]//
+    - derive/[_]//
+    - derive/[^a-zA-Z0-9]//
+
+    # ── 禁用非英文/数字开头的编码 ──
+    - erase/^[^a-zA-Z0-9].+$/
+
+    # ── 大小写派生（3 条，上游为 12 条）──
+    - derive/^.+$/\L$0/    # 全小写：放宽到所有长度，使 nhs → NHS 可行
+    - derive/^.+$/\U$0/    # 全大写
+    - derive/^./\U$0/      # 首字母大写
+
+    # ── 少量拼写替换容错 ──
+    # 注意：绝大部分错拼容错已在**词库层**实现（见 build_en_dict.py 生成的
+    # 错拼变体：漏字母、相邻换位、元音互换）。那种方式能覆盖位置不定的错法，
+    # derive 规则做不到。
+    # 这里只保留词库变体覆盖不到的「词尾模式替换」——它们改动的是词尾整段，
+    # 不是单个字母，故不属于上述三类。
+    # Rime 没有内置英文拼写检查。这里用 derive 派生出常见的错拼形式，
+    # 使打错也能命中正确单词——与 Rime 做拼音模糊音是同一机制。
+    #
+    # 注意这是「模式覆盖」而非通用纠错：只能纠正下列已知模式，
+    # 不能处理任意的漏字母、多字母、字母顺序颠倒。
+    # 通用编辑距离纠错需自行编写 Lua filter，在 4.3 万词库上做模糊搜索，
+    # 键盘扩展的内存与 CPU 限制下有明显性能风险，暂不采用。
+    #
+    # 每条规则都会增加 prism 体积，故只保留高频错法。
+    - derive/ance$/ence/               # independance→independence
+    - derive/ence$/ance/               # relevence→relevance
+    - derive/ible$/able/               # responsable→responsible
+    - derive/able$/ible/               # accessable→accessible
+
+    # ── 禁用小写单编码 ──
+    - erase/^[a-z]$/
+
+    # ── 中文数字/符号读音派生（沿用上游全拼部分）──
+    - derive/(?<!\d)1([1-9])(?!\d)/shi$1/
+    - derive/([1-9])0000(?!0)/$1wan/
+    - derive/([1-9])000(?!0)/$1qian/
+    - derive/([1-9])00(?!0)/$1bai/
+    - derive/([2-9])0(?!0)/$1shi/
+    - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1shi$2/
+    - derive/\./dian/
+    - derive/10/shi/
+    - derive/0/ling/
+    - derive/1/yi/
+    - derive/2/er/
+    - derive/2/liang/
+    - derive/3/san/
+    - derive/4/si/
+    - derive/5/wu/
+    - derive/6/liu/
+    - derive/7/qi/
+    - derive/8/ba/
+    - derive/9/jiu/
+    - derive/\+/jia/
+    - derive/#/jing/

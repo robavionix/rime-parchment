@@ -1,0 +1,30 @@
+# 参考实现：上游雾凇与空山素影的完整原始拷贝
+# 仅供本地对照，不得随仓库分发（那等于原样转发别人的仓库）
+/reference/
+
+# 上游雾凇基底（50 MB，别人仓库的完整拷贝）
+# 用 ./fetch-upstream.sh 按需拉取
+/vendor/
+
+# 构建产物
+/dist/
+/test/
+
+# 便携版工具链（19 MB，各自按需下载）
+/tools/
+
+# Rime 运行时生成物
+*.userdb/
+build/
+installation.yaml
+user.yaml
+
+# 素材缓存
+*.tar.gz
+*.zip
+
+# 系统
+.DS_Store
+Thumbs.db
+__MACOSX/
+__pycache__/

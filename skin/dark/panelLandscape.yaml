@@ -1,0 +1,221 @@
+floatTargetScale:
+  x: 0.45
+  "y": 0.8
+floatingKeyboardButtonBackgroundStyle:
+  buttonStyleType: "geometry"
+  cornerRadius: 8.5
+  highlightColor: "#52525A"
+  highlightLowerEdgeColor: "#1A1A1C"
+  insets:
+    bottom: 6
+    left: 3
+    right: 3
+    top: 6
+  normalColor: "#3F3F45"
+  normalLowerEdgeColor: "#1A1A1C"
+keyboardBackgroundStyle:
+  buttonStyleType: "geometry"
+  normalColor: "#2A2A2D"
+keyboardLayout:
+- HStack:
+    subviews:
+    - Cell: "toolbarHamster3Button"
+    - Cell: "toolbarKeyboardDefinition"
+    - Cell: "toolbarFeedbackButton"
+    - Cell: "toolbarCheckUpdateButton"
+- HStack:
+    subviews:
+    - Cell: "toolbarSkinButton"
+    - Cell: "toolbarSkinPreference"
+    - Cell: "toolbarUploadButton"
+    - Cell: "toolbarToggleEmbeddedButton"
+keyboardStyle:
+  backgroundStyle: "keyboardBackgroundStyle"
+  insets:
+    bottom: 10
+    left: 12
+    right: 12
+    top: 10
+toolbarCheckUpdateButton:
+  action:
+    openURL: "https://apps.apple.com/cn/app/%E5%85%83%E4%B9%A6%E8%BE%93%E5%85%A5%E6%B3%95/id6744464701"
+  backgroundStyle: "floatingKeyboardButtonBackgroundStyle"
+  foregroundStyle:
+  - "toolbarCheckUpdateButtonForegroundStyleSystemImage"
+  - "toolbarCheckUpdateButtonForegroundStyleText"
+toolbarCheckUpdateButtonForegroundStyleSystemImage:
+  buttonStyleType: "systemImage"
+  center:
+    "y": 0.4
+  fontSize: 20
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  systemImageName: "arrow.down.circle"
+toolbarCheckUpdateButtonForegroundStyleText:
+  buttonStyleType: "text"
+  center:
+    "y": 0.7
+  fontSize: 13
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  text: "更新"
+toolbarFeedbackButton:
+  action:
+    openURL: "hamster3://com.ihsiao.apps.hamster3/feedback"
+  backgroundStyle: "floatingKeyboardButtonBackgroundStyle"
+  foregroundStyle:
+  - "toolbarFeedbackButtonForegroundStyleSystemImage"
+  - "toolbarFeedbackButtonForegroundStyleText"
+toolbarFeedbackButtonForegroundStyleSystemImage:
+  buttonStyleType: "systemImage"
+  center:
+    "y": 0.4
+  fontSize: 20
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  systemImageName: "iphone.radiowaves.left.and.right"
+toolbarFeedbackButtonForegroundStyleText:
+  buttonStyleType: "text"
+  center:
+    "y": 0.7
+  fontSize: 13
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  text: "震动"
+toolbarHamster3Button:
+  action: "settings"
+  backgroundStyle: "floatingKeyboardButtonBackgroundStyle"
+  foregroundStyle:
+  - "toolbarHamster3ButtonForegroundStyleSystemImage"
+  - "toolbarHamster3ButtonForegroundStyleText"
+toolbarHamster3ButtonForegroundStyleSystemImage:
+  buttonStyleType: "systemImage"
+  center:
+    "y": 0.4
+  fontSize: 20
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  systemImageName: "atom"
+toolbarHamster3ButtonForegroundStyleText:
+  buttonStyleType: "text"
+  center:
+    "y": 0.7
+  fontSize: 13
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  text: "元书"
+toolbarKeyboardDefinition:
+  action:
+    openURL: "hamster3://com.ihsiao.apps.hamster3/finder?action=openSkinsFile&fileURL=jsonnet/Buttons/README.md"
+  backgroundStyle: "floatingKeyboardButtonBackgroundStyle"
+  foregroundStyle:
+  - "toolbarKeyboardDefinitionForegroundStyleSystemImage"
+  - "toolbarKeyboardDefinitionForegroundStyleText"
+toolbarKeyboardDefinitionForegroundStyleSystemImage:
+  buttonStyleType: "systemImage"
+  center:
+    "y": 0.4
+  fontSize: 20
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  systemImageName: "keyboard.badge.ellipsis"
+toolbarKeyboardDefinitionForegroundStyleText:
+  buttonStyleType: "text"
+  center:
+    "y": 0.7
+  fontSize: 13
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  text: "按键"
+toolbarSkinButton:
+  action:
+    openURL: "hamster3://com.ihsiao.apps.hamster3/keyboardSkins"
+  backgroundStyle: "floatingKeyboardButtonBackgroundStyle"
+  foregroundStyle:
+  - "toolbarSkinButtonForegroundStyleSystemImage"
+  - "toolbarSkinButtonForegroundStyleText"
+toolbarSkinButtonForegroundStyleSystemImage:
+  buttonStyleType: "systemImage"
+  center:
+    "y": 0.4
+  fontSize: 20
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  systemImageName: "tshirt"
+toolbarSkinButtonForegroundStyleText:
+  buttonStyleType: "text"
+  center:
+    "y": 0.7
+  fontSize: 13
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  text: "皮肤"
+toolbarSkinPreference:
+  action:
+    openURL: "hamster3://com.ihsiao.apps.hamster3/finder?action=openSkinsFile&fileURL=jsonnet/Settings.libsonnet"
+  backgroundStyle: "floatingKeyboardButtonBackgroundStyle"
+  foregroundStyle:
+  - "toolbarSkinPreferenceForegroundStyleSystemImage"
+  - "toolbarSkinPreferenceForegroundStyleText"
+toolbarSkinPreferenceForegroundStyleSystemImage:
+  buttonStyleType: "systemImage"
+  center:
+    "y": 0.4
+  fontSize: 20
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  systemImageName: "wrench.and.screwdriver"
+toolbarSkinPreferenceForegroundStyleText:
+  buttonStyleType: "text"
+  center:
+    "y": 0.7
+  fontSize: 13
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  text: "微调"
+toolbarToggleEmbeddedButton:
+  action:
+    shortcut: "#toggleEmbeddedInputMode"
+  backgroundStyle: "floatingKeyboardButtonBackgroundStyle"
+  foregroundStyle:
+  - "toolbarToggleEmbeddedButtonForegroundStyleSystemImage"
+  - "toolbarToggleEmbeddedButtonForegroundStyleText"
+toolbarToggleEmbeddedButtonForegroundStyleSystemImage:
+  buttonStyleType: "systemImage"
+  center:
+    "y": 0.4
+  fontSize: 20
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  systemImageName: "square.and.pencil"
+toolbarToggleEmbeddedButtonForegroundStyleText:
+  buttonStyleType: "text"
+  center:
+    "y": 0.7
+  fontSize: 13
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  text: "内嵌"
+toolbarUploadButton:
+  action:
+    openURL: "hamster3://com.ihsiao.apps.hamster3/wifi"
+  backgroundStyle: "floatingKeyboardButtonBackgroundStyle"
+  foregroundStyle:
+  - "toolbarUploadButtonForegroundStyleSystemImage"
+  - "toolbarUploadButtonForegroundStyleText"
+toolbarUploadButtonForegroundStyleSystemImage:
+  buttonStyleType: "systemImage"
+  center:
+    "y": 0.4
+  fontSize: 20
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  systemImageName: "wifi"
+toolbarUploadButtonForegroundStyleText:
+  buttonStyleType: "text"
+  center:
+    "y": 0.7
+  fontSize: 13
+  highlightColor: "#F2EFE8"
+  normalColor: "#F2EFE8"
+  text: "传输"

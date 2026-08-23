@@ -1,0 +1,446 @@
+# 场景词库：中英文混打场景下的高频专门词汇
+# 格式：词条  或  词条<TAB>权重覆盖
+# 以 # 开头为注释，空行忽略
+# 这些词在通用词频表里排名很低甚至没有，但在实际使用中是高频刚需
+
+## ===== 教育 / 学术 =====
+transcript
+syllabus
+dissertation
+thesis
+viva
+tuition
+scholarship
+bursary
+semester
+trimester
+undergraduate
+postgraduate
+freshman
+sophomore
+alumni
+alumnus
+plagiarism
+referencing
+bibliography
+citation
+coursework
+seminar
+tutorial
+lecturer
+professor
+supervisor
+provost
+faculty
+enrolment
+enrollment
+matriculation
+prerequisite
+elective
+credits
+transcripts
+deferral
+extenuating
+mitigating
+resit
+retake
+dropout
+withdrawal
+GPA
+IELTS
+TOEFL
+GRE
+GMAT
+UCAS
+SAT
+ACT
+MPhil
+DPhil
+PhD
+MSc
+MEng
+BSc
+BEng
+MBA
+LLM
+TA
+RA
+OFFER
+deadline
+proofreading
+peer-review
+abstract
+methodology
+literature
+appendix
+
+## ===== 证件 / 身份 =====
+visa
+biometric
+USCIS
+CBP
+ICE
+OPT
+CPT
+STEM
+EAD
+SSN
+ITIN
+greencard
+naturalization
+naturalisation
+citizenship
+permanent
+residency
+sponsorship
+petition
+affidavit
+notarize
+notarise
+apostille
+BRP
+ILR
+settlement
+indefinite
+Schengen
+passport
+immigration
+customs
+declaration
+port
+entry
+exit
+stamp
+expiry
+renewal
+extension
+biometrics
+interview
+consulate
+embassy
+
+## ===== 居住 / 房屋 =====
+tenancy
+landlord
+tenant
+guarantor
+letting
+lettings
+viewing
+inventory
+deposit
+holding
+utilities
+council
+escrow
+lease
+leasing
+sublet
+subletting
+HOA
+tenement
+freehold
+leasehold
+mortgage
+conveyancing
+solicitor
+surveyor
+bills
+electricity
+broadband
+boiler
+radiator
+thermostat
+mould
+damp
+eviction
+notice
+renewal
+furnished
+unfurnished
+studio
+flatmate
+roommate
+housemate
+storage
+removals
+
+## ===== 银行 / 税务 / 财务 =====
+routing
+IBAN
+BIC
+SWIFT
+overdraft
+debit
+standing
+credit
+FICO
+transcript
+withholding
+refund
+deduction
+allowance
+exemption
+bracket
+filing
+jointly
+dependent
+HMRC
+IRS
+PAYE
+NIN
+ISA
+Roth
+IRA
+pension
+payroll
+paycheck
+payslip
+gross
+net
+invoice
+receipt
+statement
+balance
+transfer
+remittance
+exchange
+wire
+ACH
+Zelle
+Venmo
+PayPal
+Revolut
+Monzo
+Chase
+HSBC
+Barclays
+NatWest
+Lloyds
+
+## ===== 医疗 / 保险 =====
+NHS
+GP
+prescription
+referral
+copay
+copayment
+deductible
+premium
+coinsurance
+HMO
+PPO
+Medicaid
+Medicare
+urgent
+pharmacy
+pharmacist
+dispensary
+appointment
+walk-in
+triage
+symptoms
+diagnosis
+allergy
+vaccination
+immunization
+immunisation
+booster
+dental
+optician
+optometrist
+physiotherapy
+prescription
+refill
+generic
+insurer
+claim
+coverage
+network
+provider
+
+## ===== 交通 / 出行 =====
+DMV
+DVLA
+provisional
+licence
+license
+MOT
+insurance
+registration
+plate
+Oyster
+Clipper
+TfL
+Amtrak
+Greyhound
+Uber
+Lyft
+carpool
+commute
+terminal
+layover
+transit
+boarding
+baggage
+carousel
+customs
+shuttle
+rideshare
+toll
+parking
+permit
+ticket
+fine
+penalty
+
+## ===== 职场 =====
+onboarding
+offboarding
+appraisal
+probation
+redundancy
+severance
+resignation
+reference
+referee
+recruiter
+headhunter
+internship
+apprenticeship
+secondment
+timesheet
+overtime
+PTO
+OOO
+standup
+retro
+retrospective
+sprint
+backlog
+deliverable
+stakeholder
+bandwidth
+headcount
+escalate
+escalation
+deprioritize
+deprioritise
+actionable
+takeaway
+alignment
+sync
+offsite
+allhands
+performance
+promotion
+raise
+bonus
+equity
+vesting
+cliff
+RSU
+ESPP
+NDA
+IP
+contractor
+freelance
+remote
+hybrid
+onsite
+relocation
+
+## ===== 常用缩写 =====
+ASAP
+FYI
+EOD
+EOW
+COB
+TBD
+TBC
+TBA
+AKA
+IMO
+IMHO
+BTW
+FWIW
+IIRC
+AFAIK
+LGTM
+PTAL
+WIP
+PR
+MR
+RFC
+SOP
+KPI
+OKR
+ROI
+QA
+QC
+HR
+CV
+LOR
+SOP
+ETA
+RSVP
+DIY
+FAQ
+TOS
+GDPR
+PII
+SLA
+MVP
+POC
+EOL
+YoY
+QoQ
+MoM
+
+## ===== 高频词组（作为单条词收录，避免依赖连句机制） =====
+thank you	thankyou
+thanks a lot	thanksalot
+looking forward to	lookingforwardto
+as soon as possible	assoonaspossible
+let me know	letmeknow
+please let me know	pleaseletmeknow
+best regards	bestregards
+kind regards	kindregards
+warm regards	warmregards
+best wishes	bestwishes
+please find attached	pleasefindattached
+sorry for the late reply	sorryforthelatereply
+sorry for the delay	sorryforthedelay
+apologies for the delay	apologiesforthedelay
+thanks in advance	thanksinadvance
+thank you in advance	thankyouinadvance
+looking forward to hearing from you	lookingforwardtohearingfromyou
+please let me know if you have any questions	pleaseletmeknowifyouhaveanyquestions
+feel free to	feelfreeto
+as discussed	asdiscussed
+as mentioned	asmentioned
+per our conversation	perourconversation
+following up on	followingupon
+just checking in	justcheckingin
+circling back	circlingback
+touch base	touchbase
+on track	ontrack
+heads up	headsup
+by the way	bytheway
+in terms of	intermsof
+with regard to	withregardto
+on behalf of	onbehalfof
+due to the fact that	duetothefactthat
+in addition to	inadditionto
+as a result	asaresult
+for instance	forinstance
+in other words	inotherwords
+to be honest	tobehonest
+make sense	makesense
+sounds good	soundsgood
+no worries	noworries
+my pleasure	mypleasure
+have a good day	haveagoodday
+have a great weekend	haveagreatweekend
+see you soon	seeyousoon
+talk soon	talksoon

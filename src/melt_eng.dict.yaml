@@ -1,0 +1,22 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# 覆盖上游同名文件：改挂合并后的英文词库。
+#
+# ⚠️ 这是本项目少数几个「覆盖上游」而非「打补丁」的文件之一。
+#    原因：.dict.yaml 不支持 *.custom.yaml 补丁机制，只能整体替换。
+#    上游更新时需人工核对本文件（内容极少，核对成本低）。
+#
+# 上游原为：
+#   import_tables:
+#     - en_dicts/en_ext
+#     - en_dicts/en
+# 现合并为单表 en_merged，由 src/tools/build_en_dict.py 生成，
+# 已包含上游 en + en_ext 全部词条，并统一赋予了基于词频的权重。
+#
+---
+name: melt_eng
+version: "2026-08-23"
+import_tables:
+  - en_dicts/en_merged
+...

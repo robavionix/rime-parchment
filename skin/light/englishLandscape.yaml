@@ -1,0 +1,3298 @@
+aButton:
+  action:
+    character: "a"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  bounds:
+    alignment: "right"
+    width: "112.5/168.75"
+  foregroundStyle:
+  - "aButtonForegroundStyle"
+  - "aButtonSwipeUpForegroundStyle"
+  hintStyle: "aButtonHintStyle"
+  hintSymbolsStyle: "aButtonLongPressSymbolsStyle"
+  size:
+    width: "168.75/1125"
+  swipeDownAction:
+    shortcut: "#selectText"
+  swipeUpAction:
+    character: "!"
+  uppercasedStateAction:
+    character: "A"
+  uppercasedStateForegroundStyle:
+  - "aButtonUppercasedForegroundStyle"
+  - "aButtonSwipeUpForegroundStyle"
+aButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "a"
+aButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "a"
+aButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "aButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "aButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "aButtonHintSwipeUpForegroundStyle"
+aButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  systemImageName: "selection.pin.in.out"
+aButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "!"
+aButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "A"
+aButtonLongPressSymbol0Style:
+  action:
+    character: "A"
+  foregroundStyle: "aButtonLongPressSymbol0ForegroundStyle"
+aButtonLongPressSymbol1ForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  systemImageName: "keyboard.onehanded.left"
+aButtonLongPressSymbol1Style:
+  action:
+    shortcut: "#左手模式"
+  foregroundStyle: "aButtonLongPressSymbol1ForegroundStyle"
+aButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "aButtonLongPressSymbol0Style"
+  - "aButtonLongPressSymbol1Style"
+aButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "!"
+aButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "A"
+alphabeticButtonBackgroundStyle:
+  buttonStyleType: "geometry"
+  cornerRadius: 8.5
+  highlightColor: "#EFE6D2"
+  highlightLowerEdgeColor: "#B9A985"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  normalColor: "#FBF6EA"
+  normalLowerEdgeColor: "#B9A985"
+alphabeticHintBackgroundStyle:
+  borderSize: 0.5
+  buttonStyleType: "geometry"
+  cornerRadius: 10
+  highlightBorderColor: "#C9BCA0"
+  highlightShadowColor: "#B9A985"
+  normalBorderColor: "#C9BCA0"
+  normalColor: "#FBF6EA"
+  normalShadowColor: "#B9A985"
+  shadowRadius: 3
+bButton:
+  action:
+    character: "b"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "bButtonForegroundStyle"
+  - "bButtonSwipeUpForegroundStyle"
+  hintStyle: "bButtonHintStyle"
+  hintSymbolsStyle: "bButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    character: "]"
+  swipeUpAction:
+    character: "["
+  uppercasedStateAction:
+    character: "B"
+  uppercasedStateForegroundStyle:
+  - "bButtonUppercasedForegroundStyle"
+  - "bButtonSwipeUpForegroundStyle"
+bButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "b"
+bButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "b"
+bButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "bButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "bButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "bButtonHintSwipeUpForegroundStyle"
+bButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "]"
+bButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "["
+bButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "B"
+bButtonLongPressSymbol0Style:
+  action:
+    character: "B"
+  foregroundStyle: "bButtonLongPressSymbol0ForegroundStyle"
+bButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "bButtonLongPressSymbol0Style"
+bButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "["
+bButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "B"
+backspaceButton:
+  action: "backspace"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  bounds:
+    alignment: "right"
+    width: "151/168.75"
+  foregroundStyle:
+  - "backspaceButtonForegroundStyle"
+  notification:
+  - "backspaceButtonPreeditChangedNotification"
+  repeatAction: "backspace"
+  size:
+    width: "168.75/1125"
+backspaceButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  highlightSystemImageName: "delete.left.fill"
+  normalColor: "#3B3226"
+  systemImageName: "delete.left"
+backspaceButtonPreeditChangedForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  highlightSystemImageName: "delete.left.fill"
+  normalColor: "#3B3226"
+  systemImageName: "delete.left"
+backspaceButtonPreeditChangedNotification:
+  backgroundStyle: "systemButtonBackgroundStyle"
+  bounds:
+    alignment: "right"
+    width: "151/168.75"
+  foregroundStyle:
+  - "backspaceButtonPreeditChangedForegroundStyle"
+  notificationType: "preeditChanged"
+  swipeUpAction:
+    sendKeys: "Control+Backspace"
+cButton:
+  action:
+    character: "c"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "cButtonForegroundStyle"
+  - "cButtonSwipeUpForegroundStyle"
+  hintStyle: "cButtonHintStyle"
+  hintSymbolsStyle: "cButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    shortcut: "#copy"
+  swipeUpAction:
+    character: "`"
+  uppercasedStateAction:
+    character: "C"
+  uppercasedStateForegroundStyle:
+  - "cButtonUppercasedForegroundStyle"
+  - "cButtonSwipeUpForegroundStyle"
+cButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "c"
+cButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "c"
+cButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "cButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "cButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "cButtonHintSwipeUpForegroundStyle"
+cButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  systemImageName: "doc.on.doc"
+cButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "`"
+cButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "C"
+cButtonLongPressSymbol0Style:
+  action:
+    character: "C"
+  foregroundStyle: "cButtonLongPressSymbol0ForegroundStyle"
+cButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "cButtonLongPressSymbol0Style"
+cButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "`"
+cButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "C"
+candidateContextMenu:
+- action:
+    sendKeys: "Control+Shift+dollar"
+  name: "简繁"
+colorButtonBackgroundStyle:
+  buttonStyleType: "geometry"
+  cornerRadius: 8.5
+  highlightColor: "#FBF6EA"
+  highlightLowerEdgeColor: "#B9A985"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  normalColor: "#9C5A44"
+  normalLowerEdgeColor: "#B9A985"
+commaButton:
+  action:
+    character: ","
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "commaButtonForegroundStyle"
+  - "commaButtonSwipeUpForegroundStyle"
+  hintStyle: "commaButtonHintStyle"
+  size:
+    width: "112.5/1125"
+  swipeUpAction:
+    character: "."
+commaButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.52
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "，"
+commaButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "，"
+commaButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "commaButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeUpForegroundStyle: "commaButtonHintSwipeUpForegroundStyle"
+commaButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "。"
+commaButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.3
+  fontSize: 9
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "。"
+dButton:
+  action:
+    character: "d"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "dButtonForegroundStyle"
+  - "dButtonSwipeUpForegroundStyle"
+  hintStyle: "dButtonHintStyle"
+  hintSymbolsStyle: "dButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    character: "\\"
+  swipeUpAction:
+    character: "/"
+  uppercasedStateAction:
+    character: "D"
+  uppercasedStateForegroundStyle:
+  - "dButtonUppercasedForegroundStyle"
+  - "dButtonSwipeUpForegroundStyle"
+dButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "d"
+dButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "d"
+dButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "dButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "dButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "dButtonHintSwipeUpForegroundStyle"
+dButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "\\"
+dButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "/"
+dButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "D"
+dButtonLongPressSymbol0Style:
+  action:
+    character: "D"
+  foregroundStyle: "dButtonLongPressSymbol0ForegroundStyle"
+dButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "dButtonLongPressSymbol0Style"
+dButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "/"
+dButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "D"
+eButton:
+  action:
+    character: "e"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "eButtonForegroundStyle"
+  - "eButtonSwipeUpForegroundStyle"
+  hintStyle: "eButtonHintStyle"
+  hintSymbolsStyle: "eButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeUpAction:
+    character: "3"
+  uppercasedStateAction:
+    character: "E"
+  uppercasedStateForegroundStyle:
+  - "eButtonUppercasedForegroundStyle"
+  - "eButtonSwipeUpForegroundStyle"
+eButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "e"
+eButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "e"
+eButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "eButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeUpForegroundStyle: "eButtonHintSwipeUpForegroundStyle"
+eButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "3"
+eButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "E"
+eButtonLongPressSymbol0Style:
+  action:
+    character: "E"
+  foregroundStyle: "eButtonLongPressSymbol0ForegroundStyle"
+eButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "eButtonLongPressSymbol0Style"
+eButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "3"
+eButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "E"
+enterButton:
+  action: "enter"
+  backgroundStyle: "colorButtonBackgroundStyle"
+  foregroundStyle:
+  - "enterButtonForegroundStyle"
+  hintSymbolsStyle: "enterButtonLongPressSymbolsStyle"
+  notification:
+  - "enterButtonPreeditChangedNotification"
+  - "enterButtonReturnKeyType0Notification"
+  size:
+    width: "250/1125"
+  swipeDownAction:
+    shortcut: "#行尾"
+  swipeUpAction:
+    shortcut: "#行首"
+enterButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 16
+  highlightColor: "#3B3226"
+  normalColor: "#FFF8EC"
+  text: "$returnKeyType"
+enterButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  systemImageName: "return"
+enterButtonLongPressSymbol0Style:
+  action:
+    shortcut: "#换行"
+  foregroundStyle: "enterButtonLongPressSymbol0ForegroundStyle"
+enterButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "enterButtonLongPressSymbol0Style"
+enterButtonPreeditChangedForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 16
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "确认"
+enterButtonPreeditChangedNotification:
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "enterButtonPreeditChangedForegroundStyle"
+  notificationType: "preeditChanged"
+enterButtonReturnKeyType0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 16
+  highlightColor: "#3B3226"
+  normalColor: "#FFF8EC"
+  text: "$returnKeyType"
+enterButtonReturnKeyType0Notification:
+  backgroundStyle: "colorButtonBackgroundStyle"
+  foregroundStyle:
+  - "enterButtonReturnKeyType0ForegroundStyle"
+  notificationType: "returnKeyType"
+expandButton:
+  action:
+    shortcut: "#candidatesBarStateToggle"
+  foregroundStyle: "expandButtonForegroundStyle"
+  size:
+    width: 44
+expandButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "chevron.forward"
+fButton:
+  action:
+    character: "f"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "fButtonForegroundStyle"
+  - "fButtonSwipeUpForegroundStyle"
+  hintStyle: "fButtonHintStyle"
+  hintSymbolsStyle: "fButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    character: ":"
+  swipeUpAction:
+    character: ";"
+  uppercasedStateAction:
+    character: "F"
+  uppercasedStateForegroundStyle:
+  - "fButtonUppercasedForegroundStyle"
+  - "fButtonSwipeUpForegroundStyle"
+fButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "f"
+fButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "f"
+fButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "fButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "fButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "fButtonHintSwipeUpForegroundStyle"
+fButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: ":"
+fButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: ";"
+fButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "F"
+fButtonLongPressSymbol0Style:
+  action:
+    character: "F"
+  foregroundStyle: "fButtonLongPressSymbol0ForegroundStyle"
+fButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "fButtonLongPressSymbol0Style"
+fButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: ";"
+fButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "F"
+gButton:
+  action:
+    character: "g"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "gButtonForegroundStyle"
+  - "gButtonSwipeUpForegroundStyle"
+  hintStyle: "gButtonHintStyle"
+  hintSymbolsStyle: "gButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    character: ")"
+  swipeUpAction:
+    character: "("
+  uppercasedStateAction:
+    character: "G"
+  uppercasedStateForegroundStyle:
+  - "gButtonUppercasedForegroundStyle"
+  - "gButtonSwipeUpForegroundStyle"
+gButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "g"
+gButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "g"
+gButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "gButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "gButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "gButtonHintSwipeUpForegroundStyle"
+gButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: ")"
+gButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "("
+gButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "G"
+gButtonLongPressSymbol0Style:
+  action:
+    character: "G"
+  foregroundStyle: "gButtonLongPressSymbol0ForegroundStyle"
+gButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "gButtonLongPressSymbol0Style"
+gButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "("
+gButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "G"
+gotoPinyin26Button:
+  action:
+    combine:
+    - switchRimeSchema: "rime_ice"
+    - keyboardType: "pinyin"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "gotoPinyin26ButtonForegroundStyle"
+  size:
+    width: "112.5/1125"
+  swipeUpAction:
+    shortcut: "#中英切换"
+gotoPinyin26ButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 16
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "中En"
+hButton:
+  action:
+    character: "h"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "hButtonForegroundStyle"
+  - "hButtonSwipeUpForegroundStyle"
+  hintStyle: "hButtonHintStyle"
+  hintSymbolsStyle: "hButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    character: "_"
+  swipeUpAction:
+    character: "-"
+  uppercasedStateAction:
+    character: "H"
+  uppercasedStateForegroundStyle:
+  - "hButtonUppercasedForegroundStyle"
+  - "hButtonSwipeUpForegroundStyle"
+hButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "h"
+hButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "h"
+hButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "hButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "hButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "hButtonHintSwipeUpForegroundStyle"
+hButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "_"
+hButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "-"
+hButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "H"
+hButtonLongPressSymbol0Style:
+  action:
+    character: "H"
+  foregroundStyle: "hButtonLongPressSymbol0ForegroundStyle"
+hButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "hButtonLongPressSymbol0Style"
+hButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "-"
+hButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "H"
+horizontalCandidateStyle:
+  commentColor: "#3B3226"
+  commentFontSize: 14
+  highlightBackgroundColor: "#FBF6EA"
+  indexColor: "#3B3226"
+  indexFontSize: 12
+  preferredBackgroundColor: "#FBF6EA"
+  preferredCommentColor: "#3B3226"
+  preferredIndexColor: "#3B3226"
+  preferredTextColor: "#3B3226"
+  textColor: "#3B3226"
+  textFontSize: 16
+horizontalCandidates:
+  candidateStyle: "horizontalCandidateStyle"
+  type: "horizontalCandidates"
+horizontalCandidatesLayout:
+- HStack:
+    subviews:
+    - Cell: "horizontalCandidates"
+    - Cell: "expandButton"
+horizontalCandidatesStyle:
+  backgroundStyle: "keyboardBackgroundStyle"
+  insets:
+    bottom: 1
+    left: 3
+    top: 8
+horizontalSymbolsToolbarButtonsDataSource:
+- action:
+    shortcut: "#copy"
+  label: "toolbarCopyTextButton"
+  styleName: "toolbarCopyTextButtonStyle"
+- action:
+    shortcut: "#paste"
+  label: "toolbarPasteTextButton"
+  styleName: "toolbarPasteTextButtonStyle"
+- action:
+    shortcut: "#selectText"
+  label: "toolbarSelectAllTextButton"
+  styleName: "toolbarSelectAllTextButtonStyle"
+- action:
+    shortcut: "#cut"
+  label: "toolbarCutTextButton"
+  styleName: "toolbarCutTextButtonStyle"
+- action:
+    shortcut: "#undo"
+  label: "toolbarUndoButton"
+  styleName: "toolbarUndoButtonStyle"
+- action:
+    shortcut: "#redo"
+  label: "toolbarRedoButton"
+  styleName: "toolbarRedoButtonStyle"
+- action: "moveCursorBackward"
+  label: "toolbarMoveCursorLeftButton"
+  styleName: "toolbarMoveCursorLeftButtonStyle"
+- action: "moveCursorForward"
+  label: "toolbarMoveCursorRightButton"
+  styleName: "toolbarMoveCursorRightButtonStyle"
+- action:
+    shortcut: "#showPasteboardView"
+  label: "toolbarClipboardButton"
+  styleName: "toolbarClipboardButtonStyle"
+- action:
+    keyboardType: "emojis"
+  label: "toolbarKeyboardEmojiButton"
+  styleName: "toolbarKeyboardEmojiButtonStyle"
+- action:
+    keyboardType: "symbolic"
+  label: "toolbarKeyboardSymbolicButton"
+  styleName: "toolbarKeyboardSymbolicButtonStyle"
+- action:
+    openURL: "hamster3://com.ihsiao.apps.hamster3/keyboardSkins"
+  label: "toolbarSkinButton"
+  styleName: "toolbarSkinButtonStyle"
+- action:
+    openURL: "hamster3://com.ihsiao.apps.hamster3/rime?action=deploy"
+  label: "toolbarRimeDeployButton"
+  styleName: "toolbarRimeDeployButtonStyle"
+- action:
+    shortcut: "#RimeSwitcher"
+  label: "toolbarRimeSwitcherButton"
+  styleName: "toolbarRimeSwitcherButtonStyle"
+iButton:
+  action:
+    character: "i"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "iButtonForegroundStyle"
+  - "iButtonSwipeUpForegroundStyle"
+  hintStyle: "iButtonHintStyle"
+  hintSymbolsStyle: "iButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    character: "|"
+  swipeUpAction:
+    character: "8"
+  uppercasedStateAction:
+    character: "I"
+  uppercasedStateForegroundStyle:
+  - "iButtonUppercasedForegroundStyle"
+  - "iButtonSwipeUpForegroundStyle"
+iButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "i"
+iButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "i"
+iButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "iButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "iButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "iButtonHintSwipeUpForegroundStyle"
+iButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "|"
+iButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "8"
+iButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "I"
+iButtonLongPressSymbol0Style:
+  action:
+    character: "I"
+  foregroundStyle: "iButtonLongPressSymbol0ForegroundStyle"
+iButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "iButtonLongPressSymbol0Style"
+iButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "8"
+iButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "I"
+jButton:
+  action:
+    character: "j"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "jButtonForegroundStyle"
+  - "jButtonSwipeUpForegroundStyle"
+  hintStyle: "jButtonHintStyle"
+  hintSymbolsStyle: "jButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    character: "+"
+  swipeUpAction:
+    character: "#"
+  uppercasedStateAction:
+    character: "J"
+  uppercasedStateForegroundStyle:
+  - "jButtonUppercasedForegroundStyle"
+  - "jButtonSwipeUpForegroundStyle"
+jButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "j"
+jButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "j"
+jButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "jButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "jButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "jButtonHintSwipeUpForegroundStyle"
+jButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "+"
+jButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "#"
+jButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "J"
+jButtonLongPressSymbol0Style:
+  action:
+    character: "J"
+  foregroundStyle: "jButtonLongPressSymbol0ForegroundStyle"
+jButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "jButtonLongPressSymbol0Style"
+jButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "#"
+jButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "J"
+kButton:
+  action:
+    character: "k"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "kButtonForegroundStyle"
+  - "kButtonSwipeUpForegroundStyle"
+  hintStyle: "kButtonHintStyle"
+  hintSymbolsStyle: "kButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    character: "}"
+  swipeUpAction:
+    character: "{"
+  uppercasedStateAction:
+    character: "K"
+  uppercasedStateForegroundStyle:
+  - "kButtonUppercasedForegroundStyle"
+  - "kButtonSwipeUpForegroundStyle"
+kButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "k"
+kButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "k"
+kButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "kButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "kButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "kButtonHintSwipeUpForegroundStyle"
+kButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "}"
+kButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "{"
+kButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "K"
+kButtonLongPressSymbol0Style:
+  action:
+    character: "K"
+  foregroundStyle: "kButtonLongPressSymbol0ForegroundStyle"
+kButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "kButtonLongPressSymbol0Style"
+kButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "{"
+kButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "K"
+keyboardBackgroundStyle:
+  buttonStyleType: "geometry"
+  normalColor: "#E9DFC9"
+keyboardHeight: 160
+keyboardLayout:
+- HStack:
+    subviews:
+    - Cell: "qButton"
+    - Cell: "wButton"
+    - Cell: "eButton"
+    - Cell: "rButton"
+    - Cell: "tButton"
+    - Cell: "yButton"
+    - Cell: "uButton"
+    - Cell: "iButton"
+    - Cell: "oButton"
+    - Cell: "pButton"
+- HStack:
+    subviews:
+    - Cell: "aButton"
+    - Cell: "sButton"
+    - Cell: "dButton"
+    - Cell: "fButton"
+    - Cell: "gButton"
+    - Cell: "hButton"
+    - Cell: "jButton"
+    - Cell: "kButton"
+    - Cell: "lButton"
+- HStack:
+    subviews:
+    - Cell: "shiftButton"
+    - Cell: "zButton"
+    - Cell: "xButton"
+    - Cell: "cButton"
+    - Cell: "vButton"
+    - Cell: "bButton"
+    - Cell: "nButton"
+    - Cell: "mButton"
+    - Cell: "backspaceButton"
+- HStack:
+    subviews:
+    - Cell: "numericButton"
+    - Cell: "commaButton"
+    - Cell: "spaceButton"
+    - Cell: "gotoPinyin26Button"
+    - Cell: "enterButton"
+keyboardStyle:
+  backgroundStyle: "keyboardBackgroundStyle"
+lButton:
+  action:
+    character: "l"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  bounds:
+    alignment: "left"
+    width: "112.5/168.75"
+  foregroundStyle:
+  - "lButtonForegroundStyle"
+  - "lButtonSwipeUpForegroundStyle"
+  hintStyle: "lButtonHintStyle"
+  hintSymbolsStyle: "lButtonLongPressSymbolsStyle"
+  size:
+    width: "168.75/1125"
+  swipeDownAction:
+    character: "'"
+  swipeUpAction:
+    character: "\""
+  uppercasedStateAction:
+    character: "L"
+  uppercasedStateForegroundStyle:
+  - "lButtonUppercasedForegroundStyle"
+  - "lButtonSwipeUpForegroundStyle"
+lButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "l"
+lButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "l"
+lButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "lButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "lButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "lButtonHintSwipeUpForegroundStyle"
+lButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "'"
+lButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "\""
+lButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  systemImageName: "keyboard.onehanded.right"
+lButtonLongPressSymbol0Style:
+  action:
+    shortcut: "#右手模式"
+  foregroundStyle: "lButtonLongPressSymbol0ForegroundStyle"
+lButtonLongPressSymbol1ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "L"
+lButtonLongPressSymbol1Style:
+  action:
+    character: "L"
+  foregroundStyle: "lButtonLongPressSymbol1ForegroundStyle"
+lButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 1
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "lButtonLongPressSymbol0Style"
+  - "lButtonLongPressSymbol1Style"
+lButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "\""
+lButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "L"
+longPressSymbolsBackgroundStyle:
+  borderSize: 0.5
+  buttonStyleType: "geometry"
+  cornerRadius: 10
+  highlightBorderColor: "#C9BCA0"
+  highlightColor: "#9C5A44"
+  highlightShadowColor: "#B9A985"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  normalBorderColor: "#C9BCA0"
+  normalColor: "#FBF6EA"
+  normalShadowColor: "#B9A985"
+  shadowRadius: 3
+longPressSymbolsSelectedBackgroundStyle:
+  buttonStyleType: "geometry"
+  cornerRadius: 8.5
+  highlightColor: "#9C5A44"
+  highlightLowerEdgeColor: "#B9A985"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  normalColor: "#9C5A44"
+  normalLowerEdgeColor: "#B9A985"
+mButton:
+  action:
+    character: "m"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "mButtonForegroundStyle"
+  - "mButtonSwipeUpForegroundStyle"
+  hintStyle: "mButtonHintStyle"
+  hintSymbolsStyle: "mButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    character: "$"
+  swipeUpAction:
+    character: "?"
+  uppercasedStateAction:
+    character: "M"
+  uppercasedStateForegroundStyle:
+  - "mButtonUppercasedForegroundStyle"
+  - "mButtonSwipeUpForegroundStyle"
+mButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "m"
+mButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "m"
+mButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "mButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "mButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "mButtonHintSwipeUpForegroundStyle"
+mButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "$"
+mButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "?"
+mButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "M"
+mButtonLongPressSymbol0Style:
+  action:
+    character: "M"
+  foregroundStyle: "mButtonLongPressSymbol0ForegroundStyle"
+mButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "mButtonLongPressSymbol0Style"
+mButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "?"
+mButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "M"
+nButton:
+  action:
+    character: "n"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "nButtonForegroundStyle"
+  - "nButtonSwipeUpForegroundStyle"
+  hintStyle: "nButtonHintStyle"
+  hintSymbolsStyle: "nButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    character: "~"
+  swipeUpAction:
+    character: "&"
+  uppercasedStateAction:
+    character: "N"
+  uppercasedStateForegroundStyle:
+  - "nButtonUppercasedForegroundStyle"
+  - "nButtonSwipeUpForegroundStyle"
+nButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "n"
+nButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "n"
+nButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "nButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "nButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "nButtonHintSwipeUpForegroundStyle"
+nButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "~"
+nButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "&"
+nButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "N"
+nButtonLongPressSymbol0Style:
+  action:
+    character: "N"
+  foregroundStyle: "nButtonLongPressSymbol0ForegroundStyle"
+nButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "nButtonLongPressSymbol0Style"
+nButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "&"
+nButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "N"
+numericButton:
+  action:
+    keyboardType: "numeric"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "numericButtonForegroundStyle"
+  size:
+    width: "225/1125"
+  swipeDownAction:
+    keyboardType: "emojis"
+  swipeUpAction:
+    keyboardType: "symbolic"
+numericButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 18
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "123"
+oButton:
+  action:
+    character: "o"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "oButtonForegroundStyle"
+  - "oButtonSwipeUpForegroundStyle"
+  hintStyle: "oButtonHintStyle"
+  hintSymbolsStyle: "oButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    character: "<"
+  swipeUpAction:
+    character: "9"
+  uppercasedStateAction:
+    character: "O"
+  uppercasedStateForegroundStyle:
+  - "oButtonUppercasedForegroundStyle"
+  - "oButtonSwipeUpForegroundStyle"
+oButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "o"
+oButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "o"
+oButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "oButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "oButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "oButtonHintSwipeUpForegroundStyle"
+oButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "<"
+oButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "9"
+oButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "O"
+oButtonLongPressSymbol0Style:
+  action:
+    character: "O"
+  foregroundStyle: "oButtonLongPressSymbol0ForegroundStyle"
+oButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "oButtonLongPressSymbol0Style"
+oButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "9"
+oButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "O"
+pButton:
+  action:
+    character: "p"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "pButtonForegroundStyle"
+  - "pButtonSwipeUpForegroundStyle"
+  hintStyle: "pButtonHintStyle"
+  hintSymbolsStyle: "pButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    character: ">"
+  swipeUpAction:
+    character: "0"
+  uppercasedStateAction:
+    character: "P"
+  uppercasedStateForegroundStyle:
+  - "pButtonUppercasedForegroundStyle"
+  - "pButtonSwipeUpForegroundStyle"
+pButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "p"
+pButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "p"
+pButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "pButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "pButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "pButtonHintSwipeUpForegroundStyle"
+pButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: ">"
+pButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "0"
+pButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "P"
+pButtonLongPressSymbol0Style:
+  action:
+    character: "P"
+  foregroundStyle: "pButtonLongPressSymbol0ForegroundStyle"
+pButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "pButtonLongPressSymbol0Style"
+pButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "0"
+pButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "P"
+preeditForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 17
+  normalColor: "#3B3226"
+preeditHeight: 21
+preeditStyle:
+  backgroundStyle: "keyboardBackgroundStyle"
+  foregroundStyle: "preeditForegroundStyle"
+  insets:
+    left: 4
+    top: 2
+qButton:
+  action:
+    character: "q"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "qButtonForegroundStyle"
+  - "qButtonSwipeUpForegroundStyle"
+  hintStyle: "qButtonHintStyle"
+  hintSymbolsStyle: "qButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction: "tab"
+  swipeUpAction:
+    character: "1"
+  uppercasedStateAction:
+    character: "Q"
+  uppercasedStateForegroundStyle:
+  - "qButtonUppercasedForegroundStyle"
+  - "qButtonSwipeUpForegroundStyle"
+qButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "q"
+qButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "q"
+qButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "qButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "qButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "qButtonHintSwipeUpForegroundStyle"
+qButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  systemImageName: "arrow.right.to.line"
+qButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "1"
+qButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "Q"
+qButtonLongPressSymbol0Style:
+  action:
+    character: "Q"
+  foregroundStyle: "qButtonLongPressSymbol0ForegroundStyle"
+qButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "qButtonLongPressSymbol0Style"
+qButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "1"
+qButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "Q"
+rButton:
+  action:
+    character: "r"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "rButtonForegroundStyle"
+  - "rButtonSwipeUpForegroundStyle"
+  hintStyle: "rButtonHintStyle"
+  hintSymbolsStyle: "rButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeUpAction:
+    character: "4"
+  uppercasedStateAction:
+    character: "R"
+  uppercasedStateForegroundStyle:
+  - "rButtonUppercasedForegroundStyle"
+  - "rButtonSwipeUpForegroundStyle"
+rButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "r"
+rButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "r"
+rButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "rButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeUpForegroundStyle: "rButtonHintSwipeUpForegroundStyle"
+rButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "4"
+rButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "R"
+rButtonLongPressSymbol0Style:
+  action:
+    character: "R"
+  foregroundStyle: "rButtonLongPressSymbol0ForegroundStyle"
+rButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "rButtonLongPressSymbol0Style"
+rButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "4"
+rButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "R"
+rimeSchemaChangedNotification:
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "spaceButtonForegroundStyle"
+  - "spaceButtonRimeSchemaForegroundStyle"
+  notificationType: "rime"
+  rimeNotificationType: "schemaChanged"
+sButton:
+  action:
+    character: "s"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "sButtonForegroundStyle"
+  - "sButtonSwipeUpForegroundStyle"
+  hintStyle: "sButtonHintStyle"
+  hintSymbolsStyle: "sButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    character: "%"
+  swipeUpAction:
+    character: "^"
+  uppercasedStateAction:
+    character: "S"
+  uppercasedStateForegroundStyle:
+  - "sButtonUppercasedForegroundStyle"
+  - "sButtonSwipeUpForegroundStyle"
+sButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "s"
+sButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "s"
+sButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "sButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "sButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "sButtonHintSwipeUpForegroundStyle"
+sButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "%"
+sButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "^"
+sButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "S"
+sButtonLongPressSymbol0Style:
+  action:
+    character: "S"
+  foregroundStyle: "sButtonLongPressSymbol0ForegroundStyle"
+sButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "sButtonLongPressSymbol0Style"
+sButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "^"
+sButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "S"
+scaleAnimation:
+  animationType: "scale"
+  isAutoReverse: true
+  pressDuration: 60
+  releaseDuration: 80
+  scale: 0.87
+shiftButton:
+  action: "shift"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  bounds:
+    alignment: "left"
+    width: "151/168.75"
+  capsLockedStateForegroundStyle: "shiftButtonCapsLockedForegroundStyle"
+  foregroundStyle:
+  - "shiftButtonForegroundStyle"
+  notification:
+  - "shiftButtonPreeditChangedNotification"
+  size:
+    width: "168.75/1125"
+  uppercasedStateForegroundStyle:
+  - "shiftButtonUppercasedForegroundStyle"
+shiftButtonCapsLockedForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "capslock.fill"
+shiftButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "shift"
+shiftButtonPreeditChangedForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "square.and.line.vertical.and.square"
+shiftButtonPreeditChangedNotification:
+  action:
+    character: "'"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  bounds:
+    alignment: "left"
+    width: "151/168.75"
+  foregroundStyle:
+  - "shiftButtonPreeditChangedForegroundStyle"
+  notificationType: "preeditChanged"
+shiftButtonUppercasedForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "shift.fill"
+spaceButton:
+  action: "space"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "spaceButtonForegroundStyle"
+  - "spaceButtonRimeSchemaForegroundStyle"
+  notification:
+  - "rimeSchemaChangedNotification"
+  - "spaceButtonPreeditChangedNotification"
+spaceButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  center:
+    x: 0.5
+    "y": 0.5
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "space"
+spaceButtonPreeditChangedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.5
+  fontSize: 16
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "选定"
+spaceButtonPreeditChangedNotification:
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "spaceButtonPreeditChangedForegroundStyle"
+  - "spaceButtonPreeditChangedSwipeUpForegroundStyle"
+  notificationType: "preeditChanged"
+  swipeUpAction:
+    shortcut: "#次选上屏"
+spaceButtonPreeditChangedSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 9
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "次选"
+spaceButtonRimeSchemaForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.2
+    "y": 0.7
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "English Nano"
+systemButtonBackgroundStyle:
+  buttonStyleType: "geometry"
+  cornerRadius: 8.5
+  highlightColor: "#FBF6EA"
+  highlightLowerEdgeColor: "#B9A985"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  normalColor: "#D9CDB2"
+  normalLowerEdgeColor: "#B9A985"
+tButton:
+  action:
+    character: "t"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "tButtonForegroundStyle"
+  - "tButtonSwipeUpForegroundStyle"
+  hintStyle: "tButtonHintStyle"
+  hintSymbolsStyle: "tButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeUpAction:
+    character: "5"
+  uppercasedStateAction:
+    character: "T"
+  uppercasedStateForegroundStyle:
+  - "tButtonUppercasedForegroundStyle"
+  - "tButtonSwipeUpForegroundStyle"
+tButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "t"
+tButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "t"
+tButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "tButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeUpForegroundStyle: "tButtonHintSwipeUpForegroundStyle"
+tButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "5"
+tButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "T"
+tButtonLongPressSymbol0Style:
+  action:
+    character: "T"
+  foregroundStyle: "tButtonLongPressSymbol0ForegroundStyle"
+tButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "tButtonLongPressSymbol0Style"
+tButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "5"
+tButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "T"
+toolbarClipboardButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "clipboard"
+toolbarClipboardButtonStyle:
+  foregroundStyle: "toolbarClipboardButtonForegroundStyle"
+toolbarCollectionCellStyle:
+  backgroundStyle: "keyboardBackgroundStyle"
+  foregroundStyle: "keyboardBackgroundStyle"
+toolbarCopyTextButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "doc.on.doc"
+toolbarCopyTextButtonStyle:
+  foregroundStyle: "toolbarCopyTextButtonForegroundStyle"
+toolbarCutTextButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "scissors"
+toolbarCutTextButtonStyle:
+  foregroundStyle: "toolbarCutTextButtonForegroundStyle"
+toolbarDismissButton:
+  action: "dismissKeyboard"
+  foregroundStyle:
+  - "toolbarDismissButtonForegroundStyle"
+toolbarDismissButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "chevron.down"
+toolbarHeight: 45
+toolbarKeyboardEmojiButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "face.dashed"
+toolbarKeyboardEmojiButtonStyle:
+  foregroundStyle: "toolbarKeyboardEmojiButtonForegroundStyle"
+toolbarKeyboardSymbolicButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "number"
+toolbarKeyboardSymbolicButtonStyle:
+  foregroundStyle: "toolbarKeyboardSymbolicButtonForegroundStyle"
+toolbarLayout:
+- HStack:
+    subviews:
+    - Cell: "toolbarMenuButton"
+    - Cell: "toolbarSlideButtons"
+    - Cell: "toolbarDismissButton"
+toolbarMenuButton:
+  action:
+    floatKeyboardType: "panel"
+  foregroundStyle:
+  - "toolbarMenuButtonForegroundStyle"
+toolbarMenuButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "hexagon.righthalf.filled"
+toolbarMoveCursorLeftButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "arrowshape.left"
+toolbarMoveCursorLeftButtonStyle:
+  foregroundStyle: "toolbarMoveCursorLeftButtonForegroundStyle"
+toolbarMoveCursorRightButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "arrowshape.right"
+toolbarMoveCursorRightButtonStyle:
+  foregroundStyle: "toolbarMoveCursorRightButtonForegroundStyle"
+toolbarPasteTextButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "doc.on.clipboard"
+toolbarPasteTextButtonStyle:
+  foregroundStyle: "toolbarPasteTextButtonForegroundStyle"
+toolbarRedoButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "arrow.uturn.right"
+toolbarRedoButtonStyle:
+  foregroundStyle: "toolbarRedoButtonForegroundStyle"
+toolbarRimeDeployButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "slider.horizontal.2.arrow.trianglehead.counterclockwise"
+toolbarRimeDeployButtonStyle:
+  foregroundStyle: "toolbarRimeDeployButtonForegroundStyle"
+toolbarRimeSwitcherButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "switch.2"
+toolbarRimeSwitcherButtonStyle:
+  foregroundStyle: "toolbarRimeSwitcherButtonForegroundStyle"
+toolbarSelectAllTextButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "selection.pin.in.out"
+toolbarSelectAllTextButtonStyle:
+  foregroundStyle: "toolbarSelectAllTextButtonForegroundStyle"
+toolbarSkinButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "tshirt"
+toolbarSkinButtonStyle:
+  foregroundStyle: "toolbarSkinButtonForegroundStyle"
+toolbarSlideButtons:
+  cellStyle: "toolbarCollectionCellStyle"
+  contentRightToLeft: false
+  dataSource: "horizontalSymbolsToolbarButtonsDataSource"
+  maxColumns: 8
+  size:
+    width: "8/10"
+  type: "horizontalSymbols"
+toolbarStyle:
+  backgroundStyle: "keyboardBackgroundStyle"
+  insets:
+    top: 6
+toolbarUndoButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "arrow.uturn.left"
+toolbarUndoButtonStyle:
+  foregroundStyle: "toolbarUndoButtonForegroundStyle"
+uButton:
+  action:
+    character: "u"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "uButtonForegroundStyle"
+  - "uButtonSwipeUpForegroundStyle"
+  hintStyle: "uButtonHintStyle"
+  hintSymbolsStyle: "uButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeUpAction:
+    character: "7"
+  uppercasedStateAction:
+    character: "U"
+  uppercasedStateForegroundStyle:
+  - "uButtonUppercasedForegroundStyle"
+  - "uButtonSwipeUpForegroundStyle"
+uButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "u"
+uButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "u"
+uButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "uButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeUpForegroundStyle: "uButtonHintSwipeUpForegroundStyle"
+uButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "7"
+uButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "U"
+uButtonLongPressSymbol0Style:
+  action:
+    character: "U"
+  foregroundStyle: "uButtonLongPressSymbol0ForegroundStyle"
+uButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "uButtonLongPressSymbol0Style"
+uButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "7"
+uButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "U"
+vButton:
+  action:
+    character: "v"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "vButtonForegroundStyle"
+  - "vButtonSwipeUpForegroundStyle"
+  hintStyle: "vButtonHintStyle"
+  hintSymbolsStyle: "vButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    shortcut: "#paste"
+  swipeUpAction:
+    character: "="
+  uppercasedStateAction:
+    character: "V"
+  uppercasedStateForegroundStyle:
+  - "vButtonUppercasedForegroundStyle"
+  - "vButtonSwipeUpForegroundStyle"
+vButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "v"
+vButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "v"
+vButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "vButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "vButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "vButtonHintSwipeUpForegroundStyle"
+vButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  systemImageName: "doc.on.clipboard"
+vButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "="
+vButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "V"
+vButtonLongPressSymbol0Style:
+  action:
+    character: "V"
+  foregroundStyle: "vButtonLongPressSymbol0ForegroundStyle"
+vButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "vButtonLongPressSymbol0Style"
+vButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "="
+vButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "V"
+verticalBackspaceButtonStyle:
+  action: "backspace"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle: "verticalBackspaceButtonStyleForegroundStyle"
+verticalBackspaceButtonStyleForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "delete.left"
+verticalCandidateStyle:
+  commentColor: "#3B3226"
+  commentFontSize: 14
+  highlightBackgroundColor: "#FBF6EA"
+  indexColor: "#3B3226"
+  indexFontSize: 12
+  insets:
+    bottom: 4
+    left: 6
+    right: 6
+    top: 4
+  preferredBackgroundColor: "#FBF6EA"
+  preferredCommentColor: "#3B3226"
+  preferredIndexColor: "#3B3226"
+  preferredTextColor: "#3B3226"
+  textColor: "#3B3226"
+  textFontSize: 16
+verticalCandidates:
+  candidateStyle: "verticalCandidateStyle"
+  insets:
+    bottom: 8
+    left: 8
+    right: 8
+    top: 8
+  maxColumns: 6
+  maxRows: 5
+  separatorColor: "#C9BCA0"
+  type: "verticalCandidates"
+verticalCandidatesLayout:
+- HStack:
+    subviews:
+    - Cell: "verticalCandidates"
+- HStack:
+    style: "verticalLastRowStyle"
+    subviews:
+    - Cell: "verticalReturnButtonStyle"
+    - Cell: "verticalPageUpButtonStyle"
+    - Cell: "verticalPageDownButtonStyle"
+    - Cell: "verticalBackspaceButtonStyle"
+verticalCandidatesStyle:
+  backgroundStyle: "keyboardBackgroundStyle"
+verticalLastRowStyle:
+  size:
+    height: 45
+verticalPageDownButtonStyle:
+  action:
+    shortcut: "#verticalCandidatesPageDown"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle: "verticalPageDownButtonStyleForegroundStyle"
+verticalPageDownButtonStyleForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "chevron.down"
+verticalPageUpButtonStyle:
+  action:
+    shortcut: "#verticalCandidatesPageUp"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle: "verticalPageUpButtonStyleForegroundStyle"
+verticalPageUpButtonStyleForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "chevron.up"
+verticalReturnButtonStyle:
+  action:
+    shortcut: "#candidatesBarStateToggle"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle: "verticalReturnButtonStyleForegroundStyle"
+verticalReturnButtonStyleForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "arrow.backward"
+wButton:
+  action:
+    character: "w"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "wButtonForegroundStyle"
+  - "wButtonSwipeUpForegroundStyle"
+  hintStyle: "wButtonHintStyle"
+  hintSymbolsStyle: "wButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeUpAction:
+    character: "2"
+  uppercasedStateAction:
+    character: "W"
+  uppercasedStateForegroundStyle:
+  - "wButtonUppercasedForegroundStyle"
+  - "wButtonSwipeUpForegroundStyle"
+wButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "w"
+wButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "w"
+wButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "wButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeUpForegroundStyle: "wButtonHintSwipeUpForegroundStyle"
+wButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "2"
+wButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "W"
+wButtonLongPressSymbol0Style:
+  action:
+    character: "W"
+  foregroundStyle: "wButtonLongPressSymbol0ForegroundStyle"
+wButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "wButtonLongPressSymbol0Style"
+wButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "2"
+wButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "W"
+xButton:
+  action:
+    character: "x"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "xButtonForegroundStyle"
+  - "xButtonSwipeUpForegroundStyle"
+  hintStyle: "xButtonHintStyle"
+  hintSymbolsStyle: "xButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    shortcut: "#cut"
+  swipeUpAction:
+    character: "*"
+  uppercasedStateAction:
+    character: "X"
+  uppercasedStateForegroundStyle:
+  - "xButtonUppercasedForegroundStyle"
+  - "xButtonSwipeUpForegroundStyle"
+xButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "x"
+xButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "x"
+xButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "xButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "xButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "xButtonHintSwipeUpForegroundStyle"
+xButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  systemImageName: "scissors"
+xButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "*"
+xButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "X"
+xButtonLongPressSymbol0Style:
+  action:
+    character: "X"
+  foregroundStyle: "xButtonLongPressSymbol0ForegroundStyle"
+xButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "xButtonLongPressSymbol0Style"
+xButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "*"
+xButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "X"
+yButton:
+  action:
+    character: "y"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "yButtonForegroundStyle"
+  - "yButtonSwipeUpForegroundStyle"
+  hintStyle: "yButtonHintStyle"
+  hintSymbolsStyle: "yButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeUpAction:
+    character: "6"
+  uppercasedStateAction:
+    character: "Y"
+  uppercasedStateForegroundStyle:
+  - "yButtonUppercasedForegroundStyle"
+  - "yButtonSwipeUpForegroundStyle"
+yButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "y"
+yButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "y"
+yButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "yButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeUpForegroundStyle: "yButtonHintSwipeUpForegroundStyle"
+yButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "6"
+yButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "Y"
+yButtonLongPressSymbol0Style:
+  action:
+    character: "Y"
+  foregroundStyle: "yButtonLongPressSymbol0ForegroundStyle"
+yButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "yButtonLongPressSymbol0Style"
+yButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "6"
+yButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "Y"
+zButton:
+  action:
+    character: "z"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "zButtonForegroundStyle"
+  - "zButtonSwipeUpForegroundStyle"
+  hintStyle: "zButtonHintStyle"
+  hintSymbolsStyle: "zButtonLongPressSymbolsStyle"
+  size:
+    width: "112.5/1125"
+  swipeDownAction:
+    shortcut: "#undo"
+  swipeUpAction:
+    character: "@"
+  uppercasedStateAction:
+    character: "Z"
+  uppercasedStateForegroundStyle:
+  - "zButtonUppercasedForegroundStyle"
+  - "zButtonSwipeUpForegroundStyle"
+zButtonForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "z"
+zButtonHintForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "z"
+zButtonHintStyle:
+  backgroundStyle: "alphabeticHintBackgroundStyle"
+  foregroundStyle: "zButtonHintForegroundStyle"
+  size:
+    height: 45
+    width: 45
+  swipeDownForegroundStyle: "zButtonHintSwipeDownForegroundStyle"
+  swipeUpForegroundStyle: "zButtonHintSwipeUpForegroundStyle"
+zButtonHintSwipeDownForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  systemImageName: "arrow.uturn.left"
+zButtonHintSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "@"
+zButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  text: "Z"
+zButtonLongPressSymbol0Style:
+  action:
+    character: "Z"
+  foregroundStyle: "zButtonLongPressSymbol0ForegroundStyle"
+zButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "zButtonLongPressSymbol0Style"
+zButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 10
+  highlightColor: "#8F8067"
+  normalColor: "#8F8067"
+  text: "@"
+zButtonUppercasedForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
+  fontSize: 21.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "Z"

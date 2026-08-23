@@ -1,0 +1,69 @@
+# 中英双打羊皮纸
+
+适合同时有中英文混打输入需求的人群。
+
+配色：浅色为羊皮纸护眼底，深色为柔和灰（非纯黑），按键文字均保证高对比。
+
+## 三套键盘，各挂一套 Rime 方案
+
+| 键盘 | Rime 方案 | 用途 |
+|---|---|---|
+| **九宫格** | `t9` | 纯中文，方案层面已关闭英文翻译器 |
+| **26 键中英混打** | `rime_ice` | 主力键盘，中英文同时出候选 |
+| **纯英文** | `melt_eng` | 有词库、含错拼容错，只出单词不连句 |
+
+切换键**同时切键盘和方案**（`combine` 动作），不会出现「键盘换了方案没换」。
+
+## 键位
+
+```
+九宫格底行            ←→   空格   [中En]
+                                    ↑ 点按 → 26 键中英混打
+                                      上滑 → 中英切换(ascii_mode)
+
+26 键底行     [123][En]  ，  空格  [T9]  enter
+                ↑    ↑              ↑ 点按 → 九宫格
+             数字  纯英文             上滑 → 中英切换
+
+纯英文底行     [123]     ，  空格  [中En] enter
+                                    ↑ 点按 → 回 26 键中英混打
+```
+
+## 调参
+
+主要开关在 `jsonnet/Settings.libsonnet`：
+
+```jsonnet
+dualKeyboard: true,        // 多键盘总开关
+schemaFor9:  't9',         // 九宫格方案
+schemaFor26: 'rime_ice',   // 26 键方案
+schemaForEn: 'melt_eng',   // 纯英文方案
+accentColor: 4,            // 主题色 0-无 1-红 2-绿 3-橙 4-蓝 5-紫
+uppercaseForChinese: true, // 中文模式字母键大写显示
+```
+
+按键功能定义在 `jsonnet/Buttons/`。
+
+## 编译
+
+手机端：长按皮肤 → 「运行 main.jsonnet」
+
+PC 端（项目根目录）：
+```bash
+./build.sh          # debug，YAML 可读
+./build.sh release  # 紧凑格式
+```
+
+---
+
+## 致谢与来源
+
+本皮肤**改造自 [空山素影](https://github.com/luozikuan/kongshan-suying)**（作者 **luozikuan / 罗滋宽**）。
+键盘布局、Jsonnet 模块结构、按键划动体系等基础工作均出自原作者之手，
+本项目在其之上做了多键盘并存、走 Rime 的纯英文键盘、羊皮纸配色等改动。
+
+原皮肤仓库未附 LICENSE 文件。若原作者对本衍生项目的发布有任何异议，
+请提 issue 告知，我会立即配合调整或下架。
+
+输入方案基于 [雾凇拼音 rime-ice](https://github.com/iDvel/rime-ice)（GPLv3），
+作者 **Dvel**。

@@ -1,0 +1,117 @@
+# 雾凇拼音（全拼 / 26 键中英混打）方案补丁
+#
+# 面向有中英文混打需求的用户。
+# 因此本方案的取向与上游默认相反：英文是一等公民，不是偶尔冒头的干扰项。
+
+patch:
+
+  # ════════════════════════════════════════════════════════
+  # 硬伤 1：reduce_english_filter 方向反了
+  # ════════════════════════════════════════════════════════
+  # 上游默认 mode: custom，专门把一批英文单词压到第 2 位之后。
+  # 该设计假设「用户主要打中文，英文冒出来很烦」——与本项目人群相反。
+  reduce_english_filter/mode: none
+
+  # ════════════════════════════════════════════════════════
+  # 硬伤 2：corrector 把英文纠错成中文
+  # ════════════════════════════════════════════════════════
+  # corrector.lua 会对输入做模糊纠音，导致 Amazon 被纠成「a ma zong 阿妈粽」
+  # 并抢占首选。上游的应对是把 Amazon/NASA/SOHO 等硬钉进 custom_phrase.txt，
+  # 属于打补丁而非解决问题。
+  #
+  # corrector 没有开关，只能从 filter 链摘除，故整体重定义 filters。
+  # 代价：失去中文错音错字提示（如把 shen shen xue zi 提示为 xin xin）。
+  #       对本项目人群而言，这项收益远小于它对英文输入的破坏。
+  # 若想恢复：把下面第一行的注释解开即可。
+  engine/filters:
+    # - lua_filter@*corrector                       # 错音错字提示（已禁用，见上）
+    # - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜（已移除，见下）
+    - lua_filter@*autocap_filter                    # 英文自动大写
+    - lua_filter@*v_filter                          # v 模式 symbols 优先
+    - lua_filter@*pin_cand_filter                   # 置顶候选项
+    - lua_filter@*long_word_filter                  # 长词优先
+    - lua_filter@*reduce_english_filter             # 已由 mode: none 停用
+    - simplifier@emoji                              # Emoji
+    - simplifier@traditionalize                     # 简繁切换
+    # - lua_filter@*search@radical_pinyin           # 部件拆字辅码（已移除，见下）
+    - uniquifier                                    # 去重
+
+  # ════════════════════════════════════════════════════════
+  # 精简：移除部件拆字（反查 + 辅码）
+  # ════════════════════════════════════════════════════════
+  # 两个功能共用 radical_pinyin 词库（源 2.1 MB，编译产物约 5.8 MB）：
+  #
+  #   ① 部件拆字反查 —— 前缀 uU，用部件拼音倒查生僻字
+  #      如 uUniuniuniu → 犇，uUshuishuishui → 淼，uUbinbei → 赟
+  #      用途：读古籍、打人名怪字。用户明确表示不需要生僻字。
+  #
+  #   ② 辅码 —— 触发键 `，打字中途补部件拼音来筛候选
+  #      如 shi`ri → 只剩含「日」的：时 是 昰
+  #      用途：消歧提速。但需记忆部件拼音，实际使用率极低。
+  #      且上游未提供 radical_pinyin 配置块，该功能本就处于半失效状态。
+  #
+  # 要恢复：解开上面两行 filter 注释，还原下面四项，
+  #        并在 build-rime.sh 中去掉对 radical_pinyin.* 的删除。
+  schema/dependencies:
+    - melt_eng
+
+  engine/segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    # - affix_segmentor@radical_lookup              # 部件拆字自定义 tag（已移除）
+    - punct_segmentor
+    - fallback_segmentor
+
+  engine/translators:
+    - punct_translator
+    - script_translator
+    - lua_translator@*date_translator    # 时间、日期、星期
+    - lua_translator@*lunar              # 农历
+    - lua_translator@*uuid               # UUID
+    - table_translator@custom_phrase     # 自定义短语
+    - table_translator@melt_eng          # 英文输入
+    - table_translator@cn_en             # 中英混合词汇
+    # - table_translator@radical_lookup  # 部件拆字反查（已移除）
+    - lua_translator@*unicode            # Unicode
+    - lua_translator@*number_translator  # 数字、金额大写
+    - lua_translator@*calc_translator    # 计算器
+    - lua_translator@*force_gc           # 暴力 GC
+
+  # 去掉 radical_lookup 的触发规则，其余保持上游原样
+  recognizer/patterns:
+    punct: "^v([0-9]|10|[A-Za-z]+)$"
+    # radical_lookup: "^uU[a-z]+$"       # （已移除）
+    unicode: "^U[a-f0-9]+"
+    number: "^R[0-9]+[.]?[0-9]*"
+    calculator: "^cC.+"
+    gregorian_to_lunar: "^N[0-9]{1,8}"
+
+  # corrector 移除后，这两项失去用途（它们本就是专为 corrector 服务的）
+  translator/always_show_comments: false
+  translator/comment_format: []
+
+  # ════════════════════════════════════════════════════════
+  # 硬伤 3：英文词库覆盖面不足
+  # ════════════════════════════════════════════════════════
+  # 已在词库层解决：melt_eng.dict.yaml 改挂 en_merged（43,005 条），
+  # 含教育/证件/居住/财务/医疗/交通/职场场景词与高频词组。
+  # 此处无需配置。
+
+  # ════════════════════════════════════════════════════════
+  # 硬伤 4：英文无法连打
+  # ════════════════════════════════════════════════════════
+  # 不采用 enable_sentence: true。原因：英文词库没有词间语法模型，
+  # 开启后 Rime 会把输入切开硬拼——important → import + ant，
+  # together → to + get + her，垃圾候选会和正确整词抢位置。
+  # 这正是上游把它设为 false 的原因。
+  #
+  # 改用两个更有效且零风险的替代：
+  #   ① enable_completion：打 inter 直接出 international（提速的大头）
+  #   ② 高频词组作为单条词收进词库（见 curated_terms.txt 末尾段），
+  #      thank you / looking forward to 等一次成型，不依赖连句机制拼接
+  melt_eng/enable_sentence: false
+  melt_eng/enable_completion: true
+
+  # 允许 Rime 学习你的英文用词频率，常用词会逐渐前移
+  melt_eng/enable_user_dict: true

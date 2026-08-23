@@ -1,0 +1,808 @@
+alphabeticButtonBackgroundStyle:
+  buttonStyleType: "geometry"
+  cornerRadius: 8.5
+  highlightColor: "#EFE6D2"
+  highlightLowerEdgeColor: "#B9A985"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  normalColor: "#FBF6EA"
+  normalLowerEdgeColor: "#B9A985"
+alphabeticHintBackgroundStyle:
+  borderSize: 0.5
+  buttonStyleType: "geometry"
+  cornerRadius: 10
+  highlightBorderColor: "#C9BCA0"
+  highlightShadowColor: "#B9A985"
+  normalBorderColor: "#C9BCA0"
+  normalColor: "#FBF6EA"
+  normalShadowColor: "#B9A985"
+  shadowRadius: 3
+backspaceButton:
+  action: "backspace"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "backspaceButtonForegroundStyle"
+  notification:
+  - "backspaceButtonPreeditChangedNotification"
+  repeatAction: "backspace"
+backspaceButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  highlightSystemImageName: "delete.left.fill"
+  normalColor: "#3B3226"
+  systemImageName: "delete.left"
+backspaceButtonPreeditChangedForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  highlightSystemImageName: "delete.left.fill"
+  normalColor: "#3B3226"
+  systemImageName: "delete.left"
+backspaceButtonPreeditChangedNotification:
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "backspaceButtonPreeditChangedForegroundStyle"
+  notificationType: "preeditChanged"
+  swipeUpAction:
+    sendKeys: "Control+Backspace"
+candidateContextMenu:
+- action:
+    sendKeys: "Control+Shift+dollar"
+  name: "简繁"
+colorButtonBackgroundStyle:
+  buttonStyleType: "geometry"
+  cornerRadius: 8.5
+  highlightColor: "#FBF6EA"
+  highlightLowerEdgeColor: "#B9A985"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  normalColor: "#9C5A44"
+  normalLowerEdgeColor: "#B9A985"
+dotButton:
+  action:
+    symbol: "."
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "dotButtonForegroundStyle"
+  notification:
+  - "dotButtonPreeditChangedNotification"
+dotButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 18
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "."
+dotButtonPreeditChangedForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 18
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "."
+dotButtonPreeditChangedNotification:
+  action:
+    character: "."
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "dotButtonPreeditChangedForegroundStyle"
+  notificationType: "preeditChanged"
+eightButton:
+  action:
+    character: "8"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "eightButtonForegroundStyle"
+eightButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "8"
+enterButton:
+  action: "enter"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "enterButtonForegroundStyle"
+  hintSymbolsStyle: "enterButtonLongPressSymbolsStyle"
+  notification:
+  - "enterButtonPreeditChangedNotification"
+  - "enterButtonReturnKeyType0Notification"
+  swipeDownAction:
+    shortcut: "#行尾"
+  swipeUpAction:
+    shortcut: "#行首"
+enterButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 16
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "$returnKeyType"
+enterButtonLongPressSymbol0ForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#FFF8EC"
+  normalColor: "#3B3226"
+  systemImageName: "return"
+enterButtonLongPressSymbol0Style:
+  action:
+    shortcut: "#换行"
+  foregroundStyle: "enterButtonLongPressSymbol0ForegroundStyle"
+enterButtonLongPressSymbolsStyle:
+  backgroundStyle: "longPressSymbolsBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  selectedBackgroundStyle: "longPressSymbolsSelectedBackgroundStyle"
+  selectedIndex: 0
+  size:
+    height: 45
+    width: 45
+  symbolStyles:
+  - "enterButtonLongPressSymbol0Style"
+enterButtonPreeditChangedForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 16
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "确认"
+enterButtonPreeditChangedNotification:
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "enterButtonPreeditChangedForegroundStyle"
+  notificationType: "preeditChanged"
+enterButtonReturnKeyType0ForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 16
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "$returnKeyType"
+enterButtonReturnKeyType0Notification:
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "enterButtonReturnKeyType0ForegroundStyle"
+  notificationType: "returnKeyType"
+expandButton:
+  action:
+    shortcut: "#candidatesBarStateToggle"
+  foregroundStyle: "expandButtonForegroundStyle"
+  size:
+    width: 44
+expandButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "chevron.forward"
+fiveButton:
+  action:
+    character: "5"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "fiveButtonForegroundStyle"
+fiveButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "5"
+fourButton:
+  action:
+    character: "4"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "fourButtonForegroundStyle"
+fourButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "4"
+gotoPrimaryKeyboardButton:
+  action: "returnPrimaryKeyboard"
+  backgroundStyle: "colorButtonBackgroundStyle"
+  foregroundStyle:
+  - "gotoPrimaryKeyboardButtonForegroundStyle"
+  size:
+    height: "1/4"
+gotoPrimaryKeyboardButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#FFF8EC"
+  systemImageName: "arrow.backward"
+halfVStackStyle:
+  size:
+    width:
+      percentage: 0.48
+horizontalCandidateStyle:
+  commentColor: "#3B3226"
+  commentFontSize: 14
+  highlightBackgroundColor: "#FBF6EA"
+  indexColor: "#3B3226"
+  indexFontSize: 12
+  preferredBackgroundColor: "#FBF6EA"
+  preferredCommentColor: "#3B3226"
+  preferredIndexColor: "#3B3226"
+  preferredTextColor: "#3B3226"
+  textColor: "#3B3226"
+  textFontSize: 16
+horizontalCandidates:
+  candidateStyle: "horizontalCandidateStyle"
+  type: "horizontalCandidates"
+horizontalCandidatesLayout:
+- HStack:
+    subviews:
+    - Cell: "horizontalCandidates"
+    - Cell: "expandButton"
+horizontalCandidatesStyle:
+  backgroundStyle: "keyboardBackgroundStyle"
+  insets:
+    bottom: 1
+    left: 3
+    top: 8
+horizontalSymbolsToolbarButtonsDataSource:
+- action:
+    shortcut: "#copy"
+  label: "toolbarCopyTextButton"
+  styleName: "toolbarCopyTextButtonStyle"
+- action:
+    shortcut: "#paste"
+  label: "toolbarPasteTextButton"
+  styleName: "toolbarPasteTextButtonStyle"
+- action:
+    shortcut: "#selectText"
+  label: "toolbarSelectAllTextButton"
+  styleName: "toolbarSelectAllTextButtonStyle"
+- action:
+    shortcut: "#cut"
+  label: "toolbarCutTextButton"
+  styleName: "toolbarCutTextButtonStyle"
+- action:
+    shortcut: "#undo"
+  label: "toolbarUndoButton"
+  styleName: "toolbarUndoButtonStyle"
+- action:
+    shortcut: "#redo"
+  label: "toolbarRedoButton"
+  styleName: "toolbarRedoButtonStyle"
+- action: "moveCursorBackward"
+  label: "toolbarMoveCursorLeftButton"
+  styleName: "toolbarMoveCursorLeftButtonStyle"
+- action: "moveCursorForward"
+  label: "toolbarMoveCursorRightButton"
+  styleName: "toolbarMoveCursorRightButtonStyle"
+- action:
+    shortcut: "#showPasteboardView"
+  label: "toolbarClipboardButton"
+  styleName: "toolbarClipboardButtonStyle"
+- action:
+    keyboardType: "emojis"
+  label: "toolbarKeyboardEmojiButton"
+  styleName: "toolbarKeyboardEmojiButtonStyle"
+- action:
+    keyboardType: "symbolic"
+  label: "toolbarKeyboardSymbolicButton"
+  styleName: "toolbarKeyboardSymbolicButtonStyle"
+- action:
+    openURL: "hamster3://com.ihsiao.apps.hamster3/keyboardSkins"
+  label: "toolbarSkinButton"
+  styleName: "toolbarSkinButtonStyle"
+- action:
+    openURL: "hamster3://com.ihsiao.apps.hamster3/rime?action=deploy"
+  label: "toolbarRimeDeployButton"
+  styleName: "toolbarRimeDeployButtonStyle"
+- action:
+    shortcut: "#RimeSwitcher"
+  label: "toolbarRimeSwitcherButton"
+  styleName: "toolbarRimeSwitcherButtonStyle"
+keyboardBackgroundStyle:
+  buttonStyleType: "geometry"
+  normalColor: "#E9DFC9"
+keyboardHeight: 160
+keyboardLayout:
+- VStack:
+    style: "halfVStackStyle"
+    subviews:
+    - VStack:
+        style: "narrowVStackStyle"
+        subviews:
+        - Cell: "numericSymbolsCollection"
+        - Cell: "gotoPrimaryKeyboardButton"
+    - VStack:
+        subviews:
+        - Cell: "oneButton"
+        - Cell: "fourButton"
+        - Cell: "sevenButton"
+        - Cell: "numericSpaceButton"
+    - VStack:
+        subviews:
+        - Cell: "twoButton"
+        - Cell: "fiveButton"
+        - Cell: "eightButton"
+        - Cell: "zeroButton"
+    - VStack:
+        subviews:
+        - Cell: "threeButton"
+        - Cell: "sixButton"
+        - Cell: "nineButton"
+        - Cell: "dotButton"
+    - VStack:
+        style: "narrowVStackStyle"
+        subviews:
+        - Cell: "backspaceButton"
+        - Cell: "numericEqualButton"
+        - Cell: "numericColonButton"
+        - Cell: "enterButton"
+- VStack: {}
+- VStack:
+    style: "halfVStackStyle"
+    subviews:
+    - Cell: "numericCategorySymbolCollection"
+keyboardStyle:
+  backgroundStyle: "keyboardBackgroundStyle"
+longPressSymbolsBackgroundStyle:
+  borderSize: 0.5
+  buttonStyleType: "geometry"
+  cornerRadius: 10
+  highlightBorderColor: "#C9BCA0"
+  highlightColor: "#9C5A44"
+  highlightShadowColor: "#B9A985"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  normalBorderColor: "#C9BCA0"
+  normalColor: "#FBF6EA"
+  normalShadowColor: "#B9A985"
+  shadowRadius: 3
+longPressSymbolsSelectedBackgroundStyle:
+  buttonStyleType: "geometry"
+  cornerRadius: 8.5
+  highlightColor: "#9C5A44"
+  highlightLowerEdgeColor: "#B9A985"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  normalColor: "#9C5A44"
+  normalLowerEdgeColor: "#B9A985"
+narrowVStackStyle:
+  size:
+    width:
+      percentage: 0.18
+nineButton:
+  action:
+    character: "9"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "nineButtonForegroundStyle"
+nineButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "9"
+numericCategorySymbolCollection:
+  backgroundStyle: "systemButtonBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  type: "categorySymbols"
+numericColonButton:
+  action:
+    symbol: ":"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "numericColonButtonForegroundStyle"
+numericColonButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 18
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: ":"
+numericEqualButton:
+  action:
+    character: "="
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "numericEqualButtonForegroundStyle"
+numericEqualButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 18
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "="
+numericSpaceButton:
+  action: "space"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "numericSpaceButtonForegroundStyle"
+numericSpaceButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "space"
+numericSymbolsCollection:
+  backgroundStyle: "systemButtonBackgroundStyle"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  type: "numericSymbols"
+oneButton:
+  action:
+    character: "1"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "oneButtonForegroundStyle"
+oneButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "1"
+preeditForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 17
+  normalColor: "#3B3226"
+preeditHeight: 21
+preeditStyle:
+  backgroundStyle: "keyboardBackgroundStyle"
+  foregroundStyle: "preeditForegroundStyle"
+  insets:
+    left: 4
+    top: 2
+scaleAnimation:
+  animationType: "scale"
+  isAutoReverse: true
+  pressDuration: 60
+  releaseDuration: 80
+  scale: 0.87
+sevenButton:
+  action:
+    character: "7"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "sevenButtonForegroundStyle"
+sevenButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "7"
+sixButton:
+  action:
+    character: "6"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "sixButtonForegroundStyle"
+sixButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "6"
+systemButtonBackgroundStyle:
+  buttonStyleType: "geometry"
+  cornerRadius: 8.5
+  highlightColor: "#FBF6EA"
+  highlightLowerEdgeColor: "#B9A985"
+  insets:
+    bottom: 3
+    left: 3
+    right: 3
+    top: 3
+  normalColor: "#D9CDB2"
+  normalLowerEdgeColor: "#B9A985"
+threeButton:
+  action:
+    character: "3"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "threeButtonForegroundStyle"
+threeButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "3"
+toolbarClipboardButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "clipboard"
+toolbarClipboardButtonStyle:
+  foregroundStyle: "toolbarClipboardButtonForegroundStyle"
+toolbarCollectionCellStyle:
+  backgroundStyle: "keyboardBackgroundStyle"
+  foregroundStyle: "keyboardBackgroundStyle"
+toolbarCopyTextButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "doc.on.doc"
+toolbarCopyTextButtonStyle:
+  foregroundStyle: "toolbarCopyTextButtonForegroundStyle"
+toolbarCutTextButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "scissors"
+toolbarCutTextButtonStyle:
+  foregroundStyle: "toolbarCutTextButtonForegroundStyle"
+toolbarDismissButton:
+  action: "dismissKeyboard"
+  foregroundStyle:
+  - "toolbarDismissButtonForegroundStyle"
+toolbarDismissButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "chevron.down"
+toolbarHeight: 45
+toolbarKeyboardEmojiButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "face.dashed"
+toolbarKeyboardEmojiButtonStyle:
+  foregroundStyle: "toolbarKeyboardEmojiButtonForegroundStyle"
+toolbarKeyboardSymbolicButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "number"
+toolbarKeyboardSymbolicButtonStyle:
+  foregroundStyle: "toolbarKeyboardSymbolicButtonForegroundStyle"
+toolbarLayout:
+- HStack:
+    subviews:
+    - Cell: "toolbarMenuButton"
+    - Cell: "toolbarSlideButtons"
+    - Cell: "toolbarDismissButton"
+toolbarMenuButton:
+  action:
+    floatKeyboardType: "panel"
+  foregroundStyle:
+  - "toolbarMenuButtonForegroundStyle"
+toolbarMenuButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "hexagon.righthalf.filled"
+toolbarMoveCursorLeftButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "arrowshape.left"
+toolbarMoveCursorLeftButtonStyle:
+  foregroundStyle: "toolbarMoveCursorLeftButtonForegroundStyle"
+toolbarMoveCursorRightButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "arrowshape.right"
+toolbarMoveCursorRightButtonStyle:
+  foregroundStyle: "toolbarMoveCursorRightButtonForegroundStyle"
+toolbarPasteTextButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "doc.on.clipboard"
+toolbarPasteTextButtonStyle:
+  foregroundStyle: "toolbarPasteTextButtonForegroundStyle"
+toolbarRedoButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "arrow.uturn.right"
+toolbarRedoButtonStyle:
+  foregroundStyle: "toolbarRedoButtonForegroundStyle"
+toolbarRimeDeployButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "slider.horizontal.2.arrow.trianglehead.counterclockwise"
+toolbarRimeDeployButtonStyle:
+  foregroundStyle: "toolbarRimeDeployButtonForegroundStyle"
+toolbarRimeSwitcherButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "switch.2"
+toolbarRimeSwitcherButtonStyle:
+  foregroundStyle: "toolbarRimeSwitcherButtonForegroundStyle"
+toolbarSelectAllTextButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "selection.pin.in.out"
+toolbarSelectAllTextButtonStyle:
+  foregroundStyle: "toolbarSelectAllTextButtonForegroundStyle"
+toolbarSkinButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "tshirt"
+toolbarSkinButtonStyle:
+  foregroundStyle: "toolbarSkinButtonForegroundStyle"
+toolbarSlideButtons:
+  cellStyle: "toolbarCollectionCellStyle"
+  contentRightToLeft: false
+  dataSource: "horizontalSymbolsToolbarButtonsDataSource"
+  maxColumns: 8
+  size:
+    width: "8/10"
+  type: "horizontalSymbols"
+toolbarStyle:
+  backgroundStyle: "keyboardBackgroundStyle"
+  insets:
+    top: 6
+toolbarUndoButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "arrow.uturn.left"
+toolbarUndoButtonStyle:
+  foregroundStyle: "toolbarUndoButtonForegroundStyle"
+twoButton:
+  action:
+    character: "2"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "twoButtonForegroundStyle"
+twoButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "2"
+verticalBackspaceButtonStyle:
+  action: "backspace"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle: "verticalBackspaceButtonStyleForegroundStyle"
+verticalBackspaceButtonStyleForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "delete.left"
+verticalCandidateStyle:
+  commentColor: "#3B3226"
+  commentFontSize: 14
+  highlightBackgroundColor: "#FBF6EA"
+  indexColor: "#3B3226"
+  indexFontSize: 12
+  insets:
+    bottom: 4
+    left: 6
+    right: 6
+    top: 4
+  preferredBackgroundColor: "#FBF6EA"
+  preferredCommentColor: "#3B3226"
+  preferredIndexColor: "#3B3226"
+  preferredTextColor: "#3B3226"
+  textColor: "#3B3226"
+  textFontSize: 16
+verticalCandidates:
+  candidateStyle: "verticalCandidateStyle"
+  insets:
+    bottom: 8
+    left: 8
+    right: 8
+    top: 8
+  maxColumns: 6
+  maxRows: 5
+  separatorColor: "#C9BCA0"
+  type: "verticalCandidates"
+verticalCandidatesLayout:
+- HStack:
+    subviews:
+    - Cell: "verticalCandidates"
+- HStack:
+    style: "verticalLastRowStyle"
+    subviews:
+    - Cell: "verticalReturnButtonStyle"
+    - Cell: "verticalPageUpButtonStyle"
+    - Cell: "verticalPageDownButtonStyle"
+    - Cell: "verticalBackspaceButtonStyle"
+verticalCandidatesStyle:
+  backgroundStyle: "keyboardBackgroundStyle"
+verticalLastRowStyle:
+  size:
+    height: 45
+verticalPageDownButtonStyle:
+  action:
+    shortcut: "#verticalCandidatesPageDown"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle: "verticalPageDownButtonStyleForegroundStyle"
+verticalPageDownButtonStyleForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "chevron.down"
+verticalPageUpButtonStyle:
+  action:
+    shortcut: "#verticalCandidatesPageUp"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle: "verticalPageUpButtonStyleForegroundStyle"
+verticalPageUpButtonStyleForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "chevron.up"
+verticalReturnButtonStyle:
+  action:
+    shortcut: "#candidatesBarStateToggle"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle: "verticalReturnButtonStyleForegroundStyle"
+verticalReturnButtonStyleForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "arrow.backward"
+zeroButton:
+  action:
+    character: "0"
+  animation:
+  - "scaleAnimation"
+  backgroundStyle: "alphabeticButtonBackgroundStyle"
+  foregroundStyle:
+  - "zeroButtonForegroundStyle"
+zeroButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 22.5
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "0"
