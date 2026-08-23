@@ -1,0 +1,14 @@
+# 全局配置补丁 —— 安卓变体（同文 Trime / fcitx5-android）
+#
+# 与 iOS 版的唯一区别：不含中文九键方案 t9。
+#
+# 原因：t9.schema.yaml 的 engine/processors 第一项是 `t9_processor`，
+# 那是仓输入法与元书输入法**编译进 App 的原生组件，不属于 librime**，
+# 在整个配置里也找不到任何 lua 或其他实现。
+# 安卓端的 librime 没有这个 processor，方案会加载失败。
+#
+# 因此安卓上只用全键盘：26 键中英混打 + 纯英文。
+patch:
+  schema_list:
+    - {schema: rime_ice}   # 全拼，26 键中英混打
+    - {schema: melt_eng}   # 纯英文（有词库、补全、错拼容错）

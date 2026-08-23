@@ -1,10 +1,21 @@
 #!/usr/bin/env bash
 # 组装 Rime 配置：干净上游雾凇 + 本项目补丁 - 无用文件
-# 用法: ./build-rime.sh
+#
+# 用法:
+#   ./build-rime.sh            iOS 元书版  → dist/rime
+#   ./build-rime.sh android    安卓版      → dist/rime-android
+#
+# 安卓版去掉中文九键 t9：它依赖 `t9_processor`，那是仓/元书编译进 App 的
+# 原生组件，不属于 librime，安卓端加载会失败。故安卓上只用全键盘。
 set -euo pipefail
 cd "$(dirname "$0")"
 
-OUT=dist/rime
+TARGET="${1:-ios}"
+if [ "$TARGET" = "android" ]; then
+  OUT=dist/rime-android
+else
+  OUT=dist/rime
+fi
 rm -rf "$OUT"
 mkdir -p "$OUT"
 
@@ -37,7 +48,15 @@ rm -f  "$OUT/README.md" "$OUT/AGENTS.md" "$OUT/recipe.yaml"
 echo "[3/4] 覆盖 / 追加本项目文件"
 cp src/melt_eng.dict.yaml          "$OUT/"           # 覆盖：改挂 en_merged
 cp src/en_dicts/en_merged.dict.yaml "$OUT/en_dicts/" # 新增：合并英文词库
-cp src/patches/*.custom.yaml       "$OUT/"           # 补丁：不动上游原文件
+cp src/patches/rime_ice.custom.yaml src/patches/melt_eng.custom.yaml "$OUT/"
+
+if [ "$TARGET" = "android" ]; then
+  # 安卓：换用不含 t9 的方案列表，并移除 t9 专属文件
+  cp src/patches/default.custom.android.yaml "$OUT/default.custom.yaml"
+  rm -f "$OUT/t9.schema.yaml" "$OUT/lua/t9_preedit.lua"
+else
+  cp src/patches/default.custom.yaml "$OUT/"
+fi
 
 echo "[4/4] 统计"
 printf '  产物目录 %s\n' "$OUT"

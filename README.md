@@ -45,6 +45,31 @@
 
 浅色为羊皮纸护眼底，深色为柔和灰（非纯黑），按键文字对比度约 9:1。
 
+## 安卓
+
+Rime 方案层可移植到 **[fcitx5-android](https://github.com/fcitx5-android/fcitx5-android)**
+（需另装 Rime 插件）或 **同文输入法 Trime**：
+
+```bash
+./build-rime.sh android    # → dist/rime-android
+```
+
+| App | 配置目录 |
+|---|---|
+| fcitx5-android | `/Android/data/org.fcitx.fcitx5.android/files/data/rime` |
+| 同文 Trime | `/rime` |
+
+**两点限制：**
+
+1. **没有九宫格。** `t9.schema.yaml` 的 `engine/processors` 第一项是
+   `t9_processor`——那是仓输入法与元书**编译进 App 的原生组件，不属于
+   librime**，安卓端加载会失败。故安卓版只保留 26 键中英混打与纯英文两套方案。
+2. **皮肤完全不可移植。** 元书皮肤格式是其专有；且本项目「切键盘同时切方案」
+   依赖 `combine` / `switchRimeSchema` / 自定义键盘，均为元书特有能力，
+   安卓端无对等物。键盘外观请用所选 App 自带的主题另配。
+
+英文词库、错拼容错、前缀补全等核心改进都在方案层，跨平台通用。
+
 ## 目录结构
 
 ```
@@ -69,7 +94,8 @@ docs/NOTES.md        完整开发记录：每处改动的原因与踩过的坑
 ./fetch-upstream.sh                          # 首次：拉取上游雾凇基底
 ./build.sh                                   # 编译皮肤
 python3 src/tools/build_en_dict.py <素材目录> vendor/rime-ice   # 重建英文词库
-./build-rime.sh                              # 组装 Rime 配置
+./build-rime.sh                              # 组装 Rime 配置（iOS 元书版）
+./build-rime.sh android                      # 组装 Rime 配置（安卓版）
 ```
 
 皮肤也可在手机上编译：长按皮肤 → 「运行 main.jsonnet」。
