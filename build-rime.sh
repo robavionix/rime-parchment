@@ -56,6 +56,7 @@ if [ "$TARGET" = "android" ]; then
   rm -f "$OUT/t9.schema.yaml" "$OUT/lua/t9_preedit.lua"
 else
   cp src/patches/default.custom.yaml "$OUT/"
+  cp src/patches/t9.custom.yaml      "$OUT/"   # 九宫格补丁（仅 iOS，安卓无 t9）
 fi
 
 echo "[4/4] 统计"

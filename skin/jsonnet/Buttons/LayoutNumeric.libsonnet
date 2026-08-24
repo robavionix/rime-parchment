@@ -220,10 +220,15 @@ local settings = import '../Settings.libsonnet';
   },
 
   // 地址符号
+  //
+  // 4.4：character → symbol。
+  // character 会把 @ 送进 Rime，被 t9 方案的 punctuator 拦下
+  // （"@": [1, "@", ！, ：, 、, ……, ～]），于是点一下弹出一串候选而不是直接出 @。
+  // symbol 直发系统，点一下就是 @，写邮箱、@人时不用再从候选里挑。
   atButton: {
     name: 'atButton',
     params: {
-      action: { character: '@' },
+      action: { symbol: '@' },
     },
   },
 
