@@ -238,7 +238,7 @@ local settings = import '../Settings.libsonnet';
     params: {
       action: { combine: [
         { switchRimeSchema: settings.schemaFor26 },
-        { keyboardType: 'pinyin' },   // 主键盘即 26 键中英混打
+        { keyboardType: settings.kbd26 },   // 26 键的键盘类型名，随 primaryKeyboard 变
       ] },
       text: '中En',
       swipeUp: { action: { shortcut: '#中英切换' } },
@@ -266,7 +266,7 @@ local settings = import '../Settings.libsonnet';
     params: {
       action: { combine: [
         { switchRimeSchema: settings.schemaFor9 },
-        { keyboardType: 'pinyin9' },  // 九宫格现为自定义键盘
+        { keyboardType: settings.kbd9 },  // 九宫格的键盘类型名，随 primaryKeyboard 变
       ] },
       text: 'T9',
       swipeUp: { action: { shortcut: '#中英切换' } },
@@ -282,7 +282,7 @@ local settings = import '../Settings.libsonnet';
       action: if settings.dualKeyboard then
                 { combine: [
                     { switchRimeSchema: settings.schemaFor26 },
-                    { keyboardType: 'pinyin' },
+                    { keyboardType: settings.kbd26 },
                 ] }
               else
                 { keyboardType: 'pinyin' },

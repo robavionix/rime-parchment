@@ -10,8 +10,12 @@ local symbolicRowEnComponent = import 'Components/Symbolic/SymbolicRowEn.libsonn
 local panelComponent = import 'Components/Panel.libsonnet';
 local settings = import 'Settings.libsonnet';
 
+// 主键盘为九宫格时，把两套布局对调挂载：元书调出的类型固定是 pinyin，
+// 谁挂在 pinyin 上谁就是默认显示的键盘。
+local t9Primary = settings.dualKeyboard && settings.primaryKeyboard == '9';
+
 local nameToComponent = {
-  pinyin: pinyinComponent,
+  pinyin: if t9Primary then pinyin9Component else pinyinComponent,
   // 双键盘模式下不生成纯英文键盘：26 键本身即中英混打，
   // 纯英文由切换键上滑的 #中英切换（ascii_mode）承担
   [if !settings.dualKeyboard then 'alphabetic']: alphabeticComponent,
@@ -20,7 +24,7 @@ local nameToComponent = {
   [if settings.symbolicLayout != 'default' then 'symbolic']: symbolicComponent,
 
    // 双键盘并存：九宫格作为独立键盘（主键盘 'pinyin' 为 26 键中英混打）
-  [if settings.dualKeyboard then 'pinyin9']: pinyin9Component,
+  [if settings.dualKeyboard then 'pinyin9']: if t9Primary then pinyinComponent else pinyin9Component,
 
    // 走 Rime 的纯英文键盘（有词库，区别于上游无词库的 alphabetic）
   [if settings.dualKeyboard then 'english']: englishComponent,

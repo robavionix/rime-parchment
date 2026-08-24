@@ -185,6 +185,10 @@ local commonButtons = import './Common.libsonnet';
     params: {
       action: { symbol: '，' },
       text: '，',
+      center: { x: 0.5, y: 0.55 },   // 与数字键一致：主字下移，给上划提示让位
+      // 上划出句号 —— 系统键默认不画上划提示，这里显式打开，
+      // 否则键面只有逗号，没人知道还能上划出句号。
+      showSwipeUpText: true,
       swipeUp: { action: { symbol: '。' }, text: '。' },
       longPress: [
         { action: { symbol: '、' }, text: '、' },

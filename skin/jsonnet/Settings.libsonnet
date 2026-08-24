@@ -30,6 +30,19 @@
   # 注意：keyboardLayout 必须为非 26 键布局，否则本项无效（26 键已是主键盘）
   dualKeyboard: true,
 
+  # 主键盘 —— 键盘调出时默认显示哪个，也是元书上屏符号后返回的那个
+  #   '26'  26 键中英混打（默认）
+  #   '9'   九宫格
+  #
+  # 原理：元书打开的键盘类型固定叫 pinyin，本设置决定 pinyin 映射到哪套布局。
+  # 另一套则挂到 pinyin9 上。两颗切换键的目标名由下面两个派生值自动跟着换，
+  # 不需要手动改按键。
+  primaryKeyboard: '26',
+
+  # 派生：两套键盘各自的元书键盘类型名（不要手动改）
+  kbd26: if self.dualKeyboard && self.primaryKeyboard == '9' then 'pinyin9' else 'pinyin',
+  kbd9: if self.dualKeyboard && self.primaryKeyboard == '9' then 'pinyin' else 'pinyin9',
+
   # 九宫格使用的 Rime 方案 ID
   # t9 方案继承自 rime_ice，共用同一词库与 userdb，自造词互通
   schemaFor9: 't9',

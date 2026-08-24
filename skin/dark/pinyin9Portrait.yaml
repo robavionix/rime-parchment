@@ -317,6 +317,7 @@ latinSymbolButton:
   backgroundStyle: "systemButtonBackgroundStyle"
   foregroundStyle:
   - "latinSymbolButtonForegroundStyle"
+  - "latinSymbolButtonSwipeUpForegroundStyle"
   hintSymbolsStyle: "latinSymbolButtonLongPressSymbolsStyle"
   size:
     width:
@@ -325,6 +326,9 @@ latinSymbolButton:
     symbol: "。"
 latinSymbolButtonForegroundStyle:
   buttonStyleType: "text"
+  center:
+    x: 0.5
+    "y": 0.55
   fontSize: 16
   highlightColor: "#F2EFE8"
   normalColor: "#F2EFE8"
@@ -496,6 +500,14 @@ latinSymbolButtonLongPressSymbolsStyle:
   - "latinSymbolButtonLongPressSymbol11Style"
   - "latinSymbolButtonLongPressSymbol12Style"
   - "latinSymbolButtonLongPressSymbol13Style"
+latinSymbolButtonSwipeUpForegroundStyle:
+  buttonStyleType: "text"
+  center:
+    "y": 0.23
+  fontSize: 9
+  highlightColor: "#A9A49A"
+  normalColor: "#A9A49A"
+  text: "。"
 longPressSymbolsBackgroundStyle:
   borderSize: 0.5
   buttonStyleType: "geometry"

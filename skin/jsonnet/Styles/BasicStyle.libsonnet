@@ -1058,11 +1058,14 @@ local newAlphabeticButton(name, isDark=false, params={}, needHint=true, swipeTex
     .AddSchemaChangeEvent();
   button.GetButton() + button.reference;
 
+// 系统键默认不显示上划提示（功能键上划多是快捷动作，标出来反而乱）。
+// 但有的系统键上划是要上屏的字符（如九宫格左下角标点键的句号），
+// 用户看不到就不知道有这个手势 —— 这类键在 params 里写 showSwipeUpText: true 即可。
 local newSystemButton(name, isDark=false, params={}) =
   local button = newButton(name, 'system', isDark, params)
     .AddBackgroundStyle()
     .AddForegroundStyle(newSystemButtonForegroundStyle)
-    .AddSwipeUp(false)
+    .AddSwipeUp(std.objectHas(params, 'showSwipeUpText') && params.showSwipeUpText)
     .AddSwipeDown(false)
     .AddPropertiesInParams()
     .AddUppercasedState(newSystemButtonForegroundStyle)
