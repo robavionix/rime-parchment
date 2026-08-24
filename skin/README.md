@@ -116,6 +116,27 @@ patch:
 注意：Rime 方案的默认值是另一层，在 `default.custom.yaml` 的 `schema_list`，
 第一个即默认。两层要对齐，否则会出现「26 键布局配 t9 方案」这类错配。
 
+## 呼出键盘就打出英文 / 数字？
+
+**现象**：新开一个 App 呼出键盘，26 键上打出的是英文字母，九宫格上打出的是数字；
+切一下键盘再切回来就正常了。
+
+**原因**：雾凇的 `switches` 里 `ascii_mode` 没有 `reset`，状态会跨会话保留。
+上次上划切到英文模式没切回来，下次呼出时它还开着 —— `ascii_mode` 为开时按键
+原样透传，26 键上是字母，九宫格上是数字。切键盘能治，是因为切换键会
+`switchRimeSchema`，重新加载方案时开关被重置。
+
+**修法**：`src/patches/rime_ice.custom.yaml` 已加
+
+```yaml
+patch:
+  switches/@0/reset: 0    # @0 即 ascii_mode，见 rime_ice.schema.yaml
+```
+
+每次加载方案强制回中文模式。临时打英文仍然上划切换，只是不再被带到下一次。
+
+不用本仓库 Rime 配置的话，自己在方案补丁里加这一行即可。
+
 ## 调参
 
 主要开关在 `jsonnet/Settings.libsonnet`：
