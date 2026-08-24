@@ -135,6 +135,11 @@ patch:
 
 每次加载方案强制回中文模式。临时打英文仍然上划切换，只是不再被带到下一次。
 
+**同一条规则要在 `rime_ice.custom.yaml` 和 `t9.custom.yaml` 里各写一遍**：
+`t9.schema.yaml` 是靠 `__include: rime_ice.schema.yaml:/` 拉取整份配置的，
+而 `.custom.yaml` 补丁按方案文件各自生效，不会跟着 `__include` 传递。
+`melt_eng` 上游自带 `reset: 0`，无需处理。
+
 不用本仓库 Rime 配置的话，自己在方案补丁里加这一行即可。
 
 ## 调参
