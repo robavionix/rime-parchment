@@ -286,6 +286,10 @@ horizontalSymbolsToolbarButtonsDataSource:
   label: "toolbarMoveCursorRightButton"
   styleName: "toolbarMoveCursorRightButtonStyle"
 - action:
+    shortcut: "#toggleEmbeddedInputMode"
+  label: "toolbarToggleEmbeddedButton"
+  styleName: "toolbarToggleEmbeddedButtonStyle"
+- action:
     shortcut: "#showPasteboardView"
   label: "toolbarClipboardButton"
   styleName: "toolbarClipboardButtonStyle"
@@ -683,6 +687,14 @@ toolbarStyle:
   backgroundStyle: "keyboardBackgroundStyle"
   insets:
     top: 6
+toolbarToggleEmbeddedButtonForegroundStyle:
+  buttonStyleType: "systemImage"
+  fontSize: 20
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  systemImageName: "square.and.pencil"
+toolbarToggleEmbeddedButtonStyle:
+  foregroundStyle: "toolbarToggleEmbeddedButtonForegroundStyle"
 toolbarUndoButtonForegroundStyle:
   buttonStyleType: "systemImage"
   fontSize: 20

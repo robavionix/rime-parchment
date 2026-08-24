@@ -225,6 +225,7 @@ local toolbarButtonNames = local buttons = keyboardParams.toolbarButton;
   buttons.toolbarRedoButton.name, // 重做
   buttons.toolbarMoveCursorLeftButton.name, // 光标左移
   buttons.toolbarMoveCursorRightButton.name, // 光标右移
+  buttons.toolbarToggleEmbeddedButton.name, // 内嵌编辑（28）
 ];
 
 local needSlideToolbar(slideButtons, slideButtonsMaxCount) =
