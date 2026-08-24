@@ -15,64 +15,72 @@ local settings = import '../Settings.libsonnet';
   local root = self,
 
   // 数字键
+  //
+  // 4.8：character → symbol。
+  // character 会把数字送进 Rime，而 t9 方案的编码表里数字就是输入码 ——
+  // 在九宫格方案下打 1989，四个数字被当成拼音吃进候选区，还得点一下才上屏。
+  // symbol 直发系统，数字键盘上打的数字直接进输入框。
+  //
+  // 九宫格自己的数字键（Layout9.libsonnet 的 t9OneButton 等）仍是 character，
+  // 那是 T9 拼音输入的正路，不能动。
   oneButton: {
     name: 'oneButton',
     params: {
-      action: { character: '1' },
+      action: { symbol: '1' },
     },
   },
   twoButton: {
     name: 'twoButton',
     params: {
-      action: { character: '2' },
+      action: { symbol: '2' },
     },
   },
   threeButton: {
     name: 'threeButton',
     params: {
-      action: { character: '3' },
+      action: { symbol: '3' },
     },
   },
   fourButton: {
     name: 'fourButton',
     params: {
-      action: { character: '4' },
+      action: { symbol: '4' },
     },
   },
   fiveButton: {
     name: 'fiveButton',
     params: {
-      action: { character: '5' },
+      action: { symbol: '5' },
     },
   },
   sixButton: {
     name: 'sixButton',
     params: {
-      action: { character: '6' },
+      action: { symbol: '6' },
     },
   },
   sevenButton: {
     name: 'sevenButton',
     params: {
-      action: { character: '7' },
+      action: { symbol: '7' },
     },
   },
   eightButton: {
     name: 'eightButton',
     params: {
-      action: { character: '8' },
+      action: { symbol: '8' },
     },
   },
   nineButton: {
     name: 'nineButton',
     params: {
-      action: { character: '9' },
+      action: { symbol: '9' },
     },
   },
   zeroButton: {
     name: 'zeroButton',
     params: {
-      action: { character: '0' },
+      action: { symbol: '0' },
     },
   },
 

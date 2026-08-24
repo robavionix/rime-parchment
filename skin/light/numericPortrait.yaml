@@ -94,7 +94,7 @@ dotButtonPreeditChangedNotification:
   notificationType: "preeditChanged"
 eightButton:
   action:
-    character: "8"
+    symbol: "8"
   animation:
   - "scaleAnimation"
   backgroundStyle: "alphabeticButtonBackgroundStyle"
@@ -185,7 +185,7 @@ expandButtonForegroundStyle:
   systemImageName: "chevron.forward"
 fiveButton:
   action:
-    character: "5"
+    symbol: "5"
   animation:
   - "scaleAnimation"
   backgroundStyle: "alphabeticButtonBackgroundStyle"
@@ -199,7 +199,7 @@ fiveButtonForegroundStyle:
   text: "5"
 fourButton:
   action:
-    character: "4"
+    symbol: "4"
   animation:
   - "scaleAnimation"
   backgroundStyle: "alphabeticButtonBackgroundStyle"
@@ -376,7 +376,7 @@ narrowVStackStyle:
       percentage: 0.18
 nineButton:
   action:
-    character: "9"
+    symbol: "9"
   animation:
   - "scaleAnimation"
   backgroundStyle: "alphabeticButtonBackgroundStyle"
@@ -433,7 +433,7 @@ numericSymbolsCollection:
   type: "numericSymbols"
 oneButton:
   action:
-    character: "1"
+    symbol: "1"
   animation:
   - "scaleAnimation"
   backgroundStyle: "alphabeticButtonBackgroundStyle"
@@ -464,7 +464,7 @@ scaleAnimation:
   scale: 0.87
 sevenButton:
   action:
-    character: "7"
+    symbol: "7"
   animation:
   - "scaleAnimation"
   backgroundStyle: "alphabeticButtonBackgroundStyle"
@@ -478,7 +478,7 @@ sevenButtonForegroundStyle:
   text: "7"
 sixButton:
   action:
-    character: "6"
+    symbol: "6"
   animation:
   - "scaleAnimation"
   backgroundStyle: "alphabeticButtonBackgroundStyle"
@@ -504,7 +504,7 @@ systemButtonBackgroundStyle:
   normalLowerEdgeColor: "#B9A985"
 threeButton:
   action:
-    character: "3"
+    symbol: "3"
   animation:
   - "scaleAnimation"
   backgroundStyle: "alphabeticButtonBackgroundStyle"
@@ -673,7 +673,7 @@ toolbarUndoButtonStyle:
   foregroundStyle: "toolbarUndoButtonForegroundStyle"
 twoButton:
   action:
-    character: "2"
+    symbol: "2"
   animation:
   - "scaleAnimation"
   backgroundStyle: "alphabeticButtonBackgroundStyle"
@@ -774,7 +774,7 @@ verticalReturnButtonStyleForegroundStyle:
   systemImageName: "arrow.backward"
 zeroButton:
   action:
-    character: "0"
+    symbol: "0"
   animation:
   - "scaleAnimation"
   backgroundStyle: "alphabeticButtonBackgroundStyle"
