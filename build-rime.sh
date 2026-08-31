@@ -5,8 +5,12 @@
 #   ./build-rime.sh            iOS 元书版  → dist/rime
 #   ./build-rime.sh android    安卓版      → dist/rime-android
 #
-# 安卓版去掉中文九键 t9：它依赖 `t9_processor`，那是仓/元书编译进 App 的
-# 原生组件，不属于 librime，安卓端加载会失败。故安卓上只用全键盘。
+# 5.0 起不再有独立的 t9 方案：九宫格与 26 键共用 rime_ice
+# （见 src/patches/rime_ice.custom.yaml 末尾）。
+#
+# 安卓版会剥离 rime_ice.custom.yaml 里 T9-ONLY 标记之间的内容：那几段依赖
+# `t9_processor`，是仓/元书编译进 App 的原生组件，不属于 librime，安卓端
+# 加载会失败。剥离后安卓拿到的是一份纯 26 键配置。
 set -euo pipefail
 cd "$(dirname "$0")"
 
@@ -47,16 +51,20 @@ rm -f  "$OUT/README.md" "$OUT/AGENTS.md" "$OUT/recipe.yaml"
 
 echo "[3/4] 覆盖 / 追加本项目文件"
 cp src/melt_eng.dict.yaml          "$OUT/"           # 覆盖：改挂 en_merged
+cp src/rime_ice.dict.yaml          "$OUT/"           # 覆盖：挂载个人中文词库
 cp src/en_dicts/en_merged.dict.yaml "$OUT/en_dicts/" # 新增：合并英文词库
-cp src/patches/rime_ice.custom.yaml src/patches/melt_eng.custom.yaml "$OUT/"
+cp src/cn_dicts/personal.dict.yaml "$OUT/cn_dicts/"  # 新增：个人中文词库
+cp src/patches/melt_eng.custom.yaml "$OUT/"
+cp src/patches/default.custom.yaml  "$OUT/"
+
+# t9 方案已废弃（5.0），其文件不再随包分发
+rm -f "$OUT/t9.schema.yaml" "$OUT/lua/t9_preedit.lua"
 
 if [ "$TARGET" = "android" ]; then
-  # 安卓：换用不含 t9 的方案列表，并移除 t9 专属文件
-  cp src/patches/default.custom.android.yaml "$OUT/default.custom.yaml"
-  rm -f "$OUT/t9.schema.yaml" "$OUT/lua/t9_preedit.lua"
+  # 剥离 T9-ONLY 段：t9_processor 等元书原生能力，librime 没有
+  sed '/T9-ONLY BEGIN/,/T9-ONLY END/d'       src/patches/rime_ice.custom.yaml > "$OUT/rime_ice.custom.yaml"
 else
-  cp src/patches/default.custom.yaml "$OUT/"
-  cp src/patches/t9.custom.yaml      "$OUT/"   # 九宫格补丁（仅 iOS，安卓无 t9）
+  cp src/patches/rime_ice.custom.yaml "$OUT/"
 fi
 
 echo "[4/4] 统计"

@@ -1,0 +1,5641 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# 个人中文词库
+#
+# 汽车（含品牌车型） / 机械工程 / 数码电子 / 摄影 / 航空航天
+# 数学（含高数） / 物理 / 化学 / 政治人物 / 鸣潮 / 红色警戒2 / 影视人物
+#
+# 由 src/tools/build_cn_dict.py 生成，请勿手工编辑。
+# 增删词条请改 src/tools/cn_terms/*.txt 后重新运行构建。
+#
+# 拼音由 pypinyin 自动生成，多音字用脚本内的 OVERRIDE 表人工修正。
+# 新增词条后建议跑 `python3 src/tools/build_cn_dict.py --audit`
+# 检查含多音字的词是否标注正确。
+#
+---
+name: personal
+version: "1.0.0"
+...
+
+# ===== 人物 =====
+# --- 中国 正国级 ---
+习近平	xi jin ping	1000
+李强	li qiang	1000
+赵乐际	zhao le ji	1000
+王沪宁	wang hu ning	1000
+蔡奇	cai qi	1000
+丁薛祥	ding xue xiang	1000
+李希	li xi	1000
+韩正	han zheng	1000
+# --- 中国 历任最高领导人与总理 ---
+毛泽东	mao ze dong	1000
+邓小平	deng xiao ping	1000
+华国锋	hua guo feng	1000
+江泽民	jiang ze min	1000
+胡锦涛	hu jin tao	1000
+周恩来	zhou en lai	1000
+赵紫阳	zhao zi yang	1000
+李鹏	li peng	1000
+朱镕基	zhu rong ji	1000
+温家宝	wen jia bao	1000
+李克强	li ke qiang	1000
+刘少奇	liu shao qi	1000
+朱德	zhu de	1000
+陈云	chen yun	1000
+叶剑英	ye jian ying	1000
+杨尚昆	yang shang kun	1000
+李先念	li xian nian	1000
+胡耀邦	hu yao bang	1000
+# --- 中国 副国级 ---
+何立峰	he li feng	1000
+张国清	zhang guo qing	1000
+刘国中	liu guo zhong	1000
+吴政隆	wu zheng long	1000
+王毅	wang yi	1000
+谌贻琴	chen yi qin	1000
+秦刚	qin gang	1000
+李干杰	li gan jie	1000
+石泰峰	shi tai feng	1000
+陈文清	chen wen qing	1000
+黄坤明	huang kun ming	1000
+陈敏尔	chen min er	1000
+袁家军	yuan jia jun	1000
+李书磊	li shu lei	1000
+李鸿忠	li hong zhong	1000
+何卫东	he wei dong	1000
+张又侠	zhang you xia	1000
+刘振立	liu zhen li	1000
+王东明	wang dong ming	1000
+肖捷	xiao jie	1000
+郑建邦	zheng jian bang	1000
+咸辉	xian hui	1000
+沈跃跃	shen yue yue	1000
+铁凝	tie ning	1000
+彭清华	peng qing hua	1000
+张庆伟	zhang qing wei	1000
+洛桑江村	luo sang jiang cun	1000
+邵鸿	shao hong	1000
+高云龙	gao yun long	1000
+张军	zhang jun	1000
+应勇	ying yong	1000
+胡春华	hu chun hua	1000
+# --- 中国 正部级（部委） ---
+董军	dong jun	1000
+王小洪	wang xiao hong	1000
+蓝佛安	lan fu an	1000
+王文涛	wang wen tao	1000
+怀进鹏	huai jin peng	1000
+阴和俊	yin he jun	1000
+潘功胜	pan gong sheng	1000
+金壮龙	jin zhuang long	1000
+郑栅洁	zheng zha jie	1000
+唐仁健	tang ren jian	1000
+黄润秋	huang run qiu	1000
+陆治原	lu zhi yuan	1000
+王祥喜	wang xiang xi	1000
+倪虹	ni hong	1000
+李小鹏	li xiao peng	1000
+雷海潮	lei hai chao	1000
+陈刚	chen gang	1000
+王志军	wang zhi jun	1000
+胡衡华	hu heng hua	1000
+王广华	wang guang hua	1000
+# --- 美国 历任总统 ---
+特朗普	te lang pu	1000
+拜登	bai deng	1000
+奥巴马	ao ba ma	1000
+小布什	xiao bu shen	1000
+克林顿	ke lin dun	1000
+老布什	lao bu shen	1000
+里根	li gen	1000
+卡特	ka te	1000
+福特	fu te	1000
+尼克松	ni ke song	1000
+肯尼迪	ken ni di	1000
+艾森豪威尔	ai sen hao wei er	1000
+杜鲁门	du lu men	1000
+罗斯福	luo si fu	1000
+胡佛	hu fu	1000
+威尔逊	wei er xun	1000
+林肯	lin ken	1000
+华盛顿	hua sheng dun	1000
+杰斐逊	jie fei xun	1000
+汉密尔顿	han mi er dun	1000
+# --- 美国 其他 ---
+万斯	wan si	1000
+哈里斯	ha li si	1000
+彭斯	peng si	1000
+蓬佩奥	peng pei ao	1000
+布林肯	bu lin ken	1000
+鲁比奥	lu bi ao	1000
+耶伦	ye lun	1000
+贝森特	bei sen te	1000
+沃尔兹	wo er zi	1000
+佩洛西	pei luo xi	1000
+舒默	shu mo	1000
+麦康奈尔	mai kang nai er	1000
+希拉里	xi la li	1000
+桑德斯	sang de si	1000
+沃伦	wo lun	1000
+# --- 英国 历任首相 ---
+斯塔默	si ta mo	1000
+苏纳克	su na ke	1000
+特拉斯	te la si	1000
+约翰逊	yue han xun	1000
+特雷莎梅	te lei sha mei	1000
+卡梅伦	ka mei lun	1000
+布朗	bu lang	1000
+布莱尔	bu lai er	1000
+梅杰	mei jie	1000
+撒切尔	sa qie er	1000
+卡拉汉	ka la han	1000
+希思	xi si	1000
+道格拉斯霍姆	dao ge la si huo mu	1000
+麦克米伦	mai ke mi lun	1000
+艾登	ai deng	1000
+丘吉尔	qiu ji er	1000
+艾德礼	ai de li	1000
+张伯伦	zhang bo lun	1000
+查尔斯三世	cha er si san shi	1000
+伊丽莎白二世	yi li sha bai er shi	1000
+# --- 法国 历任总统 ---
+马克龙	ma ke long	1000
+奥朗德	ao lang de	1000
+萨科齐	sa ke qi	1000
+希拉克	xi la ke	1000
+密特朗	mi te lang	1000
+德斯坦	de si tan	1000
+蓬皮杜	peng pi du	1000
+戴高乐	dai gao le	1000
+勒庞	le pang	1000
+梅朗雄	mei lang xiong	1000
+巴尼耶	ba ni ye	1000
+菲永	fei yong	1000
+# --- 德国 历任总理 ---
+默茨	mo ci	1000
+朔尔茨	shuo er ci	1000
+默克尔	mo ke er	1000
+施罗德	shi luo de	1000
+科尔	ke er	1000
+施密特	shi mi te	1000
+勃兰特	bo lan te	1000
+基辛格	ji xin ge	1000
+艾哈德	ai ha de	1000
+阿登纳	a deng na	1000
+施泰因迈尔	shi tai yin mai er	1000
+贝尔伯克	bei er bo ke	1000
+高克	gao ke	1000
+# --- 意大利与欧盟 ---
+梅洛尼	mei luo ni	1000
+德拉吉	de la ji	1000
+孔特	kong te	1000
+伦齐	lun qi	1000
+蒙蒂	meng di	1000
+贝卢斯科尼	bei lu si ke ni	1000
+普罗迪	pu luo di	1000
+马塔雷拉	ma ta lei la	1000
+冯德莱恩	feng de lai en	1000
+米歇尔	mi xie er	1000
+拉加德	la jia de	1000
+博雷利	bo lei li	1000
+科斯塔	ke si ta	1000
+图斯克	tu si ke	1000
+容克	rong ke	1000
+巴罗佐	ba luo zuo	1000
+# --- 俄罗斯与苏联 ---
+普京	pu jing	1000
+梅德韦杰夫	mei de wei jie fu	1000
+叶利钦	ye li qin	1000
+戈尔巴乔夫	ge er ba qiao fu	1000
+契尔年科	qi er nian ke	1000
+安德罗波夫	an de luo bo fu	1000
+勃列日涅夫	bo lie ri nie fu	1000
+赫鲁晓夫	he lu xiao fu	1000
+斯大林	si da lin	1000
+列宁	lie ning	1000
+拉夫罗夫	la fu luo fu	1000
+米舒斯京	mi shu si jing	1000
+绍伊古	shao yi gu	1000
+佩斯科夫	pei si ke fu	1000
+泽连斯基	ze lian si ji	1000
+卢卡申科	lu ka shen ke	1000
+# --- 加拿大澳新 ---
+卡尼	ka ni	1000
+特鲁多	te lu duo	1000
+哈珀	ha po	1000
+马丁	ma ding	1000
+克雷蒂安	ke lei di an	1000
+老特鲁多	lao te lu duo	1000
+穆尔罗尼	mu er luo ni	1000
+阿尔巴尼斯	a er ba ni si	1000
+莫里森	mo li sen	1000
+特恩布尔	te en bu er	1000
+阿博特	a bo te	1000
+吉拉德	ji la de	1000
+陆克文	lu ke wen	1000
+霍华德	huo hua de	1000
+基廷	ji ting	1000
+卢克森	lu ke sen	1000
+阿德恩	a de en	1000
+约翰基	yue han ji	1000
+# --- 以色列 历任总理 ---
+内塔尼亚胡	nei ta ni ya hu	1000
+拉皮德	la pi de	1000
+贝内特	bei nei te	1000
+奥尔默特	ao er mo te	1000
+沙龙	sha long	1000
+巴拉克	ba la ke	1000
+佩雷斯	pei lei si	1000
+拉宾	la bin	1000
+沙米尔	sha mi er	1000
+贝京	bei jing	1000
+梅厄	mei e	1000
+埃什科尔	ai shen ke er	1000
+本古里安	ben gu li an	1000
+赫尔佐格	he er zuo ge	1000
+甘茨	gan ci	1000
+卡茨	ka ci	1000
+# --- 日本 历任首相 ---
+石破茂	shi po mao	1000
+高市早苗	gao shi zao miao	1000
+岸田文雄	an tian wen xiong	1000
+菅义伟	jian yi wei	1000
+安倍晋三	an bei jin san	1000
+野田佳彦	ye tian jia yan	1000
+菅直人	jian zhi ren	1000
+鸠山由纪夫	jiu shan you ji fu	1000
+麻生太郎	ma sheng tai lang	1000
+福田康夫	fu tian kang fu	1000
+小泉纯一郎	xiao quan chun yi lang	1000
+森喜朗	sen xi lang	1000
+小渊惠三	xiao yuan hui san	1000
+桥本龙太郎	qiao ben long tai lang	1000
+村山富市	cun shan fu shi	1000
+细川护熙	xi chuan hu xi	1000
+海部俊树	hai bu jun shu	1000
+竹下登	zhu xia deng	1000
+中曾根康弘	zhong ceng gen kang hong	1000
+大平正芳	da ping zheng fang	1000
+福田赳夫	fu tian jiu fu	1000
+三木武夫	san mu wu fu	1000
+田中角荣	tian zhong jiao rong	1000
+佐藤荣作	zuo teng rong zuo	1000
+池田勇人	chi tian yong ren	1000
+岸信介	an xin jie	1000
+鸠山一郎	jiu shan yi lang	1000
+吉田茂	ji tian mao	1000
+小泉进次郎	xiao quan jin ci lang	1000
+河野太郎	he ye tai lang	1000
+德仁	de ren	1000
+明仁	ming ren	1000
+裕仁	yu ren	1000
+# --- 韩国 历任总统 ---
+李在明	li zai ming	1000
+尹锡悦	yin xi yue	1000
+文在寅	wen zai yin	1000
+朴槿惠	piao jin hui	1000
+李明博	li ming bo	1000
+卢武铉	lu wu xuan	1000
+金大中	jin da zhong	1000
+金泳三	jin yong san	1000
+卢泰愚	lu tai yu	1000
+全斗焕	quan dou huan	1000
+崔圭夏	cui gui xia	1000
+朴正熙	piao zheng xi	1000
+尹潽善	yin pu shan	1000
+李承晚	li cheng wan	1000
+# --- 朝鲜蒙古与台湾地区 ---
+金正恩	jin zheng en	1000
+金正日	jin zheng ri	1000
+金日成	jin ri cheng	1000
+金与正	jin yu zheng	1000
+呼日勒苏赫	hu ri le su he	1000
+巴特图勒嘎	ba te tu le ga	1000
+奥云额尔登	ao yun e er deng	1000
+赖清德	lai qing de	1000
+蔡英文	cai ying wen	1000
+马英九	ma ying jiu	1000
+陈水扁	chen shui bian	1000
+李登辉	li deng hui	1000
+蒋经国	jiang jing guo	1000
+蒋介石	jiang jie shi	1000
+韩国瑜	han guo yu	1000
+柯文哲	ke wen zhe	1000
+侯友宜	hou you yi	1000
+# --- 国际组织 ---
+古特雷斯	gu te lei si	1000
+潘基文	pan ji wen	1000
+安南	an nan	1000
+加利	jia li	1000
+德奎利亚尔	de kui li ya er	1000
+谭德塞	tan de sai	1000
+格奥尔基耶娃	ge ao er ji ye wa	1000
+教皇方济各	jiao huang fang ji ge	1000
+本笃十六世	ben du shi liu shi	1000
+
+# ===== 化学 =====
+# --- 基础概念 ---
+物质的量	wu zhi di liang	1000
+摩尔	mo er	1000
+阿伏加德罗常数	a fu jia de luo chang shu	1000
+摩尔质量	mo er zhi liang	1000
+摩尔体积	mo er ti ji	1000
+物质的量浓度	wu zhi di liang nong du	1000
+质量分数	zhi liang fen shu	1000
+溶解度	rong jie du	1000
+相对原子质量	xiang dui yuan zi zhi liang	1000
+相对分子质量	xiang dui fen zi zhi liang	1000
+化学式	hua xue shi	1000
+分子式	fen zi shi	1000
+结构式	jie gou shi	1000
+实验式	shi yan shi	1000
+化学方程式	hua xue fang cheng shi	1000
+离子方程式	li zi fang cheng shi	1000
+氧化还原反应	yang hua huan yuan fan ying	1000
+氧化剂	yang hua ji	1000
+还原剂	huan yuan ji	1000
+氧化态	yang hua tai	1000
+化合价	hua he jia	1000
+电子转移	dian zi zhuan yi	1000
+半反应	ban fan ying	1000
+配平	pei ping	1000
+化学计量	hua xue ji liang	1000
+过量	guo liang	1000
+不足	bu zu	1000
+产率	chan lv	1000
+转化率	zhuan hua lv	1000
+选择性	xuan ze xing	1000
+原子经济性	yuan zi jing ji xing	1000
+# --- 结构与周期 ---
+原子结构	yuan zi jie gou	1000
+电子层	dian zi ceng	1000
+能级	neng ji	1000
+原子轨道	yuan zi gui dao	1000
+电子排布	dian zi pai bu	1000
+洪特规则	hong te gui ze	1000
+泡利原理	pao li yuan li	1000
+能量最低原理	neng liang zui di yuan li	1000
+元素周期表	yuan su zhou qi biao	1000
+周期	zhou qi	1000
+主族	zhu zu	1000
+副族	fu zu	1000
+过渡元素	guo du yuan su	1000
+镧系	lan xi	1000
+锕系	a xi	1000
+原子半径	yuan zi ban jing	1000
+电离能	dian li neng	1000
+电负性	dian fu xing	1000
+电子亲和能	dian zi qin he neng	1000
+离子键	li zi jian	1000
+共价键	gong jia jian	1000
+极性键	ji xing jian	1000
+非极性键	fei ji xing jian	1000
+金属键	jin shu jian	1000
+配位键	pei wei jian	1000
+氢键	qing jian	1000
+范德华力	fan de hua li	1000
+键能	jian neng	1000
+键长	jian zhang	1000
+键角	jian jiao	1000
+杂化轨道	za hua gui dao	1000
+sp杂化	sp za hua	1000
+价层电子对互斥	jia ceng dian zi dui hu chi	1000
+分子构型	fen zi gou xing	1000
+极性分子	ji xing fen zi	1000
+非极性分子	fei ji xing fen zi	1000
+晶体	jing ti	1000
+离子晶体	li zi jing ti	1000
+原子晶体	yuan zi jing ti	1000
+分子晶体	fen zi jing ti	1000
+金属晶体	jin shu jing ti	1000
+晶胞	jing bao	1000
+配位数	pei wei shu	1000
+晶格能	jing ge neng	1000
+# --- 化学反应原理 ---
+反应速率	fan ying su lv	1000
+活化能	huo hua neng	1000
+催化剂	cui hua ji	1000
+均相催化	jun xiang cui hua	1000
+多相催化	duo xiang cui hua	1000
+碰撞理论	peng zhuang li lun	1000
+过渡态理论	guo du tai li lun	1000
+速率方程	su lv fang cheng	1000
+反应级数	fan ying ji shu	1000
+化学平衡	hua xue ping heng	1000
+平衡常数	ping heng chang shu	1000
+勒夏特列原理	le xia te lie yuan li	1000
+平衡移动	ping heng yi dong	1000
+等效平衡	deng xiao ping heng	1000
+焓变	han bian	1000
+熵变	shang bian	1000
+吉布斯自由能变	ji bu si zi you neng bian	1000
+自发反应	zi fa fan ying	1000
+热化学方程式	re hua xue fang cheng shi	1000
+盖斯定律	gai si ding lv	1000
+燃烧热	ran shao re	1000
+中和热	zhong he re	1000
+电离平衡	dian li ping heng	1000
+弱电解质	ruo dian jie zhi	1000
+电离度	dian li du	1000
+水的离子积	shui de li zi ji	1000
+酸碱质子理论	suan jian zhi zi li lun	1000
+缓冲溶液	huan chong rong ye	1000
+盐类水解	yan lei shui jie	1000
+沉淀溶解平衡	chen dian rong jie ping heng	1000
+溶度积	rong du ji	1000
+同离子效应	tong li zi xiao ying	1000
+分步沉淀	fen bu chen dian	1000
+原电池	yuan dian chi	1000
+电解池	dian jie chi	1000
+电极电势	dian ji dian shi	1000
+标准电极电势	biao zhun dian ji dian shi	1000
+能斯特方程	neng si te fang cheng	1000
+盐桥	yan qiao	1000
+阳极	yang ji	1000
+阴极	yin ji	1000
+电解	dian jie	1000
+电镀	dian du	1000
+阳极氧化	yang ji yang hua	1000
+腐蚀	fu shi	1000
+析氢腐蚀	xi qing fu shi	1000
+吸氧腐蚀	xi yang fu shi	1000
+牺牲阳极	xi sheng yang ji	1000
+燃料电池	ran liao dian chi	1000
+锂离子电池	li li zi dian chi	1000
+铅蓄电池	qian xu dian chi	1000
+# --- 有机化学 ---
+烷烃	wan ting	1000
+烯烃	xi ting	1000
+炔烃	gui ting	1000
+芳烃	fang ting	1000
+苯	ben	1000
+甲苯	jia ben	1000
+卤代烃	lu dai ting	1000
+醇	chun	1000
+酚	fen	1000
+醚	mi	1000
+醛	quan	1000
+酮	tong	1000
+羧酸	suo suan	1000
+酯	zhi	1000
+胺	an	1000
+酰胺	xian an	1000
+腈	jing	1000
+官能团	guan neng tuan	1000
+同分异构体	tong fen yi gou ti	1000
+碳链异构	tan lian yi gou	1000
+位置异构	wei zhi yi gou	1000
+官能团异构	guan neng tuan yi gou	1000
+顺反异构	shun fan yi gou	1000
+对映异构	dui ying yi gou	1000
+手性	shou xing	1000
+手性碳	shou xing tan	1000
+取代反应	qu dai fan ying	1000
+加成反应	jia cheng fan ying	1000
+消去反应	xiao qu fan ying	1000
+聚合反应	ju he fan ying	1000
+加聚	jia ju	1000
+缩聚	suo ju	1000
+酯化反应	zhi hua fan ying	1000
+水解反应	shui jie fan ying	1000
+皂化反应	zao hua fan ying	1000
+自由基反应	zi you ji fan ying	1000
+亲电取代	qin dian qu dai	1000
+亲核取代	qin he qu dai	1000
+亲电加成	qin dian jia cheng	1000
+亲核加成	qin he jia cheng	1000
+消除反应	xiao chu fan ying	1000
+重排	chong pai	1000
+马氏规则	ma shi gui ze	1000
+诱导效应	you dao xiao ying	1000
+共轭效应	gong e xiao ying	1000
+超共轭	chao gong e	1000
+空间位阻	kong jian wei zu	1000
+芳香性	fang xiang xing	1000
+休克尔规则	xiu ke er gui ze	1000
+糖类	tang lei	1000
+单糖	dan tang	1000
+二糖	er tang	1000
+多糖	duo tang	1000
+葡萄糖	pu tao tang	1000
+蔗糖	zhe tang	1000
+淀粉	dian fen	1000
+纤维素	xian wei su	1000
+油脂	you zhi	1000
+皂化值	zao hua zhi	1000
+氨基酸	an ji suan	1000
+肽键	tai jian	1000
+蛋白质	dan bai zhi	1000
+核酸	he suan	1000
+高分子	gao fen zi	1000
+单体	dan ti	1000
+链节	lian jie	1000
+聚合度	ju he du	1000
+塑料	su liao	1000
+橡胶	xiang jiao	1000
+纤维	xian wei	1000
+交联	jiao lian	1000
+硫化	liu hua	1000
+# --- 分析与仪器 ---
+定性分析	ding xing fen xi	1000
+定量分析	ding liang fen xi	1000
+滴定	di ding	1000
+酸碱滴定	suan jian di ding	1000
+氧化还原滴定	yang hua huan yuan di ding	1000
+络合滴定	luo he di ding	1000
+沉淀滴定	chen dian di ding	1000
+指示剂	zhi shi ji	1000
+滴定终点	di ding zhong dian	1000
+重量分析	zhong liang fen xi	1000
+色谱	se pu	1000
+气相色谱	qi xiang se pu	1000
+液相色谱	ye xiang se pu	1000
+高效液相色谱	gao xiao ye xiang se pu	1000
+薄层色谱	bao ceng se pu	1000
+薄层色谱	bo ceng se pu	500
+柱色谱	zhu se pu	1000
+保留时间	bao liu shi jian	1000
+质谱	zhi pu	1000
+核磁共振	he ci gong zhen	1000
+红外光谱	hong wai guang pu	1000
+紫外可见光谱	zi wai ke jian guang pu	1000
+拉曼光谱	la man guang pu	1000
+原子吸收光谱	yuan zi xi shou guang pu	1000
+电感耦合等离子体	dian gan ou he deng li zi ti	1000
+X射线衍射	X she xian yan she	1000
+电子显微镜	dian zi xian wei jing	1000
+扫描电镜	sao miao dian jing	1000
+透射电镜	tou she dian jing	1000
+热重分析	re zhong fen xi	1000
+差示扫描量热	cha shi sao miao liang re	1000
+标准曲线	biao zhun qu xian	1000
+检出限	jian chu xian	1000
+精密度	jing mi du	1000
+准确度	zhun que du	1000
+空白试验	kong bai shi yan	1000
+平行样	ping xing yang	1000
+回收率	hui shou lv	1000
+
+# ===== 地名 =====
+# --- 亚洲国家 ---
+中国	zhong guo	1000
+日本	ri ben	1000
+韩国	han guo	1000
+朝鲜	chao xian	1000
+蒙古	meng gu	1000
+越南	yue nan	1000
+老挝	lao wo	1000
+柬埔寨	jian pu zhai	1000
+泰国	tai guo	1000
+缅甸	mian dian	1000
+马来西亚	ma lai xi ya	1000
+新加坡	xin jia po	1000
+印度尼西亚	yin du ni xi ya	1000
+菲律宾	fei lv bin	1000
+文莱	wen lai	1000
+东帝汶	dong di wen	1000
+印度	yin du	1000
+巴基斯坦	ba ji si tan	1000
+孟加拉国	meng jia la guo	1000
+斯里兰卡	si li lan ka	1000
+尼泊尔	ni po er	1000
+不丹	bu dan	1000
+马尔代夫	ma er dai fu	1000
+阿富汗	a fu han	1000
+哈萨克斯坦	ha sa ke si tan	1000
+乌兹别克斯坦	wu zi bie ke si tan	1000
+吉尔吉斯斯坦	ji er ji si si tan	1000
+塔吉克斯坦	ta ji ke si tan	1000
+土库曼斯坦	tu ku man si tan	1000
+伊朗	yi lang	1000
+伊拉克	yi la ke	1000
+叙利亚	xu li ya	1000
+黎巴嫩	li ba nen	1000
+约旦	yue dan	1000
+以色列	yi se lie	1000
+巴勒斯坦	ba le si tan	1000
+沙特阿拉伯	sha te a la bo	1000
+阿联酋	a lian qiu	1000
+卡塔尔	ka ta er	1000
+科威特	ke wei te	1000
+巴林	ba lin	1000
+阿曼	a man	1000
+也门	ye men	1000
+土耳其	tu er qi	1000
+塞浦路斯	sai pu lu si	1000
+格鲁吉亚	ge lu ji ya	1000
+亚美尼亚	ya mei ni ya	1000
+阿塞拜疆	a sai bai jiang	1000
+# --- 欧洲国家 ---
+俄罗斯	e luo si	1000
+乌克兰	wu ke lan	1000
+白俄罗斯	bai e luo si	1000
+摩尔多瓦	mo er duo wa	1000
+立陶宛	li tao wan	1000
+拉脱维亚	la tuo wei ya	1000
+爱沙尼亚	ai sha ni ya	1000
+波兰	bo lan	1000
+捷克	jie ke	1000
+斯洛伐克	si luo fa ke	1000
+匈牙利	xiong ya li	1000
+罗马尼亚	luo ma ni ya	1000
+保加利亚	bao jia li ya	1000
+塞尔维亚	sai er wei ya	1000
+克罗地亚	ke luo di ya	1000
+斯洛文尼亚	si luo wen ni ya	1000
+波黑	bo hei	1000
+黑山	hei shan	1000
+北马其顿	bei ma qi dun	1000
+阿尔巴尼亚	a er ba ni ya	1000
+希腊	xi la	1000
+意大利	yi da li	1000
+梵蒂冈	fan di gang	1000
+圣马力诺	sheng ma li nuo	1000
+马耳他	ma er ta	1000
+西班牙	xi ban ya	1000
+葡萄牙	pu tao ya	1000
+安道尔	an dao er	1000
+法国	fa guo	1000
+摩纳哥	mo na ge	1000
+德国	de guo	1000
+奥地利	ao di li	1000
+瑞士	rui shi	1000
+列支敦士登	lie zhi dun shi deng	1000
+比利时	bi li shi	1000
+荷兰	he lan	1000
+卢森堡	lu sen bao	1000
+英国	ying guo	1000
+爱尔兰	ai er lan	1000
+丹麦	dan mai	1000
+挪威	nuo wei	1000
+瑞典	rui dian	1000
+芬兰	fen lan	1000
+冰岛	bing dao	1000
+# --- 美洲国家 ---
+美国	mei guo	1000
+加拿大	jia na da	1000
+墨西哥	mo xi ge	1000
+危地马拉	wei di ma la	1000
+伯利兹	bo li zi	1000
+洪都拉斯	hong dou la si	1000
+萨尔瓦多	sa er wa duo	1000
+尼加拉瓜	ni jia la gua	1000
+哥斯达黎加	ge si da li jia	1000
+巴拿马	ba na ma	1000
+古巴	gu ba	1000
+牙买加	ya mai jia	1000
+海地	hai di	1000
+多米尼加	duo mi ni jia	1000
+巴哈马	ba ha ma	1000
+特立尼达和多巴哥	te li ni da he duo ba ge	1000
+哥伦比亚	ge lun bi ya	1000
+委内瑞拉	wei nei rui la	1000
+圭亚那	gui ya na	1000
+苏里南	su li nan	1000
+厄瓜多尔	e gua duo er	1000
+秘鲁	bi lu	1000
+玻利维亚	bo li wei ya	1000
+巴西	ba xi	1000
+智利	zhi li	1000
+阿根廷	a gen ting	1000
+乌拉圭	wu la gui	1000
+巴拉圭	ba la gui	1000
+# --- 非洲与大洋洲国家 ---
+埃及	ai ji	1000
+利比亚	li bi ya	1000
+突尼斯	tu ni si	1000
+阿尔及利亚	a er ji li ya	1000
+摩洛哥	mo luo ge	1000
+苏丹	su dan	1000
+南苏丹	nan su dan	1000
+埃塞俄比亚	ai sai e bi ya	1000
+厄立特里亚	e li te li ya	1000
+吉布提	ji bu ti	1000
+索马里	suo ma li	1000
+肯尼亚	ken ni ya	1000
+乌干达	wu gan da	1000
+坦桑尼亚	tan sang ni ya	1000
+卢旺达	lu wang da	1000
+布隆迪	bu long di	1000
+刚果	gang guo	1000
+加蓬	jia peng	1000
+喀麦隆	ka mai long	1000
+尼日利亚	ni ri li ya	1000
+尼日尔	ni ri er	1000
+乍得	zha de	1000
+中非	zhong fei	1000
+加纳	jia na	1000
+科特迪瓦	ke te di wa	1000
+塞内加尔	sai nei jia er	1000
+马里	ma li	1000
+几内亚	ji nei ya	1000
+塞拉利昂	sai la li ang	1000
+利比里亚	li bi li ya	1000
+多哥	duo ge	1000
+贝宁	bei ning	1000
+安哥拉	an ge la	1000
+赞比亚	zan bi ya	1000
+津巴布韦	jin ba bu wei	1000
+莫桑比克	mo sang bi ke	1000
+马拉维	ma la wei	1000
+博茨瓦纳	bo ci wa na	1000
+纳米比亚	na mi bi ya	1000
+南非	nan fei	1000
+莱索托	lai suo tuo	1000
+斯威士兰	si wei shi lan	1000
+马达加斯加	ma da jia si jia	1000
+毛里求斯	mao li qiu si	1000
+塞舌尔	sai she er	1000
+澳大利亚	ao da li ya	1000
+新西兰	xin xi lan	1000
+巴布亚新几内亚	ba bu ya xin ji nei ya	1000
+斐济	fei ji	1000
+所罗门群岛	suo luo men qun dao	1000
+瓦努阿图	wa nu a tu	1000
+萨摩亚	sa mo ya	1000
+汤加	tang jia	1000
+帕劳	pa lao	1000
+# --- 世界首都与名城 亚洲 ---
+东京	dong jing	1000
+大阪	da ban	1000
+京都	jing du	1000
+横滨	heng bin	1000
+名古屋	ming gu wu	1000
+神户	shen hu	1000
+福冈	fu gang	1000
+札幌	zha huang	1000
+仙台	xian tai	1000
+广岛	guang dao	1000
+长崎	chang qi	1000
+奈良	nai liang	1000
+冲绳	chong sheng	1000
+北海道	bei hai dao	1000
+首尔	shou er	1000
+釜山	fu shan	1000
+仁川	ren chuan	1000
+大邱	da qiu	1000
+平壤	ping rang	1000
+乌兰巴托	wu lan ba tuo	1000
+河内	he nei	1000
+胡志明市	hu zhi ming shi	1000
+岘港	xian gang	1000
+万象	wan xiang	1000
+金边	jin bian	1000
+暹粒	xian li	1000
+曼谷	man gu	1000
+清迈	qing mai	1000
+普吉	pu ji	1000
+仰光	yang guang	1000
+内比都	nei bi dou	1000
+吉隆坡	ji long po	1000
+槟城	bin cheng	1000
+雅加达	ya jia da	1000
+巴厘岛	ba li dao	1000
+泗水	si shui	1000
+马尼拉	ma ni la	1000
+宿务	su wu	1000
+新德里	xin de li	1000
+孟买	meng mai	1000
+加尔各答	jia er ge da	1000
+班加罗尔	ban jia luo er	1000
+海得拉巴	hai de la ba	1000
+金奈	jin nai	1000
+伊斯兰堡	yi si lan bao	1000
+卡拉奇	ka la qi	1000
+拉合尔	la he er	1000
+达卡	da ka	1000
+科伦坡	ke lun po	1000
+加德满都	jia de man dou	1000
+喀布尔	ka bu er	1000
+德黑兰	de hei lan	1000
+巴格达	ba ge da	1000
+大马士革	da ma shi ge	1000
+贝鲁特	bei lu te	1000
+安曼	an man	1000
+耶路撒冷	ye lu sa leng	1000
+特拉维夫	te la wei fu	1000
+利雅得	li ya de	1000
+麦加	mai jia	1000
+麦地那	mai di na	1000
+迪拜	di bai	1000
+阿布扎比	a bu zha bi	1000
+多哈	duo ha	1000
+科威特城	ke wei te cheng	1000
+麦纳麦	mai na mai	1000
+马斯喀特	ma si ka te	1000
+萨那	sa na	1000
+伊斯坦布尔	yi si tan bu er	1000
+安卡拉	an ka la	1000
+阿斯塔纳	a si ta na	1000
+阿拉木图	a la mu tu	1000
+塔什干	ta shi gan	1000
+撒马尔罕	sa ma er han	1000
+比什凯克	bi shen kai ke	1000
+杜尚别	du shang bie	1000
+阿什哈巴德	a shen ha ba de	1000
+第比利斯	di bi li si	1000
+埃里温	ai li wen	1000
+巴库	ba ku	1000
+# --- 世界首都与名城 欧洲 ---
+莫斯科	mo si ke	1000
+圣彼得堡	sheng bi de bao	1000
+符拉迪沃斯托克	fu la di wo si tuo ke	1000
+新西伯利亚	xin xi bo li ya	1000
+喀山	ka shan	1000
+索契	suo qi	1000
+基辅	ji fu	1000
+敖德萨	ao de sa	1000
+明斯克	ming si ke	1000
+基希讷乌	ji xi ne wu	1000
+维尔纽斯	wei er niu si	1000
+里加	li jia	1000
+塔林	ta lin	1000
+华沙	hua sha	1000
+克拉科夫	ke la ke fu	1000
+布拉格	bu la ge	1000
+布拉迪斯拉发	bu la di si la fa	1000
+布达佩斯	bu da pei si	1000
+布加勒斯特	bu jia le si te	1000
+索非亚	suo fei ya	1000
+贝尔格莱德	bei er ge lai de	1000
+萨格勒布	sa ge le bu	1000
+卢布尔雅那	lu bu er ya na	1000
+萨拉热窝	sa la re wo	1000
+波德戈里察	bo de ge li cha	1000
+斯科普里	si ke pu li	1000
+地拉那	di la na	1000
+雅典	ya dian	1000
+塞萨洛尼基	sai sa luo ni ji	1000
+罗马	luo ma	1000
+米兰	mi lan	1000
+威尼斯	wei ni si	1000
+佛罗伦萨	fo luo lun sa	1000
+那不勒斯	na bu le si	1000
+都灵	dou ling	1000
+博洛尼亚	bo luo ni ya	1000
+比萨	bi sa	1000
+西西里	xi xi li	1000
+马德里	ma de li	1000
+巴塞罗那	ba sai luo na	1000
+塞维利亚	sai wei li ya	1000
+瓦伦西亚	wa lun xi ya	1000
+毕尔巴鄂	bi er ba e	1000
+里斯本	li si ben	1000
+波尔图	bo er tu	1000
+巴黎	ba li	1000
+马赛	ma sai	1000
+里昂	li ang	1000
+尼斯	ni si	1000
+波尔多	bo er duo	1000
+斯特拉斯堡	si te la si bao	1000
+柏林	bo lin	1000
+慕尼黑	mu ni hei	1000
+汉堡	han bao	1000
+法兰克福	fa lan ke fu	1000
+科隆	ke long	1000
+斯图加特	si tu jia te	1000
+杜塞尔多夫	du sai er duo fu	1000
+德累斯顿	de lei si dun	1000
+维也纳	wei ye na	1000
+萨尔茨堡	sa er ci bao	1000
+苏黎世	su li shi	1000
+日内瓦	ri nei wa	1000
+伯尔尼	bo er ni	1000
+卢塞恩	lu sai en	1000
+布鲁塞尔	bu lu sai er	1000
+安特卫普	an te wei pu	1000
+阿姆斯特丹	a mu si te dan	1000
+鹿特丹	lu te dan	1000
+海牙	hai ya	1000
+卢森堡城	lu sen bao cheng	1000
+伦敦	lun dun	1000
+曼彻斯特	man che si te	1000
+利物浦	li wu pu	1000
+伯明翰	bo ming han	1000
+爱丁堡	ai ding bao	1000
+格拉斯哥	ge la si ge	1000
+牛津	niu jin	1000
+剑桥	jian qiao	1000
+都柏林	dou bo lin	1000
+哥本哈根	ge ben ha gen	1000
+奥斯陆	ao si lu	1000
+卑尔根	bei er gen	1000
+斯德哥尔摩	si de ge er mo	1000
+哥德堡	ge de bao	1000
+赫尔辛基	he er xin ji	1000
+雷克雅未克	lei ke ya wei ke	1000
+# --- 世界首都与名城 美洲非洲大洋洲 ---
+纽约	niu yue	1000
+洛杉矶	luo shan ji	1000
+旧金山	jiu jin shan	1000
+芝加哥	zhi jia ge	1000
+波士顿	bo shi dun	1000
+西雅图	xi ya tu	1000
+休斯敦	xiu si dun	1000
+达拉斯	da la si	1000
+迈阿密	mai a mi	1000
+亚特兰大	ya te lan da	1000
+费城	fei cheng	1000
+底特律	di te lv	1000
+丹佛	dan fu	1000
+拉斯维加斯	la si wei jia si	1000
+圣地亚哥	sheng di ya ge	1000
+圣何塞	sheng he sai	1000
+奥斯汀	ao si ting	1000
+凤凰城	feng huang cheng	1000
+新奥尔良	xin ao er liang	1000
+檀香山	tan xiang shan	1000
+多伦多	duo lun duo	1000
+温哥华	wen ge hua	1000
+蒙特利尔	meng te li er	1000
+渥太华	wo tai hua	1000
+卡尔加里	ka er jia li	1000
+魁北克	kui bei ke	1000
+墨西哥城	mo xi ge cheng	1000
+坎昆	kan kun	1000
+危地马拉城	wei di ma la cheng	1000
+巴拿马城	ba na ma cheng	1000
+哈瓦那	ha wa na	1000
+圣多明各	sheng duo ming ge	1000
+金斯敦	jin si dun	1000
+波哥大	bo ge da	1000
+加拉加斯	jia la jia si	1000
+基多	ji duo	1000
+利马	li ma	1000
+拉巴斯	la ba si	1000
+布宜诺斯艾利斯	bu yi nuo si ai li si	1000
+蒙得维的亚	meng de wei di ya	1000
+亚松森	ya song sen	1000
+巴西利亚	ba xi li ya	1000
+圣保罗	sheng bao luo	1000
+里约热内卢	li yue re nei lu	1000
+开罗	kai luo	1000
+亚历山大	ya li shan da	1000
+的黎波里	di li bo li	1000
+突尼斯城	tu ni si cheng	1000
+阿尔及尔	a er ji er	1000
+卡萨布兰卡	ka sa bu lan ka	1000
+拉巴特	la ba te	1000
+马拉喀什	ma la ka shi	1000
+喀土穆	ka tu mu	1000
+亚的斯亚贝巴	ya di si ya bei ba	1000
+内罗毕	nei luo bi	1000
+坎帕拉	kan pa la	1000
+达累斯萨拉姆	da lei si sa la mu	1000
+基加利	ji jia li	1000
+金沙萨	jin sha sa	1000
+拉各斯	la ge si	1000
+阿布贾	a bu jia	1000
+阿克拉	a ke la	1000
+达喀尔	da ka er	1000
+约翰内斯堡	yue han nei si bao	1000
+开普敦	kai pu dun	1000
+比勒陀利亚	bi le tuo li ya	1000
+德班	de ban	1000
+哈拉雷	ha la lei	1000
+卢萨卡	lu sa ka	1000
+温得和克	wen de he ke	1000
+悉尼	xi ni	1000
+墨尔本	mo er ben	1000
+布里斯班	bu li si ban	1000
+珀斯	po si	1000
+阿德莱德	a de lai de	1000
+堪培拉	kan pei la	1000
+黄金海岸	huang jin hai an	1000
+凯恩斯	kai en si	1000
+奥克兰	ao ke lan	1000
+惠灵顿	hui ling dun	1000
+基督城	ji du cheng	1000
+皇后镇	huang hou zhen	1000
+苏瓦	su wa	1000
+莫尔兹比港	mo er zi bi gang	1000
+# --- 中国 省级行政区 ---
+北京	bei jing	1000
+天津	tian jin	1000
+河北	he bei	1000
+山西	shan xi	1000
+内蒙古	nei meng gu	1000
+辽宁	liao ning	1000
+吉林	ji lin	1000
+黑龙江	hei long jiang	1000
+上海	shang hai	1000
+江苏	jiang su	1000
+浙江	zhe jiang	1000
+安徽	an hui	1000
+福建	fu jian	1000
+江西	jiang xi	1000
+山东	shan dong	1000
+河南	he nan	1000
+湖北	hu bei	1000
+湖南	hu nan	1000
+广东	guang dong	1000
+广西	guang xi	1000
+海南	hai nan	1000
+重庆	chong qing	1000
+四川	si chuan	1000
+贵州	gui zhou	1000
+云南	yun nan	1000
+西藏	xi zang	1000
+陕西	shan xi	1000
+甘肃	gan su	1000
+青海	qing hai	1000
+宁夏	ning xia	1000
+新疆	xin jiang	1000
+香港	xiang gang	1000
+澳门	ao men	1000
+台湾	tai wan	1000
+# --- 中国 主要城市 华北东北 ---
+石家庄	shi jia zhuang	1000
+唐山	tang shan	1000
+秦皇岛	qin huang dao	1000
+邯郸	han dan	1000
+保定	bao ding	1000
+张家口	zhang jia kou	1000
+承德	cheng de	1000
+沧州	cang zhou	1000
+廊坊	lang fang	1000
+衡水	heng shui	1000
+太原	tai yuan	1000
+大同	da tong	1000
+阳泉	yang quan	1000
+长治	zhang zhi	1000
+晋城	jin cheng	1000
+朔州	shuo zhou	1000
+晋中	jin zhong	1000
+运城	yun cheng	1000
+忻州	xin zhou	1000
+临汾	lin fen	1000
+吕梁	lv liang	1000
+呼和浩特	hu he hao te	1000
+包头	bao tou	1000
+乌海	wu hai	1000
+赤峰	chi feng	1000
+通辽	tong liao	1000
+鄂尔多斯	e er duo si	1000
+呼伦贝尔	hu lun bei er	1000
+巴彦淖尔	ba yan nao er	1000
+乌兰察布	wu lan cha bu	1000
+锡林郭勒	xi lin guo le	1000
+沈阳	shen yang	1000
+大连	da lian	1000
+鞍山	an shan	1000
+抚顺	fu shun	1000
+本溪	ben xi	1000
+丹东	dan dong	1000
+锦州	jin zhou	1000
+营口	ying kou	1000
+阜新	fu xin	1000
+辽阳	liao yang	1000
+盘锦	pan jin	1000
+铁岭	tie ling	1000
+朝阳	zhao yang	1000
+葫芦岛	hu lu dao	1000
+长春	chang chun	1000
+吉林市	ji lin shi	1000
+四平	si ping	1000
+辽源	liao yuan	1000
+通化	tong hua	1000
+白山	bai shan	1000
+松原	song yuan	1000
+白城	bai cheng	1000
+延边	yan bian	1000
+延吉	yan ji	1000
+哈尔滨	ha er bin	1000
+齐齐哈尔	qi qi ha er	1000
+鸡西	ji xi	1000
+鹤岗	he gang	1000
+双鸭山	shuang ya shan	1000
+大庆	da qing	1000
+伊春	yi chun	1000
+佳木斯	jia mu si	1000
+七台河	qi tai he	1000
+牡丹江	mu dan jiang	1000
+黑河	hei he	1000
+绥化	sui hua	1000
+漠河	mo he	1000
+# --- 中国 主要城市 华东 ---
+南京	nan jing	1000
+无锡	wu xi	1000
+徐州	xu zhou	1000
+常州	chang zhou	1000
+苏州	su zhou	1000
+南通	nan tong	1000
+连云港	lian yun gang	1000
+淮安	huai an	1000
+盐城	yan cheng	1000
+扬州	yang zhou	1000
+镇江	zhen jiang	1000
+泰州	tai zhou	1000
+宿迁	su qian	1000
+昆山	kun shan	1000
+张家港	zhang jia gang	1000
+杭州	hang zhou	1000
+宁波	ning bo	1000
+温州	wen zhou	1000
+嘉兴	jia xing	1000
+湖州	hu zhou	1000
+绍兴	shao xing	1000
+金华	jin hua	1000
+衢州	qu zhou	1000
+舟山	zhou shan	1000
+台州	tai zhou	1000
+丽水	li shui	1000
+义乌	yi wu	1000
+慈溪	ci xi	1000
+合肥	he fei	1000
+芜湖	wu hu	1000
+蚌埠	beng bu	1000
+淮南	huai nan	1000
+马鞍山	ma an shan	1000
+淮北	huai bei	1000
+铜陵	tong ling	1000
+安庆	an qing	1000
+黄山	huang shan	1000
+滁州	chu zhou	1000
+阜阳	fu yang	1000
+宿州	su zhou	1000
+六安	lu an	1000
+亳州	bo zhou	1000
+池州	chi zhou	1000
+宣城	xuan cheng	1000
+福州	fu zhou	1000
+厦门	xia men	1000
+莆田	pu tian	1000
+三明	san ming	1000
+泉州	quan zhou	1000
+漳州	zhang zhou	1000
+南平	nan ping	1000
+龙岩	long yan	1000
+宁德	ning de	1000
+平潭	ping tan	1000
+南昌	nan chang	1000
+景德镇	jing de zhen	1000
+萍乡	ping xiang	1000
+九江	jiu jiang	1000
+新余	xin yu	1000
+鹰潭	ying tan	1000
+赣州	gan zhou	1000
+吉安	ji an	1000
+宜春	yi chun	1000
+抚州	fu zhou	1000
+上饶	shang rao	1000
+井冈山	jing gang shan	1000
+济南	ji nan	1000
+青岛	qing dao	1000
+淄博	zi bo	1000
+枣庄	zao zhuang	1000
+东营	dong ying	1000
+烟台	yan tai	1000
+潍坊	wei fang	1000
+济宁	ji ning	1000
+泰安	tai an	1000
+威海	wei hai	1000
+日照	ri zhao	1000
+临沂	lin yi	1000
+德州	de zhou	1000
+聊城	liao cheng	1000
+滨州	bin zhou	1000
+菏泽	he ze	1000
+# --- 中国 主要城市 华中华南西部 ---
+郑州	zheng zhou	1000
+开封	kai feng	1000
+洛阳	luo yang	1000
+平顶山	ping ding shan	1000
+安阳	an yang	1000
+鹤壁	he bi	1000
+新乡	xin xiang	1000
+焦作	jiao zuo	1000
+濮阳	pu yang	1000
+许昌	xu chang	1000
+漯河	luo he	1000
+三门峡	san men xia	1000
+南阳	nan yang	1000
+商丘	shang qiu	1000
+信阳	xin yang	1000
+周口	zhou kou	1000
+驻马店	zhu ma dian	1000
+济源	ji yuan	1000
+武汉	wu han	1000
+黄石	huang shi	1000
+十堰	shi yan	1000
+宜昌	yi chang	1000
+襄阳	xiang yang	1000
+鄂州	e zhou	1000
+荆门	jing men	1000
+孝感	xiao gan	1000
+荆州	jing zhou	1000
+黄冈	huang gang	1000
+咸宁	xian ning	1000
+随州	sui zhou	1000
+恩施	en shi	1000
+神农架	shen nong jia	1000
+长沙	chang sha	1000
+株洲	zhu zhou	1000
+湘潭	xiang tan	1000
+衡阳	heng yang	1000
+邵阳	shao yang	1000
+岳阳	yue yang	1000
+常德	chang de	1000
+张家界	zhang jia jie	1000
+益阳	yi yang	1000
+郴州	chen zhou	1000
+永州	yong zhou	1000
+怀化	huai hua	1000
+娄底	lou di	1000
+湘西	xiang xi	1000
+凤凰	feng huang	1000
+广州	guang zhou	1000
+深圳	shen zhen	1000
+珠海	zhu hai	1000
+汕头	shan tou	1000
+佛山	fo shan	1000
+韶关	shao guan	1000
+湛江	zhan jiang	1000
+肇庆	zhao qing	1000
+江门	jiang men	1000
+茂名	mao ming	1000
+惠州	hui zhou	1000
+梅州	mei zhou	1000
+汕尾	shan wei	1000
+河源	he yuan	1000
+阳江	yang jiang	1000
+清远	qing yuan	1000
+东莞	dong guan	1000
+中山	zhong shan	1000
+潮州	chao zhou	1000
+揭阳	jie yang	1000
+云浮	yun fu	1000
+南宁	nan ning	1000
+柳州	liu zhou	1000
+桂林	gui lin	1000
+梧州	wu zhou	1000
+北海	bei hai	1000
+防城港	fang cheng gang	1000
+钦州	qin zhou	1000
+贵港	gui gang	1000
+玉林	yu lin	1000
+百色	bai se	1000
+贺州	he zhou	1000
+河池	he chi	1000
+来宾	lai bin	1000
+崇左	chong zuo	1000
+阳朔	yang shuo	1000
+海口	hai kou	1000
+三亚	san ya	1000
+儋州	dan zhou	1000
+三沙	san sha	1000
+琼海	qiong hai	1000
+万宁	wan ning	1000
+文昌	wen chang	1000
+成都	cheng du	1000
+自贡	zi gong	1000
+攀枝花	pan zhi hua	1000
+泸州	lu zhou	1000
+德阳	de yang	1000
+绵阳	mian yang	1000
+广元	guang yuan	1000
+遂宁	sui ning	1000
+内江	nei jiang	1000
+乐山	le shan	1000
+南充	nan chong	1000
+眉山	mei shan	1000
+宜宾	yi bin	1000
+广安	guang an	1000
+达州	da zhou	1000
+雅安	ya an	1000
+巴中	ba zhong	1000
+资阳	zi yang	1000
+阿坝	a ba	1000
+甘孜	gan zi	1000
+凉山	liang shan	1000
+都江堰	du jiang yan	1000
+九寨沟	jiu zhai gou	1000
+峨眉山	e mei shan	1000
+贵阳	gui yang	1000
+六盘水	liu pan shui	1000
+遵义	zun yi	1000
+安顺	an shun	1000
+毕节	bi jie	1000
+铜仁	tong ren	1000
+黔西南	qian xi nan	1000
+黔东南	qian dong nan	1000
+黔南	qian nan	1000
+荔波	li bo	1000
+昆明	kun ming	1000
+曲靖	qu jing	1000
+玉溪	yu xi	1000
+保山	bao shan	1000
+昭通	zhao tong	1000
+丽江	li jiang	1000
+普洱	pu er	1000
+临沧	lin cang	1000
+楚雄	chu xiong	1000
+红河	hong he	1000
+文山	wen shan	1000
+西双版纳	xi shuang ban na	1000
+大理	da li	1000
+德宏	de hong	1000
+怒江	nu jiang	1000
+迪庆	di qing	1000
+香格里拉	xiang ge li la	1000
+腾冲	teng chong	1000
+拉萨	la sa	1000
+日喀则	ri ka ze	1000
+昌都	chang dou	1000
+林芝	lin zhi	1000
+山南	shan nan	1000
+那曲	na qu	1000
+阿里	a li	1000
+珠峰	zhu feng	1000
+西安	xi an	1000
+铜川	tong chuan	1000
+宝鸡	bao ji	1000
+咸阳	xian yang	1000
+渭南	wei nan	1000
+延安	yan an	1000
+汉中	han zhong	1000
+榆林	yu lin	1000
+安康	an kang	1000
+商洛	shang luo	1000
+华阴	hua yin	1000
+兰州	lan zhou	1000
+嘉峪关	jia yu guan	1000
+金昌	jin chang	1000
+白银	bai yin	1000
+天水	tian shui	1000
+武威	wu wei	1000
+张掖	zhang ye	1000
+平凉	ping liang	1000
+酒泉	jiu quan	1000
+庆阳	qing yang	1000
+定西	ding xi	1000
+陇南	long nan	1000
+敦煌	dun huang	1000
+甘南	gan nan	1000
+西宁	xi ning	1000
+海东	hai dong	1000
+海北	hai bei	1000
+黄南	huang nan	1000
+海南州	hai nan zhou	1000
+果洛	guo luo	1000
+玉树	yu shu	1000
+海西	hai xi	1000
+格尔木	ge er mu	1000
+银川	yin chuan	1000
+石嘴山	shi zui shan	1000
+吴忠	wu zhong	1000
+固原	gu yuan	1000
+中卫	zhong wei	1000
+乌鲁木齐	wu lu mu qi	1000
+克拉玛依	ke la ma yi	1000
+吐鲁番	tu lu fan	1000
+哈密	ha mi	1000
+昌吉	chang ji	1000
+博尔塔拉	bo er ta la	1000
+巴音郭楞	ba yin guo leng	1000
+阿克苏	a ke su	1000
+克孜勒苏	ke zi le su	1000
+喀什	ka shi	1000
+和田	he tian	1000
+伊犁	yi li	1000
+塔城	ta cheng	1000
+阿勒泰	a le tai	1000
+石河子	shi he zi	1000
+库尔勒	ku er le	1000
+阿拉尔	a la er	1000
+# --- 美国州与地区 ---
+加利福尼亚	jia li fu ni ya	1000
+德克萨斯	de ke sa si	1000
+佛罗里达	fu luo li da	1000
+纽约州	niu yue zhou	1000
+宾夕法尼亚	bin xi fa ni ya	1000
+伊利诺伊	yi li nuo yi	1000
+俄亥俄	e hai e	1000
+佐治亚	zuo zhi ya	1000
+北卡罗来纳	bei ka luo lai na	1000
+密歇根	mi xie gen	1000
+新泽西	xin ze xi	1000
+弗吉尼亚	fu ji ni ya	1000
+华盛顿州	hua sheng dun zhou	1000
+亚利桑那	ya li sang na	1000
+马萨诸塞	ma sa zhu sai	1000
+田纳西	tian na xi	1000
+印第安纳	yin di an na	1000
+密苏里	mi su li	1000
+马里兰	ma li lan	1000
+威斯康星	wei si kang xing	1000
+科罗拉多	ke luo la duo	1000
+明尼苏达	ming ni su da	1000
+南卡罗来纳	nan ka luo lai na	1000
+亚拉巴马	ya la ba ma	1000
+路易斯安那	lu yi si an na	1000
+肯塔基	ken ta ji	1000
+俄勒冈	e le gang	1000
+俄克拉何马	e ke la he ma	1000
+康涅狄格	kang nie di ge	1000
+犹他	you ta	1000
+爱荷华	ai he hua	1000
+内华达	nei hua da	1000
+阿肯色	a ken se	1000
+密西西比	mi xi xi bi	1000
+堪萨斯	kan sa si	1000
+新墨西哥	xin mo xi ge	1000
+内布拉斯加	nei bu la si jia	1000
+西弗吉尼亚	xi fu ji ni ya	1000
+爱达荷	ai da he	1000
+夏威夷	xia wei yi	1000
+缅因	mian yin	1000
+新罕布什尔	xin han bu shen er	1000
+罗德岛	luo de dao	1000
+蒙大拿	meng da na	1000
+特拉华	te la hua	1000
+南达科他	nan da ke ta	1000
+北达科他	bei da ke ta	1000
+阿拉斯加	a la si jia	1000
+佛蒙特	fu meng te	1000
+怀俄明	huai e ming	1000
+硅谷	gui gu	1000
+华尔街	hua er jie	1000
+好莱坞	hao lai wu	1000
+曼哈顿	man ha dun	1000
+布鲁克林	bu lu ke lin	1000
+皇后区	huang hou qu	1000
+长岛	zhang dao	1000
+# --- 日本都道府县 ---
+东京都	dong jing du	1000
+大阪府	da ban fu	1000
+京都府	jing du fu	1000
+青森	qing sen	1000
+岩手	yan shou	1000
+宫城	gong cheng	1000
+秋田	qiu tian	1000
+山形	shan xing	1000
+福岛	fu dao	1000
+茨城	ci cheng	1000
+栃木	li mu	1000
+群马	qun ma	1000
+埼玉	qi yu	1000
+千叶	qian ye	1000
+神奈川	shen nai chuan	1000
+新潟	xin xi	1000
+富山	fu shan	1000
+石川	shi chuan	1000
+福井	fu jing	1000
+山梨	shan li	1000
+长野	zhang ye	1000
+岐阜	qi fu	1000
+静冈	jing gang	1000
+爱知	ai zhi	1000
+三重	san chong	1000
+滋贺	zi he	1000
+兵库	bing ku	1000
+和歌山	he ge shan	1000
+鸟取	niao qu	1000
+岛根	dao gen	1000
+冈山	gang shan	1000
+山口	shan kou	1000
+德岛	de dao	1000
+香川	xiang chuan	1000
+爱媛	ai yuan	1000
+高知	gao zhi	1000
+佐贺	zuo he	1000
+熊本	xiong ben	1000
+大分	da fen	1000
+宫崎	gong qi	1000
+鹿儿岛	lu er dao	1000
+# --- 山川海洋 ---
+喜马拉雅	xi ma la ya	1000
+珠穆朗玛峰	zhu mu lang ma feng	1000
+乔戈里峰	qiao ge li feng	1000
+昆仑山	kun lun shan	1000
+天山	tian shan	1000
+阿尔泰山	a er tai shan	1000
+祁连山	qi lian shan	1000
+秦岭	qin ling	1000
+太行山	tai hang shan	1000
+燕山	yan shan	1000
+长白山	chang bai shan	1000
+大兴安岭	da xing an ling	1000
+小兴安岭	xiao xing an ling	1000
+横断山	heng duan shan	1000
+唐古拉山	tang gu la shan	1000
+冈底斯山	gang di si shan	1000
+五台山	wu tai shan	1000
+华山	hua shan	1000
+泰山	tai shan	1000
+衡山	heng shan	1000
+恒山	heng shan	1000
+嵩山	song shan	1000
+庐山	lu shan	1000
+武当山	wu dang shan	1000
+武夷山	wu yi shan	1000
+阿尔卑斯山	a er bei si shan	1000
+比利牛斯山	bi li niu si shan	1000
+阿巴拉契亚	a ba la qi ya	1000
+落基山	luo ji shan	1000
+安第斯山	an di si shan	1000
+乞力马扎罗	qi li ma zha luo	1000
+富士山	fu shi shan	1000
+阿尔卑斯	a er bei si	1000
+长江	chang jiang	1000
+黄河	huang he	1000
+珠江	zhu jiang	1000
+松花江	song hua jiang	1000
+辽河	liao he	1000
+淮河	huai he	1000
+海河	hai he	1000
+雅鲁藏布江	ya lu zang bu jiang	1000
+澜沧江	lan cang jiang	1000
+汉江	han jiang	1000
+湘江	xiang jiang	1000
+赣江	gan jiang	1000
+闽江	min jiang	1000
+钱塘江	qian tang jiang	1000
+尼罗河	ni luo he	1000
+亚马逊河	ya ma xun he	1000
+密西西比河	mi xi xi bi he	1000
+多瑙河	duo nao he	1000
+莱茵河	lai yin he	1000
+塞纳河	sai na he	1000
+泰晤士河	tai wu shi he	1000
+伏尔加河	fu er jia he	1000
+恒河	heng he	1000
+印度河	yin du he	1000
+幼发拉底河	you fa la di he	1000
+底格里斯河	di ge li si he	1000
+湄公河	mei gong he	1000
+太平洋	tai ping yang	1000
+大西洋	da xi yang	1000
+印度洋	yin du yang	1000
+北冰洋	bei bing yang	1000
+南冰洋	nan bing yang	1000
+地中海	di zhong hai	1000
+黑海	hei hai	1000
+红海	hong hai	1000
+波罗的海	bo luo di hai	1000
+加勒比海	jia le bi hai	1000
+南海	nan hai	1000
+东海	dong hai	1000
+黄海	huang hai	1000
+渤海	bo hai	1000
+白令海	bai ling hai	1000
+日本海	ri ben hai	1000
+阿拉伯海	a la bo hai	1000
+孟加拉湾	meng jia la wan	1000
+墨西哥湾	mo xi ge wan	1000
+波斯湾	bo si wan	1000
+青海湖	qing hai hu	1000
+鄱阳湖	po yang hu	1000
+洞庭湖	dong ting hu	1000
+太湖	tai hu	1000
+洪泽湖	hong ze hu	1000
+巢湖	chao hu	1000
+滇池	dian chi	1000
+纳木错	na mu cuo	1000
+贝加尔湖	bei jia er hu	1000
+五大湖	wu da hu	1000
+死海	si hai	1000
+里海	li hai	1000
+撒哈拉沙漠	sa ha la sha mo	1000
+戈壁	ge bi	1000
+塔克拉玛干	ta ke la ma gan	1000
+巴丹吉林	ba dan ji lin	1000
+腾格里	teng ge li	1000
+库布齐	ku bu qi	1000
+阿塔卡马	a ta ka ma	1000
+格陵兰	ge ling lan	1000
+婆罗洲	po luo zhou	1000
+苏门答腊	su men da la	1000
+爪哇	zhao wa	1000
+新几内亚	xin ji nei ya	1000
+塔斯马尼亚	ta si ma ni ya	1000
+撒丁岛	sa ding dao	1000
+海南岛	hai nan dao	1000
+台湾岛	tai wan dao	1000
+崇明岛	chong ming dao	1000
+舟山群岛	zhou shan qun dao	1000
+南沙群岛	nan sha qun dao	1000
+西沙群岛	xi sha qun dao	1000
+钓鱼岛	diao yu dao	1000
+冲绳群岛	chong sheng qun dao	1000
+夏威夷群岛	xia wei yi qun dao	1000
+# --- 英国爱尔兰 城市 ---
+因弗内斯	yin fu nei si	1000
+阿伯丁	a bo ding	1000
+邓迪	deng di	1000
+斯特灵	si te ling	1000
+圣安德鲁斯	sheng an de lu si	1000
+高地	gao di	1000
+天空岛	tian kong dao	1000
+尼斯湖	ni si hu	1000
+约克	yue ke	1000
+巴斯	ba si	1000
+布里斯托尔	bu li si tuo er	1000
+纽卡斯尔	niu ka si er	1000
+谢菲尔德	xie fei er de	1000
+利兹	li zi	1000
+诺丁汉	nuo ding han	1000
+莱斯特	lai si te	1000
+考文垂	kao wen chui	1000
+德比	de bi	1000
+南安普顿	nan an pu dun	1000
+朴茨茅斯	pu ci mao si	1000
+布莱顿	bu lai dun	1000
+坎特伯雷	kan te bo lei	1000
+温莎	wen sha	1000
+切斯特	qie si te	1000
+温德米尔	wen de mi er	1000
+湖区	hu qu	1000
+科茨沃尔德	ke ci wo er de	1000
+贝尔法斯特	bei er fa si te	1000
+卡迪夫	ka di fu	1000
+斯旺西	si wang xi	1000
+斯诺登尼亚	si nuo deng ni ya	1000
+巨人堤	ju ren di	1000
+高威	gao wei	1000
+科克	ke ke	1000
+基拉尼	ji la ni	1000
+莫赫悬崖	mo he xuan ya	1000
+# --- 法国 城市 ---
+图卢兹	tu lu zi	1000
+南特	nan te	1000
+蒙彼利埃	meng bi li ai	1000
+里尔	li er	1000
+雷恩	lei en	1000
+兰斯	lan si	1000
+戛纳	jia na	1000
+阿维尼翁	a wei ni weng	1000
+安纳西	an na xi	1000
+沙莫尼	sha mo ni	1000
+圣马洛	sheng ma luo	1000
+迪戎	di rong	1000
+科尔马	ke er ma	1000
+图尔	tu er	1000
+卡尔卡松	ka er ka song	1000
+比亚里茨	bi ya li ci	1000
+昂热	ang re	1000
+亚眠	ya mian	1000
+鲁昂	lu ang	1000
+卡昂	ka ang	1000
+圣米歇尔山	sheng mi xie er shan	1000
+普罗旺斯	pu luo wang si	1000
+蔚蓝海岸	wei lan hai an	1000
+圣特罗佩	sheng te luo pei	1000
+芒通	mang tong	1000
+埃兹	ai zi	1000
+尼姆	ni mu	1000
+阿尔勒	a er le	1000
+波城	bo cheng	1000
+拉罗谢尔	la luo xie er	1000
+# --- 德国 城市 ---
+莱比锡	lai bi xi	1000
+汉诺威	han nuo wei	1000
+纽伦堡	niu lun bao	1000
+不来梅	bu lai mei	1000
+波恩	bo en	1000
+海德堡	hai de bao	1000
+弗莱堡	fu lai bao	1000
+罗滕堡	luo teng bao	1000
+吕贝克	lv bei ke	1000
+波茨坦	bo ci tan	1000
+魏玛	wei ma	1000
+明斯特	ming si te	1000
+亚琛	ya chen	1000
+特里尔	te li er	1000
+班贝格	ban bei ge	1000
+富森	fu sen	1000
+新天鹅堡	xin tian e bao	1000
+加米施	jia mi shi	1000
+巴登巴登	ba deng ba deng	1000
+埃尔福特	ai er fu te	1000
+美因茨	mei yin ci	1000
+黑森林	hei sen lin	1000
+莱茵河谷	lai yin he gu	1000
+国王湖	guo wang hu	1000
+楚格峰	chu ge feng	1000
+# --- 意大利 城市 ---
+热那亚	re na ya	1000
+维罗纳	wei luo na	1000
+锡耶纳	xi ye na	1000
+卢卡	lu ka	1000
+里米尼	li mi ni	1000
+帕尔马	pa er ma	1000
+摩德纳	mo de na	1000
+巴里	ba li	1000
+巴勒莫	ba le mo	1000
+卡塔尼亚	ka ta ni ya	1000
+陶尔米纳	tao er mi na	1000
+阿马尔菲	a ma er fei	1000
+波西塔诺	bo xi ta nuo	1000
+索伦托	suo lun tuo	1000
+卡普里	ka pu li	1000
+五渔村	wu yu cun	1000
+科莫	ke mo	1000
+贝加莫	bei jia mo	1000
+特伦托	te lun tuo	1000
+博尔扎诺	bo er zha nuo	1000
+乌迪内	wu di nei	1000
+的里雅斯特	di li ya si te	1000
+阿西西	a xi xi	1000
+佩鲁贾	pei lu jia	1000
+拉文纳	la wen na	1000
+帕多瓦	pa duo wa	1000
+曼托瓦	man tuo wa	1000
+蒙特普尔恰诺	meng te pu er qia nuo	1000
+圣吉米尼亚诺	sheng ji mi ni ya nuo	1000
+托斯卡纳	tuo si ka na	1000
+撒丁	sa ding	1000
+多洛米蒂	duo luo mi di	1000
+# --- 西班牙葡萄牙 ---
+萨拉戈萨	sa la ge sa	1000
+马拉加	ma la jia	1000
+格拉纳达	ge la na da	1000
+科尔多瓦	ke er duo wa	1000
+托莱多	tuo lai duo	1000
+萨拉曼卡	sa la man ka	1000
+圣塞瓦斯蒂安	sheng sai wa si di an	1000
+阿利坎特	a li kan te	1000
+加的斯	jia di si	1000
+龙达	long da	1000
+塞戈维亚	sai ge wei ya	1000
+昆卡	kun ka	1000
+圣地亚哥孔波斯特拉	sheng di ya ge kong bo si te la	1000
+伊比萨	yi bi sa	1000
+马略卡	ma lve ka	1000
+特内里费	te nei li fei	1000
+大加纳利	da jia na li	1000
+辛特拉	xin te la	1000
+法罗	fa luo	1000
+科英布拉	ke ying bu la	1000
+布拉加	bu la jia	1000
+埃武拉	ai wu la	1000
+马德拉	ma de la	1000
+亚速尔	ya su er	1000
+阿尔加维	a er jia wei	1000
+# --- 希腊土耳其 ---
+圣托里尼	sheng tuo li ni	1000
+米克诺斯	mi ke nuo si	1000
+克里特	ke li te	1000
+伊拉克利翁	yi la ke li weng	1000
+科孚	ke fu	1000
+迈泰奥拉	mai tai ao la	1000
+德尔菲	de er fei	1000
+纳夫普利翁	na fu pu li weng	1000
+扎金索斯	zha jin suo si	1000
+圣岛	sheng dao	1000
+雅典卫城	ya dian wei cheng	1000
+伊兹密尔	yi zi mi er	1000
+安塔利亚	an ta li ya	1000
+费特希耶	fei te xi ye	1000
+卡帕多西亚	ka pa duo xi ya	1000
+格雷梅	ge lei mei	1000
+棉花堡	mian hua bao	1000
+帕穆卡莱	pa mu ka lai	1000
+布尔萨	bu er sa	1000
+孔亚	kong ya	1000
+特拉布宗	te la bu zong	1000
+博德鲁姆	bo de lu mu	1000
+马尔马里斯	ma er ma li si	1000
+库萨达斯	ku sa da si	1000
+以弗所	yi fu suo	1000
+加济安泰普	jia ji an tai pu	1000
+阿达纳	a da na	1000
+卡尔斯	ka er si	1000
+番红花城	fan hong hua cheng	1000
+# --- 瑞士奥地利 ---
+巴塞尔	ba sai er	1000
+洛桑	luo sang	1000
+因特拉肯	yin te la ken	1000
+采尔马特	cai er ma te	1000
+圣莫里茨	sheng mo li ci	1000
+格林德瓦	ge lin de wa	1000
+蒙特勒	meng te le	1000
+卢加诺	lu jia nuo	1000
+少女峰	shao nv feng	1000
+马特洪峰	ma te hong feng	1000
+铁力士	tie li shi	1000
+沙夫豪森	sha fu hao sen	1000
+施皮茨	shi pi ci	1000
+因斯布鲁克	yin si bu lu ke	1000
+格拉茨	ge la ci	1000
+林茨	lin ci	1000
+哈尔施塔特	ha er shi ta te	1000
+采尔湖	cai er hu	1000
+瓦豪河谷	wa hao he gu	1000
+# --- 荷比卢北欧 ---
+乌得勒支	wu de le zhi	1000
+埃因霍温	ai yin huo wen	1000
+代尔夫特	dai er fu te	1000
+羊角村	yang jiao cun	1000
+库肯霍夫	ku ken huo fu	1000
+布鲁日	bu lu ri	1000
+根特	gen te	1000
+鲁汶	lu wen	1000
+那慕尔	na mu er	1000
+马尔默	ma er mo	1000
+基律纳	ji lv na	1000
+乌普萨拉	wu pu sa la	1000
+特罗姆瑟	te luo mu se	1000
+斯塔万格	si ta wan ge	1000
+盖朗厄尔	gai lang e er	1000
+罗弗敦	luo fu dun	1000
+奥胡斯	ao hu si	1000
+欧登塞	ou deng sai	1000
+罗瓦涅米	luo wa nie mi	1000
+图尔库	tu er ku	1000
+坦佩雷	tan pei lei	1000
+蓝湖	lan hu	1000
+黄金圈	huang jin quan	1000
+# --- 中东欧 ---
+克鲁姆洛夫	ke lu mu luo fu	1000
+卡罗维发利	ka luo wei fa li	1000
+布尔诺	bu er nuo	1000
+弗罗茨瓦夫	fu luo ci wa fu	1000
+格但斯克	ge dan si ke	1000
+扎科帕内	zha ke pa nei	1000
+波兹南	bo zi nan	1000
+奥斯维辛	ao si wei xin	1000
+布莱德	bu lai de	1000
+皮兰	pi lan	1000
+杜布罗夫尼克	du bu luo fu ni ke	1000
+斯普利特	si pu li te	1000
+扎达尔	zha da er	1000
+普利特维采	pu li te wei cai	1000
+罗维尼	luo wei ni	1000
+布拉索夫	bu la suo fu	1000
+锡比乌	xi bi wu	1000
+克卢日	ke lu ri	1000
+蒂米什瓦拉	di mi shen wa la	1000
+锡吉什瓦拉	xi ji shen wa la	1000
+瓦尔纳	wa er na	1000
+普罗夫迪夫	pu luo fu di fu	1000
+里拉	li la	1000
+诺维萨德	nuo wei sa de	1000
+莫斯塔尔	mo si ta er	1000
+奥赫里德	ao he li de	1000
+布德瓦	bu de wa	1000
+科托尔	ke tuo er	1000
+利沃夫	li wo fu	1000
+哈尔科夫	ha er ke fu	1000
+# --- 俄罗斯 城市 ---
+叶卡捷琳堡	ye ka jie lin bao	1000
+摩尔曼斯克	mo er man si ke	1000
+伊尔库茨克	yi er ku ci ke	1000
+苏兹达尔	su zi da er	1000
+谢尔吉耶夫	xie er ji ye fu	1000
+下诺夫哥罗德	xia nuo fu ge luo de	1000
+加里宁格勒	jia li ning ge le	1000
+伏尔加格勒	fu er jia ge le	1000
+罗斯托夫	luo si tuo fu	1000
+克拉斯诺达尔	ke la si nuo da er	1000
+哈巴罗夫斯克	ha ba luo fu si ke	1000
+堪察加	kan cha jia	1000
+# --- 美国 城市与国家公园 ---
+波特兰	bo te lan	1000
+盐湖城	yan hu cheng	1000
+圣安东尼奥	sheng an dong ni ao	1000
+纳什维尔	na shen wei er	1000
+孟菲斯	meng fei si	1000
+匹兹堡	pi zi bao	1000
+明尼阿波利斯	ming ni a bo li si	1000
+克利夫兰	ke li fu lan	1000
+辛辛那提	xin xin na ti	1000
+印第安纳波利斯	yin di an na bo li si	1000
+堪萨斯城	kan sa si cheng	1000
+圣路易斯	sheng lu yi si	1000
+巴尔的摩	ba er de mo	1000
+夏洛特	xia luo te	1000
+罗利	luo li	1000
+奥兰多	ao lan duo	1000
+坦帕	tan pa	1000
+杰克逊维尔	jie ke xun wei er	1000
+萨凡纳	sa fan na	1000
+查尔斯顿	cha er si dun	1000
+阿什维尔	a shen wei er	1000
+圣塔菲	sheng ta fei	1000
+图森	tu sen	1000
+阿尔伯克基	a er bo ke ji	1000
+博伊西	bo yi xi	1000
+安克雷奇	an ke lei qi	1000
+朱诺	zhu nuo	1000
+阿斯彭	a si peng	1000
+杰克逊霍尔	jie ke xun huo er	1000
+塞多纳	sai duo na	1000
+蒙特雷	meng te lei	1000
+圣巴巴拉	sheng ba ba la	1000
+纳帕	na pa	1000
+索诺玛	suo nuo ma	1000
+棕榈泉	zong lv quan	1000
+基韦斯特	ji wei si te	1000
+纽波特	niu bo te	1000
+大峡谷	da xia gu	1000
+优胜美地	you sheng mei di	1000
+锡安	xi an	1000
+布莱斯	bu lai si	1000
+大提顿	da ti dun	1000
+冰川国家公园	bing chuan guo jia gong yuan	1000
+阿卡迪亚	a ka di ya	1000
+死亡谷	si wang gu	1000
+红杉	hong shan	1000
+火山口湖	huo shan kou hu	1000
+拱门国家公园	gong men guo jia gong yuan	1000
+峡谷地	xia gu di	1000
+羚羊谷	ling yang gu	1000
+马蹄湾	ma ti wan	1000
+纪念碑谷	ji nian bei gu	1000
+大烟山	da yan shan	1000
+约书亚树	yue shu ya shu	1000
+# --- 加拿大与拉美 ---
+埃德蒙顿	ai de meng dun	1000
+魁北克城	kui bei ke cheng	1000
+哈利法克斯	ha li fa ke si	1000
+维多利亚	wei duo li ya	1000
+班夫	ban fu	1000
+露易丝湖	lu yi si hu	1000
+贾斯珀	jia si po	1000
+惠斯勒	hui si le	1000
+尼亚加拉	ni ya jia la	1000
+黄刀镇	huang dao zhen	1000
+丘吉尔镇	qiu ji er zhen	1000
+圣约翰斯	sheng yue han si	1000
+图卢姆	tu lu mu	1000
+瓜纳华托	gua na hua tuo	1000
+圣米格尔	sheng mi ge er	1000
+瓦哈卡	wa ha ka	1000
+梅里达	mei li da	1000
+洛斯卡沃斯	luo si ka wo si	1000
+库斯科	ku si ke	1000
+马丘比丘	ma qiu bi qiu	1000
+阿雷基帕	a lei ji pa	1000
+的的喀喀湖	di di ka ka hu	1000
+乌尤尼	wu you ni	1000
+卡塔赫纳	ka ta he na	1000
+麦德林	mai de lin	1000
+瓦尔帕莱索	wa er pa lai suo	1000
+巴塔哥尼亚	ba ta ge ni ya	1000
+乌斯怀亚	wu si huai ya	1000
+卡拉法特	ka la fa te	1000
+伊瓜苏	yi gua su	1000
+门多萨	men duo sa	1000
+巴里洛切	ba li luo qie	1000
+累西腓	lei xi fei	1000
+福塔莱萨	fu ta lai sa	1000
+库里蒂巴	ku li di ba	1000
+玛瑙斯	ma nao si	1000
+加拉帕戈斯	jia la pa ge si	1000
+# --- 澳新与其他 ---
+霍巴特	huo ba te	1000
+达尔文	da er wen	1000
+乌鲁鲁	wu lu lu	1000
+艾尔斯岩	ai er si yan	1000
+大堡礁	da bao jiao	1000
+拜伦湾	bai lun wan	1000
+汉密尔顿岛	han mi er dun dao	1000
+大洋路	da yang lu	1000
+但尼丁	dan ni ding	1000
+罗托鲁瓦	luo tuo lu wa	1000
+陶波	tao bo	1000
+瓦纳卡	wa na ka	1000
+蒂阿瑙	di a nao	1000
+米尔福德	mi er fu de	1000
+库克山	ku ke shan	1000
+弗朗兹约瑟夫	fu lang zi yue se fu	1000
+
+# ===== 影视人物 =====
+# --- 早期与经典 ---
+饭岛爱	fan dao ai	1000
+武藤兰	wu teng lan	1000
+松岛枫	song dao feng	1000
+小泽玛利亚	xiao ze ma li ya	1000
+苍井空	cang jing kong	1000
+吉泽明步	ji ze ming bu	1000
+麻生希	ma sheng xi	1000
+天海翼	tian hai yi	1000
+波多野结衣	bo duo ye jie yi	1000
+大桥未久	da qiao wei jiu	1000
+上原亚衣	shang yuan ya yi	1000
+泷泽萝拉	long ze luo la	1000
+桃谷绘里香	tao gu hui li xiang	1000
+明日花绮罗	ming ri hua qi luo	1000
+希崎杰西卡	xi qi jie xi ka	1000
+麻美由真	ma mei you zhen	1000
+北条麻妃	bei tiao ma fei	1000
+佐山爱	zuo shan ai	1000
+川上优	chuan shang you	1000
+沖田杏梨	chong tian xing li	1000
+冲田杏梨	chong tian xing li	1000
+桥本凉	qiao ben liang	1000
+里美尤利娅	li mei you li ya	1000
+鹫尾芽衣	jiu wei ya yi	1000
+# --- 中期 ---
+三上悠亚	san shang you ya	1000
+桥本有菜	qiao ben you cai	1000
+相泽南	xiang ze nan	1000
+深田咏美	shen tian yong mei	1000
+高桥圣子	gao qiao sheng zi	1000
+星野娜美	xing ye na mei	1000
+佐佐木明希	zuo zuo mu ming xi	1000
+铃村爱里	ling cun ai li	1000
+桃乃木香奈	tao nai mu xiang nai	1000
+枫可怜	feng ke lian	1000
+架乃由罗	jia nai you luo	1000
+本庄铃	ben zhuang ling	1000
+二宫光	er gong guang	1000
+凉森玲梦	liang sen ling meng	1000
+天使萌	tian shi meng	1000
+八木奈奈	ba mu nai nai	1000
+白石茉莉奈	bai shi mo li nai	1000
+希岛爱理	xi dao ai li	1000
+松本一香	song ben yi xiang	1000
+美竹铃	mei zhu ling	1000
+君岛美绪	jun dao mei xu	1000
+小岛南	xiao dao nan	1000
+夏目彩春	xia mu cai chun	1000
+有村千佳	you cun qian jia	1000
+水卜樱	shui bo ying	1000
+佐仓绊	zuo cang ban	1000
+石原莉奈	shi yuan li nai	1000
+明里紬	ming li chou	1000
+七泽米亚	qi ze mi ya	1000
+枫花恋	feng hua lian	1000
+樱空桃	ying kong tao	1000
+# --- 近期活跃 ---
+河北彩花	he bei cai hua	1000
+河北彩伽	he bei cai ga	1000
+涌田绘美	yong tian hui mei	1000
+楪可怜	ye ke lian	1000
+松本菜奈实	song ben cai nai shi	1000
+净滨凉子	jing bin liang zi	1000
+筱田优	xiao tian you	1000
+逢泽真纪	feng ze zhen ji	1000
+伊藤舞雪	yi teng wu xue	1000
+枫富爱	feng fu ai	1000
+唯井真寻	wei jing zhen xun	1000
+花恋莉音	hua lian li yin	1000
+岬奈奈美	jia nai nai mei	1000
+浅野心	qian ye xin	1000
+一之濑亚美莉	yi zhi lai ya mei li	1000
+花柳杏奈	hua liu xing nai	1000
+神宫寺奈绪	shen gong si nai xu	1000
+楠里绪奈	nan li xu nai	1000
+富田优衣	fu tian you yi	1000
+天音真白	tian yin zhen bai	1000
+有栖花绯	you qi hua fei	1000
+花丸日和	hua wan ri he	1000
+珠城桃	zhu cheng tao	1000
+望月琉叶	wang yue liu ye	1000
+石川澪	shi chuan ling	1000
+白桃花	bai tao hua	1000
+奏音花音	zou yin hua yin	1000
+乙白沙也加	yi bai sha ye jia	1000
+桜空桃	ying kong tao	1000
+五十岚清华	wu shi lan qing hua	1000
+森泽佳奈	sen ze jia nai	1000
+星宫一花	xing gong yi hua	1000
+
+# ===== 摄影 =====
+# --- 曝光 ---
+曝光	bao guang	1000
+曝光三角	bao guang san jiao	1000
+光圈	guang quan	1000
+快门	kuai men	1000
+感光度	gan guang du	1000
+光圈优先	guang quan you xian	1000
+快门优先	kuai men you xian	1000
+程序自动	cheng xu zi dong	1000
+手动模式	shou dong mo shi	1000
+全手动	quan shou dong	1000
+测光	ce guang	1000
+点测光	dian ce guang	1000
+中央重点测光	zhong yang zhong dian ce guang	1000
+评价测光	ping jia ce guang	1000
+矩阵测光	ju zhen ce guang	1000
+局部测光	ju bu ce guang	1000
+曝光补偿	bao guang bu chang	1000
+包围曝光	bao wei bao guang	1000
+自动包围曝光	zi dong bao wei bao guang	1000
+曝光锁定	bao guang suo ding	1000
+过曝	guo bao	1000
+欠曝	qian bao	1000
+高光溢出	gao guang yi chu	1000
+暗部死黑	an bu si hei	1000
+动态范围	dong tai fan wei	1000
+宽容度	kuan rong du	1000
+直方图	zhi fang tu	1000
+斑马纹	ban ma wen	1000
+高光警告	gao guang jing gao	1000
+安全快门	an quan kuai men	1000
+最低快门	zui di kuai men	1000
+快门速度	kuai men su du	1000
+长曝光	chang bao guang	1000
+慢门	man men	1000
+定时曝光	ding shi bao guang	1000
+手动模式测光表	shou dong mo shi ce guang biao	1000
+# --- 镜头 ---
+定焦	ding jiao	1000
+变焦	bian jiao	1000
+广角	guang jiao	1000
+超广角	chao guang jiao	1000
+标准镜头	biao zhun jing tou	1000
+中焦	zhong jiao	1000
+长焦	chang jiao	1000
+超长焦	chao chang jiao	1000
+微距	wei ju	1000
+移轴	yi zhou	1000
+鱼眼	yu yan	1000
+折返镜头	zhe fan jing tou	1000
+大光圈	da guang quan	1000
+恒定光圈	heng ding guang quan	1000
+浮动光圈	fu dong guang quan	1000
+焦距	jiao ju	1000
+等效焦距	deng xiao jiao ju	1000
+视角	shi jiao	1000
+最近对焦距离	zui jin dui jiao ju li	1000
+放大倍率	fang da bei lv	1000
+工作距离	gong zuo ju li	1000
+镜片	jing pian	1000
+非球面镜片	fei qiu mian jing pian	1000
+低色散镜片	di se san jing pian	1000
+萤石镜片	ying shi jing pian	1000
+镀膜	du mo	1000
+纳米镀膜	na mi du mo	1000
+内对焦	nei dui jiao	1000
+后对焦	hou dui jiao	1000
+对焦行程	dui jiao xing cheng	1000
+呼吸效应	hu xi xiao ying	1000
+畸变	ji bian	1000
+桶形畸变	tong xing ji bian	1000
+枕形畸变	zhen xing ji bian	1000
+暗角	an jiao	1000
+色散	se san	1000
+紫边	zi bian	1000
+眩光	xuan guang	1000
+鬼影	gui ying	1000
+分辨率	fen bian lv	1000
+中心锐度	zhong xin rui du	1000
+边缘锐度	bian yuan rui du	1000
+反差	fan cha	1000
+卡口	ka kou	1000
+转接环	zhuan jie huan	1000
+增倍镜	zeng bei jing	1000
+近摄环	jin she huan	1000
+遮光罩	zhe guang zhao	1000
+滤镜螺纹	lv jing luo wen	1000
+# --- 对焦 ---
+自动对焦	zi dong dui jiao	1000
+手动对焦	shou dong dui jiao	1000
+单次对焦	dan ci dui jiao	1000
+连续对焦	lian xu dui jiao	1000
+智能对焦	zhi neng dui jiao	1000
+相位对焦	xiang wei dui jiao	1000
+反差对焦	fan cha dui jiao	1000
+双像素对焦	shuang xiang su dui jiao	1000
+片上相位	pian shang xiang wei	1000
+眼部对焦	yan bu dui jiao	1000
+人眼识别	ren yan shi bie	1000
+动物识别	dong wu shi bie	1000
+车辆识别	che liang shi bie	1000
+追踪对焦	zhui zong dui jiao	1000
+对焦点	dui jiao dian	1000
+对焦区域	dui jiao qu yu	1000
+全区域对焦	quan qu yu dui jiao	1000
+区域对焦	qu yu dui jiao	1000
+陷阱对焦	xian jing dui jiao	1000
+峰值对焦	feng zhi dui jiao	1000
+放大对焦	fang da dui jiao	1000
+跑焦	pao jiao	1000
+合焦	he jiao	1000
+脱焦	tuo jiao	1000
+对焦速度	dui jiao su du	1000
+暗光对焦	an guang dui jiao	1000
+# --- 传感器与画质 ---
+全画幅	quan hua fu	1000
+中画幅	zhong hua fu	1000
+半画幅	ban hua fu	1000
+微单	wei dan	1000
+单反	dan fan	1000
+无反	wu fan	1000
+底大一级压死人	di da yi ji ya si ren	1000
+像素	xiang su	1000
+有效像素	you xiao xiang su	1000
+像素密度	xiang su mi du	1000
+背照式	bei zhao shi	1000
+堆栈式	dui zhan shi	1000
+全局快门	quan ju kuai men	1000
+卷帘快门	juan lian kuai men	1000
+果冻效应	guo dong xiao ying	1000
+读出速度	du chu su du	1000
+信噪比	xin zao bi	1000
+噪点	zao dian	1000
+高感表现	gao gan biao xian	1000
+原生感光度	yuan sheng gan guang du	1000
+双原生	shuang yuan sheng	1000
+色深	se shen	1000
+位深	wei shen	1000
+色彩深度	se cai shen du	1000
+拜耳阵列	bai er zhen lie	1000
+低通滤镜	di tong lv jing	1000
+摩尔纹	mo er wen	1000
+传感器除尘	chuan gan qi chu chen	1000
+防抖	fang dou	1000
+机身防抖	ji shen fang dou	1000
+镜头防抖	jing tou fang dou	1000
+五轴防抖	wu zhou fang dou	1000
+协同防抖	xie tong fang dou	1000
+像素偏移	xiang su pian yi	1000
+高分辨率合成	gao fen bian lv he cheng	1000
+# --- 构图与用光 ---
+构图	gou tu	1000
+三分法	san fen fa	1000
+黄金分割	huang jin fen ge	1000
+对称构图	dui chen gou tu	1000
+引导线	yin dao xian	1000
+框架构图	kuang jia gou tu	1000
+前景	qian jing	1000
+中景	zhong jing	1000
+背景	bei jing	1000
+留白	liu bai	1000
+层次	ceng ci	1000
+纵深	zong shen	1000
+透视	tou shi	1000
+压缩感	ya suo gan	1000
+空间感	kong jian gan	1000
+视觉重心	shi jue zhong xin	1000
+画面平衡	hua mian ping heng	1000
+主体	zhu ti	1000
+陪体	pei ti	1000
+环境人像	huan jing ren xiang	1000
+特写	te xie	1000
+中景人像	zhong jing ren xiang	1000
+全身	quan shen	1000
+自然光	zi ran guang	1000
+顺光	shun guang	1000
+侧光	ce guang	1000
+逆光	ni guang	1000
+侧逆光	ce ni guang	1000
+顶光	ding guang	1000
+底光	di guang	1000
+伦勃朗光	lun bo lang guang	1000
+蝴蝶光	hu die guang	1000
+分割光	fen ge guang	1000
+环形光	huan xing guang	1000
+硬光	ying guang	1000
+柔光	rou guang	1000
+光比	guang bi	1000
+主光	zhu guang	1000
+辅光	fu guang	1000
+轮廓光	lun kuo guang	1000
+发丝光	fa si guang	1000
+背景光	bei jing guang	1000
+反光板	fan guang ban	1000
+柔光箱	rou guang xiang	1000
+束光筒	shu guang tong	1000
+蜂巢	feng chao	1000
+闪光灯	shan guang deng	1000
+机顶闪	ji ding shan	1000
+离机闪	li ji shan	1000
+高速同步	gao su tong bu	1000
+后帘同步	hou lian tong bu	1000
+前帘同步	qian lian tong bu	1000
+引闪器	yin shan qi	1000
+常亮灯	chang liang deng	1000
+补光灯	bu guang deng	1000
+色温片	se wen pian	1000
+# --- 色彩与后期 ---
+色温	se wen	1000
+白平衡	bai ping heng	1000
+自动白平衡	zi dong bai ping heng	1000
+自定义白平衡	zi ding yi bai ping heng	1000
+灰卡	hui ka	1000
+色卡	se ka	1000
+色彩空间	se cai kong jian	1000
+色域	se yu	1000
+色彩管理	se cai guan li	1000
+显示器校色	xian shi qi jiao se	1000
+直出	zhi chu	1000
+原始格式	yuan shi ge shi	1000
+无损压缩	wu sun ya suo	1000
+有损压缩	you sun ya suo	1000
+曲线	qu xian	1000
+色阶	se jie	1000
+色相	se xiang	1000
+饱和度	bao he du	1000
+明度	ming du	1000
+自然饱和度	zi ran bao he du	1000
+高光	gao guang	1000
+阴影	yin ying	1000
+白色	bai se	1000
+黑色	hei se	1000
+清晰度	qing xi du	1000
+去朦胧	qu meng long	1000
+纹理	wen li	1000
+锐化	rui hua	1000
+降噪	jiang zao	1000
+明度降噪	ming du jiang zao	1000
+色彩降噪	se cai jiang zao	1000
+分离色调	fen li se diao	1000
+色彩分级	se cai fen ji	1000
+色轮	se lun	1000
+三向色轮	san xiang se lun	1000
+蒙版	meng ban	1000
+径向渐变	jing xiang jian bian	1000
+线性渐变	xian xing jian bian	1000
+画笔蒙版	hua bi meng ban	1000
+亮度蒙版	liang du meng ban	1000
+堆栈	dui zhan	1000
+曝光合成	bao guang he cheng	1000
+全景接片	quan jing jie pian	1000
+焦点堆栈	jiao dian dui zhan	1000
+星轨	xing gui	1000
+延时摄影	yan shi she ying	1000
+光绘	guang hui	1000
+# --- 器材与场景 ---
+三脚架	san jiao jia	1000
+独脚架	du jiao jia	1000
+云台	yun tai	1000
+球形云台	qiu xing yun tai	1000
+三维云台	san wei yun tai	1000
+齿轮云台	chi lun yun tai	1000
+快装板	kuai zhuang ban	1000
+中轴	zhong zhou	1000
+脚管	jiao guan	1000
+碳纤维脚架	tan xian wei jiao jia	1000
+滤镜	lv jing	1000
+偏振镜	pian zhen jing	1000
+减光镜	jian guang jing	1000
+渐变镜	jian bian jing	1000
+中灰渐变	zhong hui jian bian	1000
+方形滤镜	fang xing lv jing	1000
+支架	zhi jia	1000
+保护镜	bao hu jing	1000
+风光摄影	feng guang she ying	1000
+人像摄影	ren xiang she ying	1000
+街头摄影	jie tou she ying	1000
+纪实摄影	ji shi she ying	1000
+建筑摄影	jian zhu she ying	1000
+产品摄影	chan pin she ying	1000
+静物摄影	jing wu she ying	1000
+微距摄影	wei ju she ying	1000
+星空摄影	xing kong she ying	1000
+天文摄影	tian wen she ying	1000
+野生动物摄影	ye sheng dong wu she ying	1000
+打鸟	da niao	1000
+体育摄影	ti yu she ying	1000
+婚礼摄影	hun li she ying	1000
+旅拍	lv pai	1000
+扫街	sao jie	1000
+城市风光	cheng shi feng guang	1000
+蓝调时刻	lan diao shi ke	1000
+黄金时刻	huang jin shi ke	1000
+
+# ===== 数学 =====
+# --- 微积分 ---
+极限	ji xian	1000
+左极限	zuo ji xian	1000
+右极限	you ji xian	1000
+无穷小	wu qiong xiao	1000
+无穷大	wu qiong da	1000
+等价无穷小	deng jia wu qiong xiao	1000
+洛必达法则	luo bi da fa ze	1000
+夹逼准则	jia bi zhun ze	1000
+连续	lian xu	1000
+间断点	jian duan dian	1000
+可导	ke dao	1000
+导数	dao shu	1000
+高阶导数	gao jie dao shu	1000
+偏导数	pian dao shu	1000
+全微分	quan wei fen	1000
+方向导数	fang xiang dao shu	1000
+隐函数求导	yin han shu qiu dao	1000
+参数方程求导	can shu fang cheng qiu dao	1000
+微分中值定理	wei fen zhong zhi ding li	1000
+罗尔定理	luo er ding li	1000
+拉格朗日中值定理	la ge lang ri zhong zhi ding li	1000
+柯西中值定理	ke xi zhong zhi ding li	1000
+泰勒公式	tai le gong shi	1000
+泰勒级数	tai le ji shu	1000
+麦克劳林级数	mai ke lao lin ji shu	1000
+余项	yu xiang	1000
+不定积分	bu ding ji fen	1000
+定积分	ding ji fen	1000
+换元积分	huan yuan ji fen	1000
+分部积分	fen bu ji fen	1000
+有理函数积分	you li han shu ji fen	1000
+反常积分	fan chang ji fen	1000
+广义积分	guang yi ji fen	1000
+变限积分	bian xian ji fen	1000
+二重积分	er chong ji fen	1000
+三重积分	san chong ji fen	1000
+重积分	chong ji fen	1000
+重积分	zhong ji fen	500
+曲线积分	qu xian ji fen	1000
+曲面积分	qu mian ji fen	1000
+第一类曲线积分	di yi lei qu xian ji fen	1000
+第二类曲线积分	di er lei qu xian ji fen	1000
+格林公式	ge lin gong shi	1000
+高斯公式	gao si gong shi	1000
+斯托克斯公式	si tuo ke si gong shi	1000
+散度	san du	1000
+旋度	xuan du	1000
+梯度	ti du	1000
+通量	tong liang	1000
+环量	huan liang	1000
+保守场	bao shou chang	1000
+势函数	shi han shu	1000
+数项级数	shu xiang ji shu	1000
+幂级数	mi ji shu	1000
+收敛半径	shou lian ban jing	1000
+收敛域	shou lian yu	1000
+绝对收敛	jue dui shou lian	1000
+条件收敛	tiao jian shou lian	1000
+比值判别法	bi zhi pan bie fa	1000
+根值判别法	gen zhi pan bie fa	1000
+傅里叶级数	fu li ye ji shu	1000
+傅里叶变换	fu li ye bian huan	1000
+快速傅里叶变换	kuai su fu li ye bian huan	1000
+离散傅里叶变换	li san fu li ye bian huan	1000
+拉普拉斯变换	la pu la si bian huan	1000
+逆拉普拉斯变换	ni la pu la si bian huan	1000
+拉普拉斯逆变换	la pu la si ni bian huan	1000
+Z变换	Z bian huan	1000
+卷积	juan ji	1000
+卷积定理	juan ji ding li	1000
+传递函数	chuan di han shu	1000
+频域	pin yu	1000
+时域	shi yu	1000
+频谱	pin pu	1000
+单位冲激	dan wei chong ji	1000
+阶跃函数	jie yue han shu	1000
+# --- 微分方程 ---
+常微分方程	chang wei fen fang cheng	1000
+偏微分方程	pian wei fen fang cheng	1000
+一阶线性微分方程	yi jie xian xing wei fen fang cheng	1000
+齐次方程	qi ci fang cheng	1000
+非齐次方程	fei qi ci fang cheng	1000
+通解	tong jie	1000
+特解	te jie	1000
+初值问题	chu zhi wen ti	1000
+可分离变量	ke fen li bian liang	1000
+伯努利方程	bo nu li fang cheng	1000
+全微分方程	quan wei fen fang cheng	1000
+高阶线性微分方程	gao jie xian xing wei fen fang cheng	1000
+特征方程	te zheng fang cheng	1000
+常系数线性微分方程	chang xi shu xian xing wei fen fang cheng	1000
+欧拉方程	ou la fang cheng	1000
+波动方程	bo dong fang cheng	1000
+热传导方程	re chuan dao fang cheng	1000
+拉普拉斯方程	la pu la si fang cheng	1000
+泊松方程	po song fang cheng	1000
+边值问题	bian zhi wen ti	1000
+分离变量法	fen li bian liang fa	1000
+特征值问题	te zheng zhi wen ti	1000
+# --- 线性代数 ---
+矩阵	ju zhen	1000
+方阵	fang zhen	1000
+行列式	hang lie shi	1000
+余子式	yu zi shi	1000
+代数余子式	dai shu yu zi shi	1000
+转置	zhuan zhi	1000
+逆矩阵	ni ju zhen	1000
+伴随矩阵	ban sui ju zhen	1000
+初等变换	chu deng bian huan	1000
+初等矩阵	chu deng ju zhen	1000
+秩	zhi	1000
+满秩	man zhi	1000
+线性相关	xian xing xiang guan	1000
+线性无关	xian xing wu guan	1000
+极大线性无关组	ji da xian xing wu guan zu	1000
+向量空间	xiang liang kong jian	1000
+基	ji	1000
+维数	wei shu	1000
+坐标变换	zuo biao bian huan	1000
+过渡矩阵	guo du ju zhen	1000
+特征值	te zheng zhi	1000
+特征向量	te zheng xiang liang	1000
+特征多项式	te zheng duo xiang shi	1000
+相似矩阵	xiang si ju zhen	1000
+相似对角化	xiang si dui jiao hua	1000
+可对角化	ke dui jiao hua	1000
+若尔当标准形	ruo er dang biao zhun xing	1000
+正交	zheng jiao	1000
+正交矩阵	zheng jiao ju zhen	1000
+施密特正交化	shi mi te zheng jiao hua	1000
+内积	nei ji	1000
+范数	fan shu	1000
+二次型	er ci xing	1000
+标准形	biao zhun xing	1000
+规范形	gui fan xing	1000
+正定	zheng ding	1000
+半正定	ban zheng ding	1000
+惯性指数	guan xing zhi shu	1000
+线性方程组	xian xing fang cheng zu	1000
+齐次线性方程组	qi ci xian xing fang cheng zu	1000
+非齐次线性方程组	fei qi ci xian xing fang cheng zu	1000
+基础解系	ji chu jie xi	1000
+克拉默法则	ke la mo fa ze	1000
+高斯消元法	gao si xiao yuan fa	1000
+奇异值分解	qi yi zhi fen jie	1000
+特征值分解	te zheng zhi fen jie	1000
+谱分解	pu fen jie	1000
+迹	ji	1000
+广义逆	guang yi ni	1000
+# --- 概率与统计 ---
+样本空间	yang ben kong jian	1000
+随机事件	sui ji shi jian	1000
+条件概率	tiao jian gai lv	1000
+全概率公式	quan gai lv gong shi	1000
+贝叶斯公式	bei ye si gong shi	1000
+独立性	du li xing	1000
+随机变量	sui ji bian liang	1000
+分布函数	fen bu han shu	1000
+概率密度函数	gai lv mi du han shu	1000
+离散型随机变量	li san xing sui ji bian liang	1000
+连续型随机变量	lian xu xing sui ji bian liang	1000
+二项分布	er xiang fen bu	1000
+泊松分布	po song fen bu	1000
+几何分布	ji he fen bu	1000
+超几何分布	chao ji he fen bu	1000
+均匀分布	jun yun fen bu	1000
+指数分布	zhi shu fen bu	1000
+正态分布	zheng tai fen bu	1000
+标准正态分布	biao zhun zheng tai fen bu	1000
+卡方分布	ka fang fen bu	1000
+t分布	t fen bu	1000
+F分布	F fen bu	1000
+联合分布	lian he fen bu	1000
+边缘分布	bian yuan fen bu	1000
+数学期望	shu xue qi wang	1000
+方差	fang cha	1000
+标准差	biao zhun cha	1000
+协方差	xie fang cha	1000
+相关系数	xiang guan xi shu	1000
+矩	ju	1000
+切比雪夫不等式	qie bi xue fu bu deng shi	1000
+大数定律	da shu ding lv	1000
+中心极限定理	zhong xin ji xian ding li	1000
+样本均值	yang ben jun zhi	1000
+样本方差	yang ben fang cha	1000
+点估计	dian gu ji	1000
+矩估计	ju gu ji	1000
+极大似然估计	ji da shi ran gu ji	1000
+无偏性	wu pian xing	1000
+有效性	you xiao xing	1000
+一致性	yi zhi xing	1000
+区间估计	qu jian gu ji	1000
+置信区间	zhi xin qu jian	1000
+假设检验	jia she jian yan	1000
+显著性水平	xian zhu xing shui ping	1000
+第一类错误	di yi lei cuo wu	1000
+第二类错误	di er lei cuo wu	1000
+方差分析	fang cha fen xi	1000
+回归分析	hui gui fen xi	1000
+最小二乘法	zui xiao er cheng fa	1000
+# --- 复变与其它 ---
+复数	fu shu	1000
+共轭复数	gong e fu shu	1000
+模	mo	1000
+辐角	fu jiao	1000
+欧拉公式	ou la gong shi	1000
+解析函数	jie xi han shu	1000
+柯西黎曼方程	ke xi li man fang cheng	1000
+留数	liu shu	1000
+留数定理	liu shu ding li	1000
+洛朗级数	luo lang ji shu	1000
+数值分析	shu zhi fen xi	1000
+迭代法	die dai fa	1000
+牛顿法	niu dun fa	1000
+二分法	er fen fa	1000
+插值	cha zhi	1000
+拉格朗日插值	la ge lang ri cha zhi	1000
+样条插值	yang tiao cha zhi	1000
+数值积分	shu zhi ji fen	1000
+辛普森公式	xin pu sen gong shi	1000
+龙格库塔法	long ge ku ta fa	1000
+有限差分	you xian cha fen	1000
+收敛阶	shou lian jie	1000
+截断误差	jie duan wu cha	1000
+舍入误差	she ru wu cha	1000
+条件数	tiao jian shu	1000
+病态	bing tai	1000
+集合	ji he	1000
+映射	ying she	1000
+满射	man she	1000
+单射	dan she	1000
+双射	shuang she	1000
+等价关系	deng jia guan xi	1000
+偏序	pian xu	1000
+图论	tu lun	1000
+邻接矩阵	lin jie ju zhen	1000
+最短路径	zui duan lu jing	1000
+生成树	sheng cheng shu	1000
+欧拉回路	ou la hui lu	1000
+群	qun	1000
+环	huan	1000
+域	yu	1000
+同态	tong tai	1000
+同构	tong gou	1000
+置换群	zhi huan qun	1000
+线性规划	xian xing gui hua	1000
+单纯形法	dan chun xing fa	1000
+对偶问题	dui ou wen ti	1000
+凸优化	tu you hua	1000
+拉格朗日乘数法	la ge lang ri cheng shu fa	1000
+梯度下降	ti du xia jiang	1000
+凸函数	tu han shu	1000
+鞍点	an dian	1000
+泛函	fan han	1000
+变分法	bian fen fa	1000
+欧拉拉格朗日方程	ou la la ge lang ri fang cheng	1000
+
+# ===== 数码 =====
+# --- 手机品牌与产品线 ---
+苹果	ping guo	1000
+华为	hua wei	1000
+小米	xiao mi	1000
+荣耀	rong yao	1000
+一加	yi jia	1000
+真我	zhen wo	1000
+中兴	zhong xing	1000
+努比亚	nu bi ya	1000
+魅族	mei zu	1000
+三星	san xing	1000
+索尼	suo ni	1000
+谷歌	gu ge	1000
+摩托罗拉	mo tuo luo la	1000
+红米	hong mi	1000
+红魔	hong mo	1000
+黑鲨	hei sha	1000
+传音	chuan yin	1000
+联想	lian xiang	1000
+微软	wei ruan	1000
+鸿蒙	hong meng	1000
+澎湃	peng pai	1000
+原生鸿蒙	yuan sheng hong meng	1000
+折叠旗舰	zhe die qi jian	1000
+影像旗舰	ying xiang qi jian	1000
+直屏旗舰	zhi ping qi jian	1000
+性能旗舰	xing neng qi jian	1000
+中端机	zhong duan ji	1000
+千元机	qian yuan ji	1000
+# --- 芯片与性能 ---
+骁龙	xiao long	1000
+麒麟	qi lin	1000
+天玑	tian ji	1000
+联发科	lian fa ke	1000
+高通	gao tong	1000
+紫光展锐	zi guang zhan rui	1000
+苹果芯片	ping guo xin pian	1000
+自研芯片	zi yan xin pian	1000
+基带	ji dai	1000
+图形处理器	tu xing chu li qi	1000
+神经网络单元	shen jing wang luo dan yuan	1000
+制程	zhi cheng	1000
+纳米	na mi	1000
+台积电	tai ji dian	1000
+中芯国际	zhong xin guo ji	1000
+三星代工	san xing dai gong	1000
+晶圆	jing yuan	1000
+封装	feng zhuang	1000
+先进封装	xian jin feng zhuang	1000
+堆叠	dui die	1000
+处理器	chu li qi	1000
+核心	he xin	1000
+超大核	chao da he	1000
+大核	da he	1000
+小核	xiao he	1000
+能效核	neng xiao he	1000
+主频	zhu pin	1000
+睿频	rui pin	1000
+架构	jia gou	1000
+指令集	zhi ling ji	1000
+精简指令集	jing jian zhi ling ji	1000
+跑分	pao fen	1000
+单核性能	dan he xing neng	1000
+多核性能	duo he xing neng	1000
+图形跑分	tu xing pao fen	1000
+帧率	zhen lv	1000
+平均帧率	ping jun zhen lv	1000
+帧生成时间	zhen sheng cheng shi jian	1000
+掉帧	diao zhen	1000
+卡顿	ka dun	1000
+发热	fa re	1000
+降频	jiang pin	1000
+散热	san re	1000
+均热板	jun re ban	1000
+石墨烯	shi mo xi	1000
+液冷散热	ye leng san re	1000
+风冷	feng leng	1000
+主动散热	zhu dong san re	1000
+温控	wen kong	1000
+功耗墙	gong hao qiang	1000
+运行内存	yun xing nei cun	1000
+存储	cun chu	1000
+闪存	shan cun	1000
+通用闪存存储	tong yong shan cun cun chu	1000
+固态硬盘	gu tai ying pan	1000
+机械硬盘	ji xie ying pan	1000
+读写速度	du xie su du	1000
+顺序读写	shun xu du xie	1000
+随机读写	sui ji du xie	1000
+# --- 屏幕 ---
+屏幕	ping mu	1000
+显示屏	xian shi ping	1000
+有机发光二极管	you ji fa guang er ji guan	1000
+液晶屏	ye jing ping	1000
+微型发光二极管	wei xing fa guang er ji guan	1000
+刷新率	shua xin lv	1000
+高刷	gao shua	1000
+可变刷新率	ke bian shua xin lv	1000
+自适应刷新率	zi shi ying shua xin lv	1000
+触控采样率	chu kong cai yang lv	1000
+峰值亮度	feng zhi liang du	1000
+全局激发亮度	quan ju ji fa liang du	1000
+对比度	dui bi du	1000
+色准	se zhun	1000
+色偏	se pian	1000
+护眼	hu yan	1000
+频闪	pin shan	1000
+调光	tiao guang	1000
+高频调光	gao pin tiao guang	1000
+类直流调光	lei zhi liu tiao guang	1000
+蓝光	lan guang	1000
+曲面屏	qu mian ping	1000
+直屏	zhi ping	1000
+微曲屏	wei qu ping	1000
+折叠屏	zhe die ping	1000
+内折	nei zhe	1000
+外折	wai zhe	1000
+挖孔屏	wa kong ping	1000
+刘海屏	liu hai ping	1000
+屏下摄像头	ping xia she xiang tou	1000
+边框	bian kuang	1000
+屏占比	ping zhan bi	1000
+息屏显示	xi ping xian shi	1000
+护眼模式	hu yan mo shi	1000
+夜间模式	ye jian mo shi	1000
+# --- 影像 ---
+主摄	zhu she	1000
+潜望式长焦	qian wang shi chang jiao	1000
+人像镜头	ren xiang jing tou	1000
+电影镜头	dian ying jing tou	1000
+传感器尺寸	chuan gan qi chi cun	1000
+大底	da di	1000
+单像素面积	dan xiang su mian ji	1000
+光学防抖	guang xue fang dou	1000
+电子防抖	dian zi fang dou	1000
+混合防抖	hun he fang dou	1000
+对焦	dui jiao	1000
+激光对焦	ji guang dui jiao	1000
+全像素双核对焦	quan xiang su shuang he dui jiao	1000
+计算摄影	ji suan she ying	1000
+多帧合成	duo zhen he cheng	1000
+夜景模式	ye jing mo shi	1000
+人像模式	ren xiang mo shi	1000
+电影模式	dian ying mo shi	1000
+高动态范围	gao dong tai fan wei	1000
+色彩科学	se cai ke xue	1000
+直出风格	zhi chu feng ge	1000
+影像算法	ying xiang suan fa	1000
+联名调校	lian ming tiao jiao	1000
+数码变焦	shu ma bian jiao	1000
+无损变焦	wu sun bian jiao	1000
+长焦微距	chang jiao wei ju	1000
+录像	lu xiang	1000
+防抖录像	fang dou lu xiang	1000
+慢动作	man dong zuo	1000
+# --- 电池与充电 ---
+电池容量	dian chi rong liang	1000
+毫安时	hao an shi	1000
+快充	kuai chong	1000
+有线快充	you xian kuai chong	1000
+无线快充	wu xian kuai chong	1000
+反向充电	fan xiang chong dian	1000
+无线反充	wu xian fan chong	1000
+充电功率	chong dian gong lv	1000
+充电协议	chong dian xie yi	1000
+氮化镓	dan hua jia	1000
+充电头	chong dian tou	1000
+充电宝	chong dian bao	1000
+移动电源	yi dong dian yuan	1000
+数据线	shu ju xian	1000
+编织线	bian zhi xian	1000
+电池健康	dian chi jian kang	1000
+循环次数	xun huan ci shu	1000
+电池衰减	dian chi shuai jian	1000
+续航	xu hang	1000
+待机功耗	dai ji gong hao	1000
+亮屏时间	liang ping shi jian	1000
+省电模式	sheng dian mo shi	1000
+超级省电	chao ji sheng dian	1000
+硅碳负极	gui tan fu ji	1000
+# --- 系统与软件 ---
+安卓	an zhuo	1000
+苹果系统	ping guo xi tong	1000
+系统更新	xi tong geng xin	1000
+大版本更新	da ban ben geng xin	1000
+安全补丁	an quan bu ding	1000
+底层	di ceng	1000
+内核	nei he	1000
+驱动	qu dong	1000
+固件	gu jian	1000
+刷机	shua ji	1000
+解锁	jie suo	1000
+应用	ying yong	1000
+后台	hou tai	1000
+权限	quan xian	1000
+隐私	yin si	1000
+沙盒	sha he	1000
+分身	fen shen	1000
+双开	shuang kai	1000
+多任务	duo ren wu	1000
+分屏	fen ping	1000
+悬浮窗	xuan fu chuang	1000
+手势导航	shou shi dao hang	1000
+返回手势	fan hui shou shi	1000
+应用商店	ying yong shang dian	1000
+内测	nei ce	1000
+公测	gong ce	1000
+灰度推送	hui du tui song	1000
+推送	tui song	1000
+通知	tong zhi	1000
+免打扰	mian da rao	1000
+专注模式	zhuan zhu mo shi	1000
+屏幕使用时间	ping mu shi yong shi jian	1000
+云同步	yun tong bu	1000
+备份	bei fen	1000
+恢复出厂设置	hui fu chu chang she zhi	1000
+迁移	qian yi	1000
+换机	huan ji	1000
+一碰传	yi peng chuan	1000
+投屏	tou ping	1000
+多屏协同	duo ping xie tong	1000
+跨设备	kua she bei	1000
+# --- 网络与连接 ---
+五G	wu G	1000
+六G	liu G	1000
+双卡双待	shuang ka shuang dai	1000
+副卡	fu ka	1000
+电子卡	dian zi ka	1000
+载波聚合	zai bo ju he	1000
+网络制式	wang luo zhi shi	1000
+信号强度	xin hao qiang du	1000
+基站	ji zhan	1000
+卫星通信	wei xing tong xin	1000
+蓝牙	lan ya	1000
+无线局域网	wu xian ju yu wang	1000
+无线网络协议	wu xian wang luo xie yi	1000
+频段	pin duan	1000
+双频	shuang pin	1000
+三频	san pin	1000
+网关	wang guan	1000
+路由器	lu you qi	1000
+中继	zhong ji	1000
+网状组网	wang zhuang zu wang	1000
+千兆宽带	qian zhao kuan dai	1000
+近场通信	jin chang tong xin	1000
+超宽带	chao kuan dai	1000
+有线连接	you xian lian jie	1000
+雷电接口	lei dian jie kou	1000
+通用串行总线	tong yong chuan xing zong xian	1000
+快充协议	kuai chong xie yi	1000
+音频接口	yin pin jie kou	1000
+# --- 电脑与外设 ---
+笔记本	bi ji ben	1000
+台式机	tai shi ji	1000
+一体机	yi ti ji	1000
+迷你主机	mi ni zhu ji	1000
+显卡	xian ka	1000
+独立显卡	du li xian ka	1000
+集成显卡	ji cheng xian ka	1000
+显存	xian cun	1000
+光线追踪	guang xian zhui zong	1000
+超级采样	chao ji cai yang	1000
+主板	zhu ban	1000
+芯片组	xin pian zu	1000
+内存条	nei cun tiao	1000
+双通道	shuang tong dao	1000
+超频	chao pin	1000
+电源	dian yuan	1000
+额定功率	e ding gong lv	1000
+散热器	san re qi	1000
+水冷	shui leng	1000
+一体式水冷	yi ti shi shui leng	1000
+机箱	ji xiang	1000
+显示器	xian shi qi	1000
+高刷显示器	gao shua xian shi qi	1000
+色域覆盖	se yu fu gai	1000
+出厂校色	chu chang jiao se	1000
+键盘	jian pan	1000
+机械键盘	ji xie jian pan	1000
+轴体	zhou ti	1000
+客制化	ke zhi hua	1000
+键帽	jian mao	1000
+鼠标	shu biao	1000
+无线鼠标	wu xian shu biao	1000
+传感器	chuan gan qi	1000
+回报率	hui bao lv	1000
+耳机	er ji	1000
+头戴式	tou dai shi	1000
+入耳式	ru er shi	1000
+真无线	zhen wu xian	1000
+主动降噪	zhu dong jiang zao	1000
+通透模式	tong tou mo shi	1000
+空间音频	kong jian yin pin	1000
+解码器	jie ma qi	1000
+耳放	er fang	1000
+音质	yin zhi	1000
+采样率	cai yang lv	1000
+码率	ma lv	1000
+无损音频	wu sun yin pin	1000
+手表	shou biao	1000
+智能手表	zhi neng shou biao	1000
+手环	shou huan	1000
+平板	ping ban	1000
+电纸书	dian zhi shu	1000
+显示器支架	xian shi qi zhi jia	1000
+投影仪	tou ying yi	1000
+智能音箱	zhi neng yin xiang	1000
+摄像头	she xiang tou	1000
+麦克风	mai ke feng	1000
+扩展坞	kuo zhan wu	1000
+转接头	zhuan jie tou	1000
+读卡器	du ka qi	1000
+移动硬盘	yi dong ying pan	1000
+网络附加存储	wang luo fu jia cun chu	1000
+
+# ===== 机械工程 =====
+# --- 力学与材料 ---
+应力	ying li	1000
+应变	ying bian	1000
+弹性模量	tan xing mo liang	1000
+泊松比	po song bi	1000
+屈服强度	qu fu qiang du	1000
+抗拉强度	kang la qiang du	1000
+延伸率	yan shen lv	1000
+断面收缩率	duan mian shou suo lv	1000
+硬度	ying du	1000
+洛氏硬度	luo shi ying du	1000
+布氏硬度	bu shi ying du	1000
+维氏硬度	wei shi ying du	1000
+冲击韧性	chong ji ren xing	1000
+疲劳强度	pi lao qiang du	1000
+疲劳寿命	pi lao shou ming	1000
+疲劳极限	pi lao ji xian	1000
+应力集中	ying li ji zhong	1000
+应力幅	ying li fu	1000
+平均应力	ping jun ying li	1000
+疲劳裂纹	pi lao lie wen	1000
+蠕变	ru bian	1000
+松弛	song chi	1000
+断裂韧性	duan lie ren xing	1000
+脆性断裂	cui xing duan lie	1000
+韧性断裂	ren xing duan lie	1000
+剪切	jian qie	1000
+弯曲	wan qu	1000
+扭转	niu zhuan	1000
+拉伸	la shen	1000
+压缩	ya suo	1000
+复合受力	fu he shou li	1000
+梁	liang	1000
+简支梁	jian zhi liang	1000
+悬臂梁	xuan bi liang	1000
+弯矩	wan ju	1000
+剪力	jian li	1000
+挠度	nao du	1000
+转角	zhuan jiao	1000
+惯性矩	guan xing ju	1000
+抗弯截面系数	kang wan jie mian xi shu	1000
+中性轴	zhong xing zhou	1000
+安全系数	an quan xi shu	1000
+许用应力	xu yong ying li	1000
+强度校核	qiang du jiao he	1000
+刚度校核	gang du jiao he	1000
+稳定性校核	wen ding xing jiao he	1000
+屈曲	qu qu	1000
+临界载荷	lin jie zai he	1000
+有限元	you xian yuan	1000
+网格划分	wang ge hua fen	1000
+收敛性	shou lian xing	1000
+碳钢	tan gang	1000
+合金钢	he jin gang	1000
+不锈钢	bu xiu gang	1000
+工具钢	gong ju gang	1000
+模具钢	mu ju gang	1000
+铸铁	zhu tie	1000
+球墨铸铁	qiu mo zhu tie	1000
+灰铸铁	hui zhu tie	1000
+铝合金	lv he jin	1000
+钛合金	tai he jin	1000
+铜合金	tong he jin	1000
+镁合金	mei he jin	1000
+调质	tiao zhi	1000
+淬火	cui huo	1000
+回火	hui huo	1000
+正火	zheng huo	1000
+退火	tui huo	1000
+渗碳	shen tan	1000
+渗氮	shen dan	1000
+感应淬火	gan ying cui huo	1000
+表面硬化	biao mian ying hua	1000
+时效处理	shi xiao chu li	1000
+固溶处理	gu rong chu li	1000
+# --- 机械设计 ---
+公差	gong cha	1000
+公差	gong chai	500
+尺寸公差	chi cun gong cha	1000
+形位公差	xing wei gong cha	1000
+几何公差	ji he gong cha	1000
+基本偏差	ji ben pian cha	1000
+公差带	gong cha dai	1000
+配合	pei he	1000
+间隙配合	jian xi pei he	1000
+过盈配合	guo ying pei he	1000
+过渡配合	guo du pei he	1000
+基孔制	ji kong zhi	1000
+基轴制	ji zhou zhi	1000
+表面粗糙度	biao mian cu cao du	1000
+轮廓算术平均偏差	lun kuo suan shu ping jun pian cha	1000
+形状误差	xing zhuang wu cha	1000
+位置误差	wei zhi wu cha	1000
+同轴度	tong zhou du	1000
+圆柱度	yuan zhu du	1000
+平面度	ping mian du	1000
+垂直度	chui zhi du	1000
+平行度	ping xing du	1000
+对称度	dui chen du	1000
+跳动	tiao dong	1000
+圆跳动	yuan tiao dong	1000
+全跳动	quan tiao dong	1000
+基准	ji zhun	1000
+基准要素	ji zhun yao su	1000
+最大实体要求	zui da shi ti yao qiu	1000
+螺纹	luo wen	1000
+普通螺纹	pu tong luo wen	1000
+细牙螺纹	xi ya luo wen	1000
+梯形螺纹	ti xing luo wen	1000
+锯齿形螺纹	ju chi xing luo wen	1000
+管螺纹	guan luo wen	1000
+螺距	luo ju	1000
+导程	dao cheng	1000
+牙型角	ya xing jiao	1000
+自锁	zi suo	1000
+螺栓	luo shuan	1000
+螺柱	luo zhu	1000
+螺钉	luo ding	1000
+螺母	luo mu	1000
+垫圈	dian juan	1000
+弹簧垫圈	tan huang dian quan	1000
+平垫圈	ping dian juan	1000
+开口销	kai kou xiao	1000
+防松	fang song	1000
+预紧力	yu jin li	1000
+拧紧力矩	ning jin li ju	1000
+屈服紧固	qu fu jin gu	1000
+键	jian	1000
+平键	ping jian	1000
+半圆键	ban yuan jian	1000
+花键	hua jian	1000
+渐开线花键	jian kai xian hua jian	1000
+矩形花键	ju xing hua jian	1000
+销	xiao	1000
+圆柱销	yuan zhu xiao	1000
+圆锥销	yuan zhui xiao	1000
+铆钉	mao ding	1000
+铆接	mao jie	1000
+焊接	han jie	1000
+过盈联接	guo ying lian jie	1000
+轴	zhou	1000
+阶梯轴	jie ti zhou	1000
+空心轴	kong xin zhou	1000
+曲轴	qu zhou	1000
+凸轮轴	tu lun zhou	1000
+轴肩	zhou jian	1000
+退刀槽	tui dao cao	1000
+越程槽	yue cheng cao	1000
+中心孔	zhong xin kong	1000
+轴承	zhou cheng	1000
+滚动轴承	gun dong zhou cheng	1000
+深沟球轴承	shen gou qiu zhou cheng	1000
+角接触球轴承	jiao jie chu qiu zhou cheng	1000
+圆锥滚子轴承	yuan zhui gun zi zhou cheng	1000
+圆柱滚子轴承	yuan zhu gun zi zhou cheng	1000
+调心球轴承	tiao xin qiu zhou cheng	1000
+调心球轴承	diao xin qiu zhou cheng	500
+推力轴承	tui li zhou cheng	1000
+滑动轴承	hua dong zhou cheng	1000
+含油轴承	han you zhou cheng	1000
+轴瓦	zhou wa	1000
+润滑	run hua	1000
+油脂润滑	you zhi run hua	1000
+油润滑	you run hua	1000
+密封	mi feng	1000
+油封	you feng	1000
+骨架油封	gu jia you feng	1000
+迷宫密封	mi gong mi feng	1000
+机械密封	ji xie mi feng	1000
+O形圈	O xing quan	1000
+齿轮	chi lun	1000
+直齿轮	zhi chi lun	1000
+斜齿轮	xie chi lun	1000
+人字齿轮	ren zi chi lun	1000
+锥齿轮	zhui chi lun	1000
+蜗轮蜗杆	wo lun wo gan	1000
+齿条	chi tiao	1000
+模数	mo shu	1000
+压力角	ya li jiao	1000
+齿数	chi shu	1000
+分度圆	fen du yuan	1000
+齿顶圆	chi ding yuan	1000
+齿根圆	chi gen yuan	1000
+变位齿轮	bian wei chi lun	1000
+齿侧间隙	chi ce jian xi	1000
+重合度	zhong he du	1000
+根切	gen qie	1000
+传动比	chuan dong bi	1000
+行星齿轮	xing xing chi lun	1000
+太阳轮	tai yang lun	1000
+行星轮	xing xing lun	1000
+内齿圈	nei chi quan	1000
+系杆	xi gan	1000
+差动轮系	cha dong lun xi	1000
+带传动	dai chuan dong	1000
+V带	V dai	1000
+同步带	tong bu dai	1000
+链传动	lian chuan dong	1000
+滚子链	gun zi lian	1000
+张紧装置	zhang jin zhuang zhi	1000
+联轴器	lian zhou qi	1000
+弹性联轴器	tan xing lian zhou qi	1000
+万向联轴器	wan xiang lian zhou qi	1000
+离合器	li he qi	1000
+制动器	zhi dong qi	1000
+弹簧	tan huang	1000
+弹簧	dan huang	500
+压缩弹簧	ya suo tan huang	1000
+拉伸弹簧	la shen tan huang	1000
+扭转弹簧	niu zhuan tan huang	1000
+碟形弹簧	die xing tan huang	1000
+板簧	ban huang	1000
+刚度	gang du	1000
+弹簧指数	tan huang zhi shu	1000
+有效圈数	you xiao quan shu	1000
+凸轮机构	tu lun ji gou	1000
+从动件	cong dong jian	1000
+连杆机构	lian gan ji gou	1000
+四杆机构	si gan ji gou	1000
+曲柄摇杆	qu bing yao gan	1000
+双曲柄	shuang qu bing	1000
+双摇杆	shuang yao gan	1000
+曲柄滑块	qu bing hua kuai	1000
+死点	si dian	1000
+急回特性	ji hui te xing	1000
+自由度	zi you du	1000
+约束	yue shu	1000
+运动副	yun dong fu	1000
+转动副	zhuan dong fu	1000
+移动副	yi dong fu	1000
+螺旋副	luo xuan fu	1000
+球面副	qiu mian fu	1000
+机构简图	ji gou jian tu	1000
+# --- 制造工艺 ---
+车削	che xiao	1000
+铣削	xi xue	1000
+钻削	zuan xue	1000
+镗削	tang xue	1000
+铰削	jiao xue	1000
+磨削	mo xue	1000
+刨削	pao xue	1000
+拉削	la xue	1000
+滚齿	gun chi	1000
+插齿	cha chi	1000
+磨齿	mo chi	1000
+珩磨	hang mo	1000
+研磨	yan mo	1000
+抛光	pao guang	1000
+数控机床	shu kong ji chuang	1000
+三轴	san zhou	1000
+四轴	si zhou	1000
+五轴	wu zhou	1000
+加工中心	jia gong zhong xin	1000
+车铣复合	che xi fu he	1000
+主轴转速	zhu zhou zhuan su	1000
+进给量	jin ji liang	1000
+切削速度	qie xiao su du	1000
+背吃刀量	bei chi dao liang	1000
+切削三要素	qie xiao san yao su	1000
+刀具	dao ju	1000
+硬质合金	ying zhi he jin	1000
+涂层刀具	tu ceng dao ju	1000
+陶瓷刀具	tao ci dao ju	1000
+金刚石刀具	jin gang shi dao ju	1000
+立铣刀	li xi dao	1000
+球头铣刀	qiu tou xi dao	1000
+面铣刀	mian xi dao	1000
+丝锥	si zhui	1000
+板牙	ban ya	1000
+铰刀	jiao dao	1000
+夹具	jia ju	1000
+定位	ding wei	1000
+六点定位	liu dian ding wei	1000
+完全定位	wan quan ding wei	1000
+欠定位	qian ding wei	1000
+过定位	guo ding wei	1000
+夹紧力	jia jin li	1000
+基准重合	ji zhun chong he	1000
+基准统一	ji zhun tong yi	1000
+工艺基准	gong yi ji zhun	1000
+铸造	zhu zao	1000
+砂型铸造	sha xing zhu zao	1000
+熔模铸造	rong mo zhu zao	1000
+压力铸造	ya li zhu zao	1000
+低压铸造	di ya zhu zao	1000
+离心铸造	li xin zhu zao	1000
+缩孔	suo kong	1000
+缩松	suo song	1000
+气孔	qi kong	1000
+夹渣	jia zha	1000
+冷隔	leng ge	1000
+锻造	duan zao	1000
+自由锻	zi you duan	1000
+模锻	mu duan	1000
+精密锻造	jing mi duan zao	1000
+冲压	chong ya	1000
+落料	luo liao	1000
+冲孔	chong kong	1000
+拉深	la shen	1000
+翻边	fan bian	1000
+胀形	zhang xing	1000
+回弹	hui tan	1000
+板料成形	ban liao cheng xing	1000
+电弧焊	dian hu han	1000
+氩弧焊	ya hu han	1000
+二氧化碳保护焊	er yang hua tan bao hu han	1000
+埋弧焊	mai hu han	1000
+点焊	dian han	1000
+缝焊	feng han	1000
+钎焊	qian han	1000
+激光焊	ji guang han	1000
+电子束焊	dian zi shu han	1000
+搅拌摩擦焊	jiao ban mo ca han	1000
+焊缝	han feng	1000
+热影响区	re ying xiang qu	1000
+焊接变形	han jie bian xing	1000
+焊接应力	han jie ying li	1000
+焊接缺陷	han jie que xian	1000
+未熔合	wei rong he	1000
+未焊透	wei han tou	1000
+咬边	yao bian	1000
+裂纹	lie wen	1000
+增材制造	zeng cai zhi zao	1000
+三维打印	san wei da yin	1000
+熔融沉积	rong rong chen ji	1000
+光固化	guang gu hua	1000
+选区激光熔化	xuan qu ji guang rong hua	1000
+电子束熔化	dian zi shu rong hua	1000
+金属打印	jin shu da yin	1000
+支撑结构	zhi cheng jie gou	1000
+分层切片	fen ceng qie pian	1000
+表面处理	biao mian chu li	1000
+硬质阳极氧化	ying zhi yang ji yang hua	1000
+化学镀	hua xue du	1000
+喷丸	pen wan	1000
+喷砂	pen sha	1000
+磷化	lin hua	1000
+发黑	fa hei	1000
+喷涂	pen tu	1000
+粉末喷涂	fen mo pen tu	1000
+# --- 流体与热 ---
+流量	liu liang	1000
+压力	ya li	1000
+压差	ya cha	1000
+流速	liu su	1000
+雷诺数	lei nuo shu	1000
+层流	ceng liu	1000
+湍流	tuan liu	1000
+沿程损失	yan cheng sun shi	1000
+局部损失	ju bu sun shi	1000
+水头损失	shui tou sun shi	1000
+空化	kong hua	1000
+汽蚀	qi shi	1000
+泵	beng	1000
+离心泵	li xin beng	1000
+齿轮泵	chi lun beng	1000
+柱塞泵	zhu sai beng	1000
+叶片泵	ye pian beng	1000
+螺杆泵	luo gan beng	1000
+扬程	yang cheng	1000
+效率曲线	xiao lv qu xian	1000
+汽蚀余量	qi shi yu liang	1000
+液压	ye ya	1000
+液压缸	ye ya gang	1000
+液压马达	ye ya ma da	1000
+换向阀	huan xiang fa	1000
+溢流阀	yi liu fa	1000
+减压阀	jian ya fa	1000
+节流阀	jie liu fa	1000
+比例阀	bi li fa	1000
+伺服阀	ci fu fa	1000
+蓄能器	xu neng qi	1000
+油箱	you xiang	1000
+过滤器	guo lv qi	1000
+气动	qi dong	1000
+气缸	qi gang	1000
+气动马达	qi dong ma da	1000
+电磁阀	dian ci fa	1000
+气源处理	qi yuan chu li	1000
+三联件	san lian jian	1000
+消音器	xiao yin qi	1000
+传热	chuan re	1000
+导热	dao re	1000
+对流	dui liu	1000
+辐射	fu she	1000
+传热系数	chuan re xi shu	1000
+热阻	re zu	1000
+热流密度	re liu mi du	1000
+温差	wen cha	1000
+换热器	huan re qi	1000
+板式换热器	ban shi huan re qi	1000
+管壳式换热器	guan ke shi huan re qi	1000
+热膨胀	re peng zhang	1000
+线膨胀系数	xian peng zhang xi shu	1000
+热变形	re bian xing	1000
+热应力	re ying li	1000
+液冷	ye leng	1000
+热管	re guan	1000
+均温板	jun wen ban	1000
+
+# ===== 汽车 =====
+# --- 动力总成 ---
+内燃机	nei ran ji	1000
+汽油机	qi you ji	1000
+柴油机	chai you ji	1000
+增压器	zeng ya qi	1000
+涡轮增压	wo lun zeng ya	1000
+机械增压	ji xie zeng ya	1000
+双涡轮	shuang wo lun	1000
+可变截面涡轮	ke bian jie mian wo lun	1000
+自然吸气	zi ran xi qi	1000
+缸内直喷	gang nei zhi pen	1000
+歧管喷射	qi guan pen she	1000
+混合喷射	hun he pen she	1000
+缸径	gang jing	1000
+冲程	chong cheng	1000
+压缩比	ya suo bi	1000
+排量	pai liang	1000
+气门	qi men	1000
+进气门	jin qi men	1000
+排气门	pai qi men	1000
+双顶置凸轮轴	shuang ding zhi tu lun zhou	1000
+可变气门正时	ke bian qi men zheng shi	1000
+可变气门升程	ke bian qi men sheng cheng	1000
+连杆	lian gan	1000
+活塞	huo sai	1000
+活塞环	huo sai huan	1000
+缸体	gang ti	1000
+缸盖	gang gai	1000
+缸垫	gang dian	1000
+正时链条	zheng shi lian tiao	1000
+正时皮带	zheng shi pi dai	1000
+飞轮	fei lun	1000
+双质量飞轮	shuang zhi liang fei lun	1000
+节气门	jie qi men	1000
+进气歧管	jin qi qi guan	1000
+排气歧管	pai qi qi guan	1000
+中冷器	zhong leng qi	1000
+机油泵	ji you beng	1000
+机油滤清器	ji you lv qing qi	1000
+空气滤清器	kong qi lv qing qi	1000
+火花塞	huo hua sai	1000
+点火线圈	dian huo xian quan	1000
+爆震	bao zhen	1000
+爆震传感器	bao zhen chuan gan qi	1000
+喷油嘴	pen you zui	1000
+高压油泵	gao ya you beng	1000
+燃油轨	ran you gui	1000
+三元催化器	san yuan cui hua qi	1000
+颗粒捕捉器	ke li bu zhuo qi	1000
+废气再循环	fei qi zai xun huan	1000
+氧传感器	yang chuan gan qi	1000
+起动机	qi dong ji	1000
+发电机	fa dian ji	1000
+皮带张紧轮	pi dai zhang jin lun	1000
+水泵	shui beng	1000
+节温器	jie wen qi	1000
+冷却液	leng que ye	1000
+防冻液	fang dong ye	1000
+电子扇	dian zi shan	1000
+机油标号	ji you biao hao	1000
+# --- 传动系统 ---
+变速箱	bian su xiang	1000
+手动变速箱	shou dong bian su xiang	1000
+自动变速箱	zi dong bian su xiang	1000
+手自一体	shou zi yi ti	1000
+双离合	shuang li he	1000
+湿式双离合	shi shi shuang li he	1000
+干式双离合	gan shi shuang li he	1000
+无级变速	wu ji bian su	1000
+液力变矩器	ye li bian ju qi	1000
+行星齿轮组	xing xing chi lun zu	1000
+同步器	tong bu qi	1000
+换挡拨片	huan dang bo pian	1000
+离合器片	li he qi pian	1000
+压盘	ya pan	1000
+分离轴承	fen li zhou cheng	1000
+传动轴	chuan dong zhou	1000
+半轴	ban zhou	1000
+万向节	wan xiang jie	1000
+等速万向节	deng su wan xiang jie	1000
+差速器	cha su qi	1000
+限滑差速器	xian hua cha su qi	1000
+托森差速器	tuo sen cha su qi	1000
+电子差速锁	dian zi cha su suo	1000
+分动箱	fen dong xiang	1000
+前驱	qian qu	1000
+后驱	hou qu	1000
+四驱	si qu	1000
+适时四驱	shi shi si qu	1000
+全时四驱	quan shi si qu	1000
+分时四驱	fen shi si qu	1000
+主减速比	zhu jian su bi	1000
+齿比	chi bi	1000
+换挡逻辑	huan dang luo ji	1000
+蠕行	ru xing	1000
+# --- 底盘与操控 ---
+麦弗逊	mai fu xun	1000
+双叉臂	shuang cha bi	1000
+多连杆	duo lian gan	1000
+扭力梁	niu li liang	1000
+空气悬架	kong qi xuan jia	1000
+电磁悬架	dian ci xuan jia	1000
+可变阻尼	ke bian zu ni	1000
+减震器	jian zhen qi	1000
+防倾杆	fang qing gan	1000
+稳定杆	wen ding gan	1000
+副车架	fu che jia	1000
+转向节	zhuan xiang jie	1000
+球头	qiu tou	1000
+衬套	chen tao	1000
+下摆臂	xia bai bi	1000
+上摆臂	shang bai bi	1000
+束角	shu jiao	1000
+外倾角	wai qing jiao	1000
+主销后倾角	zhu xiao hou qing jiao	1000
+四轮定位	si lun ding wei	1000
+齿轮齿条转向	chi lun chi tiao zhuan xiang	1000
+电动助力转向	dian dong zhu li zhuan xiang	1000
+液压助力转向	ye ya zhu li zhuan xiang	1000
+转向比	zhuan xiang bi	1000
+可变转向比	ke bian zhuan xiang bi	1000
+转向手感	zhuan xiang shou gan	1000
+侧倾	ce qing	1000
+推头	tui tou	1000
+转向不足	zhuan xiang bu zu	1000
+转向过度	zhuan xiang guo du	1000
+甩尾	shuai wei	1000
+循迹性	xun ji xing	1000
+抓地力	zhua di li	1000
+机械抓地	ji xie zhua di	1000
+轮胎	lun tai	1000
+胎压	tai ya	1000
+胎面	tai mian	1000
+花纹	hua wen	1000
+胎壁	tai bi	1000
+扁平比	bian ping bi	1000
+轮毂	lun gu	1000
+锻造轮毂	duan zao lun gu	1000
+铸造轮毂	zhu zao lun gu	1000
+刹车盘	sha che pan	1000
+通风盘	tong feng pan	1000
+打孔盘	da kong pan	1000
+划线盘	hua xian pan	1000
+碳陶刹车	tan tao sha che	1000
+刹车卡钳	sha che ka qian	1000
+对向活塞卡钳	dui xiang huo sai ka qian	1000
+刹车片	sha che pian	1000
+刹车油	sha che you	1000
+热衰减	re shuai jian	1000
+制动距离	zhi dong ju li	1000
+手刹	shou sha	1000
+电子手刹	dian zi shou sha	1000
+自动驻车	zi dong zhu che	1000
+# --- 车身与结构 ---
+承载式车身	cheng zai shi che shen	1000
+非承载式车身	fei cheng zai shi che shen	1000
+大梁	da liang	1000
+纵梁	zong liang	1000
+横梁	heng liang	1000
+溃缩吸能	kui suo xi neng	1000
+高强度钢	gao qiang du gang	1000
+热成型钢	re cheng xing gang	1000
+铝合金车身	lv he jin che shen	1000
+碳纤维	tan xian wei	1000
+风阻系数	feng zu xi shu	1000
+迎风面积	ying feng mian ji	1000
+空气动力学	kong qi dong li xue	1000
+扩散器	kuo san qi	1000
+尾翼	wei yi	1000
+前唇	qian chun	1000
+侧裙	ce qun	1000
+底盘护板	di pan hu ban	1000
+车顶行李架	che ding xing li jia	1000
+轴距	zhou ju	1000
+轮距	lun ju	1000
+接近角	jie jin jiao	1000
+离去角	li qu jiao	1000
+纵向通过角	zong xiang tong guo jiao	1000
+最小离地间隙	zui xiao li di jian xi	1000
+整备质量	zheng bei zhi liang	1000
+前后配重	qian hou pei zhong	1000
+# --- 电动与混动 ---
+纯电动	chun dian dong	1000
+插电混动	cha dian hun dong	1000
+增程式	zeng cheng shi	1000
+油电混动	you dian hun dong	1000
+轻混	qing hun	1000
+电池包	dian chi bao	1000
+电芯	dian xin	1000
+模组	mo zu	1000
+磷酸铁锂	lin suan tie li	1000
+三元锂	san yuan li	1000
+固态电池	gu tai dian chi	1000
+能量密度	neng liang mi du	1000
+电池管理系统	dian chi guan li xi tong	1000
+热管理	re guan li	1000
+慢充	man chong	1000
+补能	bu neng	1000
+充电桩	chong dian zhuang	1000
+超充	chao chong	1000
+直流快充	zhi liu kuai chong	1000
+交流慢充	jiao liu man chong	1000
+续航里程	xu hang li cheng	1000
+表显续航	biao xian xu hang	1000
+电耗	dian hao	1000
+百公里电耗	bai gong li dian hao	1000
+动能回收	dong neng hui shou	1000
+单踏板	dan ta ban	1000
+驱动电机	qu dong dian ji	1000
+永磁同步电机	yong ci tong bu dian ji	1000
+交流异步电机	jiao liu yi bu dian ji	1000
+电控	dian kong	1000
+电驱系统	dian qu xi tong	1000
+三电系统	san dian xi tong	1000
+高压平台	gao ya ping tai	1000
+八百伏	ba bai fu	1000
+循环寿命	xun huan shou ming	1000
+# --- 电子与智驾 ---
+车机	che ji	1000
+中控屏	zhong kong ping	1000
+液晶仪表	ye jing yi biao	1000
+抬头显示	tai tou xian shi	1000
+语音助手	yu yin zhu shou	1000
+无线充电	wu xian chong dian	1000
+全景影像	quan jing ying xiang	1000
+倒车影像	dao che ying xiang	1000
+行车记录仪	xing che ji lu yi	1000
+自适应巡航	zi shi ying xun hang	1000
+全速自适应巡航	quan su zi shi ying xun hang	1000
+车道保持	che dao bao chi	1000
+车道居中	che dao ju zhong	1000
+自动紧急制动	zi dong jin ji zhi dong	1000
+盲区监测	mang qu jian ce	1000
+并线辅助	bing xian fu zhu	1000
+后方交通预警	hou fang jiao tong yu jing	1000
+自动泊车	zi dong bo che	1000
+记忆泊车	ji yi bo che	1000
+领航辅助	ling hang fu zhu	1000
+高速领航	gao su ling hang	1000
+城市领航	cheng shi ling hang	1000
+激光雷达	ji guang lei da	1000
+毫米波雷达	hao mi bo lei da	1000
+超声波雷达	chao sheng bo lei da	1000
+域控制器	yu kong zhi qi	1000
+整车控制器	zheng che kong zhi qi	1000
+空中升级	kong zhong sheng ji	1000
+数字钥匙	shu zi yao shi	1000
+# --- 驾驶与养护 ---
+磨合	mo he	1000
+保养	bao yang	1000
+大保养	da bao yang	1000
+小保养	xiao bao yang	1000
+机油	ji you	1000
+变速箱油	bian su xiang you	1000
+火花塞更换	huo hua sai geng huan	1000
+空调滤芯	kong tiao lv xin	1000
+汽油滤芯	qi you lv xin	1000
+四轮换位	si lun huan wei	1000
+动平衡	dong ping heng	1000
+轮胎老化	lun tai lao hua	1000
+底盘异响	di pan yi xiang	1000
+发动机抖动	fa dong ji dou dong	1000
+怠速不稳	dai su bu wen	1000
+冷启动	leng qi dong	1000
+热车	re che	1000
+拉高速	la gao su	1000
+积碳	ji tan	1000
+清洗节气门	qing xi jie qi men	1000
+油耗	you hao	1000
+百公里油耗	bai gong li you hao	1000
+综合油耗	zong he you hao	1000
+工况油耗	gong kuang you hao	1000
+表显油耗	biao xian you hao	1000
+亏电油耗	kui dian you hao	1000
+# --- 品牌 德系 ---
+保时捷	bao shi jie	1000
+宝马	bao ma	1000
+奔驰	ben chi	1000
+奥迪	ao di	1000
+大众	da zhong	1000
+斯柯达	si ke da	1000
+欧宝	ou bao	1000
+迈巴赫	mai ba he	1000
+布加迪	bu jia di	1000
+阿尔宾娜	a er bin na	1000
+巴博斯	ba bo si	1000
+# --- 品牌 日韩 ---
+丰田	feng tian	1000
+本田	ben tian	1000
+日产	ri chan	1000
+马自达	ma zi da	1000
+斯巴鲁	si ba lu	1000
+铃木	ling mu	1000
+三菱	san ling	1000
+雷克萨斯	lei ke sa si	1000
+英菲尼迪	ying fei ni di	1000
+讴歌	ou ge	1000
+大发	da fa	1000
+五十铃	wu shi ling	1000
+现代	xian dai	1000
+起亚	qi ya	1000
+捷尼赛思	jie ni sai si	1000
+# --- 品牌 美系 ---
+雪佛兰	xue fu lan	1000
+凯迪拉克	kai di la ke	1000
+别克	bie ke	1000
+吉普	ji pu	1000
+道奇	dao qi	1000
+克莱斯勒	ke lai si le	1000
+特斯拉	te si la	1000
+通用汽车	tong yong qi che	1000
+# --- 品牌 欧系 ---
+沃尔沃	wo er wo	1000
+路虎	lu hu	1000
+捷豹	jie bao	1000
+迷你	mi ni	1000
+劳斯莱斯	lao si lai si	1000
+宾利	bin li	1000
+阿斯顿马丁	a si dun ma ding	1000
+迈凯伦	mai kai lun	1000
+莲花	lian hua	1000
+法拉利	fa la li	1000
+兰博基尼	lan bo ji ni	1000
+玛莎拉蒂	ma sha la di	1000
+阿尔法罗密欧	a er fa luo mi ou	1000
+菲亚特	fei ya te	1000
+蓝旗亚	lan qi ya	1000
+帕加尼	pa jia ni	1000
+标致	biao zhi	1000
+雪铁龙	xue tie long	1000
+雷诺	lei nuo	1000
+达契亚	da qi ya	1000
+西雅特	xi ya te	1000
+柯尼塞格	ke ni sai ge	1000
+科尼赛克	ke ni sai ke	1000
+# --- 品牌 中国 ---
+比亚迪	bi ya di	1000
+吉利	ji li	1000
+长城	chang cheng	1000
+哈弗	ha fu	1000
+坦克	tan ke	1000
+魏牌	wei pai	1000
+欧拉	ou la	1000
+长安	chang an	1000
+深蓝	shen lan	1000
+阿维塔	a wei ta	1000
+奇瑞	qi rui	1000
+星途	xing tu	1000
+捷途	jie tu	1000
+iCAR	iCAR	1000
+红旗	hong qi	1000
+蔚来	wei lai	1000
+小鹏	xiao peng	1000
+理想	li xiang	1000
+零跑	ling pao	1000
+哪吒	ne zha	1000
+极氪	ji ke	1000
+领克	ling ke	1000
+智己	zhi ji	1000
+极狐	ji hu	1000
+岚图	lan tu	1000
+猛士	meng shi	1000
+东风	dong feng	1000
+启辰	qi chen	1000
+问界	wen jie	1000
+智界	zhi jie	1000
+享界	xiang jie	1000
+尊界	zun jie	1000
+小米汽车	xiao mi qi che	1000
+广汽	guang qi	1000
+传祺	chuan qi	1000
+埃安	ai an	1000
+昊铂	hao bo	1000
+上汽	shang qi	1000
+荣威	rong wei	1000
+名爵	ming jue	1000
+五菱	wu ling	1000
+宝骏	bao jun	1000
+北汽	bei qi	1000
+江淮	jiang huai	1000
+海豹	hai bao	1000
+海豚	hai tun	1000
+仰望	yang wang	1000
+方程豹	fang cheng bao	1000
+腾势	teng shi	1000
+# --- 车型 保时捷 ---
+帕拉梅拉	pa la mei la	1000
+卡宴	ka yan	1000
+卡曼	ka man	1000
+博克斯特	bo ke si te	1000
+泰肯	tai ken	1000
+马坎	ma kan	1000
+# --- 车型 德系 ---
+辉腾	hui teng	1000
+途锐	tu rui	1000
+途观	tu guan	1000
+途昂	tu ang	1000
+帕萨特	pa sa te	1000
+迈腾	mai teng	1000
+速腾	su teng	1000
+朗逸	lang yi	1000
+宝来	bao lai	1000
+高尔夫	gao er fu	1000
+探岳	tan yue	1000
+揽境	lan jing	1000
+凌渡	ling du	1000
+科迪亚克	ke di ya ke	1000
+明锐	ming rui	1000
+昕锐	xin rui	1000
+速派	su pai	1000
+柯珞克	ke luo ke	1000
+# --- 车型 日系 ---
+凯美瑞	kai mei rui	1000
+卡罗拉	ka luo la	1000
+亚洲龙	ya zhou long	1000
+汉兰达	han lan da	1000
+普拉多	pu la duo	1000
+兰德酷路泽	lan de ku lu ze	1000
+陆地巡洋舰	lu di xun yang jian	1000
+霸道	ba dao	1000
+埃尔法	ai er fa	1000
+塞纳	sai na	1000
+雷凌	lei ling	1000
+威兰达	wei lan da	1000
+荣放	rong fang	1000
+皇冠	huang guan	1000
+世纪	shi ji	1000
+雅阁	ya ge	1000
+思域	si yu	1000
+飞度	fei du	1000
+冠道	guan dao	1000
+皓影	hao ying	1000
+型格	xing ge	1000
+英仕派	ying shi pai	1000
+奥德赛	ao de sai	1000
+艾力绅	ai li shen	1000
+天籁	tian lai	1000
+轩逸	xuan yi	1000
+逍客	xiao ke	1000
+奇骏	qi jun	1000
+途乐	tu le	1000
+楼兰	lou lan	1000
+骐达	qi da	1000
+昂克赛拉	ang ke sai la	1000
+阿特兹	a te zi	1000
+马自达六	ma zi da liu	1000
+马自达三	ma zi da san	1000
+森林人	sen lin ren	1000
+傲虎	ao hu	1000
+力狮	li shi	1000
+翼豹	yi bao	1000
+驰鹏	chi peng	1000
+# --- 车型 韩系 ---
+索纳塔	suo na ta	1000
+途胜	tu sheng	1000
+胜达	sheng da	1000
+伊兰特	yi lan te	1000
+帕里斯帝	pa li si di	1000
+智跑	zhi pao	1000
+狮跑	shi pao	1000
+索兰托	suo lan tuo	1000
+嘉华	jia hua	1000
+智驹	zhi ju	1000
+# --- 车型 美系 ---
+野马	ye ma	1000
+探险者	tan xian zhe	1000
+锐界	rui jie	1000
+蒙迪欧	meng di ou	1000
+福克斯	fu ke si	1000
+翼虎	yi hu	1000
+猛禽	meng qin	1000
+烈马	lie ma	1000
+科鲁兹	ke lu zi	1000
+迈锐宝	mai rui bao	1000
+探界者	tan jie zhe	1000
+开拓者	kai tuo zhe	1000
+科尔维特	ke er wei te	1000
+库罗德	ku luo de	1000
+凯雷德	kai lei de	1000
+凯尔维特	kai er wei te	1000
+领航员	ling hang yuan	1000
+大陆	da lu	1000
+领航者	ling hang zhe	1000
+牧马人	mu ma ren	1000
+大切诺基	da qie nuo ji	1000
+自由光	zi you guang	1000
+指南者	zhi nan zhe	1000
+角斗士	jue dou shi	1000
+# --- 车型 欧系 ---
+揽胜	lan sheng	1000
+揽胜运动	lan sheng yun dong	1000
+卫士	wei shi	1000
+发现	fa xian	1000
+发现神行	fa xian shen xing	1000
+极光	ji guang	1000
+星脉	xing mai	1000
+沃尔沃六十	wo er wo liu shi	1000
+沃尔沃九十	wo er wo jiu shi	1000
+极星	ji xing	1000
+乌拉坎	wu la kan	1000
+大牛	da niu	1000
+小牛	xiao niu	1000
+盖拉多	gai la duo	1000
+埃文塔多	ai wen ta duo	1000
+雷文顿	lei wen dun	1000
+拉法	la fa	1000
+恩佐	en zuo	1000
+加州	jia zhou	1000
+蒙扎	meng zha	1000
+普洛桑格	pu luo sang ge	1000
+吉博力	ji bo li	1000
+莱万特	lai wan te	1000
+格雷嘉	ge lei jia	1000
+# --- 车型 中国 ---
+汉	han	1000
+唐	tang	1000
+秦	qin	1000
+宋	song	1000
+元	yuan	1000
+海狮	hai shi	1000
+驱逐舰	qu zhu jian	1000
+护卫舰	hu wei jian	1000
+仰望U8	yang wang U8	1000
+腾势D9	teng shi D9	1000
+星越	xing yue	1000
+星瑞	xing rui	1000
+博越	bo yue	1000
+帝豪	di hao	1000
+缤越	bin yue	1000
+银河	yin he	1000
+极氪零零一	ji ke ling ling yi	1000
+极氪零零七	ji ke ling ling qi	1000
+坦克三百	tan ke san bai	1000
+坦克五百	tan ke wu bai	1000
+坦克七百	tan ke qi bai	1000
+哈弗H六	ha fu H liu	1000
+摩卡	mo ka	1000
+拿铁	na tie	1000
+理想L七	li xiang L qi	1000
+理想L八	li xiang L ba	1000
+理想L九	li xiang L jiu	1000
+理想MEGA	li xiang MEGA	1000
+蔚来ES六	wei lai ES liu	1000
+蔚来ET五	wei lai ET wu	1000
+小鹏P七	xiao peng P qi	1000
+小鹏G九	xiao peng G jiu	1000
+问界M五	wen jie M wu	1000
+问界M七	wen jie M qi	1000
+问界M九	wen jie M jiu	1000
+小米SU七	xiao mi SU qi	1000
+小米YU七	xiao mi YU qi	1000
+
+# ===== 物理 =====
+# --- 力学 ---
+质点	zhi dian	1000
+刚体	gang ti	1000
+参考系	can kao xi	1000
+惯性系	guan xing xi	1000
+位移	wei yi	1000
+速度	su du	1000
+加速度	jia su du	1000
+角速度	jiao su du	1000
+角加速度	jiao jia su du	1000
+匀变速运动	yun bian su yun dong	1000
+抛体运动	pao ti yun dong	1000
+圆周运动	yuan zhou yun dong	1000
+向心加速度	xiang xin jia su du	1000
+简谐运动	jian xie yun dong	1000
+阻尼振动	zu ni zhen dong	1000
+受迫振动	shou po zhen dong	1000
+共振	gong zhen	1000
+波动	bo dong	1000
+横波	heng bo	1000
+纵波	zong bo	1000
+波长	bo chang	1000
+频率	pin lv	1000
+牛顿第一定律	niu dun di yi ding lv	1000
+牛顿第二定律	niu dun di er ding lv	1000
+牛顿第三定律	niu dun di san ding lv	1000
+万有引力	wan you yin li	1000
+引力常量	yin li chang liang	1000
+重力加速度	zhong li jia su du	1000
+动量	dong liang	1000
+动量守恒	dong liang shou heng	1000
+冲量	chong liang	1000
+动能	dong neng	1000
+势能	shi neng	1000
+机械能守恒	ji xie neng shou heng	1000
+功	gong	1000
+功率	gong lv	1000
+保守力	bao shou li	1000
+耗散力	hao san li	1000
+角动量	jiao dong liang	1000
+角动量守恒	jiao dong liang shou heng	1000
+转动惯量	zhuan dong guan liang	1000
+力矩	li ju	1000
+平行轴定理	ping xing zhou ding li	1000
+进动	jin dong	1000
+科里奥利力	ke li ao li li	1000
+离心力	li xin li	1000
+惯性力	guan xing li	1000
+胡克定律	hu ke ding lv	1000
+杨氏模量	yang shi mo liang	1000
+剪切模量	jian qie mo liang	1000
+体积模量	ti ji mo liang	1000
+流体静力学	liu ti jing li xue	1000
+帕斯卡定律	pa si ka ding lv	1000
+阿基米德原理	a ji mi de yuan li	1000
+连续性方程	lian xu xing fang cheng	1000
+黏度	nian du	1000
+表面张力	biao mian zhang li	1000
+毛细现象	mao xi xian xiang	1000
+# --- 热学 ---
+温度	wen du	1000
+热力学温标	re li xue wen biao	1000
+热平衡	re ping heng	1000
+热力学第零定律	re li xue di ling ding lv	1000
+内能	nei neng	1000
+热量	re liang	1000
+热力学第一定律	re li xue di yi ding lv	1000
+热力学第二定律	re li xue di er ding lv	1000
+热力学第三定律	re li xue di san ding lv	1000
+熵	shang	1000
+熵增原理	shang zeng yuan li	1000
+焓	han	1000
+吉布斯自由能	ji bu si zi you neng	1000
+亥姆霍兹自由能	hai mu huo zi zi you neng	1000
+卡诺循环	ka nuo xun huan	1000
+卡诺定理	ka nuo ding li	1000
+热机效率	re ji xiao lv	1000
+制冷系数	zhi leng xi shu	1000
+可逆过程	ke ni guo cheng	1000
+不可逆过程	bu ke ni guo cheng	1000
+等温过程	deng wen guo cheng	1000
+等压过程	deng ya guo cheng	1000
+等容过程	deng rong guo cheng	1000
+绝热过程	jue re guo cheng	1000
+理想气体状态方程	li xiang qi ti zhuang tai fang cheng	1000
+范德瓦尔斯方程	fan de wa er si fang cheng	1000
+分子动理论	fen zi dong li lun	1000
+麦克斯韦速率分布	mai ke si wei su lv fen bu	1000
+平均自由程	ping jun zi you cheng	1000
+比热容	bi re rong	1000
+摩尔热容	mo er re rong	1000
+潜热	qian re	1000
+相变	xiang bian	1000
+三相点	san xiang dian	1000
+临界点	lin jie dian	1000
+热传导	re chuan dao	1000
+热辐射	re fu she	1000
+黑体辐射	hei ti fu she	1000
+斯特藩玻尔兹曼定律	si te fan bo er zi man ding lv	1000
+维恩位移定律	wei en wei yi ding lv	1000
+玻尔兹曼常量	bo er zi man chang liang	1000
+玻尔兹曼分布	bo er zi man fen bu	1000
+配分函数	pei fen han shu	1000
+统计系综	tong ji xi zong	1000
+# --- 电磁学 ---
+电荷	dian he	1000
+库仑定律	ku lun ding lv	1000
+电场	dian chang	1000
+电场强度	dian chang qiang du	1000
+电场线	dian chang xian	1000
+电通量	dian tong liang	1000
+高斯定理	gao si ding li	1000
+电势	dian shi	1000
+电势能	dian shi neng	1000
+等势面	deng shi mian	1000
+电势差	dian shi cha	1000
+电容	dian rong	1000
+电容器	dian rong qi	1000
+介电常数	jie dian chang shu	1000
+电介质	dian jie zhi	1000
+极化	ji hua	1000
+静电屏蔽	jing dian ping bi	1000
+电流	dian liu	1000
+电流密度	dian liu mi du	1000
+欧姆定律	ou mu ding lv	1000
+电阻率	dian zu lv	1000
+电导率	dian dao lv	1000
+基尔霍夫定律	ji er huo fu ding lv	1000
+焦耳定律	jiao er ding lv	1000
+电动势	dian dong shi	1000
+内阻	nei zu	1000
+磁场	ci chang	1000
+磁感应强度	ci gan ying qiang du	1000
+磁通量	ci tong liang	1000
+安培力	an pei li	1000
+洛伦兹力	luo lun zi li	1000
+毕奥萨伐尔定律	bi ao sa fa er ding lv	1000
+安培环路定理	an pei huan lu ding li	1000
+磁偶极矩	ci ou ji ju	1000
+磁化	ci hua	1000
+磁滞回线	ci zhi hui xian	1000
+铁磁质	tie ci zhi	1000
+顺磁质	shun ci zhi	1000
+抗磁质	kang ci zhi	1000
+电磁感应	dian ci gan ying	1000
+法拉第电磁感应定律	fa la di dian ci gan ying ding lv	1000
+楞次定律	leng ci ding lv	1000
+自感	zi gan	1000
+互感	hu gan	1000
+涡流	wo liu	1000
+位移电流	wei yi dian liu	1000
+麦克斯韦方程组	mai ke si wei fang cheng zu	1000
+电磁波	dian ci bo	1000
+坡印廷矢量	po yin ting shi liang	1000
+波阻抗	bo zu kang	1000
+交流电	jiao liu dian	1000
+有效值	you xiao zhi	1000
+阻抗	zu kang	1000
+感抗	gan kang	1000
+容抗	rong kang	1000
+谐振电路	xie zhen dian lu	1000
+品质因数	pin zhi yin shu	1000
+# --- 光学 ---
+几何光学	ji he guang xue	1000
+反射定律	fan she ding lv	1000
+折射定律	zhe she ding lv	1000
+全反射	quan fan she	1000
+临界角	lin jie jiao	1000
+薄透镜成像	bao tou jing cheng xiang	1000
+放大率	fang da lv	1000
+像差	xiang cha	1000
+色差	se cha	1000
+波动光学	bo dong guang xue	1000
+干涉	gan she	1000
+杨氏双缝	yang shi shuang feng	1000
+薄膜干涉	bao mo gan she	1000
+薄膜干涉	bo mo gan she	500
+迈克尔逊干涉仪	mai ke er xun gan she yi	1000
+衍射	yan she	1000
+单缝衍射	dan feng yan she	1000
+圆孔衍射	yuan kong yan she	1000
+光栅	guang shan	1000
+瑞利判据	rui li pan ju	1000
+分辨本领	fen bian ben ling	1000
+偏振	pian zhen	1000
+马吕斯定律	ma lv si ding lv	1000
+布儒斯特角	bu ru si te jiao	1000
+双折射	shuang zhe she	1000
+旋光	xuan guang	1000
+激光	ji guang	1000
+受激辐射	shou ji fu she	1000
+相干长度	xiang gan chang du	1000
+# --- 近代物理 ---
+光电效应	guang dian xiao ying	1000
+逸出功	yi chu gong	1000
+康普顿散射	kang pu dun san she	1000
+波粒二象性	bo li er xiang xing	1000
+德布罗意波	de bu luo yi bo	1000
+不确定性原理	bu que ding xing yuan li	1000
+波函数	bo han shu	1000
+薛定谔方程	xue ding e fang cheng	1000
+定态	ding tai	1000
+势阱	shi jing	1000
+隧穿效应	sui chuan xiao ying	1000
+谐振子	xie zhen zi	1000
+氢原子	qing yuan zi	1000
+量子数	liang zi shu	1000
+泡利不相容原理	pao li bu xiang rong yuan li	1000
+自旋	zi xuan	1000
+塞曼效应	sai man xiao ying	1000
+玻尔模型	bo er mo xing	1000
+原子核	yuan zi he	1000
+质子	zhi zi	1000
+中子	zhong zi	1000
+结合能	jie he neng	1000
+质量亏损	zhi liang kui sun	1000
+放射性	fang she xing	1000
+半衰期	ban shuai qi	1000
+衰变	shuai bian	1000
+裂变	lie bian	1000
+聚变	ju bian	1000
+狭义相对论	xia yi xiang dui lun	1000
+洛伦兹变换	luo lun zi bian huan	1000
+时间膨胀	shi jian peng zhang	1000
+长度收缩	chang du shou suo	1000
+质能方程	zhi neng fang cheng	1000
+四维时空	si wei shi kong	1000
+广义相对论	guang yi xiang dui lun	1000
+等效原理	deng xiao yuan li	1000
+引力红移	yin li hong yi	1000
+引力波	yin li bo	1000
+标准模型	biao zhun mo xing	1000
+夸克	kua ke	1000
+轻子	qing zi	1000
+规范玻色子	gui fan bo shai zi	1000
+强相互作用	qiang xiang hu zuo yong	1000
+弱相互作用	ruo xiang hu zuo yong	1000
+
+# ===== 红色警戒 =====
+# --- 盟军 步兵 ---
+美国大兵	mei guo da bing	1000
+火箭飞行兵	huo jian fei xing bing	1000
+超时空军团兵	chao shi kong jun tuan bing	1000
+谭雅	tan ya	1000
+海豹部队	hai bao bu dui	1000
+间谍	jian die	1000
+工程师	gong cheng shi	1000
+幻影狙击手	huan ying ju ji shou	1000
+# --- 盟军 载具 ---
+灰熊坦克	hui xiong tan ke	1000
+幻影坦克	huan ying tan ke	1000
+光棱坦克	guang leng tan ke	1000
+多功能步兵车	duo gong neng bu bing che	1000
+防空履带车	fang kong lv dai che	1000
+移动作战车	yi dong zuo zhan che	1000
+超时空矿车	chao shi kong kuang che	1000
+矿车	kuang che	1000
+# --- 盟军 空军海军 ---
+入侵者战机	ru qin zhe zhan ji	1000
+黑鹰战机	hei ying zhan ji	1000
+神盾巡洋舰	shen dun xun yang jian	1000
+航空母舰	hang kong mu jian	1000
+运输艇	yun shu ting	1000
+# --- 盟军 建筑 ---
+兵营	bing ying	1000
+战车工厂	zhan che gong chang	1000
+空军指挥部	kong jun zhi hui bu	1000
+作战实验室	zuo zhan shi yan shi	1000
+爱国者导弹	ai guo zhe dao dan	1000
+光棱塔	guang leng ta	1000
+超时空传送仪	chao shi kong chuan song yi	1000
+天气控制器	tian qi kong zhi qi	1000
+超时空裂缝	chao shi kong lie feng	1000
+维修厂	wei xiu chang	1000
+雷达	lei da	1000
+矿石精炼厂	kuang shi jing lian chang	1000
+发电厂	fa dian chang	1000
+# --- 苏军 步兵 ---
+动员兵	dong yuan bing	1000
+防空步兵	fang kong bu bing	1000
+疯狂伊文	feng kuang yi wen	1000
+鲍里斯	bao li si	1000
+恐怖机器人	kong bu ji qi ren	1000
+警犬	jing quan	1000
+# --- 苏军 载具 ---
+犀牛坦克	xi niu tan ke	1000
+天启坦克	tian qi tan ke	1000
+磁能坦克	ci neng tan ke	1000
+自爆卡车	zi bao ka che	1000
+V3火箭发射车	V3 huo jian fa she che	1000
+武装直升机	wu zhuang zhi sheng ji	1000
+基洛夫空艇	ji luo fu kong ting	1000
+# --- 苏军 海军 ---
+台风攻击潜艇	tai feng gong ji qian ting	1000
+无畏级战舰	wu wei ji zhan jian	1000
+海蝎	hai xie	1000
+巨型乌贼	ju xing wu zei	1000
+# --- 苏军 建筑 ---
+核电厂	he dian chang	1000
+磁暴线圈	ci bao xian quan	1000
+防空炮	fang kong pao	1000
+核弹发射井	he dan fa she jing	1000
+铁幕装置	tie mu zhuang zhi	1000
+战斗碉堡	zhan dou diao bao	1000
+# --- 尤里 单位 ---
+尤里新兵	you li xin bing	1000
+尤里X	you li X	1000
+病毒狙击手	bing du ju ji shou	1000
+初始化工程师	chu shi hua gong cheng shi	1000
+神经突击车	shen jing tu ji che	1000
+磁电坦克	ci dian tan ke	1000
+盖特机炮	gai te ji pao	1000
+战斗要塞	zhan dou yao sai	1000
+镭射幽浮	lei she you fu	1000
+心灵控制车	xin ling kong zhi che	1000
+回旋科技	hui xuan ke ji	1000
+# --- 尤里 建筑 ---
+奴隶矿场	nu li kuang chang	1000
+心灵控制器	xin ling kong zhi qi	1000
+心灵信标	xin ling xin biao	1000
+基因突变器	ji yin tu bian qi	1000
+心灵灭绝器	xin ling mie jue qi	1000
+宿命探测仪	su ming tan ce yi	1000
+磁电线圈	ci dian xian quan	1000
+# --- 通用与玩法 ---
+基地车	ji di che	1000
+建造场	jian zao chang	1000
+采矿车	cai kuang che	1000
+油井	you jing	1000
+医院	yi yuan	1000
+机场	ji chang	1000
+修理厂	xiu li chang	1000
+民用建筑	min yong jian zhu	1000
+平民	ping min	1000
+超级武器	chao ji wu qi	1000
+核弹	he dan	1000
+闪电风暴	shan dian feng bao	1000
+天气控制	tian qi kong zhi	1000
+铁幕	tie mu	1000
+超时空传送	chao shi kong chuan song	1000
+心灵控制	xin ling kong zhi	1000
+心灵突击	xin ling tu ji	1000
+造兵	zao bing	1000
+暴兵	bao bing	1000
+憋兵	bie bing	1000
+开矿	kai kuang	1000
+分矿	fen kuang	1000
+主矿	zhu kuang	1000
+卡时间	ka shi jian	1000
+卡BUG	ka BUG	1000
+空投	kong tou	1000
+伞兵	san bing	1000
+侦察	zhen cha	1000
+拆家	chai jia	1000
+推平	tui ping	1000
+围墙	wei qiang	1000
+沙袋	sha dai	1000
+电网	dian wang	1000
+维修	wei xiu	1000
+占领	zhan ling	1000
+中立建筑	zhong li jian zhu	1000
+战争迷雾	zhan zheng mi wu	1000
+遭遇战	zao yu zhan	1000
+联机	lian ji	1000
+局域网	ju yu wang	1000
+心灵控制免疫	xin ling kong zhi mian yi	1000
+磁爆	ci bao	1000
+光棱	guang leng	1000
+音波	yin bo	1000
+毒气	du qi	1000
+病毒	bing du	1000
+尤里的复仇	you li de fu chou	1000
+心灵终结	xin ling zhong jie	1000
+共和国之辉	gong he guo zhi hui	1000
+兵临城下	bing lin cheng xia	1000
+
+# ===== 结构与流体力学 =====
+# --- 结构力学 基本 ---
+静定结构	jing ding jie gou	1000
+超静定结构	chao jing ding jie gou	1000
+超静定次数	chao jing ding ci shu	1000
+几何不变体系	ji he bu bian ti xi	1000
+瞬变体系	shun bian ti xi	1000
+自由度分析	zi you du fen xi	1000
+二元体规则	er yuan ti gui ze	1000
+力法	li fa	1000
+位移法	wei yi fa	1000
+力矩分配法	li ju fen pei fa	1000
+混合法	hun he fa	1000
+影响线	ying xiang xian	1000
+虚功原理	xu gong yuan li	1000
+单位荷载法	dan wei he zai fa	1000
+图乘法	tu cheng fa	1000
+卡氏定理	ka shi ding li	1000
+桁架	heng jia	1000
+平面桁架	ping mian heng jia	1000
+空间桁架	kong jian heng jia	1000
+刚架	gang jia	1000
+排架	pai jia	1000
+拱	gong	1000
+三铰拱	san jiao gong	1000
+两铰拱	liang jiao gong	1000
+无铰拱	wu jiao gong	1000
+悬索	xuan suo	1000
+组合结构	zu he jie gou	1000
+节点法	jie dian fa	1000
+截面法	jie mian fa	1000
+零杆	ling gan	1000
+支座反力	zhi zuo fan li	1000
+铰支座	jiao zhi zuo	1000
+固定支座	gu ding zhi zuo	1000
+滑动支座	hua dong zhi zuo	1000
+弹性支座	tan xing zhi zuo	1000
+约束反力	yue shu fan li	1000
+内力图	nei li tu	1000
+弯矩图	wan ju tu	1000
+剪力图	jian li tu	1000
+轴力图	zhou li tu	1000
+扭矩图	niu ju tu	1000
+叠加原理	die jia yuan li	1000
+对称性利用	dui chen xing li yong	1000
+半结构法	ban jie gou fa	1000
+# --- 结构力学 稳定与动力 ---
+稳定性分析	wen ding xing fen xi	1000
+欧拉临界力	ou la lin jie li	1000
+长细比	chang xi bi	1000
+计算长度	ji suan chang du	1000
+屈曲模态	qu qu mo tai	1000
+失稳	shi wen	1000
+分支点失稳	fen zhi dian shi wen	1000
+极值点失稳	ji zhi dian shi wen	1000
+动力特性	dong li te xing	1000
+自振频率	zi zhen pin lv	1000
+固有频率	gu you pin lv	1000
+振型	zhen xing	1000
+主振型	zhu zhen xing	1000
+振型正交性	zhen xing zheng jiao xing	1000
+阻尼比	zu ni bi	1000
+瑞利阻尼	rui li zu ni	1000
+结构阻尼	jie gou zu ni	1000
+单自由度体系	dan zi you du ti xi	1000
+多自由度体系	duo zi you du ti xi	1000
+动力反应	dong li fan ying	1000
+动力放大系数	dong li fang da xi shu	1000
+地震反应谱	di zhen fan ying pu	1000
+时程分析	shi cheng fen xi	1000
+模态分析	mo tai fen xi	1000
+模态叠加法	mo tai die jia fa	1000
+瑞利法	rui li fa	1000
+里兹法	li zi fa	1000
+广义质量	guang yi zhi liang	1000
+广义刚度	guang yi gang du	1000
+质量矩阵	zhi liang ju zhen	1000
+刚度矩阵	gang du ju zhen	1000
+阻尼矩阵	zu ni ju zhen	1000
+# --- 有限元与固体力学 ---
+有限元法	you xian yuan fa	1000
+单元刚度矩阵	dan yuan gang du ju zhen	1000
+总体刚度矩阵	zong ti gang du ju zhen	1000
+形函数	xing han shu	1000
+位移插值	wei yi cha zhi	1000
+等参元	deng can yuan	1000
+雅可比矩阵	ya ke bi ju zhen	1000
+高斯积分	gao si ji fen	1000
+杆单元	gan dan yuan	1000
+梁单元	liang dan yuan	1000
+板单元	ban dan yuan	1000
+壳单元	ke dan yuan	1000
+实体单元	shi ti dan yuan	1000
+收敛准则	shou lian zhun ze	1000
+网格无关性验证	wang ge wu guan xing yan zheng	1000
+沙漏模式	sha lou mo shi	1000
+锁死现象	suo si xian xiang	1000
+应力集中系数	ying li ji zhong xi shu	1000
+主应力	zhu ying li	1000
+应力张量	ying li zhang liang	1000
+应变张量	ying bian zhang liang	1000
+莫尔圆	mo er yuan	1000
+米塞斯应力	mi sai si ying li	1000
+特雷斯卡准则	te lei si ka zhun ze	1000
+板壳理论	ban ke li lun	1000
+薄板弯曲	bao ban wan qu	1000
+薄板弯曲	bo ban wan qu	500
+中面	zhong mian	1000
+克希霍夫假设	ke xi huo fu jia she	1000
+明德林板	ming de lin ban	1000
+薄壳	bao ke	1000
+薄壳	bo ke	500
+厚壳	hou ke	1000
+薄膜应力	bao mo ying li	1000
+薄膜应力	bo mo ying li	500
+弯曲应力	wan qu ying li	1000
+塑性铰	su xing jiao	1000
+极限荷载	ji xian he zai	1000
+极限分析	ji xian fen xi	1000
+屈服面	qu fu mian	1000
+强化准则	qiang hua zhun ze	1000
+等向强化	deng xiang qiang hua	1000
+随动强化	sui dong qiang hua	1000
+本构关系	ben gou guan xi	1000
+弹塑性	dan su xing	1000
+断裂力学	duan lie li xue	1000
+应力强度因子	ying li qiang du yin zi	1000
+断裂韧度	duan lie ren du	1000
+裂纹扩展	lie wen kuo zhan	1000
+帕里斯公式	pa li si gong shi	1000
+裂纹尖端塑性区	lie wen jian duan su xing qu	1000
+J积分	J ji fen	1000
+损伤容限	sun shang rong xian	1000
+复合材料层合板	fu he cai liao ceng he ban	1000
+经典层合理论	jing dian ceng he li lun	1000
+铺层	pu ceng	1000
+铺层角度	pu ceng jiao du	1000
+铺层顺序	pu ceng shun xu	1000
+层间应力	ceng jian ying li	1000
+分层	fen ceng	1000
+首层失效	shou ceng shi xiao	1000
+蔡吴准则	cai wu zhun ze	1000
+蔡希尔准则	cai xi er zhun ze	1000
+最大应力准则	zui da ying li zhun ze	1000
+刚度矩阵ABD	gang du ju zhen ABD	1000
+# --- 流体力学 基础 ---
+连续介质假设	lian xu jie zhi jia she	1000
+拉格朗日法	la ge lang ri fa	1000
+欧拉法	ou la fa	1000
+迹线	ji xian	1000
+流线	liu xian	1000
+脉线	mai xian	1000
+时间线	shi jian xian	1000
+流管	liu guan	1000
+控制体	kong zhi ti	1000
+系统	xi tong	1000
+速度势	su du shi	1000
+流函数	liu han shu	1000
+涡量	wo liang	1000
+涡度	wo du	1000
+无旋流动	wu xuan liu dong	1000
+有旋流动	you xuan liu dong	1000
+势流	shi liu	1000
+点源	dian yuan	1000
+点汇	dian hui	1000
+偶极子	ou ji zi	1000
+均匀流	jun yun liu	1000
+绕流	rao liu	1000
+圆柱绕流	yuan zhu rao liu	1000
+库塔条件	ku ta tiao jian	1000
+儒可夫斯基定理	ru ke fu si ji ding li	1000
+儒可夫斯基变换	ru ke fu si ji bian huan	1000
+保角变换	bao jiao bian huan	1000
+薄翼理论	bao yi li lun	1000
+薄翼理论	bo yi li lun	500
+升力线理论	sheng li xian li lun	1000
+升力面理论	sheng li mian li lun	1000
+涡格法	wo ge fa	1000
+面元法	mian yuan fa	1000
+普朗特升力线	pu lang te sheng li xian	1000
+诱导速度	you dao su du	1000
+下洗角	xia xi jiao	1000
+纳维斯托克斯方程	na wei si tuo ke si fang cheng	1000
+连续方程	lian xu fang cheng	1000
+动量方程	dong liang fang cheng	1000
+能量方程	neng liang fang cheng	1000
+雷诺输运定理	lei nuo shu yun ding li	1000
+本构方程	ben gou fang cheng	1000
+牛顿流体	niu dun liu ti	1000
+非牛顿流体	fei niu dun liu ti	1000
+黏性	nian xing	1000
+运动黏度	yun dong nian du	1000
+动力黏度	dong li nian du	1000
+变形率张量	bian xing lv zhang liang	1000
+斯托克斯假设	si tuo ke si jia she	1000
+# --- 流体力学 湍流与边界层 ---
+转捩	zhuan lie	1000
+转捩预测	zhuan lie yu ce	1000
+雷诺平均	lei nuo ping jun	1000
+雷诺应力	lei nuo ying li	1000
+涡黏假设	wo nian jia she	1000
+湍流模型	tuan liu mo xing	1000
+零方程模型	ling fang cheng mo xing	1000
+混合长度	hun he chang du	1000
+单方程模型	dan fang cheng mo xing	1000
+双方程模型	shuang fang cheng mo xing	1000
+雷诺应力模型	lei nuo ying li mo xing	1000
+大涡模拟	da wo mo ni	1000
+亚格子模型	ya ge zi mo xing	1000
+直接数值模拟	zhi jie shu zhi mo ni	1000
+分离涡模拟	fen li wo mo ni	1000
+壁面函数	bi mian han shu	1000
+无量纲壁面距离	wu liang gang bi mian ju li	1000
+边界层方程	bian jie ceng fang cheng	1000
+布拉修斯解	bu la xiu si jie	1000
+相似解	xiang si jie	1000
+福克纳斯坎流动	fu ke na si kan liu dong	1000
+位移厚度	wei yi hou du	1000
+动量厚度	dong liang hou du	1000
+能量厚度	neng liang hou du	1000
+形状因子	xing zhuang yin zi	1000
+壁面切应力	bi mian qie ying li	1000
+摩擦系数	mo ca xi shu	1000
+逆压梯度	ni ya ti du	1000
+顺压梯度	shun ya ti du	1000
+分离点	fen li dian	1000
+分离泡	fen li pao	1000
+再附着	zai fu zhuo	1000
+湍流度	tuan liu du	1000
+自由湍流	zi you tuan liu	1000
+射流	she liu	1000
+尾迹	wei ji	1000
+混合层	hun he ceng	1000
+# --- 可压缩流与计算流体力学 ---
+等熵流	deng shang liu	1000
+滞止参数	zhi zhi can shu	1000
+总温	zong wen	1000
+总压	zong ya	1000
+声速	sheng su	1000
+马赫数	ma he shu	1000
+亚音速	ya yin su	1000
+跨音速	kua yin su	1000
+超音速	chao yin su	1000
+高超音速	gao chao yin su	1000
+正激波	zheng ji bo	1000
+斜激波	xie ji bo	1000
+激波角	ji bo jiao	1000
+楔形流	xie xing liu	1000
+锥形流	zhui xing liu	1000
+脱体激波	tuo ti ji bo	1000
+膨胀波	peng zhang bo	1000
+普朗特迈耶流动	pu lang te mai ye liu dong	1000
+激波反射	ji bo fan she	1000
+拉瓦尔喷管	la wa er pen guan	1000
+壅塞	yong se	1000
+临界截面	lin jie jie mian	1000
+面积比	mian ji bi	1000
+激波边界层干扰	ji bo bian jie ceng gan rao	1000
+激波振荡	ji bo zhen dang	1000
+波阻	bo zu	1000
+计算流体力学	ji suan liu ti li xue	1000
+网格生成	wang ge sheng cheng	1000
+结构网格	jie gou wang ge	1000
+非结构网格	fei jie gou wang ge	1000
+混合网格	hun he wang ge	1000
+边界层网格	bian jie ceng wang ge	1000
+网格质量	wang ge zhi liang	1000
+网格正交性	wang ge zheng jiao xing	1000
+有限差分法	you xian cha fen fa	1000
+有限体积法	you xian ti ji fa	1000
+迎风格式	ying feng ge shi	1000
+中心差分	zhong xin cha fen	1000
+高阶格式	gao jie ge shi	1000
+通量限制器	tong liang xian zhi qi	1000
+显式格式	xian shi ge shi	1000
+隐式格式	yin shi ge shi	1000
+库朗数	ku lang shu	1000
+时间推进	shi jian tui jin	1000
+定常求解	ding chang qiu jie	1000
+非定常求解	fei ding chang qiu jie	1000
+亚松弛因子	ya song chi yin zi	1000
+残差	can cha	1000
+收敛判据	shou lian pan ju	1000
+压力速度耦合	ya li su du ou he	1000
+简单算法	jian dan suan fa	1000
+皮索算法	pi suo suan fa	1000
+交错网格	jiao cuo wang ge	1000
+同位网格	tong wei wang ge	1000
+边界条件	bian jie tiao jian	1000
+远场边界	yuan chang bian jie	1000
+周期边界	zhou qi bian jie	1000
+
+# ===== 航空发动机 =====
+# --- 类型与循环 ---
+涡轮喷气发动机	wo lun pen qi fa dong ji	1000
+涡轮风扇发动机	wo lun feng shan fa dong ji	1000
+涡轮螺旋桨发动机	wo lun luo xuan jiang fa dong ji	1000
+涡轮轴发动机	wo lun zhou fa dong ji	1000
+桨扇发动机	jiang shan fa dong ji	1000
+齿轮传动风扇	chi lun chuan dong feng shan	1000
+变循环发动机	bian xun huan fa dong ji	1000
+自适应循环发动机	zi shi ying xun huan fa dong ji	1000
+组合动力	zu he dong li	1000
+涡轮基组合循环	wo lun ji zu he xun huan	1000
+冲压发动机	chong ya fa dong ji	1000
+超燃冲压发动机	chao ran chong ya fa dong ji	1000
+布雷顿循环	bu lei dun xun huan	1000
+理想循环	li xiang xun huan	1000
+实际循环	shi ji xun huan	1000
+循环功	xun huan gong	1000
+净功	jing gong	1000
+热效率	re xiao lv	1000
+推进效率	tui jin xiao lv	1000
+总效率	zong xiao lv	1000
+单位推力	dan wei tui li	1000
+推力系数	tui li xi shu	1000
+单位耗油率	dan wei hao you lv	1000
+燃油消耗率	ran you xiao hao lv	1000
+涵道比	han dao bi	1000
+增压比	zeng ya bi	1000
+总增压比	zong zeng ya bi	1000
+循环参数选择	xun huan can shu xuan ze	1000
+设计点	she ji dian	1000
+非设计点	fei she ji dian	1000
+共同工作线	gong tong gong zuo xian	1000
+共同工作方程	gong tong gong zuo fang cheng	1000
+特性图	te xing tu	1000
+换算参数	huan suan can shu	1000
+相似准则	xiang si zhun ze	1000
+高度速度特性	gao du su du te xing	1000
+节流特性	jie liu te xing	1000
+# --- 进气道 ---
+亚音速进气道	ya yin su jin qi dao	1000
+超音速进气道	chao yin su jin qi dao	1000
+皮托式	pi tuo shi	1000
+外压式	wai ya shi	1000
+内压式	nei ya shi	1000
+混压式	hun ya shi	1000
+二元进气道	er yuan jin qi dao	1000
+轴对称进气道	zhou dui chen jin qi dao	1000
+乘波前体	cheng bo qian ti	1000
+边界层隔道	bian jie ceng ge dao	1000
+附面层吸除	fu mian ceng xi chu	1000
+放气	fang qi	1000
+溢流阻力	yi liu zu li	1000
+附加阻力	fu jia zu li	1000
+进气畸变	jin qi ji bian	1000
+总压畸变	zong ya ji bian	1000
+旋流畸变	xuan liu ji bian	1000
+总压恢复系数	zong ya hui fu xi shu	1000
+流量系数	liu liang xi shu	1000
+进气道发动机匹配	jin qi dao fa dong ji pi pei	1000
+不起动	bu qi dong	1000
+喘振	chuan zhen	1000
+蜂鸣	feng ming	1000
+# --- 压气机与风扇 ---
+轴流压气机	zhou liu ya qi ji	1000
+离心压气机	li xin ya qi ji	1000
+混流压气机	hun liu ya qi ji	1000
+风扇	feng shan	1000
+增压级	zeng ya ji	1000
+级	ji	1000
+转子	zhuan zi	1000
+静子	jing zi	1000
+进口导流叶片	jin kou dao liu ye pian	1000
+可调静子叶片	ke diao jing zi ye pian	1000
+叶栅	ye zha	1000
+叶型	ye xing	1000
+中弧线	zhong hu xian	1000
+稠度	chou du	1000
+安装角	an zhuang jiao	1000
+攻角	gong jiao	1000
+落后角	luo hou jiao	1000
+气流转折角	qi liu zhuan zhe jiao	1000
+扩散因子	kuo san yin zi	1000
+载荷系数	zai he xi shu	1000
+反力度	fan li du	1000
+级压比	ji ya bi	1000
+级功	ji gong	1000
+多变效率	duo bian xiao lv	1000
+等熵效率	deng shang xiao lv	1000
+绝热效率	jue re xiao lv	1000
+轮缘功	lun yuan gong	1000
+速度三角形	su du san jiao xing	1000
+喘振边界	chuan zhen bian jie	1000
+喘振裕度	chuan zhen yu du	1000
+稳定裕度	wen ding yu du	1000
+旋转失速	xuan zhuan shi su	1000
+突尖型失速	tu jian xing shi su	1000
+模态波型失速	mo tai bo xing shi su	1000
+失速先兆	shi su xian zhao	1000
+放气活门	fang qi huo men	1000
+处理机匣	chu li ji xia	1000
+缝式机匣	feng shi ji xia	1000
+槽式机匣	cao shi ji xia	1000
+叶尖泄漏	ye jian xie lou	1000
+二次流	er ci liu	1000
+角区分离	jiao qu fen li	1000
+端壁	duan bi	1000
+展弦比	zhan xian bi	1000
+整体叶盘	zheng ti ye pan	1000
+宽弦叶片	kuan xian ye pian	1000
+空心叶片	kong xin ye pian	1000
+掠形叶片	lve xing ye pian	1000
+弯掠叶片	wan lve ye pian	1000
+三维气动设计	san wei qi dong she ji	1000
+反问题设计	fan wen ti she ji	1000
+# --- 燃烧室 ---
+主燃烧室	zhu ran shao shi	1000
+环形燃烧室	huan xing ran shao shi	1000
+环管形燃烧室	huan guan xing ran shao shi	1000
+单管形燃烧室	dan guan xing ran shao shi	1000
+加力燃烧室	jia li ran shao shi	1000
+火焰筒	huo yan tong	1000
+机匣	ji xia	1000
+扩压器	kuo ya qi	1000
+旋流器	xuan liu qi	1000
+燃油喷嘴	ran you pen zui	1000
+离心喷嘴	li xin pen zui	1000
+空气雾化喷嘴	kong qi wu hua pen zui	1000
+主燃区	zhu ran qu	1000
+中间区	zhong jian qu	1000
+掺混区	can hun qu	1000
+主燃孔	zhu ran kong	1000
+掺混孔	can hun kong	1000
+气膜孔	qi mo kong	1000
+油气比	you qi bi	1000
+当量比	dang liang bi	1000
+燃烧效率	ran shao xiao lv	1000
+总压损失	zong ya sun shi	1000
+出口温度分布	chu kou wen du fen bu	1000
+温度分布系数	wen du fen bu xi shu	1000
+热点系数	re dian xi shu	1000
+径向温度分布	jing xiang wen du fen bu	1000
+点火	dian huo	1000
+高空点火	gao kong dian huo	1000
+点火边界	dian huo bian jie	1000
+贫油熄火	pin you xi huo	1000
+富油熄火	fu you xi huo	1000
+稳定工作范围	wen ding gong zuo fan wei	1000
+火焰稳定器	huo yan wen ding qi	1000
+值班火焰	zhi ban huo yan	1000
+燃烧不稳定	ran shao bu wen ding	1000
+热声振荡	re sheng zhen dang	1000
+自燃	zi ran	1000
+冒烟	mao yan	1000
+排放	pai fang	1000
+低污染燃烧	di wu ran ran shao	1000
+分级燃烧	fen ji ran shao	1000
+贫油预混预蒸发	pin you yu hun yu zheng fa	1000
+驻涡燃烧室	zhu wo ran shao shi	1000
+旋流杯	xuan liu bei	1000
+蒸发管	zheng fa guan	1000
+# --- 涡轮 ---
+高压涡轮	gao ya wo lun	1000
+低压涡轮	di ya wo lun	1000
+动力涡轮	dong li wo lun	1000
+自由涡轮	zi you wo lun	1000
+导向器	dao xiang qi	1000
+导向叶片	dao xiang ye pian	1000
+工作叶片	gong zuo ye pian	1000
+涡轮盘	wo lun pan	1000
+榫头	sun tou	1000
+榫槽	sun cao	1000
+反力式涡轮	fan li shi wo lun	1000
+冲击式涡轮	chong ji shi wo lun	1000
+落压比	luo ya bi	1000
+膨胀比	peng zhang bi	1000
+涡轮效率	wo lun xiao lv	1000
+涡轮前温度	wo lun qian wen du	1000
+燃气初温	ran qi chu wen	1000
+出口温度	chu kou wen du	1000
+叶片冷却	ye pian leng que	1000
+气膜冷却	qi mo leng que	1000
+冲击冷却	chong ji leng que	1000
+对流冷却	dui liu leng que	1000
+发散冷却	fa san leng que	1000
+层板冷却	ceng ban leng que	1000
+冷效	leng xiao	1000
+冷气量	leng qi liang	1000
+冷气掺混	leng qi can hun	1000
+热障涂层	re zhang tu ceng	1000
+单晶叶片	dan jing ye pian	1000
+定向凝固	ding xiang ning gu	1000
+等轴晶	deng zhou jing	1000
+高温合金	gao wen he jin	1000
+粉末冶金	fen mo ye jin	1000
+陶瓷基复合材料	tao ci ji fu he cai liao	1000
+叶尖间隙	ye jian jian xi	1000
+主动间隙控制	zhu dong jian xi kong zhi	1000
+篦齿封严	bi chi feng yan	1000
+刷式封严	shua shi feng yan	1000
+指尖封严	zhi jian feng yan	1000
+二次空气系统	er ci kong qi xi tong	1000
+盘腔流动	pan qiang liu dong	1000
+# --- 尾喷管与传动 ---
+收敛喷管	shou lian pen guan	1000
+收扩喷管	shou kuo pen guan	1000
+引射喷管	yin she pen guan	1000
+塞式喷管	sai shi pen guan	1000
+矢量喷管	shi liang pen guan	1000
+二元矢量喷管	er yuan shi liang pen guan	1000
+轴对称矢量喷管	zhou dui chen shi liang pen guan	1000
+完全膨胀	wan quan peng zhang	1000
+欠膨胀	qian peng zhang	1000
+过膨胀	guo peng zhang	1000
+红外抑制	hong wai yi zhi	1000
+隐身喷管	yin shen pen guan	1000
+反推装置	fan tui zhuang zhi	1000
+蛤壳式	ge ke shi	1000
+叶栅式	ye zha shi	1000
+阻流门式	zu liu men shi	1000
+桨叶反桨	jiang ye fan jiang	1000
+主轴	zhu zhou	1000
+双转子	shuang zhuan zi	1000
+三转子	san zhuan zi	1000
+中介轴承	zhong jie zhou cheng	1000
+主轴承	zhu zhou cheng	1000
+滚珠轴承	gun zhu zhou cheng	1000
+滚棒轴承	gun bang zhou cheng	1000
+中央传动	zhong yang chuan dong	1000
+附件机匣	fu jian ji xia	1000
+# --- 结构强度与转子动力学 ---
+转子动力学	zhuan zi dong li xue	1000
+临界转速	lin jie zhuan su	1000
+一阶临界	yi jie lin jie	1000
+弯曲振型	wan qu zhen xing	1000
+不平衡响应	bu ping heng xiang ying	1000
+挤压油膜阻尼器	ji ya you mo zu ni qi	1000
+弹性支承	tan xing zhi cheng	1000
+支承刚度	zhi cheng gang du	1000
+陀螺力矩	tuo luo li ju	1000
+亚同步振动	ya tong bu zhen dong	1000
+碰摩	peng mo	1000
+转子静子碰摩	zhuan zi jing zi peng mo	1000
+叶片振动	ye pian zhen dong	1000
+一阶弯曲	yi jie wan qu	1000
+一阶扭转	yi jie niu zhuan	1000
+坎贝尔图	kan bei er tu	1000
+共振裕度	gong zhen yu du	1000
+颤振	chan zhen	1000
+失速颤振	shi su chan zhen	1000
+堵塞颤振	du se chan zhen	1000
+强迫响应	qiang po xiang ying	1000
+叶盘耦合振动	ye pan ou he zhen dong	1000
+失谐	shi xie	1000
+局部化	ju bu hua	1000
+摩擦阻尼	mo ca zu ni	1000
+凸肩	tu jian	1000
+阻尼块	zu ni kuai	1000
+高周疲劳	gao zhou pi lao	1000
+低周疲劳	di zhou pi lao	1000
+热机械疲劳	re ji xie pi lao	1000
+蠕变寿命	ru bian shou ming	1000
+应力松弛	ying li song chi	1000
+疲劳蠕变交互	pi lao ru bian jiao hu	1000
+寿命预测	shou ming yu ce	1000
+包容性	bao rong xing	1000
+叶片飞失	ye pian fei shi	1000
+鸟撞	niao zhuang	1000
+外物损伤	wai wu sun shang	1000
+吞冰	tun bing	1000
+吞水	tun shui	1000
+转子爆破	zhuan zi bao po	1000
+# --- 控制与维护 ---
+发动机控制	fa dong ji kong zhi	1000
+全权限数字电子控制	quan quan xian shu zi dian zi kong zhi	1000
+液压机械控制	ye ya ji xie kong zhi	1000
+燃油计量装置	ran you ji liang zhuang zhi	1000
+计量活门	ji liang huo men	1000
+燃油泵	ran you beng	1000
+转速控制	zhuan su kong zhi	1000
+温度限制	wen du xian zhi	1000
+加速控制	jia su kong zhi	1000
+减速控制	jian su kong zhi	1000
+起动控制	qi dong kong zhi	1000
+风车起动	feng che qi dong	1000
+空中再起动	kong zhong zai qi dong	1000
+慢车	man che	1000
+可调几何调节	ke diao ji he tiao jie	1000
+引气控制	yin qi kong zhi	1000
+间隙控制	jian xi kong zhi	1000
+推力管理	tui li guan li	1000
+自动油门	zi dong you men	1000
+反推控制	fan tui kong zhi	1000
+性能衰退	xing neng shuai tui	1000
+状态监控	zhuang tai jian kong	1000
+气路分析	qi lu fen xi	1000
+振动监控	zhen dong jian kong	1000
+滑油监控	hua you jian kong	1000
+屑末检测	xie mo jian ce	1000
+故障诊断	gu zhang zhen duan	1000
+剩余寿命预测	sheng yu shou ming yu ce	1000
+视情维修	shi qing wei xiu	1000
+定时维修	ding shi wei xiu	1000
+大修间隔	da xiu jian ge	1000
+翻修寿命	fan xiu shou ming	1000
+孔探	kong tan	1000
+无损检测	wu sun jian ce	1000
+台架试车	tai jia shi che	1000
+高空台	gao kong tai	1000
+飞行试验	fei xing shi yan	1000
+
+# ===== 航空航天 =====
+# --- 空气动力学 ---
+升力	sheng li	1000
+阻力	zu li	1000
+侧力	ce li	1000
+俯仰力矩	fu yang li ju	1000
+滚转力矩	gun zhuan li ju	1000
+偏航力矩	pian hang li ju	1000
+升阻比	sheng zu bi	1000
+迎角	ying jiao	1000
+侧滑角	ce hua jiao	1000
+失速	shi su	1000
+失速迎角	shi su ying jiao	1000
+临界马赫数	lin jie ma he shu	1000
+音障	yin zhang	1000
+激波	ji bo	1000
+附面层	fu mian ceng	1000
+边界层	bian jie ceng	1000
+分离	fen li	1000
+翼型	yi xing	1000
+弯度	wan du	1000
+厚度	hou du	1000
+弦长	xian chang	1000
+后掠角	hou lve jiao	1000
+上反角	shang fan jiao	1000
+梢根比	shao gen bi	1000
+翼载荷	yi zai he	1000
+诱导阻力	you dao zu li	1000
+型阻	xing zu	1000
+干扰阻力	gan rao zu li	1000
+翼尖涡	yi jian wo	1000
+下洗	xia xi	1000
+动压	dong ya	1000
+静压	jing ya	1000
+皮托管	pi tuo guan	1000
+空速	kong su	1000
+真空速	zhen kong su	1000
+表速	biao su	1000
+地速	di su	1000
+# --- 结构与部件 ---
+机身	ji shen	1000
+机翼	ji yi	1000
+平尾	ping wei	1000
+垂尾	chui wei	1000
+鸭翼	ya yi	1000
+三角翼	san jiao yi	1000
+后掠翼	hou lve yi	1000
+前掠翼	qian lve yi	1000
+变后掠翼	bian hou lve yi	1000
+边条翼	bian tiao yi	1000
+翼身融合	yi shen rong he	1000
+副翼	fu yi	1000
+襟翼	jin yi	1000
+前缘襟翼	qian yuan jin yi	1000
+后缘襟翼	hou yuan jin yi	1000
+缝翼	feng yi	1000
+扰流板	rao liu ban	1000
+减速板	jian su ban	1000
+升降舵	sheng jiang duo	1000
+方向舵	fang xiang duo	1000
+配平片	pei ping pian	1000
+全动平尾	quan dong ping wei	1000
+起落架	qi luo jia	1000
+前三点式	qian san dian shi	1000
+后三点式	hou san dian shi	1000
+主起落架	zhu qi luo jia	1000
+前起落架	qian qi luo jia	1000
+收放机构	shou fang ji gou	1000
+缓冲支柱	huan chong zhi zhu	1000
+刹车系统	sha che xi tong	1000
+防滞刹车	fang zhi sha che	1000
+蒙皮	meng pi	1000
+长桁	chang heng	1000
+隔框	ge kuang	1000
+翼梁	yi liang	1000
+翼肋	yi le	1000
+承力框	cheng li kuang	1000
+复合材料	fu he cai liao	1000
+蜂窝夹层	feng wo jia ceng	1000
+胶接	jiao jie	1000
+整体壁板	zheng ti bi ban	1000
+座舱	zuo cang	1000
+增压座舱	zeng ya zuo cang	1000
+弹射座椅	tan she zuo yi	1000
+座舱盖	zuo cang gai	1000
+风挡	feng dang	1000
+进气道	jin qi dao	1000
+可调进气道	ke tiao jin qi dao	1000
+附面层隔道	fu mian ceng ge dao	1000
+尾喷管	wei pen guan	1000
+# --- 动力 ---
+活塞发动机	huo sai fa dong ji	1000
+涡轮喷气	wo lun pen qi	1000
+涡轮风扇	wo lun feng shan	1000
+涡轮螺旋桨	wo lun luo xuan jiang	1000
+涡轮轴	wo lun zhou	1000
+超燃冲压	chao ran chong ya	1000
+火箭发动机	huo jian fa dong ji	1000
+压气机	ya qi ji	1000
+轴流式压气机	zhou liu shi ya qi ji	1000
+离心式压气机	li xin shi ya qi ji	1000
+压比	ya bi	1000
+燃烧室	ran shao shi	1000
+涡轮	wo lun	1000
+大涵道比	da han dao bi	1000
+推力	tui li	1000
+推重比	tui zhong bi	1000
+失速裕度	shi su yu du	1000
+起飞推力	qi fei tui li	1000
+巡航推力	xun hang tui li	1000
+螺旋桨	luo xuan jiang	1000
+桨叶	jiang ye	1000
+桨距	jiang ju	1000
+变距螺旋桨	bian ju luo xuan jiang	1000
+顺桨	shun jiang	1000
+反桨	fan jiang	1000
+减速器	jian su qi	1000
+液体火箭发动机	ye ti huo jian fa dong ji	1000
+固体火箭发动机	gu ti huo jian fa dong ji	1000
+液氧煤油	ye yang mei you	1000
+液氧甲烷	ye yang jia wan	1000
+液氢液氧	ye qing ye yang	1000
+偏二甲肼	pian er jia jing	1000
+四氧化二氮	si yang hua er dan	1000
+比冲	bi chong	1000
+燃烧室压力	ran shao shi ya li	1000
+喉部	hou bu	1000
+喷管扩张比	pen guan kuo zhang bi	1000
+燃气发生器	ran qi fa sheng qi	1000
+全流量分级燃烧	quan liu liang fen ji ran shao	1000
+泵压式	beng ya shi	1000
+挤压式	ji ya shi	1000
+涡轮泵	wo lun beng	1000
+推力室	tui li shi	1000
+再生冷却	zai sheng leng que	1000
+烧蚀冷却	shao shi leng que	1000
+节流	jie liu	1000
+深度节流	shen du jie liu	1000
+# --- 飞行力学与控制 ---
+纵向稳定性	zong xiang wen ding xing	1000
+横向稳定性	heng xiang wen ding xing	1000
+航向稳定性	hang xiang wen ding xing	1000
+静稳定裕度	jing wen ding yu du	1000
+焦点	jiao dian	1000
+重心	zhong xin	1000
+操纵性	cao zong xing	1000
+杆力	gan li	1000
+杆位移	gan wei yi	1000
+飞控	fei kong	1000
+电传飞控	dian chuan fei kong	1000
+主动控制	zhu dong kong zhi	1000
+增稳	zeng wen	1000
+随控布局	sui kong bu ju	1000
+静不稳定	jing bu wen ding	1000
+控制律	kong zhi lv	1000
+迎角限制	ying jiao xian zhi	1000
+过载限制	guo zai xian zhi	1000
+过载	guo zai	1000
+法向过载	fa xiang guo zai	1000
+盘旋	pan xuan	1000
+稳定盘旋	wen ding pan xuan	1000
+瞬时盘旋	shun shi pan xuan	1000
+能量机动	neng liang ji dong	1000
+剩余功率	sheng yu gong lv	1000
+爬升率	pa sheng lv	1000
+升限	sheng xian	1000
+实用升限	shi yong sheng xian	1000
+航程	hang cheng	1000
+航时	hang shi	1000
+续航能力	xu hang neng li	1000
+巡航高度	xun hang gao du	1000
+阶梯巡航	jie ti xun hang	1000
+燃油储备	ran you chu bei	1000
+起飞距离	qi fei ju li	1000
+着陆距离	zhuo lu ju li	1000
+决断速度	jue duan su du	1000
+抬前轮速度	tai qian lun su du	1000
+# --- 航天 ---
+运载火箭	yun zai huo jian	1000
+助推器	zhu tui qi	1000
+芯级	xin ji	1000
+级间段	ji jian duan	1000
+整流罩	zheng liu zhao	1000
+星箭分离	xing jian fen li	1000
+一子级	yi zi ji	1000
+二子级	er zi ji	1000
+上面级	shang mian ji	1000
+末级	mo ji	1000
+分离机构	fen li ji gou	1000
+回收	hui shou	1000
+垂直回收	chui zhi hui shou	1000
+栅格舵	zha ge duo	1000
+着陆腿	zhuo lu tui	1000
+复用	fu yong	1000
+整流罩回收	zheng liu zhao hui shou	1000
+海上回收	hai shang hui shou	1000
+一子级回收	yi zi ji hui shou	1000
+轨道	gui dao	1000
+近地轨道	jin di gui dao	1000
+太阳同步轨道	tai yang tong bu gui dao	1000
+地球同步轨道	di qiu tong bu gui dao	1000
+地球静止轨道	di qiu jing zhi gui dao	1000
+转移轨道	zhuan yi gui dao	1000
+霍曼转移	huo man zhuan yi	1000
+逃逸轨道	tao yi gui dao	1000
+近地点	jin di dian	1000
+远地点	yuan di dian	1000
+半长轴	ban chang zhou	1000
+偏心率	pian xin lv	1000
+倾角	qing jiao	1000
+升交点赤经	sheng jiao dian chi jing	1000
+近地点幅角	jin di dian fu jiao	1000
+真近点角	zhen jin dian jiao	1000
+轨道六根数	gui dao liu gen shu	1000
+变轨	bian gui	1000
+霍曼变轨	huo man bian gui	1000
+双椭圆变轨	shuang tuo yuan bian gui	1000
+相位调整	xiang wei tiao zheng	1000
+交会对接	jiao hui dui jie	1000
+远距离导引	yuan ju li dao yin	1000
+近距离导引	jin ju li dao yin	1000
+平移靠拢	ping yi kao long	1000
+姿态控制	zi tai kong zhi	1000
+三轴稳定	san zhou wen ding	1000
+自旋稳定	zi xuan wen ding	1000
+反作用轮	fan zuo yong lun	1000
+控制力矩陀螺	kong zhi li ju tuo luo	1000
+磁力矩器	ci li ju qi	1000
+姿控发动机	zi kong fa dong ji	1000
+推进剂管理	tui jin ji guan li	1000
+返回舱	fan hui cang	1000
+轨道舱	gui dao cang	1000
+推进舱	tui jin cang	1000
+服务舱	fu wu cang	1000
+再入	zai ru	1000
+再入走廊	zai ru zou lang	1000
+黑障	hei zhang	1000
+热防护	re fang hu	1000
+烧蚀防热	shao shi fang re	1000
+防热瓦	fang re wa	1000
+降落伞	jiang luo san	1000
+反推	fan tui	1000
+空间站	kong jian zhan	1000
+载人飞船	zai ren fei chuan	1000
+货运飞船	huo yun fei chuan	1000
+深空探测	shen kong tan ce	1000
+探测器	tan ce qi	1000
+巡视器	xun shi qi	1000
+着陆器	zhuo lu qi	1000
+环绕器	huan rao qi	1000
+变推力发动机	bian tui li fa dong ji	1000
+测控	ce kong	1000
+遥测	yao ce	1000
+遥控	yao kong	1000
+深空网	shen kong wang	1000
+时延	shi yan	1000
+定轨	ding gui	1000
+精密定轨	jing mi ding gui	1000
+星历	xing li	1000
+
+# ===== 飞行控制 =====
+# --- 飞行力学与模态 ---
+六自由度模型	liu zi you du mo xing	1000
+刚体运动方程	gang ti yun dong fang cheng	1000
+机体坐标系	ji ti zuo biao xi	1000
+地面坐标系	di mian zuo biao xi	1000
+气流坐标系	qi liu zuo biao xi	1000
+稳定坐标系	wen ding zuo biao xi	1000
+欧拉角	ou la jiao	1000
+四元数	si yuan shu	1000
+方向余弦矩阵	fang xiang yu xian ju zhen	1000
+小扰动线性化	xiao rao dong xian xing hua	1000
+配平点	pei ping dian	1000
+纵向运动	zong xiang yun dong	1000
+横航向运动	heng hang xiang yun dong	1000
+纵横向解耦	zong heng xiang jie ou	1000
+短周期模态	duan zhou qi mo tai	1000
+长周期模态	zhang zhou qi mo tai	1000
+沉浮模态	chen fu mo tai	1000
+滚转模态	gun zhuan mo tai	1000
+螺旋模态	luo xuan mo tai	1000
+荷兰滚模态	he lan gun mo tai	1000
+模态特性	mo tai te xing	1000
+稳定性导数	wen ding xing dao shu	1000
+操纵导数	cao zong dao shu	1000
+气动导数	qi dong dao shu	1000
+导数辨识	dao shu bian shi	1000
+气动参数辨识	qi dong can shu bian shi	1000
+风洞试验	feng dong shi yan	1000
+飞行试验辨识	fei xing shi yan bian shi	1000
+静稳定性	jing wen ding xing	1000
+动稳定性	dong wen ding xing	1000
+中性点	zhong xing dian	1000
+放宽静稳定性	fang kuan jing wen ding xing	1000
+敏捷性	min jie xing	1000
+铰链力矩	jiao lian li ju	1000
+杆力梯度	gan li ti du	1000
+操纵品质	cao zong pin zhi	1000
+飞行品质	fei xing pin zhi	1000
+库珀哈珀评定	ku po ha po ping ding	1000
+等级	deng ji	1000
+驾驶员诱发振荡	jia shi yuan you fa zhen dang	1000
+# --- 飞控系统与控制律 ---
+飞行控制系统	fei xing kong zhi xi tong	1000
+机械操纵	ji xie cao zong	1000
+助力操纵	zhu li cao zong	1000
+电传操纵	dian chuan cao zong	1000
+光传操纵	guang chuan cao zong	1000
+数字式电传	shu zi shi dian chuan	1000
+三余度	san yu du	1000
+四余度	si yu du	1000
+主动控制技术	zhu dong kong zhi ji shu	1000
+直接力控制	zhi jie li kong zhi	1000
+机动载荷控制	ji dong zai he kong zhi	1000
+阵风减缓	zhen feng jian huan	1000
+颤振抑制	chan zhen yi zhi	1000
+乘坐品质控制	cheng zuo pin zhi kong zhi	1000
+增稳系统	zeng wen xi tong	1000
+控制增稳	kong zhi zeng wen	1000
+阻尼器	zu ni qi	1000
+俯仰阻尼器	fu yang zu ni qi	1000
+偏航阻尼器	pian hang zu ni qi	1000
+滚转阻尼器	gun zhuan zu ni qi	1000
+迎角限制器	ying jiao xian zhi qi	1000
+过载限制器	guo zai xian zhi qi	1000
+边界保护	bian jie bao hu	1000
+包线保护	bao xian bao hu	1000
+失速保护	shi su bao hu	1000
+超速保护	chao su bao hu	1000
+自动配平	zi dong pei ping	1000
+马赫配平	ma he pei ping	1000
+自动驾驶仪	zi dong jia shi yi	1000
+高度保持	gao du bao chi	1000
+航向保持	hang xiang bao chi	1000
+姿态保持	zi tai bao chi	1000
+速度保持	su du bao chi	1000
+自动进近	zi dong jin jin	1000
+自动着陆	zi dong zhuo lu	1000
+飞行管理系统	fei xing guan li xi tong	1000
+大气数据系统	da qi shu ju xi tong	1000
+惯性导航	guan xing dao hang	1000
+组合导航	zu he dao hang	1000
+卫星导航	wei xing dao hang	1000
+航姿参考系统	hang zi can kao xi tong	1000
+# --- 经典与现代控制 ---
+根轨迹	gen gui ji	1000
+频域分析	pin yu fen xi	1000
+伯德图	bo de tu	1000
+奈奎斯特判据	nai kui si te pan ju	1000
+尼科尔斯图	ni ke er si tu	1000
+相位裕度	xiang wei yu du	1000
+幅值裕度	fu zhi yu du	1000
+带宽	dai kuan	1000
+剪切频率	jian qie pin lv	1000
+超调量	chao diao liang	1000
+上升时间	shang sheng shi jian	1000
+调节时间	tiao jie shi jian	1000
+稳态误差	wen tai wu cha	1000
+无阻尼自然频率	wu zu ni zi ran pin lv	1000
+主导极点	zhu dao ji dian	1000
+零极点对消	ling ji dian dui xiao	1000
+状态空间	zhuang tai kong jian	1000
+状态方程	zhuang tai fang cheng	1000
+输出方程	shu chu fang cheng	1000
+传递函数矩阵	chuan di han shu ju zhen	1000
+能控性	neng kong xing	1000
+能观性	neng guan xing	1000
+能控标准型	neng kong biao zhun xing	1000
+能观标准型	neng guan biao zhun xing	1000
+极点配置	ji dian pei zhi	1000
+状态反馈	zhuang tai fan kui	1000
+输出反馈	shu chu fan kui	1000
+状态观测器	zhuang tai guan ce qi	1000
+龙伯格观测器	long bo ge guan ce qi	1000
+降阶观测器	jiang jie guan ce qi	1000
+分离原理	fen li yuan li	1000
+卡尔曼滤波	ka er man lv bo	1000
+扩展卡尔曼滤波	kuo zhan ka er man lv bo	1000
+无迹卡尔曼滤波	wu ji ka er man lv bo	1000
+容积卡尔曼滤波	rong ji ka er man lv bo	1000
+粒子滤波	li zi lv bo	1000
+信息融合	xin xi rong he	1000
+线性二次调节器	xian xing er ci tiao jie qi	1000
+线性二次高斯	xian xing er ci gao si	1000
+最优控制	zui you kong zhi	1000
+性能指标	xing neng zhi biao	1000
+黎卡提方程	li ka ti fang cheng	1000
+极大值原理	ji da zhi yuan li	1000
+动态规划	dong tai gui hua	1000
+# --- 鲁棒与自适应 ---
+鲁棒控制	lu bang kong zhi	1000
+不确定性建模	bu que ding xing jian mo	1000
+加性不确定性	jia xing bu que ding xing	1000
+乘性不确定性	cheng xing bu que ding xing	1000
+结构不确定性	jie gou bu que ding xing	1000
+小增益定理	xiao zeng yi ding li	1000
+H无穷控制	H wu qiong kong zhi	1000
+混合灵敏度	hun he ling min du	1000
+灵敏度函数	ling min du han shu	1000
+补灵敏度函数	bu ling min du han shu	1000
+加权函数	jia quan han shu	1000
+结构奇异值	jie gou qi yi zhi	1000
+分析	fen xi	1000
+综合	zong he	1000
+线性矩阵不等式	xian xing ju zhen bu deng shi	1000
+凸优化求解	tu you hua qiu jie	1000
+增益调度	zeng yi diao du	1000
+线性变参数	xian xing bian can shu	1000
+多胞形	duo bao xing	1000
+冻结点设计	dong jie dian she ji	1000
+自适应控制	zi shi ying kong zhi	1000
+模型参考自适应控制	mo xing can kao zi shi ying kong zhi	1000
+自校正控制	zi jiao zheng kong zhi	1000
+直接自适应	zhi jie zi shi ying	1000
+间接自适应	jian jie zi shi ying	1000
+参数估计	can shu gu ji	1000
+持续激励条件	chi xu ji li tiao jian	1000
+参数漂移	can shu piao yi	1000
+修正	xiu zheng	1000
+投影算子	tou ying suan zi	1000
+组合自适应	zu he zi shi ying	1000
+复合自适应	fu he zi shi ying	1000
+神经网络自适应	shen jing wang luo zi shi ying	1000
+径向基函数网络	jing xiang ji han shu wang luo	1000
+万能逼近	wan neng bi jin	1000
+在线学习	zai xian xue xi	1000
+权值更新律	quan zhi geng xin lv	1000
+有界性证明	you jie xing zheng ming	1000
+# --- 滑模与非线性控制 ---
+滑模控制	hua mo kong zhi	1000
+变结构控制	bian jie gou kong zhi	1000
+滑模面	hua mo mian	1000
+切换函数	qie huan han shu	1000
+趋近律	qu jin lv	1000
+等速趋近律	deng su qu jin lv	1000
+指数趋近律	zhi shu qu jin lv	1000
+幂次趋近律	mi ci qu jin lv	1000
+等效控制	deng xiao kong zhi	1000
+抖振	dou zhen	1000
+抖振抑制	dou zhen yi zhi	1000
+边界层法	bian jie ceng fa	1000
+饱和函数	bao he han shu	1000
+高阶滑模	gao jie hua mo	1000
+二阶滑模	er jie hua mo	1000
+超螺旋算法	chao luo xuan suan fa	1000
+终端滑模	zhong duan hua mo	1000
+快速终端滑模	kuai su zhong duan hua mo	1000
+非奇异终端滑模	fei qi yi zhong duan hua mo	1000
+积分滑模	ji fen hua mo	1000
+自适应滑模	zi shi ying hua mo	1000
+滑模观测器	hua mo guan ce qi	1000
+反步法	fan bu fa	1000
+动态面控制	dong tai mian kong zhi	1000
+指令滤波反步	zhi ling lv bo fan bu	1000
+微分爆炸	wei fen bao zha	1000
+虚拟控制量	xu ni kong zhi liang	1000
+李雅普诺夫函数	li ya pu nuo fu han shu	1000
+障碍李雅普诺夫函数	zhang ai li ya pu nuo fu han shu	1000
+有限时间收敛	you xian shi jian shou lian	1000
+固定时间收敛	gu ding shi jian shou lian	1000
+预设性能控制	yu she xing neng kong zhi	1000
+性能函数	xing neng han shu	1000
+误差变换	wu cha bian huan	1000
+反馈线性化	fan kui xian xing hua	1000
+输入输出线性化	shu ru shu chu xian xing hua	1000
+微分几何方法	wei fen ji he fang fa	1000
+李导数	li dao shu	1000
+相对阶	xiang dui jie	1000
+零动态	ling dong tai	1000
+最小相位	zui xiao xiang wei	1000
+内动态	nei dong tai	1000
+输入状态稳定	shu ru zhuang tai wen ding	1000
+输入输出稳定	shu ru shu chu wen ding	1000
+无源性	wu yuan xing	1000
+反步递推	fan bu di tui	1000
+级联系统	ji lian xi tong	1000
+奇异摄动	qi yi she dong	1000
+干扰观测器	gan rao guan ce qi	1000
+自抗扰控制	zi kang rao kong zhi	1000
+扩张状态观测器	kuo zhang zhuang tai guan ce qi	1000
+跟踪微分器	gen zong wei fen qi	1000
+非线性状态误差反馈	fei xian xing zhuang tai wu cha fan kui	1000
+安排过渡过程	an pai guo du guo cheng	1000
+# --- 预测控制与容错 ---
+模型预测控制	mo xing yu ce kong zhi	1000
+滚动优化	gun dong you hua	1000
+预测时域	yu ce shi yu	1000
+控制时域	kong zhi shi yu	1000
+参考轨迹	can kao gui ji	1000
+二次规划	er ci gui hua	1000
+显式模型预测	xian shi mo xing yu ce	1000
+稳定性保证	wen ding xing bao zheng	1000
+非线性模型预测	fei xian xing mo xing yu ce	1000
+实时迭代	shi shi die dai	1000
+内点法	nei dian fa	1000
+有效集法	you xiao ji fa	1000
+控制分配	kong zhi fen pei	1000
+冗余操纵面	rong yu cao zong mian	1000
+伪逆法	wei ni fa	1000
+加权伪逆	jia quan wei ni	1000
+加权最小二乘	jia quan zui xiao er cheng	1000
+链式递增	lian shi di zeng	1000
+直接分配法	zhi jie fen pei fa	1000
+动态控制分配	dong tai kong zhi fen pei	1000
+执行机构饱和	zhi xing ji gou bao he	1000
+抗饱和补偿	kang bao he bu chang	1000
+速率限制	su lv xian zhi	1000
+位置限制	wei zhi xian zhi	1000
+容错控制	rong cuo kong zhi	1000
+主动容错	zhu dong rong cuo	1000
+被动容错	bei dong rong cuo	1000
+故障检测与诊断	gu zhang jian ce yu zhen duan	1000
+残差生成	can cha sheng cheng	1000
+阈值判断	yu zhi pan duan	1000
+故障隔离	gu zhang ge li	1000
+故障辨识	gu zhang bian shi	1000
+余度管理	yu du guan li	1000
+表决	biao jue	1000
+监控	jian kong	1000
+重构控制	chong gou kong zhi	1000
+控制律重构	kong zhi lv chong gou	1000
+可重构性分析	ke chong gou xing fen xi	1000
+控制面失效	kong zhi mian shi xiao	1000
+卡死	ka si	1000
+松浮	song fu	1000
+损伤	sun shang	1000
+# --- 制导与无人系统 ---
+制导律	zhi dao lv	1000
+比例导引	bi li dao yin	1000
+增强比例导引	zeng qiang bi li dao yin	1000
+最优制导律	zui you zhi dao lv	1000
+滑模制导	hua mo zhi dao	1000
+末制导	mo zhi dao	1000
+中制导	zhong zhi dao	1000
+初制导	chu zhi dao	1000
+视线角	shi xian jiao	1000
+视线角速率	shi xian jiao su lv	1000
+弹目距离	dan mu ju li	1000
+脱靶量	tuo ba liang	1000
+剩余飞行时间	sheng yu fei xing shi jian	1000
+攻击角约束	gong ji jiao yue shu	1000
+落角约束	luo jiao yue shu	1000
+无人机	wu ren ji	1000
+固定翼无人机	gu ding yi wu ren ji	1000
+四旋翼	si xuan yi	1000
+六旋翼	liu xuan yi	1000
+复合翼	fu he yi	1000
+倾转旋翼	qing zhuan xuan yi	1000
+垂直起降	chui zhi qi jiang	1000
+自主飞行	zi zhu fei xing	1000
+位置控制	wei zhi kong zhi	1000
+串级控制	chuan ji kong zhi	1000
+内环	nei huan	1000
+外环	wai huan	1000
+混控	hun kong	1000
+电机转速分配	dian ji zhuan su fen pei	1000
+编队控制	bian dui kong zhi	1000
+领航跟随	ling hang gen sui	1000
+虚拟结构	xu ni jie gou	1000
+一致性算法	yi zhi xing suan fa	1000
+分布式控制	fen bu shi kong zhi	1000
+通信拓扑	tong xin tuo pu	1000
+拉普拉斯矩阵	la pu la si ju zhen	1000
+避障	bi zhang	1000
+路径规划	lu jing gui hua	1000
+轨迹优化	gui ji you hua	1000
+伪谱法	wei pu fa	1000
+直接配点法	zhi jie pei dian fa	1000
+打靶法	da ba fa	1000
+微分平坦	wei fen ping tan	1000
+最小急动度	zui xiao ji dong du	1000
+时间最优	shi jian zui you	1000
+集群	ji qun	1000
+蜂群	feng qun	1000
+任务分配	ren wu fen pei	1000
+协同制导	xie tong zhi dao	1000
+感知与规避	gan zhi yu gui bi	1000
+
+# ===== 鸣潮 =====
+# --- 共鸣者 ---
+漂泊者	piao bo zhe	1000
+秧秧	yang yang	1000
+炽霞	chi xia	1000
+白芷	bai zhi	1000
+莫特斐	mo te fei	1000
+丹瑾	dan jin	1000
+吟霖	yin lin	1000
+凌阳	ling yang	1000
+折枝	zhe zhi	1000
+釉瑚	you hu	1000
+维里奈	wei li nai	1000
+鉴心	jian xin	1000
+散华	san hua	1000
+忌炎	ji yan	1000
+今汐	jin xi	1000
+长离	chang li	1000
+桃祈	tao qi	1000
+渊武	yuan wu	1000
+相里要	xiang li yao	1000
+哥舒临	ge shu lin	1000
+灯灯	deng deng	1000
+仇远	qiu yuan	1000
+穗穗	sui sui	1000
+守岸人	shou an ren	1000
+椿	chun	1000
+安可	an ke	1000
+秋水	qiu shui	1000
+卜灵	bo ling	1000
+嘉贝莉娜	jia bei li na	1000
+千咲	qian xiao	1000
+珂莱塔	ke lai ta	1000
+洛可可	luo ke ke	1000
+菲比	fei bi	1000
+布兰特	bu lan te	1000
+赞妮	zan ni	1000
+夏空	xia kong	1000
+坎特蕾拉	kan te lei la	1000
+卡提希娅	ka ti xi ya	1000
+露帕	lu pa	1000
+尤诺	you nuo	1000
+奥古斯塔	ao gu si ta	1000
+莫宁	mo ning	1000
+琳奈	lin nai	1000
+爱弥斯	ai mi si	1000
+西格莉卡	xi ge li ka	1000
+绯雪	fei xue	1000
+达妮娅	da ni ya	1000
+洛瑟菈	luo se la	1000
+卡卡罗	ka ka luo	1000
+清宵	qing xiao	1000
+# --- 主要角色与阵营 ---
+阿布	a bu	1000
+弗洛洛	fu luo luo	1000
+伤痕	shang hen	1000
+克里斯托弗	ke li si tuo fu	1000
+会长	hui zhang	1000
+露西	lu xi	1000
+蕾贝卡	lei bei ka	1000
+镇玄司	zhen xuan si	1000
+玄方地界	xuan fang di jie	1000
+巡林官	xun lin guan	1000
+洗魂司	xi hun si	1000
+战舞庭	zhan wu ting	1000
+索拉里斯	suo la li si	1000
+# --- 属性与机制 ---
+声骸	sheng hai	1000
+共鸣者	gong ming zhe	1000
+残象	can xiang	1000
+溯洄	su hui	1000
+泣浪	qi lang	1000
+鸣式	ming shi	1000
+无音区	wu yin qu	1000
+悲鸣	bei ming	1000
+联觉信标	lian jue xin biao	1000
+潮汐之遗	chao xi zhi yi	1000
+冷凝	leng ning	1000
+热熔	re rong	1000
+导电	dao dian	1000
+湮灭	yan mie	1000
+共鸣技能	gong ming ji neng	1000
+共鸣解放	gong ming jie fang	1000
+变奏技能	bian zou ji neng	1000
+延奏技能	yan zou ji neng	1000
+协同攻击	xie tong gong ji	1000
+声骸技能	sheng hai ji neng	1000
+普攻	pu gong	1000
+重击	zhong ji	1000
+空中攻击	kong zhong gong ji	1000
+闪避反击	shan bi fan ji	1000
+共鸣回路	gong ming hui lu	1000
+合鸣效果	he ming xiao guo	1000
+声之律动	sheng zhi lv dong	1000
+谐振	xie zhen	1000
+残响	can xiang	1000
+洄泳	hui yong	1000
+凝素结晶	ning su jie jing	1000
+暴击	bao ji	1000
+暴击伤害	bao ji shang hai	1000
+攻击力	gong ji li	1000
+生命值	sheng ming zhi	1000
+防御力	fang yu li	1000
+共鸣效率	gong ming xiao lv	1000
+属性伤害加成	shu xing shang hai jia cheng	1000
+治疗效果加成	zhi liao xiao guo jia cheng	1000
+琴心	qin xin	1000
+剑魄	jian po	1000
+心剑意	xin jian yi	1000
+心识锁定	xin shi suo ding	1000
+昙体仙身	tan ti xian shen	1000
+御剑飞行	yu jian fei xing	1000
+气劲	qi jin	1000
+# --- 系统与玩法 ---
+唤取	huan qu	1000
+星声	xing sheng	1000
+辉萤	hui ying	1000
+调谐	tiao xie	1000
+数据坞	shu ju wu	1000
+战术模拟	zhan shu mo ni	1000
+模拟领域	mo ni ling yu	1000
+全息战略	quan xi zhan lve	1000
+逆境深塔	ni jing shen ta	1000
+危机深研	wei ji shen yan	1000
+声骸副本	sheng hai fu ben	1000
+凝素领域	ning su ling yu	1000
+忘归遗迹	wang gui yi ji	1000
+波姆	bo mu	1000
+库街区	ku jie qu	1000
+索拉之影	suo la zhi ying	1000
+突破	tu po	1000
+天赋	tian fu	1000
+固有技能	gu you ji neng	1000
+命座	ming zuo	1000
+共鸣链	gong ming lian	1000
+武器精炼	wu qi jing lian	1000
+谐振等级	xie zhen deng ji	1000
+声骸调谐	sheng hai tiao xie	1000
+主词条	zhu ci tiao	1000
+副词条	fu ci tiao	1000
+迅刀	xun dao	1000
+长刃	zhang ren	1000
+佩枪	pei qiang	1000
+臂铠	bi kai	1000
+音感仪	yin gan yi	1000
+# --- 地名 ---
+今州	jin zhou	1000
+黎那汐塔	li na xi ta	1000
+黑海岸	hei hai an	1000
+荒石高地	huang shi gao di	1000
+瑝珑	huang long	1000
+无妄之地	wu wang zhi di	1000
+虎口	hu kou	1000
+中曲台地	zhong qu tai di	1000
+苦竹林	ku zhu lin	1000
+澄明数据中心	cheng ming shu ju zhong xin	1000
+拉海洛	la hai luo	1000
+北落野	bei luo ye	1000
+玄方城	xuan fang cheng	1000
+天工	tian gong	1000
+苇原	wei yuan	1000
+星炬学院	xing ju xue yuan	1000
+明庭	ming ting	1000

@@ -911,7 +911,7 @@ gotoEnglishButtonForegroundStyle:
 gotoPinyin9Button:
   action:
     combine:
-    - switchRimeSchema: "t9"
+    - switchRimeSchema: "rime_ice"
     - keyboardType: "pinyin9"
   backgroundStyle: "systemButtonBackgroundStyle"
   foregroundStyle:

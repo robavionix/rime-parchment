@@ -44,8 +44,11 @@
   kbd9: if self.dualKeyboard && self.primaryKeyboard == '9' then 'pinyin' else 'pinyin9',
 
   # 九宫格使用的 Rime 方案 ID
-  # t9 方案继承自 rime_ice，共用同一词库与 userdb，自造词互通
-  schemaFor9: 't9',
+  # 5.0 起与 26 键**同一个方案**。t9 已废弃，数字映射并入 rime_ice。
+  # 这不是简化，是 bug 修复：元书记住的是上次用过的方案、布局却由
+  # primaryKeyboard 固定，两者一旦错配，九宫格按键就原样上屏成数字。
+  # 只有一套中文方案时，错配不可能发生。详见 rime_ice.custom.yaml 末尾。
+  schemaFor9: 'rime_ice',
 
   # 26 键中英混打使用的 Rime 方案 ID
   schemaFor26: 'rime_ice',

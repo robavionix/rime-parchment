@@ -1,0 +1,24 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# 覆盖上游同名文件：挂载个人词库 cn_dicts/personal
+#
+# ⚠️ 这是本项目少数几个「覆盖上游」而非「打补丁」的文件之一。
+#    原因：.dict.yaml 不支持 *.custom.yaml 补丁机制，只能整体替换。
+#    上游更新时需人工核对（内容极少）。
+#
+# personal 放在最上面：上游注释明确写着「有重复词条时，最上面的权重生效」，
+# 这样个人词库的权重 1000 才能压过通用词库里的同名词条。
+#
+# t9 方案继承 rime_ice 的 dictionary，故九宫格自动共享本词库，无需另配。
+---
+name: rime_ice
+version: "2026-08-23"
+import_tables:
+  - cn_dicts/personal  # 个人词库：汽车/摄影/鸣潮/航空航天/机械工程
+  - cn_dicts/8105      # 字表
+  - cn_dicts/base      # 基础词库
+  - cn_dicts/ext       # 扩展词库
+  - cn_dicts/tencent   # 腾讯词向量（大词库，部署时间较长）
+  - cn_dicts/others    # 一些杂项
+...
