@@ -7,6 +7,14 @@
   2. 用 OpenSubtitles 5 万词频表为所有词条赋予统一权重（解决排序问题）
   3. 补入词频表中上游没有、且通过词典校验的新词
   4. 并入人工整理的场景词（教育/证件/居住/财务/医疗/职场）与高频词组
+  5. 原词优先：打的小写串本身是词库里的词时，把它排到同输入的别名前面（5.1）
+
+错拼变体（漏字母 / 换位 / 元音互换）自 5.1 起停用，见 TYPO_ENABLED。
+
+用法：python3 build_en_dict.py <素材目录> <上游 rime-ice 目录>
+素材目录里要有两个文件：
+  en50k.txt        hermitdave/FrequencyWords 的 content/2018/en/en_50k.txt
+  words_alpha.txt  dwyl/english-words 的 words_alpha.txt
 
 权重：round(log10(freq+1) * 100)，范围约 100~750；无词频数据的词给 fallback。
 统一赋权是必须的——若只给新词权重而上游词条无权重，新词会盖过 the/and 这类核心词。
@@ -120,6 +128,15 @@ print(f'  场景词并入      : {curated:6d} 条')
 #   ① 变体若本身是真英文单词，必须丢弃。否则打 hat 会跳出 heat/that 一堆东西。
 #   ② 只对高频词生成。全量生成会让 prism 体积失控，而低频词打错的概率本就低。
 
+# ⚠️ 5.1 起停用。变体的本质是「词库里没有的串 → 替换成词库里有的词」，而词库只有
+# 四万来条：品牌名、专业术语、缩写、人名大多不在里面，打出来就会被「纠」成别的词
+# （icar → vicar、picard）。纠对的时候省一个键，纠错的时候得删掉重打，还未必
+# 发现得了。实际使用中后者更伤，用户因此一度把整个中英混打关掉。
+#
+# 设为 True 即可恢复。下面的生成逻辑照常运行（清除上游自带错拼那一步要用它的
+# 中间结果），只是最后不落地。
+TYPO_ENABLED = False
+
 TYPO_TOP_N   = 12000   # 漏字母 / 换位：词频前 N 的词
 TYPO_VOWEL_N = 6000    # 元音替换：范围更窄（这类是「不知道怎么拼」的错，
                        # 多发生在常用词上），且组合数更多，故收紧
@@ -205,12 +222,71 @@ for b in sorted(badset):
 # ── 落地变体（此时才按「是否真单词」「是否已被占用」过滤）──
 existing_codes = set(c.lower() for _, c, _ in entries)
 added_variants = 0
-for v, (text, _) in raw_variants.items():
+for v, (text, _) in sorted(raw_variants.items()) if TYPO_ENABLED else []:
     if v in valid:            continue   # 变体本身是真单词 → 丢弃，否则打 hat 会跳出 heat/that
     if v in existing_codes:   continue   # 已被正常词条占用 → 丢弃
     entries.append((text, v, TYPO_WEIGHT))
     added_variants += 1
-print(f'  错拼变体生成    : {added_variants:6d} 条 (源词 {len(source)}, 阈值 len>={TYPO_MIN_LEN})')
+print(f'  错拼变体生成    : {added_variants:6d} 条 (源词 {len(source)}, 阈值 len>={TYPO_MIN_LEN})'
+      if TYPO_ENABLED else '  错拼变体        : 已停用（TYPO_ENABLED = False）')
+
+# ---------- 原词优先 ----------
+# 原则：你打的这串小写字母如果本身就是词库里的一个词，首位就该是它，而不是
+# 别的词条。上游有不少词条共用同一个输入：
+#     were   → were / we're          its → its / it's        lets → lets / let's
+#     sat    → sat / Saturday        rip → rip / R.I.P       may  → may / May
+#     bbq    → BBQ / barbecue
+# 排在前面的常常不是字面那个。成因有两种：
+#   ① 编码相同、别名权重更高（Saturday 444 > sat 433）
+#   ② 编码不同（we're 的编码带撇号，靠 melt_eng 的 algebra 派生出 were）。
+#      这时 Rime **不按权重排**，而是按原编码的字典序 —— 撇号、大写字母都排在
+#      小写字母前面，所以 we're(30) 反而压过 were(612)，May 压过 may
+# 处理：把同组别名的编码改成和原词一样（消掉 ②），权重压到原词之下（消掉 ①）。
+#
+# 例外见 ALIAS_FIRST，只收一种情况：字面那个串**不是一个词**，只是省掉撇号 /
+# 空格 / 句点的打法，想要的必然是别名（dont → don't）。凡字面本身是个词的
+# （wed、mar、etc、ins、grownup、i18n），一律原词优先 —— 宁可少猜，不要猜错。
+# cant、wont 字面上是词，但极罕用，打出来几乎总是想要 can't、won't，故也列入。
+ALIAS_FIRST = {
+    # 省撇号的缩约形式
+    'dont', 'cant', 'wont', 'didnt', 'doesnt', 'isnt', 'arent', 'wasnt', 'havent',
+    'couldnt', 'wouldnt', 'shouldnt', 'aint',
+    'thats', 'whats', 'hows', 'wheres', 'heres', 'theres', 'whys',
+    'hes', 'shes', 'youre', 'theyre', 'ive', 'youve', 'weve', 'youd',
+    # 省空格 / 句点
+    'thankyou', 'hongkong', 'mrs',
+    # 月份、星期缩写里字面不成词的（sat、sun、wed、mar 是词，不在此列）
+    'jan', 'jun', 'dec', 'sept', 'mon',
+}
+
+
+def norm_code(code):
+    """melt_eng 的 algebra 会把编码里的非字母数字去掉并派生全小写，这里取同样的归一形式。"""
+    return re.sub(r'[^a-z0-9]', '', code.lower())
+
+
+groups = {}
+for i, (_, c, _) in enumerate(entries):
+    groups.setdefault(norm_code(c), []).append(i)
+demoted = 0
+for key, idxs in groups.items():
+    if not key or len(idxs) < 2 or key in ALIAS_FIRST:
+        continue
+    # 字面词条：文本忽略大小写后正好等于输入。全小写的优先于带大写的（may 先于 May）
+    literal = [i for i in idxs if entries[i][0].isalnum() and entries[i][0].lower() == key]
+    if not literal:
+        continue
+    best = max(literal, key=lambda i: (entries[i][0] == key, entries[i][2]))
+    _, code0, w0 = entries[best]
+    for i in idxs:
+        t, c, w = entries[i]
+        if i == best or (t == entries[best][0] and c == code0):
+            continue
+        new = (t, code0, min(w, max(w0 - 1, 1)))
+        if new != entries[i]:
+            entries[i] = new
+            demoted += 1
+print(f'  原词优先        : {demoted:6d} 条别名让位')
 
 # ---------- 输出 ----------
 entries.sort(key=lambda e: (-e[2], e[0].lower()))
@@ -230,6 +306,9 @@ with OUT.open('w', encoding='utf-8', newline='\n') as f:
 #   3. 人工整理的场景词：教育 / 证件 / 居住 / 财务 / 医疗 / 交通 / 职场 / 缩写 / 高频词组
 #
 # 权重统一为 round(log10(词频+1) * 100)，使候选排序反映真实使用频率。
+#
+# 原词优先：打的小写串本身是词库里的词时，同输入的别名（we're、Saturday、May）
+# 改用与它相同的编码、权重压到它之下。不含错拼变体（5.1 起停用）。
 #
 ---
 name: en_merged

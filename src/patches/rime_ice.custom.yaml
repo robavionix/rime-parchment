@@ -6,17 +6,61 @@
 patch:
 
   # ════════════════════════════════════════════════════════
-  # 前后鼻音模糊音
+  # 拼写规则（5.1 起整表重定义）
   # ════════════════════════════════════════════════════════
-  # 上游把全部模糊音规则都注释掉了（rime_ice.schema.yaml 第 311 行起）。
-  # 这里只启用前后鼻音，其余（n/l、zh/z、f/h 等）保持关闭。
+  # 此前用 speller/algebra/+ 在上游规则后面追加。现在要**摘掉**上游的若干条，
+  # 而补丁只能追加或整表替换，删不了列表中间的某一项，所以这里把整张表写出来：
+  # 上游原样照抄，只注释掉要摘的。上游原表在 rime_ice.schema.yaml 的
+  # speller/algebra，雾凇更新后若它有增减，这里要人工对一遍
+  # （逐条核对的做法见 docs/NOTES.md 的「5.1」一节）。
   #
-  # 用 /+ 追加即可——全键盘没有九宫格那种「数字映射顺序陷阱」，
-  # 追加在末尾不影响效果。
+  # 【为什么摘】上游的「自动纠错」是用 derive 做的：给音节多造一个拼写，
+  # 比如让 go 也能读成 gou / gong。造出来的拼写和真拼音地位相同，于是：
   #
-  # an/ang 的规则同时覆盖 ian/iang、uan/uang（都以 an 结尾），
-  # 故无需上游那几条更细粒度的规则。
-  speller/algebra/+:
+  #   ① 抢简拼 / 混拼。Rime 切分音节有条硬规矩：整串输入能用「正常拼写」走通时，
+  #      简拼读法**全部作废**。sih 一旦能读成 shi，「si h → 似乎」就没了；
+  #      九宫格更糟 —— 数字键把字母合并了，46 本是 国内 / 很难 / 购买 的简拼，
+  #      却因为能读成 go、ho 只出「后 公 红」。
+  #   ② 抢英文。中英混打下，一个英文单词若能被拼音完整切开，中文就排到它
+  #      前面：to → 头、do → 动、done → 东阿、coming → 聪明、juice → 九册。
+  #
+  # 取舍原则（用户定）：**先把误判压到最低，容错排第二，中英文同一把尺子。**
+  # 「误判」是你打的是对的、它却给了别的；「容错」是你打错了、它帮你改回来。
+  # 两者冲突时砍容错。
+  #
+  # 所以判据只有一条：规则造出的拼写，只要实测撞上了词库里真实存在的中文词或
+  # 英文单词（哪怕只撞一个生僻词），就摘。37 条里摘 23 条、留 14 条。留下的是
+  # wia → wai、jei → jie、qioa → qiao、riu → rui、neu → nue 这类，实测零误判。
+  #
+  # 数据、做法、每条规则抢了哪些词：docs/NOTES.md 的「5.1」一节
+  # 要恢复某一条：去掉它行首的 `# `。
+  speller/algebra:
+    ### 超级简拼（上游原样）
+    - erase/^hm$/ # 响应超级简拼，取消「噷 hm」的独占（如果拼音词库有这个音节的话，雾凇里没有）
+    - erase/^m$/  # 响应超级简拼，取消「呣 m」的独占（如果拼音词库有这个音节的话，雾凇里没有）
+    - erase/^n$/  # 响应超级简拼，取消「嗯 n」的独占（如果拼音词库有这个音节的话，雾凇里没有）
+    - erase/^ng$/ # 响应超级简拼，取消「嗯 ng」的独占（如果拼音词库有这个音节的话，雾凇里没有）
+    - abbrev/^([a-z]).+$/$1/   # 超级简拼
+    - abbrev/^([zcs]h).+$/$1/  # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h's'h → 吃好睡好）。
+
+    ### v u 转换（上游原样）
+    - derive/^([nl])ve$/$1ue/
+    - derive/^([jqxy])u/$1v/
+    - derive/^([nl])ue$/$1ve/
+    - derive/^([jqxy])v/$1u/
+
+    ### 前后鼻音模糊音（本项目追加）
+    # 上游把全部模糊音规则都注释掉了（rime_ice.schema.yaml 第 311 行起）。
+    # 这里只启用前后鼻音，其余（n/l、zh/z、f/h 等）保持关闭。
+    #
+    # an/ang 的规则同时覆盖 ian/iang、uan/uang（都以 an 结尾），
+    # 故无需上游那几条更细粒度的规则。
+    #
+    # ⚠️ 按「误判优先」的尺子量，模糊音本身就是误判来源，只是它是点名要的功能，
+    # 所以留着、把代价写明：
+    #   · 精确打 jinshen（谨慎）首位出「精神」—— 两个音被当成一个
+    #   · 混打下 ten、tin、din 被读成 teng、ting、ding，首位出「疼 听 定」
+    # 不需要的话删掉下面六行即可，其余规则不受影响。
     - derive/ang$/an/
     - derive/an$/ang/
     - derive/eng$/en/
@@ -24,36 +68,36 @@ patch:
     - derive/ing$/in/
     - derive/in$/ing/
 
-    # ── 相邻键容错（低强度）──────────────────────────────
-    # 需求：手指按到隔壁键时能救回来，但不要主动纠错、不抢正常候选。
+    # ── 相邻键容错：5.1 起三条全部摘除 ────────────────────
+    # 5.0 加过三条针对鼻音韵尾误触的容错：
+    #     - derive/n$/m/     an → am、wen → wem（m 在 n 右边）
+    #     - derive/ng$/mg/   zhong → zhomg、ying → yimg
+    #     - derive/ng$/nh/   zhong → zhonh、fang → fanh（h 在 g 右边）
     #
-    # Rime 的 derive 是**无条件**的：建词库时给每个音节多生成一个输入
-    # 形式，没有「先试拼、拼不出来再纠错」这种条件分支。
+    # 当时的理由是「汉语拼音没有以 m 结尾的音节，也没有 nh 组合，这些形式全是
+    # 空位，白捡」。这只对**全拼**成立。实测它们是整张表里抢得最凶的三条：
     #
-    # 所以低强度只能靠选材：只挑那些**纠错结果本身不是合法拼音**的组合。
-    # 这样新增形式不会和任何正常输入撞车，等价于「只在你打出不可能的
-    # 拼音时才生效」。
+    #   · 抢「全拼 + 声母」的混拼 —— 最常见的偷懒打法。bim 本该是 bi'm（避免），
+    #     被读成了 bin；huam（画面）、jum（居民）、lim（里面）、kem（科目）、
+    #     wenh（文化）、renh（任何）、fanh（返回）同理。
+    #     n→m 抢 121 处、ng→nh 抢 103 处、ng→mg 抢 60 处
+    #   · n→m 另外抢了 99 个英文单词：am、team、ham、sum、jumping、camping。
+    #     打 am 首位出的是「按」
     #
-    # 下面三条针对鼻音韵尾，是 26 键上最高发的误触：n/m 在键盘上紧挨着，
-    # g/h 也紧挨着；而汉语拼音没有任何音节以 m 结尾，也没有 nh 组合，
-    # 这些形式全是空位，白捡。
-    #
-    # 漏打 ng 的 g（zhong → zhon）不在此列，已由上面的前后鼻音覆盖。
-    #
-    # 声母的相邻键误触**故意不做**：d/s、b/n 这类换个字母往往还是合法
-    # 拼音（dao 和 sao 都存在），加进来等于凭空制造歧义，候选会变脏。
-    - derive/n$/m/     # an → am、wen → wem（m 在 n 右边）
-    - derive/ng$/mg/   # zhong → zhomg、ying → yimg
-    - derive/ng$/nh/   # zhong → zhonh、fang → fanh（h 在 g 右边）
+    # 教训：给拼音加派生规则之前，全拼、简拼 / 混拼、英文三边都要量，
+    # 不能只看「它是不是合法音节」。量法见 docs/NOTES.md 的「5.1」一节。
 
     # ── 九宫格数字映射（T9-ONLY BEGIN）──────────────────────
     # 2B 统一方案：九宫格不再用独立的 t9 方案，直接复用本方案。
     # derive 是叠加式的，字母拼写全部保留，26 键完全不受影响。
     #
-    # ⚠️ 必须排在最后：这样上面的模糊音与容错产生的拼写也会一并被
-    # 映射成数字，九宫格上同样享有 wam/fanh/zhomg 的容错。
-    # （t9.custom.yaml 里那条「模糊音必须在数字映射之前」的告诫，
-    #   针对的是上游把数字映射写死在中间的情况，此处顺序相反。）
+    # ⚠️ 位置有讲究：
+    #   · 排在前后鼻音模糊音**之后** —— 模糊音造出的拼写一并映射成数字，
+    #     九宫格同样享有模糊音
+    #   · 排在自动纠错**之前**（5.1 起）—— 那些换位错拼是全键盘上的手误，
+    #     九宫格上不存在；映射成数字只会给数字串平添读法。实测挪到纠错
+    #     之前，九宫格全拼首位命中 84.5% → 85.4%，116 例变好、3 例小幅后移，
+    #     26 键不受影响
     #
     # 若部署时建 prism 失败（见上面的失败记录），第一步就是把这 8 条
     # 移到模糊音**之前**，牺牲九宫格的容错换取规模。
@@ -72,8 +116,73 @@ patch:
     # rne→ren、qnu→qun、qai→qia、qain→qian）。加上去之后**部署失败，
     # 完全无法输入中文**，回退 V9.0 才恢复。
     # 推测原因：超级简拼 + 6 条模糊音 + 9 条容错叠加，在 187 万条词库上
-    # 建 prism 时爆掉。上面这三条单独启用则部署正常、效果符合预期。
-    # 结论：容错规则在本方案里只有这三条的预算，别再往上加。
+    # 建 prism 时爆掉。
+    # 结论：这张表每多一条派生，拼写索引就膨胀一圈，别再往上加。那六条
+    # 上游自己也标注了「对全拼简拼混输有副作用」，本来就过不了误判这一关。
+
+    ### 自动纠错（上游原样，要摘的已注释）
+    # 排在九宫格数字映射**之后**：这样下面造出的换位拼写只存在于字母键盘，
+    # 不会被映射成数字。原因见上面数字映射处的说明。
+    # - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/
+    #   ↑ 【5.1 摘除】hzi → zhi。抢混拼 42 处：孩子 合作 还在 黑色 汉字 汇总 缓存
+    # - derive/([zcs])h([aeiu])$/$1$2h/
+    #   ↑ 【5.1 摘除】zih → zhi。抢混拼 12 处：似乎 组合 策划 词汇 此后 丝毫 自豪
+    - derive/^([wghk])ai$/$1ia/  # wia → wai
+    # - derive/([wfghkz])ei$/$1ie/
+    #   ↑ 【5.1 摘除】wie → wei。抢英文：fie bogie hie；抢混拼 1 处
+    - derive/([jqx])ie$/$1ei/  # jei → jie
+    # - derive/([rtypsdghklzcbnm])ao$/$1oa/
+    #   ↑ 【5.1 摘除】boa → bao。抢英文 8 个：roaming koala coating coaxing
+    - derive/([ypfm])ou$/$1uo/
+    # - derive/([wrtypsdfghklzcbnm])ang$/$1nag/
+    #   ↑ 【5.1 摘除】wnag → wang。抢混拼 16 处：在那个 是那个 把那个 有哪个；抢英文 snag
+    # - derive/([wrtypsdfghklzcbnm])ang$/$1agn/
+    #   ↑ 【5.1 摘除】wagn → wang。抢混拼 12 处：大姑娘 发给你 瓦格纳；抢英文 magna
+    # - derive/([wrtpsdfghklzcbnm])eng$/$1neg/
+    #   ↑ 【5.1 摘除】dneg → deng。抢混拼 1 处
+    # - derive/([wrtpsdfghklzcbnm])eng$/$1egn/
+    #   ↑ 【5.1 摘除】degn → deng。抢混拼 7 处：各功能 这个呢
+    # - derive/([qtypdjlxbnm])ing$/$1nig/
+    #   ↑ 【5.1 摘除】dnig → ding。抢混拼 9 处：油腻感 要你管 牟尼沟
+    # - derive/([qtypdjlxbnm])ing$/$1ign/
+    #   ↑ 【5.1 摘除】dign → ding。抢混拼 6 处：一股脑 倪光南 寄给你；抢英文 malign
+    # - derive/([rtysdghklzcn])ong$/$1nog/
+    #   ↑ 【5.1 摘除】dnog → dong。抢英文 snog
+    # - derive/([rtysdghklzcn])ong$/$1ogn/
+    #   ↑ 【5.1 摘除】dogn → dong。抢混拼 1 处
+    - derive/([qtpdjlxbnm])iao$/$1ioa/
+    - derive/([qtpdjlxbnm])iao$/$1oia/
+    - derive/([rtsghkzc])ui$/$1iu/
+    # - derive/([qjlxnm])iu$/$1ui/
+    #   ↑ 【5.1 摘除】lui → liu。抢英文：juice quiche
+    # - derive/([qjlxn])iang$/$1aing/
+    #   ↑ 【5.1 摘除】jaing → jiang。抢混拼 1 处；叠上前后鼻音模糊音后抢英文 lain jain
+    # - derive/([qjlxn])iang$/$1inag/
+    #   ↑ 【5.1 摘除】jinag → jiang。抢混拼 3 处：你哪个 你那个
+    # - derive/([g|k|h|zh|sh])ua$/$1au/
+    #   ↑ 【5.1 摘除】gau → gua。抢英文 5 个：gauge hauling haute
+    - derive/([g|h|k|zh|ch|sh])uai$/$1aui/
+    # - derive/([qrtysdghjklzxcn])uan$/$1aun/
+    #   ↑ 【5.1 摘除】haun → huan。抢英文：haunting daunting
+    - derive/([nlyjqx])ue$/$1eu/
+    - derive/([g|h|k|zh|ch|sh])uang$/$1aung/
+    # - derive/([g|h|k|zh|ch|sh])uang$/$1uagn/
+    #   ↑ 【5.1 摘除】huagn → huang。抢混拼 1 处：花姑娘
+    - derive/([g|h|k|zh|ch|sh])uang$/$1unag/
+    - derive/([g|h|k|zh|ch|sh])uang$/$1augn/
+    - derive/([jqx])iong$/$1inog/
+    # - derive/([jqx])iong$/$1oing/
+    #   ↑ 【5.1 摘除】joing → jiong。叠上前后鼻音模糊音后，join 首位成了「囧」
+    - derive/([jqx])iong$/$1iogn/
+    - derive/([jqx])iong$/$1oign/
+    # - derive/([rtsdghkzc])o(u|ng)$/$1o/
+    #   ↑ 【5.1 摘除】do → dou|dong。抢英文 126 个：to do so done coming hole role shoe；抢混拼 11 处：东欧 中欧 海鸥
+    # - derive/(.+)ong$/$1on/
+    #   ↑ 【5.1 摘除】lon → long。抢英文 31 个：son done zone ton con non salon canyon
+    # - derive/([tl])eng$/$1en/
+    #   ↑ 【5.1 摘除】ten → teng。抢英文：ten lending（前后鼻音模糊音仍会让 ten 出「疼」，见那里的说明）
+    # - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/
+    #   ↑ 【5.1 摘除】lng → lang|leng|ling|long。抢简拼 25 处：纪念馆 才能够 就能够 不能够 是那个
 
 
 

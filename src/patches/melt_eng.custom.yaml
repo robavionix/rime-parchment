@@ -101,25 +101,21 @@ patch:
     - derive/^.+$/\U$0/    # 全大写
     - derive/^./\U$0/      # 首字母大写
 
-    # ── 少量拼写替换容错 ──
-    # 注意：绝大部分错拼容错已在**词库层**实现（见 build_en_dict.py 生成的
-    # 错拼变体：漏字母、相邻换位、元音互换）。那种方式能覆盖位置不定的错法，
-    # derive 规则做不到。
-    # 这里只保留词库变体覆盖不到的「词尾模式替换」——它们改动的是词尾整段，
-    # 不是单个字母，故不属于上述三类。
-    # Rime 没有内置英文拼写检查。这里用 derive 派生出常见的错拼形式，
-    # 使打错也能命中正确单词——与 Rime 做拼音模糊音是同一机制。
+    # ── 拼写容错：5.1 起全部停用 ──
+    # 原有四条词尾替换（ance↔ence、able↔ible），与词库层的错拼变体
+    # （漏字母、相邻换位、元音互换，见 build_en_dict.py 的 TYPO_ENABLED）
+    # 是同一类东西，一并停用。
     #
-    # 注意这是「模式覆盖」而非通用纠错：只能纠正下列已知模式，
-    # 不能处理任意的漏字母、多字母、字母顺序颠倒。
-    # 通用编辑距离纠错需自行编写 Lua filter，在 4.3 万词库上做模糊搜索，
-    # 键盘扩展的内存与 CPU 限制下有明显性能风险，暂不采用。
+    # 原因：容错的本质是「你打的串 → 换成词库里的另一个词」。打错的时候它帮忙，
+    # 可词库只有四万来条，打对了但词库没收的词（品牌、术语、人名）一样被换掉；
+    # 更糟的是它连词库里**有**的词也换 —— 派生拼写与原词撞上时 Rime 不按权重排，
+    # 实测 terrence 首位出的是 terrance。
     #
-    # 每条规则都会增加 prism 体积，故只保留高频错法。
-    - derive/ance$/ence/               # independance→independence
-    - derive/ence$/ance/               # relevence→relevance
-    - derive/ible$/able/               # responsable→responsible
-    - derive/able$/ible/               # accessable→accessible
+    # 要恢复：解开下面四行。
+    # - derive/ance$/ence/               # independance→independence
+    # - derive/ence$/ance/               # relevence→relevance
+    # - derive/ible$/able/               # responsable→responsible
+    # - derive/able$/ible/               # accessable→accessible
 
     # ── 单字母编码：**不禁用** ──
     # 上游有 `erase/^[a-z]$/`，把所有单字母编码抹掉，本意是防止单字母刷屏。
@@ -128,6 +124,9 @@ patch:
     # 已连同 a / I 两个词条一起补进词库（见 curated_terms.txt）。
 
     # ── 中文数字/符号读音派生（沿用上游全拼部分）──
+    # 让词条里的数字可以按中文读音打：MP4 可以打 mpsi，7-Zip 可以打 qizip。
+    # 实测其中两条会让带数字的词条撞上真单词（Rime 对派生拼写不按权重排，
+    # 3D 排到了 sand 前面），已摘；其余几条在 3.7 万词条上零碰撞，保留。
     - derive/(?<!\d)1([1-9])(?!\d)/shi$1/
     - derive/([1-9])0000(?!0)/$1wan/
     - derive/([1-9])000(?!0)/$1qian/
@@ -138,9 +137,9 @@ patch:
     - derive/10/shi/
     - derive/0/ling/
     - derive/1/yi/
-    - derive/2/er/
+    # - derive/2/er/    # 【5.1 摘除】P2P 靠它读成 perp，压过了单词 perp
     - derive/2/liang/
-    - derive/3/san/
+    # - derive/3/san/   # 【5.1 摘除】3D 靠它读成 sand，压过了单词 sand
     - derive/4/si/
     - derive/5/wu/
     - derive/6/liu/

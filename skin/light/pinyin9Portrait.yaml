@@ -171,6 +171,23 @@ expandButtonForegroundStyle:
   highlightColor: "#3B3226"
   normalColor: "#3B3226"
   systemImageName: "chevron.forward"
+gotoEnglishButton:
+  action:
+    combine:
+    - switchRimeSchema: "melt_eng"
+    - keyboardType: "english"
+  backgroundStyle: "systemButtonBackgroundStyle"
+  foregroundStyle:
+  - "gotoEnglishButtonForegroundStyle"
+  size:
+    width:
+      percentage: 0.18
+gotoEnglishButtonForegroundStyle:
+  buttonStyleType: "text"
+  fontSize: 18
+  highlightColor: "#3B3226"
+  normalColor: "#3B3226"
+  text: "En"
 gotoPinyin26Button:
   action:
     combine:
@@ -305,6 +322,7 @@ keyboardLayout:
     - HStack:
         subviews:
         - Cell: "latinSymbolButton"
+        - Cell: "gotoEnglishButton"
         - Cell: "spaceButton"
         - Cell: "gotoPinyin26Button"
 - VStack:

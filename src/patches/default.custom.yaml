@@ -6,4 +6,4 @@ patch:
   # 方案列表，顺序即方案切换的循环顺序
   schema_list:
     - {schema: rime_ice}   # 全拼 —— 26 键中英混打 + 九宫格，共用此方案
-    - {schema: melt_eng}   # 纯英文键盘（有词库、补全、错拼容错）
+    - {schema: melt_eng}   # 纯英文键盘（有词库、前缀补全）

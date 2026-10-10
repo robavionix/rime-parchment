@@ -542,7 +542,7 @@ eButton:
   size:
     width: "112.5/1125"
   swipeUpAction:
-    character: "3"
+    symbol: "3"
   uppercasedStateAction:
     character: "E"
   uppercasedStateForegroundStyle:
@@ -1125,7 +1125,7 @@ iButton:
   swipeDownAction:
     character: "|"
   swipeUpAction:
-    character: "8"
+    symbol: "8"
   uppercasedStateAction:
     character: "I"
   uppercasedStateForegroundStyle:
@@ -1223,7 +1223,7 @@ jButton:
   swipeDownAction:
     character: "+"
   swipeUpAction:
-    character: "#"
+    symbol: "#"
   uppercasedStateAction:
     character: "J"
   uppercasedStateForegroundStyle:
@@ -1822,7 +1822,7 @@ oButton:
   swipeDownAction:
     character: "<"
   swipeUpAction:
-    character: "9"
+    symbol: "9"
   uppercasedStateAction:
     character: "O"
   uppercasedStateForegroundStyle:
@@ -1920,7 +1920,7 @@ pButton:
   swipeDownAction:
     character: ">"
   swipeUpAction:
-    character: "0"
+    symbol: "0"
   uppercasedStateAction:
     character: "P"
   uppercasedStateForegroundStyle:
@@ -2028,7 +2028,7 @@ qButton:
     width: "112.5/1125"
   swipeDownAction: "tab"
   swipeUpAction:
-    character: "1"
+    symbol: "1"
   uppercasedStateAction:
     character: "Q"
   uppercasedStateForegroundStyle:
@@ -2124,7 +2124,7 @@ rButton:
   size:
     width: "112.5/1125"
   swipeUpAction:
-    character: "4"
+    symbol: "4"
   uppercasedStateAction:
     character: "R"
   uppercasedStateForegroundStyle:
@@ -2428,7 +2428,7 @@ tButton:
   size:
     width: "112.5/1125"
   swipeUpAction:
-    character: "5"
+    symbol: "5"
   uppercasedStateAction:
     character: "T"
   uppercasedStateForegroundStyle:
@@ -2680,7 +2680,7 @@ uButton:
   size:
     width: "112.5/1125"
   swipeUpAction:
-    character: "7"
+    symbol: "7"
   uppercasedStateAction:
     character: "U"
   uppercasedStateForegroundStyle:
@@ -2954,7 +2954,7 @@ wButton:
   size:
     width: "112.5/1125"
   swipeUpAction:
-    character: "2"
+    symbol: "2"
   uppercasedStateAction:
     character: "W"
   uppercasedStateForegroundStyle:
@@ -3141,7 +3141,7 @@ yButton:
   size:
     width: "112.5/1125"
   swipeUpAction:
-    character: "6"
+    symbol: "6"
   uppercasedStateAction:
     character: "Y"
   uppercasedStateForegroundStyle:

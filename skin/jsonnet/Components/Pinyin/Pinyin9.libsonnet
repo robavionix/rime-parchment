@@ -80,6 +80,12 @@ local t9KeyboardLayout = {
             HStack: {
               subviews: [
                 { Cell: pinyin9Buttons.latinSymbolButton.name, },
+              ] + (
+                // 空格左边劈出一小块：直达纯英文键盘（双键盘模式才有那块键盘）
+                if settings.dualKeyboard then
+                  [{ Cell: commonButtons.gotoEnglishButton.name, }]
+                else []
+              ) + [
                 { Cell: pinyin9Buttons.spaceButton.name, },
                 { Cell: commonButtons.gotoPinyin26Button.name, },
               ],
@@ -200,6 +206,21 @@ local newKeyLayout(isDark=false, isPortrait=false, extraParams={}) =
     {
       size: { width: { percentage: 0.2 } },
     },
+  )
+
+  // 空格左边的英文直达键。宽度从空格里出：
+  // 标点键 0.2 + 本键 0.18 + 空格（余下的 0.42）+ 中En 0.2
+  + (
+    if settings.dualKeyboard then
+      basicStyle.newSystemButton(
+        commonButtons.gotoEnglishButton.name,
+        isDark,
+        commonButtons.gotoEnglishButton.params +
+        {
+          size: { width: { percentage: 0.18 } },
+        },
+      )
+    else {}
   )
 
   + basicStyle.newAlphabeticButton(

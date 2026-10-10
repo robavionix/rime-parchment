@@ -51,9 +51,14 @@ rm -f  "$OUT/README.md" "$OUT/AGENTS.md" "$OUT/recipe.yaml"
 
 echo "[3/4] 覆盖 / 追加本项目文件"
 cp src/melt_eng.dict.yaml          "$OUT/"           # 覆盖：改挂 en_merged
-cp src/rime_ice.dict.yaml          "$OUT/"           # 覆盖：挂载个人中文词库
 cp src/en_dicts/en_merged.dict.yaml "$OUT/en_dicts/" # 新增：合并英文词库
-cp src/cn_dicts/personal.dict.yaml "$OUT/cn_dicts/"  # 新增：个人中文词库
+cp src/custom_phrase.txt           "$OUT/"           # 覆盖：上游那份是其作者的个人示例（i → 一 等），会盖掉英文单词
+# 中文词库用上游原样的 rime_ice.dict.yaml，不另挂词库。
+# 想挂自己的：建一份 cn_dicts/xxx.dict.yaml，再覆盖 rime_ice.dict.yaml，把它加进
+# import_tables **最上面**（重复词条以最上面的权重为准）。两点要守住，否则会出怪事：
+#   · 权重给 1000 左右。上游 ext / tencent 全是 100，给 100 等于没有排序依据
+#   · 编码里的拉丁字母一律大写（t分布 → T fen bu）。小写的非拼音「音节」会让
+#     同名简拼整个失效：一条 t fen bu 就能让单按 t 没有候选
 cp src/patches/melt_eng.custom.yaml "$OUT/"
 cp src/patches/default.custom.yaml  "$OUT/"
 

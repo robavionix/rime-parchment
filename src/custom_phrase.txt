@@ -1,0 +1,43 @@
+# Rime table
+# coding: utf-8
+#@/db_name	custom_phrase.txt
+#@/db_type	tabledb
+#
+# 自定义短语 —— 留给你自己用的地方
+#
+# 放在这里的词条占最高权重（custom_phrase/initial_quality: 99），永远排第一。
+# 适合邮箱、手机号、地址、常用短语。编码随便起，不限于拼音。
+#
+# 格式：词汇<Tab>编码<Tab>权重（权重可省）
+#     someone@example.com	yx
+#     某某路 123 号	dz
+#
+# 注意两点：
+#   · 这里的词不与其它翻译器一起造词。用了完整拼音当编码的话，那个词就无法
+#     参与造句、自造词也记不住，所以编码最好不是完整拼音
+#   · 编码别用真实存在的英文单词或常用简拼 —— 它会被这里的词盖掉
+#
+# 本文件覆盖了上游雾凇的同名文件。上游那份开头是其作者的个人快捷写法
+# （i → 一 以 已 亦、u → 有 又 由、ig → 一个、sig → 是一个、m → 呣 呒 ……），
+# 5.1 起不带：中英混打下 i 是英文里第二常用的词，被「一」盖住后打不出 I，
+# sig、ig 同理。想要那些写法，从 vendor/rime-ice/custom_phrase.txt 抄回来即可。
+#
+# 上游末尾钉的十几个英文词原样保留在下面。它们的编码恰好能被拼音切开
+# （nasa = na'sa → 那仨），钉住才能首位出英文。
+#
+# 此行之后不能写注释
+
+go	go
+Golang	golang
+Hugo	hugo
+goto	goto
+domain	domain
+TODO	todo
+Dota	dota
+main	main
+Amazon	amazon
+NASA	nasa
+gone	gone
+Go程	gocheng
+code	code
+SOHO	soho

@@ -33,9 +33,16 @@ local getSwitchButton(keyboardType) =
   else
     commonButtons.alphabeticButton;
 
-// 26 键中英混打的左下角「123」拆成两半：左 = 数字键盘，右 = 纯英文键盘
-local splitNumeric(keyboardType) =
-  settings.dualKeyboard && keyboardType == KeyboardType.Chinese;
+// 左下角「123」拆成两半：左 = 数字键盘，右 = 另一块键盘的直达键
+//   26 键中英混打 → En，去纯英文键盘
+//   纯英文键盘   → T9，回九宫格。九宫格底行有直达纯英文的键，这里给一条
+//                  一键回去的路；右边的「中En」照旧回 26 键
+local splitButton(keyboardType) =
+  if !settings.dualKeyboard then null
+  else if keyboardType == KeyboardType.Chinese then commonButtons.gotoEnglishButton
+  else if keyboardType == KeyboardType.EnglishRime then commonButtons.gotoPinyin9Button
+  else null;
+local splitNumeric(keyboardType) = splitButton(keyboardType) != null;
 
 // 说明：dualKeyboard 下 keyboardLayout 固定为 '26'，此时 KeyboardType.Chinese
 // 即主键盘 'pinyin'。九宫格由 Components/Pinyin9.libsonnet 单独生成。
@@ -94,7 +101,7 @@ local keyboardLayout(keyboardType) = {
           { Cell: commonButtons.numericButton.name },
         ] + (
           if splitNumeric(keyboardType) then
-            [{ Cell: commonButtons.gotoEnglishButton.name }]
+            [{ Cell: splitButton(keyboardType).name }]
           else []
         ) + [
           { Cell: commonButtons.commaButton.name },
@@ -219,10 +226,10 @@ local newKeyLayout(isDark=false, isPortrait=true, keyboardType=KeyboardType.Chin
   + (
     if splitNumeric(keyboardType) then
       basicStyle.newSystemButton(
-        commonButtons.gotoEnglishButton.name,
+        splitButton(keyboardType).name,
         isDark,
         { size: { width: '112.5/1125' } }
-        + procParams(commonButtons.gotoEnglishButton.params)
+        + procParams(splitButton(keyboardType).params)
       )
     else {}
   )
