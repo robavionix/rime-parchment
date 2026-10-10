@@ -3,6 +3,11 @@
 [元书输入法](https://apps.apple.com/us/app/元书输入法/id6744464701)（iOS）的
 **输入方案 + 键盘皮肤**整套配置。
 
+当前公开版：**5.2**（2026-10-10）。修复纯英文选词后不立即添加空格的问题，
+同步个人版为 V10.3。公开版完整配置包、安卓包和三套 V5.2 配套皮肤均在
+[GitHub Releases 5.2](https://github.com/robavionix/rime-parchment/releases/tag/v5.2) 下载。
+本地构建产物位于 `dist/`，三套皮肤保持原有布局。
+
 适合同时有中英文混打输入需求的人群。
 
 ![预览](skin/demo.png)
@@ -69,6 +74,9 @@ Rime 方案，键盘布局却由皮肤的 `primaryKeyboard` 固定**，两者各
   （代价是失去中文错音提示，补丁中留有注释可一键恢复）
 - **英文词库重建** —— 42,999 条，按真实词频统一赋权
 - **前缀补全** —— 打 `inter` 直接出 `international`
+- **纯英文选词后自动加空格** —— 按空格或点选候选，立即提交 `hello `；
+  回车提交原始英文同样加尾空格。接标点前可退格删去空格。
+  混打键盘仍只在连续两个英文词之间补空格。
 - **原词优先** —— 你打的小写串如果本身是词库里的词，首位就是它：
   `were` 不再出 `we're`，`its` 不再出 `it's`，`sat` 不再出 `Saturday`，
   `may` 不再出 `May`。只有字面不成词的缩约写法照旧展开（`dont → don't`）
@@ -138,7 +146,13 @@ docs/NOTES.md        完整开发记录：每处改动的原因与踩过的坑
 python3 src/tools/build_en_dict.py <素材目录> vendor/rime-ice   # 重建英文词库（素材见脚本开头）
 ./build-rime.sh                              # 组装 Rime 配置（iOS 元书版）
 ./build-rime.sh android                      # 组装 Rime 配置（安卓版）
+python src/tools/package_release.py --public 5.2 --personal 10.3 --previous 10.2
+                                            # 校验并同步完整配置包与三套皮肤
 ```
+
+打包工具需要 PyYAML 和 `tools/jsonnet.exe`。打包前会核对皮肤源码与编译结果、
+键盘和方案绑定；打包后逐文件校验压缩包。个人版保留个人词库与语言模型，
+旧版目录和同名包在更新完成后由新版本替换。
 
 皮肤也可在手机上编译：长按皮肤 → 「运行 main.jsonnet」。
 

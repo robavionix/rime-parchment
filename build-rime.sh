@@ -15,11 +15,27 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 TARGET="${1:-ios}"
+case "$TARGET" in
+  ios|android) ;;
+  *) echo "错误：目标只能是 ios 或 android：$TARGET" >&2; exit 2 ;;
+esac
 if [ "$TARGET" = "android" ]; then
   OUT=dist/rime-android
 else
   OUT=dist/rime
 fi
+# 先检查构建输入，缺文件时保留上一次可用产物。
+for required in vendor/rime-ice/rime_ice.schema.yaml \
+                vendor/rime-ice/melt_eng.schema.yaml \
+                src/melt_eng.dict.yaml src/en_dicts/en_merged.dict.yaml \
+                src/custom_phrase.txt src/patches/default.custom.yaml \
+                src/patches/melt_eng.custom.yaml src/patches/rime_ice.custom.yaml \
+                src/lua/en_auto_space_processor.lua src/lua/en_auto_space_filter.lua; do
+  if [ ! -f "$required" ]; then
+    echo "错误：缺少构建输入 $required（原产物未改动）" >&2
+    exit 1
+  fi
+done
 rm -rf "$OUT"
 mkdir -p "$OUT"
 
@@ -53,6 +69,7 @@ echo "[3/4] 覆盖 / 追加本项目文件"
 cp src/melt_eng.dict.yaml          "$OUT/"           # 覆盖：改挂 en_merged
 cp src/en_dicts/en_merged.dict.yaml "$OUT/en_dicts/" # 新增：合并英文词库
 cp src/custom_phrase.txt           "$OUT/"           # 覆盖：上游那份是其作者的个人示例（i → 一 等），会盖掉英文单词
+cp src/lua/*.lua                   "$OUT/lua/"       # 新增：本项目自己的 Lua 组件（英文单词间自动补空格）
 # 中文词库用上游原样的 rime_ice.dict.yaml，不另挂词库。
 # 想挂自己的：建一份 cn_dicts/xxx.dict.yaml，再覆盖 rime_ice.dict.yaml，把它加进
 # import_tables **最上面**（重复词条以最上面的权重为准）。两点要守住，否则会出怪事：
